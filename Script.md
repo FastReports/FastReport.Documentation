@@ -181,5 +181,89 @@ By using the Add Bookmark method, you can add a bookmark programmatically. This 
 
 The GetBookmarkPage method returns the page number on which the bookmark is placed. This method is often used when creating the table of contents, for displaying page numbers. In this case, the report must have a double pass.
 
+## Reference to data sources
+
+Contrary to the FastReport expressions (covered in the "Expressions" section), never use square brackets in script for referring to the data sources. Instead of this, use the GetColumnValue method of the Report object, which returns the value of the column:
+
+```
+string productName = (string)Report.GetColumnValue("Products.Name");
+```
+
+As seen, you need to indicate the name of the source and its column. The name of the source can be compound in case, if we are referring to the data source by using a relation. Details about relations can be found in the "Data" chapter. For example, you can refer to a column of the related data source in this way:
+ 
+```
+string categoryName = (string)Report.GetColumnValue("Products.Categories.CategoryName");
+```
+
+For referring to the data source itself, use the GetDataSource method of the Report object:
+ 
+```
+DataSourceBase ds = Report.GetDataSource("Products");
+```
+
+Help on properties and methods of the DataSourceBase class can be received from the FastReport.Net Class Reference help system. As a rule, this object is used in the script in the following way:
+ 
+```
+// get a reference to the data source
+DataSourceBase ds = Report.GetDataSource("Products");
+// initialize it
+ds.Init();
+// enum all rows
+while (ds.HasMoreRows)
+{
+  // get the data column value from the current row
+  string productName = (string)Report.GetColumnValue("Products.Name");
+  // do something with it...
+  // ...
+  // go next data row
+  ds.Next();
+}
+```
+
+## Rererence to system variables
+
+For reference to system variables, use the GetVariableValue method of the Report object:
+
+```
+DateTime date = (DateTime)Report.GetVariableValue("Date");
+```
+
+## Reference to total values
+
+For reference to the total value, use the GetTotalValue method of the Report object:
+ 
+```
+float sales = Report.GetTotalValue("TotalSales");
+```
+
+Total value has got the FastReport.Variant type. It can be used directly in any expression, because the FastReport.Variant type is automatically converted to any type. For example:
+ 
+```
+float tax = Report.GetTotalValue("TotalSales") * 0.2f;
+```
+
+Reference to the total value can be done at that time when, it is being processed. Usually the total is "ready to use" at the moment of printing the band, on which it is located in the report.
+
+## Reference to report parameters
+
+For referring to report parameters, use the GetParameterValue method of the Report object:
+
+```
+int myParam = (int)Report.GetParameterValue("MyParameter");
+```
+
+Parameters can be nested. In this case, indicate the name of the parent parameter and after the period, the name of the child parameter:
+
+```
+Report.GetParameterValue("ParentParameter.ChildParameter")
+```
+
+Parameters have got a definite data type. It is given in the DataType property of the parameter. You must take this into account when referring to parameters. 
+
+For changing the value of the parameter, use the SetParameterValue method of the report object:
+
+```
+Report.SetParameterValue("MyParameter", 10);
+```
 
 [Next Page](ReportCreation.md)
