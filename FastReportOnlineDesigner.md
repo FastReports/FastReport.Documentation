@@ -1,3 +1,11 @@
 # FastReport Online Designer
 
+[FastReport Online Designer](https://www.fast-report.com/en/product/fast-report-online-designer/) is a visual report designer for Web.
+
+![](images/FastReport_designer.png)
+
+## Cross-platform
+
+[FastReport Online Designer](https://www.fast-report.com/en/product/fast-report-online-designer/) allows creating, editing and viewing reports on devices with Android, iOS or Windows platform. Designer can be run on any device with a modern browser whether it's a computer, tablet, smartphone, game console or a TV set.
+
 [Next Page](ReportTemplateFileStructure.md)
