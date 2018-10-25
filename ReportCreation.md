@@ -1,4 +1,4 @@
 # Report Creation
 
 
-[Next Page](FastReportDesignerCommunityEdition.exe)
+[Next Page](FastReportDesignerCommunityEdition.md)
