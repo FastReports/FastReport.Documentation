@@ -35,7 +35,7 @@ Here is the FastReport Open Source Documentation.
 ### [Web Reports](WebReport.md)
 
 ### [APPENDIX I: Examples](Examples.md)
-### [APPENDIX II: Class Reference](ClassReference.md)
+### [APPENDIX II: Class Reference](https://fastreports.github.io/FastReport.Documentation/ClassReference/api/FastReport.html)
 ### [APPENDIX III: The Feature Comparison Table for FastReport Open Source, FastReport Core, FastReport .Net](COMPARISON.md)
 
 ## Links
