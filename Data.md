@@ -87,4 +87,92 @@ The only way to add a hierarchical data source in your report is to register it 
 
 This means that, these two data sources are related to each other and can be used in the "master-detail" report type. You can also use each of these data sources separately in a "simple list" report type.
 
+## System Variables
+
+There is a list of system variables that can be used in a report:
+
+| Variable | Description |
+|:-|:-|
+| Date | Date and time of the report's start. |
+| Page | Current page number. |
+| TotalPages | Total number of pages in the report. To use this variable, you need to enable the report's double pass. You can do this in "Report|Properties..." menu. |
+| PageN | Page number in the form: "Page N". |
+| PageNofM | Page number in the form: "Page N of M". | 
+| Row# | Data row number inside the group. This value is reset at the start of a new group. |
+| AbsRow# | Absolute number of data row. This value is never reset at the start of a new group. |
+| Page# | Current page number. If you join several prepared reports into one package, this variable will return current page number in a package. This variable is actually a macro. It value is substituted when the component is viewed in the preview window. That means you cannot use it in an expression. |
+| TotalPages# | Total number of pages in the report. If you join several prepared reports into one package, this variable will return the number of pages in a package. You don't need to use double pass to get the correct value. This variable is actually a macro. It value is substituted when the component is viewed in the preview window. That means you cannot use it in an expression. |
+| HierarchyLevel | Current level of hierarchy in a hierarchical report (see "Printing hierarchy"). The top level is equal to 1. |
+| HierarchyRow# | Full row number like "1.2.1" in a hierarchical report. |
+
+## Totals
+
+In many reports, we may need to show some total information: sum of the group, number of rows in the list, and many others. FastReport uses totals to perform this task. For the total, you need to indicate the following parameters:
+ 
+- The total function type;
+- The expression, which is supposed to be calculated. For the "Count" function, you do not need to indicate the expression;
+- The condition. The function will be calculated if the condition is met. It's not obligatory to set up the condition.
+- The data band, for which the function will be processed;
+- The band, in which the total value will be printed.
+
+The list of total functions is given below:
+
+| Function | Description |
+|:-|:-|
+| Sum | Calculates the sum of the expression. |
+| Min | Calculates the minimum value of the expression. |
+| Max | Calculates the maximum value of the expression. |
+| Average | Calculates the average value of the expression. |
+| Count | Returns the number of rows. |
+
+## Report parameters
+
+You can define parameters in a report. Parameter is a variable, the value of which can be defined both in a report itself and outside of it. A parameter can be used in expressions and be displayed in report objects like the "Text" object.
+
+Most common methods of using parameters:
+
+- data filtering by condition set in a parameter;
+- printing parameter value in a report.
+
+A parameter has the following properties:
+
+| Property | Description |
+|:-|:-|
+| Name | Parameter's name can have any symbols except dot ".". |
+| DataType | Parameter data type. |
+| Expression | Expression which returns parameter's value. More details about expressions can be found in the "Expression" chapter. This expression will be processed when calling a parameter. |
+| Value | Parameter value. This property is not available in the designer and can be filled programmatically. |
+
+You have to set up "Name" and "DataType" properties. The "Expression" property can be left empty. In this case parameter's value should be passed programmatically. 
+
+You can refer to a parameter from an expression using square brackets:
+
+```
+[Parameter name]
+```
+
+To a nested parameter you need to refer using this method:
+ 
+```
+[Parent parameter.Child parameter]
+```
+
+Since a parameter has got a definite type (it is given in the DataType property), then with parameters, you can perform those actions which are allowed for data type. So, string type parameters can be used in an expression the following way:
+
+```
+[StringParameter].Substring(0, 2)
+```
+
+Let us see one example of using parameters. Assuming we have a report which prints "Employees" table. We want to modify the report to print information about an employee with an indicated number. To do this, we need to filter the data on the "EmployeeID" data column. Create a parameter with "EmployeeID" name. Indicate parameter's type - Int32, as exactly this type has the "EmployeeID" data column. To filter an employee with an indicated ID we need to enter "Data" band editor and indicate the following expression in "Filter" tab:
+
+```
+[Employees.EmployeeID] == [EmployeeID]
+```
+
+To pass parameter value from your program to the report, use the following code:
+
+```
+report1.SetParameterValue("EmployeeID", 2);
+```
+
 [Next Page](Expressions.md)

@@ -8,6 +8,8 @@ FastReport provides open source report generator for .NET Core 2.x/.Net Framewor
 
 Here is the FastReport Open Source Documentation. 
 
+We wish to draw up your attention to the fact that Documentation is under construction.
+
 ## Table of Contents
 
 ### [Introduction](Introduction.md)
