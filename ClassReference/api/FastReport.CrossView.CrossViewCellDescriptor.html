@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CrossViewCellDescriptor
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CrossViewCellDescriptor
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.CrossView.CrossViewCellDescriptor">
+  
+  
+  <h1 id="FastReport_CrossView_CrossViewCellDescriptor" data-uid="FastReport.CrossView.CrossViewCellDescriptor" class="text-break">Class CrossViewCellDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>The descriptor that is used to describe one CrossView data cell.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html">CrossViewDescriptor</a></div>
+    <div class="level2"><span class="xref">CrossViewCellDescriptor</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_Expression">CrossViewDescriptor.Expression</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_TemplateColumn">CrossViewDescriptor.TemplateColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_TemplateRow">CrossViewDescriptor.TemplateRow</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_TemplateCell">CrossViewDescriptor.TemplateCell</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_Deserialize_FastReport_Utils_FRReader_">CrossViewDescriptor.Deserialize(FRReader)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.CrossView.html">FastReport.CrossView</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_CrossView_CrossViewCellDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CrossViewCellDescriptor : CrossViewDescriptor, IFRSerializable</code></pre>
+  </div>
+  <h5 id="FastReport_CrossView_CrossViewCellDescriptor_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="FastReport.CrossView.CrossViewCellDescriptor.html">CrossViewCellDescriptor</a> class is used to define one data cell of the CrossView.
+To set visual appearance of the data cell, use the <a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_TemplateCell">TemplateCell</a>
+property.</p>
+<p>The collection of descriptors used to represent the CrossView data cells is stored
+in the <strong>CrossViewObject.Data.Cells</strong> property.
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor__ctor_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.#ctor*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor__ctor" data-uid="FastReport.CrossView.CrossViewCellDescriptor.#ctor">CrossViewCellDescriptor()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.CrossView.CrossViewCellDescriptor.html">CrossViewCellDescriptor</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrossViewCellDescriptor()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor__ctor_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.#ctor*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor__ctor_System_String_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">CrossViewCellDescriptor(String, String, String, Boolean, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.CrossView.CrossViewCellDescriptor.html">CrossViewCellDescriptor</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrossViewCellDescriptor(string xFieldName, string yFieldName, string measureName, bool isXTotal, bool isYTotal, bool isXGrandTotal, bool isYGrandTotal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xFieldName</span></td>
+        <td><p>The Field Name in X axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">yFieldName</span></td>
+        <td><p>The Field Name in Y axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">measureName</span></td>
+        <td><p>The Measure Name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isXTotal</span></td>
+        <td><p>Indicates the &quot;XTotal&quot; element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isYTotal</span></td>
+        <td><p>Indicates the &quot;YTotal&quot; element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isXGrandTotal</span></td>
+        <td><p>Indicates the &quot;XGrandTotal&quot; element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isYGrandTotal</span></td>
+        <td><p>Indicates the &quot;YGrandTotal&quot; element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_IsXGrandTotal_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsXGrandTotal*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_IsXGrandTotal" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsXGrandTotal">IsXGrandTotal</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this is the &quot;GrandTotal&quot; element on X axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsXGrandTotal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_IsXTotal_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsXTotal*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_IsXTotal" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsXTotal">IsXTotal</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this is the &quot;Total&quot; element on X axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsXTotal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_IsYGrandTotal_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsYGrandTotal*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_IsYGrandTotal" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsYGrandTotal">IsYGrandTotal</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this is the &quot;GrandTotal&quot; element on Y axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsYGrandTotal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_IsYTotal_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsYTotal*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_IsYTotal" data-uid="FastReport.CrossView.CrossViewCellDescriptor.IsYTotal">IsYTotal</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this is the &quot;Total&quot; element on Y axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsYTotal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_MeasureName_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.MeasureName*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_MeasureName" data-uid="FastReport.CrossView.CrossViewCellDescriptor.MeasureName">MeasureName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of measure in cube.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MeasureName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_X_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.X*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_X" data-uid="FastReport.CrossView.CrossViewCellDescriptor.X">X</h4>
+  <div class="markdown level1 summary"><p>Gets the x coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int X { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_XFieldName_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.XFieldName*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_XFieldName" data-uid="FastReport.CrossView.CrossViewCellDescriptor.XFieldName">XFieldName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of field in X axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string XFieldName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_Y_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.Y*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_Y" data-uid="FastReport.CrossView.CrossViewCellDescriptor.Y">Y</h4>
+  <div class="markdown level1 summary"><p>Gets the y coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Y { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_YFieldName_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.YFieldName*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_YFieldName" data-uid="FastReport.CrossView.CrossViewCellDescriptor.YFieldName">YFieldName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of field in Y axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string YFieldName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_Assign_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.Assign*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_Assign_FastReport_CrossView_CrossViewDescriptor_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.Assign(FastReport.CrossView.CrossViewDescriptor)">Assign(CrossViewDescriptor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Assign(CrossViewDescriptor source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html">CrossViewDescriptor</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_Assign_FastReport_CrossView_CrossViewDescriptor_">CrossViewDescriptor.Assign(CrossViewDescriptor)</a></div>
+  
+  
+  <a id="FastReport_CrossView_CrossViewCellDescriptor_Serialize_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.Serialize*"></a>
+  <h4 id="FastReport_CrossView_CrossViewCellDescriptor_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.CrossView.CrossViewCellDescriptor.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Serialize(FRWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.CrossView.CrossViewDescriptor.html#FastReport_CrossView_CrossViewDescriptor_Serialize_FastReport_Utils_FRWriter_">CrossViewDescriptor.Serialize(FRWriter)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

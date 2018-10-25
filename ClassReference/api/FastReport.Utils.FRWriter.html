@@ -1,0 +1,803 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FRWriter
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FRWriter
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Utils.FRWriter">
+  
+  
+  <h1 id="FastReport_Utils_FRWriter" data-uid="FastReport.Utils.FRWriter" class="text-break">Class FRWriter
+  </h1>
+  <div class="markdown level0 summary"><p>The writer used to serialize object's properties to a report file.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FRWriter</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Utils.html">FastReport.Utils</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Utils_FRWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FRWriter : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Utils_FRWriter__ctor_" data-uid="FastReport.Utils.FRWriter.#ctor*"></a>
+  <h4 id="FastReport_Utils_FRWriter__ctor" data-uid="FastReport.Utils.FRWriter.#ctor">FRWriter()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <strong>FRWriter</strong> class with default settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FRWriter()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Utils_FRWriter__ctor_" data-uid="FastReport.Utils.FRWriter.#ctor*"></a>
+  <h4 id="FastReport_Utils_FRWriter__ctor_FastReport_Utils_XmlItem_" data-uid="FastReport.Utils.FRWriter.#ctor(FastReport.Utils.XmlItem)">FRWriter(XmlItem)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <strong>FRWriter</strong> class with specified xml item that will
+receive writer's output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FRWriter(XmlItem root)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><span class="parametername">root</span></td>
+        <td><p>The xml item that will receive writer's output.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Utils_FRWriter_DiffObject_" data-uid="FastReport.Utils.FRWriter.DiffObject*"></a>
+  <h4 id="FastReport_Utils_FRWriter_DiffObject" data-uid="FastReport.Utils.FRWriter.DiffObject">DiffObject</h4>
+  <div class="markdown level1 summary"><p>Gets the ethalon object to compare with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object DiffObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_ItemName_" data-uid="FastReport.Utils.FRWriter.ItemName*"></a>
+  <h4 id="FastReport_Utils_FRWriter_ItemName" data-uid="FastReport.Utils.FRWriter.ItemName">ItemName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets current xml item name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ItemName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_SaveChildren_" data-uid="FastReport.Utils.FRWriter.SaveChildren*"></a>
+  <h4 id="FastReport_Utils_FRWriter_SaveChildren" data-uid="FastReport.Utils.FRWriter.SaveChildren">SaveChildren</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether is necessary to serialize child objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveChildren { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_SerializeTo_" data-uid="FastReport.Utils.FRWriter.SerializeTo*"></a>
+  <h4 id="FastReport_Utils_FRWriter_SerializeTo" data-uid="FastReport.Utils.FRWriter.SerializeTo">SerializeTo</h4>
+  <div class="markdown level1 summary"><p>Gets or sets target of serialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializeTo SerializeTo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.SerializeTo.html">SerializeTo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteHeader_" data-uid="FastReport.Utils.FRWriter.WriteHeader*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteHeader" data-uid="FastReport.Utils.FRWriter.WriteHeader">WriteHeader</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether is necessary to add xml header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WriteHeader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Utils_FRWriter_AreEqual_" data-uid="FastReport.Utils.FRWriter.AreEqual*"></a>
+  <h4 id="FastReport_Utils_FRWriter_AreEqual_System_Object_System_Object_" data-uid="FastReport.Utils.FRWriter.AreEqual(System.Object,System.Object)">AreEqual(Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Determines if two objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreEqual(object obj1, object obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td><p>The first object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td><p>The second object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><strong>true</strong> if objects will be serialized to the same value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_Dispose_" data-uid="FastReport.Utils.FRWriter.Dispose*"></a>
+  <h4 id="FastReport_Utils_FRWriter_Dispose" data-uid="FastReport.Utils.FRWriter.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes the writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Utils_FRWriter_Save_" data-uid="FastReport.Utils.FRWriter.Save*"></a>
+  <h4 id="FastReport_Utils_FRWriter_Save_System_IO_Stream_" data-uid="FastReport.Utils.FRWriter.Save(System.IO.Stream)">Save(Stream)</h4>
+  <div class="markdown level1 summary"><p>Saves the writer output to a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to save to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_Write_" data-uid="FastReport.Utils.FRWriter.Write*"></a>
+  <h4 id="FastReport_Utils_FRWriter_Write_FastReport_IFRSerializable_" data-uid="FastReport.Utils.FRWriter.Write(FastReport.IFRSerializable)">Write(IFRSerializable)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IFRSerializable obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_FRWriter_Write_FastReport_IFRSerializable__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The object must implement the <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a> interface. This method
+invokes the <strong>Serialize</strong> method of the object.</p>
+</div>
+  <h5 id="FastReport_Utils_FRWriter_Write_FastReport_IFRSerializable__examples">Examples</h5>
+  <p>This example demonstrates the use of writer.</p>
+<pre><code>public void Serialize(FRWriter writer)
+{
+  // get the etalon object. It will be used to write changed properties only.
+  Base c = writer.DiffObject as Base;
+
+  // write the type name
+  writer.ItemName = ClassName;
+
+  // write properties
+  if (Name != &quot;&quot;)
+    writer.WriteStr(&quot;Name&quot;, Name);
+  if (Restrictions != c.Restrictions)
+    writer.WriteValue(&quot;Restrictions&quot;, Restrictions);
+
+  // write child objects if allowed
+  if (writer.SaveChildren)
+  {
+    foreach (Base child in ChildObjects)
+    {
+      writer.Write(child);
+    }
+  }
+}</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_FRWriter_Write_" data-uid="FastReport.Utils.FRWriter.Write*"></a>
+  <h4 id="FastReport_Utils_FRWriter_Write_FastReport_IFRSerializable_System_Object_" data-uid="FastReport.Utils.FRWriter.Write(FastReport.IFRSerializable,System.Object)">Write(IFRSerializable, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the object using specified etalon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IFRSerializable obj, object diff)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">diff</span></td>
+        <td><p>The etalon object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteBool_" data-uid="FastReport.Utils.FRWriter.WriteBool*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteBool_System_String_System_Boolean_" data-uid="FastReport.Utils.FRWriter.WriteBool(System.String,System.Boolean)">WriteBool(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Writes a boolean property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBool(string name, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteDouble_" data-uid="FastReport.Utils.FRWriter.WriteDouble*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteDouble_System_String_System_Double_" data-uid="FastReport.Utils.FRWriter.WriteDouble(System.String,System.Double)">WriteDouble(String, Double)</h4>
+  <div class="markdown level1 summary"><p>Writes a double property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteDouble(string name, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteFloat_" data-uid="FastReport.Utils.FRWriter.WriteFloat*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteFloat_System_String_System_Single_" data-uid="FastReport.Utils.FRWriter.WriteFloat(System.String,System.Single)">WriteFloat(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Writes a float property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteFloat(string name, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteInt_" data-uid="FastReport.Utils.FRWriter.WriteInt*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteInt_System_String_System_Int32_" data-uid="FastReport.Utils.FRWriter.WriteInt(System.String,System.Int32)">WriteInt(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes an integer property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteInt(string name, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WritePropertyValue_" data-uid="FastReport.Utils.FRWriter.WritePropertyValue*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WritePropertyValue_System_String_System_String_" data-uid="FastReport.Utils.FRWriter.WritePropertyValue(System.String,System.String)">WritePropertyValue(String, String)</h4>
+  <div class="markdown level1 summary"><p>Writes a standalone property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePropertyValue(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_FRWriter_WritePropertyValue_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method produces the following output:
+&lt;PropertyName&gt;PropertyValue&lt;/PropertyName&gt;</p>
+</div>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteRef_" data-uid="FastReport.Utils.FRWriter.WriteRef*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteRef_System_String_FastReport_Base_" data-uid="FastReport.Utils.FRWriter.WriteRef(System.String,FastReport.Base)">WriteRef(String, Base)</h4>
+  <div class="markdown level1 summary"><p>Writes an object reference property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRef(string name, Base value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteStr_" data-uid="FastReport.Utils.FRWriter.WriteStr*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteStr_System_String_System_String_" data-uid="FastReport.Utils.FRWriter.WriteStr(System.String,System.String)">WriteStr(String, String)</h4>
+  <div class="markdown level1 summary"><p>Writes a string property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStr(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRWriter_WriteValue_" data-uid="FastReport.Utils.FRWriter.WriteValue*"></a>
+  <h4 id="FastReport_Utils_FRWriter_WriteValue_System_String_System_Object_" data-uid="FastReport.Utils.FRWriter.WriteValue(System.String,System.Object)">WriteValue(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Writes an enumeration property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteValue(string name, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

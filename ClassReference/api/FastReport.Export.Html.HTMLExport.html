@@ -1,0 +1,1324 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HTMLExport
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HTMLExport
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Export.Html.HTMLExport">
+  
+  
+  <h1 id="FastReport_Export_Html_HTMLExport" data-uid="FastReport.Export.Html.HTMLExport" class="text-break">Class HTMLExport
+  </h1>
+  <div class="markdown level0 summary"><p>Represents the HTML export filter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.Base.html">Base</a></div>
+    <div class="level2"><a class="xref" href="FastReport.Export.ExportBase.html">ExportBase</a></div>
+    <div class="level3"><span class="xref">HTMLExport</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Zoom">ExportBase.Zoom</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_FileFilter">ExportBase.FileFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_PageRange">ExportBase.PageRange</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_PageNumbers">ExportBase.PageNumbers</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_CurPage">ExportBase.CurPage</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_OpenAfterExport">ExportBase.OpenAfterExport</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_AllowOpenAfter">ExportBase.AllowOpenAfter</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_ShowProgress">ExportBase.ShowProgress</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_GeneratedFiles">ExportBase.GeneratedFiles</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_HasMultipleFiles">ExportBase.HasMultipleFiles</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_ShiftNonExportable">ExportBase.ShiftNonExportable</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_SaveInitialDirectory">ExportBase.SaveInitialDirectory</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Stream">ExportBase.Stream</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_FileName">ExportBase.FileName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Pages">ExportBase.Pages</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_ExportBand_FastReport_Base_">ExportBase.ExportBand(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_GetOverlayPage_FastReport_ReportPage_">ExportBase.GetOverlayPage(ReportPage)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_GetPage_System_Int32_">ExportBase.GetPage(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Assign_FastReport_Base_">ExportBase.Assign(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Export_FastReport_Report_System_IO_Stream_">ExportBase.Export(Report, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Export_FastReport_Report_System_String_">ExportBase.Export(Report, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Name">Base.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Restrictions">Base.Restrictions</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Flags">Base.Flags</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Parent">Base.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseName">Base.BaseName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ClassName">Base.ClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Report">Base.Report</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Page">Base.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ChildObjects">Base.ChildObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AllObjects">Base.AllObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ZOrder">Base.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsAncestor">Base.IsAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsDesigning">Base.IsDesigning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsPrinting">Base.IsPrinting</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsRunning">Base.IsRunning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OriginalComponent">Base.OriginalComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetProp_FastReport_Base_FastReport_Base_">Base.SetProp(Base, Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FloatDiff_System_Single_System_Single_">Base.FloatDiff(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">Base.DeserializeSubItems(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractDefaultMacros_System_String_">Base.ExtractDefaultMacros(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Dispose_System_Boolean_">Base.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetFlags_FastReport_Flags_System_Boolean_">Base.SetFlags(Flags, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetReport_FastReport_Report_">Base.SetReport(Report)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetName_System_String_">Base.SetName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParent_FastReport_Base_">Base.SetParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParentCore_FastReport_Base_">Base.SetParentCore(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FindObject_System_String_">Base.FindObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_CreateUniqueName">Base.CreateUniqueName()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">Base.AssignAll(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasParent_FastReport_Base_">Base.HasParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasFlag_FastReport_Flags_">Base.HasFlag(Flags)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasRestriction_FastReport_Restrictions_">Base.HasRestriction(Restrictions)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_InvokeEvent_System_String_System_Object_">Base.InvokeEvent(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OnAfterLoad">Base.OnAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetExpressions">Base.GetExpressions()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetCustomScript">Base.GetCustomScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractMacros">Base.ExtractMacros()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsHaveToConvert_System_Object_">Base.IsHaveToConvert(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetConvertedObjects">Base.GetConvertedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ForEachAllConvectedObjects_System_Object_">Base.ForEachAllConvectedObjects(Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Export.Html.html">FastReport.Export.Html</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Export_Html_HTMLExport_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HTMLExport : ExportBase, IFRSerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport__ctor_" data-uid="FastReport.Export.Html.HTMLExport.#ctor*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport__ctor" data-uid="FastReport.Export.Html.HTMLExport.#ctor">HTMLExport()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Export.Html.HTMLExport.html">HTMLExport</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTMLExport()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Count_" data-uid="FastReport.Export.Html.HTMLExport.Count*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Count" data-uid="FastReport.Export.Html.HTMLExport.Count">Count</h4>
+  <div class="markdown level1 summary"><p>For internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_EmbedPictures_" data-uid="FastReport.Export.Html.HTMLExport.EmbedPictures*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_EmbedPictures" data-uid="FastReport.Export.Html.HTMLExport.EmbedPictures">EmbedPictures</h4>
+  <div class="markdown level1 summary"><p>Enable or disable embedding pictures in HTML export</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EmbedPictures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_EnableMargins_" data-uid="FastReport.Export.Html.HTMLExport.EnableMargins*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_EnableMargins" data-uid="FastReport.Export.Html.HTMLExport.EnableMargins">EnableMargins</h4>
+  <div class="markdown level1 summary"><p>Enable or disable margins for pages. Works only for Layers-mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableMargins { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_EnableVectorObjects_" data-uid="FastReport.Export.Html.HTMLExport.EnableVectorObjects*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_EnableVectorObjects" data-uid="FastReport.Export.Html.HTMLExport.EnableVectorObjects">EnableVectorObjects</h4>
+  <div class="markdown level1 summary"><p>Enable or disable export of vector objects such as Barcodes in SVG format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableVectorObjects { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_ExportMode_" data-uid="FastReport.Export.Html.HTMLExport.ExportMode*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_ExportMode" data-uid="FastReport.Export.Html.HTMLExport.ExportMode">ExportMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets html export mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTMLExport.ExportType ExportMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Export.Html.HTMLExport.ExportType.html">HTMLExport.ExportType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Format_" data-uid="FastReport.Export.Html.HTMLExport.Format*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Format" data-uid="FastReport.Export.Html.HTMLExport.Format">Format</h4>
+  <div class="markdown level1 summary"><p>Specifies the output format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTMLExportFormat Format { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Export.Html.HTMLExportFormat.html">HTMLExportFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_GeneratedStreams_" data-uid="FastReport.Export.Html.HTMLExport.GeneratedStreams*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_GeneratedStreams" data-uid="FastReport.Export.Html.HTMLExport.GeneratedStreams">GeneratedStreams</h4>
+  <div class="markdown level1 summary"><p>Gets list of generated streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Stream&gt; GeneratedStreams { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_HeightUnits_" data-uid="FastReport.Export.Html.HTMLExport.HeightUnits*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_HeightUnits" data-uid="FastReport.Export.Html.HTMLExport.HeightUnits">HeightUnits</h4>
+  <div class="markdown level1 summary"><p>Specifies the height units in HTML export</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HtmlSizeUnits HeightUnits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Export.Html.HtmlSizeUnits.html">HtmlSizeUnits</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_ImageFormat_" data-uid="FastReport.Export.Html.HTMLExport.ImageFormat*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_ImageFormat" data-uid="FastReport.Export.Html.HTMLExport.ImageFormat">ImageFormat</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageFormat ImageFormat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Export.Html.ImageFormat.html">ImageFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Layers_" data-uid="FastReport.Export.Html.HTMLExport.Layers*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Layers" data-uid="FastReport.Export.Html.HTMLExport.Layers">Layers</h4>
+  <div class="markdown level1 summary"><p>Enable or disable layers export mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Layers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Navigator_" data-uid="FastReport.Export.Html.HTMLExport.Navigator*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Navigator" data-uid="FastReport.Export.Html.HTMLExport.Navigator">Navigator</h4>
+  <div class="markdown level1 summary"><p>Enable or disable the page navigator in html export</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Navigator { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_OnClickTemplate_" data-uid="FastReport.Export.Html.HTMLExport.OnClickTemplate*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_OnClickTemplate" data-uid="FastReport.Export.Html.HTMLExport.OnClickTemplate">OnClickTemplate</h4>
+  <div class="markdown level1 summary"><p>Sets an onclick template</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OnClickTemplate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_PageBreaks_" data-uid="FastReport.Export.Html.HTMLExport.PageBreaks*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_PageBreaks" data-uid="FastReport.Export.Html.HTMLExport.PageBreaks">PageBreaks</h4>
+  <div class="markdown level1 summary"><p>Enable or disable the breaks between pages in print preview when single page mode is enabled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PageBreaks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Pictures_" data-uid="FastReport.Export.Html.HTMLExport.Pictures*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Pictures" data-uid="FastReport.Export.Html.HTMLExport.Pictures">Pictures</h4>
+  <div class="markdown level1 summary"><p>Enable or disable the pictures in HTML export</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Pictures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_PreparedPages_" data-uid="FastReport.Export.Html.HTMLExport.PreparedPages*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_PreparedPages" data-uid="FastReport.Export.Html.HTMLExport.PreparedPages">PreparedPages</h4>
+  <div class="markdown level1 summary"><p>For internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;HTMLPageData&gt; PreparedPages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FastReport.Export.Html.HTMLPageData.html">HTMLPageData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Preview_" data-uid="FastReport.Export.Html.HTMLExport.Preview*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Preview" data-uid="FastReport.Export.Html.HTMLExport.Preview">Preview</h4>
+  <div class="markdown level1 summary"><p>Enable or disable preview in Web settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Preview { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Print_" data-uid="FastReport.Export.Html.HTMLExport.Print*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Print" data-uid="FastReport.Export.Html.HTMLExport.Print">Print</h4>
+  <div class="markdown level1 summary"><p>Enable or disable showing of print dialog in browser when html document is opened</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Print { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_PrintPageData_" data-uid="FastReport.Export.Html.HTMLExport.PrintPageData*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_PrintPageData" data-uid="FastReport.Export.Html.HTMLExport.PrintPageData">PrintPageData</h4>
+  <div class="markdown level1 summary"><p>Gets print page data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTMLPageData PrintPageData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Export.Html.HTMLPageData.html">HTMLPageData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_ReportID_" data-uid="FastReport.Export.Html.HTMLExport.ReportID*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_ReportID" data-uid="FastReport.Export.Html.HTMLExport.ReportID">ReportID</h4>
+  <div class="markdown level1 summary"><p>Sets a ID of report</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReportID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_SaveStreams_" data-uid="FastReport.Export.Html.HTMLExport.SaveStreams*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_SaveStreams" data-uid="FastReport.Export.Html.HTMLExport.SaveStreams">SaveStreams</h4>
+  <div class="markdown level1 summary"><p>Enable or disable saving streams in GeneratedStreams collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveStreams { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_SinglePage_" data-uid="FastReport.Export.Html.HTMLExport.SinglePage*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_SinglePage" data-uid="FastReport.Export.Html.HTMLExport.SinglePage">SinglePage</h4>
+  <div class="markdown level1 summary"><p>Enable or disable the single HTML page creation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SinglePage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_StylePrefix_" data-uid="FastReport.Export.Html.HTMLExport.StylePrefix*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_StylePrefix" data-uid="FastReport.Export.Html.HTMLExport.StylePrefix">StylePrefix</h4>
+  <div class="markdown level1 summary"><p>For internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StylePrefix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_SubFolder_" data-uid="FastReport.Export.Html.HTMLExport.SubFolder*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_SubFolder" data-uid="FastReport.Export.Html.HTMLExport.SubFolder">SubFolder</h4>
+  <div class="markdown level1 summary"><p>Enable or disable the sub-folder for files of export</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SubFolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_WebImagePrefix_" data-uid="FastReport.Export.Html.HTMLExport.WebImagePrefix*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_WebImagePrefix" data-uid="FastReport.Export.Html.HTMLExport.WebImagePrefix">WebImagePrefix</h4>
+  <div class="markdown level1 summary"><p>For internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WebImagePrefix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_WebImageSuffix_" data-uid="FastReport.Export.Html.HTMLExport.WebImageSuffix*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_WebImageSuffix" data-uid="FastReport.Export.Html.HTMLExport.WebImageSuffix">WebImageSuffix</h4>
+  <div class="markdown level1 summary"><p>For internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WebImageSuffix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_WidthUnits_" data-uid="FastReport.Export.Html.HTMLExport.WidthUnits*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_WidthUnits" data-uid="FastReport.Export.Html.HTMLExport.WidthUnits">WidthUnits</h4>
+  <div class="markdown level1 summary"><p>Specifies the width units in HTML export</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HtmlSizeUnits WidthUnits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Export.Html.HtmlSizeUnits.html">HtmlSizeUnits</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Wysiwyg_" data-uid="FastReport.Export.Html.HTMLExport.Wysiwyg*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Wysiwyg" data-uid="FastReport.Export.Html.HTMLExport.Wysiwyg">Wysiwyg</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Wysiwyg quality of export</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Wysiwyg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_ExportPageBegin_" data-uid="FastReport.Export.Html.HTMLExport.ExportPageBegin*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_ExportPageBegin_FastReport_ReportPage_" data-uid="FastReport.Export.Html.HTMLExport.ExportPageBegin(FastReport.ReportPage)">ExportPageBegin(ReportPage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ExportPageBegin(ReportPage page)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportPage.html">ReportPage</a></td>
+        <td><span class="parametername">page</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_ExportPageBegin_FastReport_ReportPage_">ExportBase.ExportPageBegin(ReportPage)</a></div>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_ExportPageEnd_" data-uid="FastReport.Export.Html.HTMLExport.ExportPageEnd*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_ExportPageEnd_FastReport_ReportPage_" data-uid="FastReport.Export.Html.HTMLExport.ExportPageEnd(FastReport.ReportPage)">ExportPageEnd(ReportPage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ExportPageEnd(ReportPage page)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportPage.html">ReportPage</a></td>
+        <td><span class="parametername">page</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_ExportPageEnd_FastReport_ReportPage_">ExportBase.ExportPageEnd(ReportPage)</a></div>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Finish_" data-uid="FastReport.Export.Html.HTMLExport.Finish*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Finish" data-uid="FastReport.Export.Html.HTMLExport.Finish">Finish()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Finish()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Finish">ExportBase.Finish()</a></div>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_GetFileFilter_" data-uid="FastReport.Export.Html.HTMLExport.GetFileFilter*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_GetFileFilter" data-uid="FastReport.Export.Html.HTMLExport.GetFileFilter">GetFileFilter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetFileFilter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_GetFileFilter">ExportBase.GetFileFilter()</a></div>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Init_WebMode_" data-uid="FastReport.Export.Html.HTMLExport.Init_WebMode*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Init_WebMode" data-uid="FastReport.Export.Html.HTMLExport.Init_WebMode">Init_WebMode()</h4>
+  <div class="markdown level1 summary"><p>For internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init_WebMode()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_OnCustomDraw_" data-uid="FastReport.Export.Html.HTMLExport.OnCustomDraw*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_OnCustomDraw_FastReport_Export_Html_CustomDrawEventArgs_" data-uid="FastReport.Export.Html.HTMLExport.OnCustomDraw(FastReport.Export.Html.CustomDrawEventArgs)">OnCustomDraw(CustomDrawEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Draw any custom controls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCustomDraw(CustomDrawEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Export.Html.CustomDrawEventArgs.html">CustomDrawEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_ProcessPageBegin_" data-uid="FastReport.Export.Html.HTMLExport.ProcessPageBegin*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_ProcessPageBegin_System_Int32_System_Int32_FastReport_ReportPage_" data-uid="FastReport.Export.Html.HTMLExport.ProcessPageBegin(System.Int32,System.Int32,FastReport.ReportPage)">ProcessPageBegin(Int32, Int32, ReportPage)</h4>
+  <div class="markdown level1 summary"><p>Process Page with number p and real page ReportPage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessPageBegin(int p, int ReportPage, ReportPage page)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ReportPage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportPage.html">ReportPage</a></td>
+        <td><span class="parametername">page</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_ProcessPageEnd_" data-uid="FastReport.Export.Html.HTMLExport.ProcessPageEnd*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_ProcessPageEnd_System_Int32_System_Int32_" data-uid="FastReport.Export.Html.HTMLExport.ProcessPageEnd(System.Int32,System.Int32)">ProcessPageEnd(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Process Page with number p and real page ReportPage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessPageEnd(int p, int ReportPage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ReportPage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Serialize_" data-uid="FastReport.Export.Html.HTMLExport.Serialize*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Export.Html.HTMLExport.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Serialize(FRWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Serialize_FastReport_Utils_FRWriter_">ExportBase.Serialize(FRWriter)</a></div>
+  
+  
+  <a id="FastReport_Export_Html_HTMLExport_Start_" data-uid="FastReport.Export.Html.HTMLExport.Start*"></a>
+  <h4 id="FastReport_Export_Html_HTMLExport_Start" data-uid="FastReport.Export.Html.HTMLExport.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Export.ExportBase.html#FastReport_Export_ExportBase_Start">ExportBase.Start()</a></div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="FastReport_Export_Html_HTMLExport_CustomDraw" data-uid="FastReport.Export.Html.HTMLExport.CustomDraw">CustomDraw</h4>
+  <div class="markdown level1 summary"><p>Draw any custom controls</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;CustomDrawEventArgs&gt; CustomDraw</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="FastReport.Export.Html.CustomDrawEventArgs.html">CustomDrawEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

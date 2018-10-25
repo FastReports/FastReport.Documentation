@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CrossViewData
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CrossViewData
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.CrossView.CrossViewData">
+  
+  
+  <h1 id="FastReport_CrossView_CrossViewData" data-uid="FastReport.CrossView.CrossViewData" class="text-break">Class CrossViewData
+  </h1>
+  <div class="markdown level0 summary"><p>Contains a set of properties and methods to hold and manipulate the CrossView descriptors.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CrossViewData</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.CrossView.html">FastReport.CrossView</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_CrossView_CrossViewData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CrossViewData</code></pre>
+  </div>
+  <h5 id="FastReport_CrossView_CrossViewData_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class contains three collections of descriptors such as <a class="xref" href="FastReport.CrossView.CrossViewData.html#FastReport_CrossView_CrossViewData_Columns">Columns</a>,
+<a class="xref" href="FastReport.CrossView.CrossViewData.html#FastReport_CrossView_CrossViewData_Rows">Rows</a> and <a class="xref" href="FastReport.CrossView.CrossViewData.html#FastReport_CrossView_CrossViewData_Cells">Cells</a>. Descriptors are filled from FastCube Slice.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_Cells_" data-uid="FastReport.CrossView.CrossViewData.Cells*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_Cells" data-uid="FastReport.CrossView.CrossViewData.Cells">Cells</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of data cell descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrossViewCells Cells { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.CrossView.CrossViewCells.html">CrossViewCells</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_CrossView_CrossViewData_Cells_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: after you change something in this collection, call the
+<a class="xref" href="FastReport.CrossView.CrossViewObject.html#FastReport_CrossView_CrossViewObject_BuildTemplate">BuildTemplate()</a> method to refresh the CrossView.</p>
+</div>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_ColumnDescriptorsIndexes_" data-uid="FastReport.CrossView.CrossViewData.ColumnDescriptorsIndexes*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_ColumnDescriptorsIndexes" data-uid="FastReport.CrossView.CrossViewData.ColumnDescriptorsIndexes">ColumnDescriptorsIndexes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ColumnDescriptorsIndexes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_Columns_" data-uid="FastReport.CrossView.CrossViewData.Columns*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_Columns" data-uid="FastReport.CrossView.CrossViewData.Columns">Columns</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of column descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrossViewHeader Columns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.CrossView.CrossViewHeader.html">CrossViewHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_CrossView_CrossViewData_Columns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: after you change something in this collection, call the
+<a class="xref" href="FastReport.CrossView.CrossViewObject.html#FastReport_CrossView_CrossViewObject_BuildTemplate">BuildTemplate()</a> method to refresh the CrossView.</p>
+</div>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_ColumnTerminalIndexes_" data-uid="FastReport.CrossView.CrossViewData.ColumnTerminalIndexes*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_ColumnTerminalIndexes" data-uid="FastReport.CrossView.CrossViewData.ColumnTerminalIndexes">ColumnTerminalIndexes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ColumnTerminalIndexes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_DataColumnCount_" data-uid="FastReport.CrossView.CrossViewData.DataColumnCount*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_DataColumnCount" data-uid="FastReport.CrossView.CrossViewData.DataColumnCount">DataColumnCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DataColumnCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_DataRowCount_" data-uid="FastReport.CrossView.CrossViewData.DataRowCount*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_DataRowCount" data-uid="FastReport.CrossView.CrossViewData.DataRowCount">DataRowCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DataRowCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_MeasuresCount_" data-uid="FastReport.CrossView.CrossViewData.MeasuresCount*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_MeasuresCount" data-uid="FastReport.CrossView.CrossViewData.MeasuresCount">MeasuresCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MeasuresCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_MeasuresInXAxis_" data-uid="FastReport.CrossView.CrossViewData.MeasuresInXAxis*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_MeasuresInXAxis" data-uid="FastReport.CrossView.CrossViewData.MeasuresInXAxis">MeasuresInXAxis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MeasuresInXAxis { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_MeasuresInYAxis_" data-uid="FastReport.CrossView.CrossViewData.MeasuresInYAxis*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_MeasuresInYAxis" data-uid="FastReport.CrossView.CrossViewData.MeasuresInYAxis">MeasuresInYAxis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MeasuresInYAxis { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_MeasuresLevel_" data-uid="FastReport.CrossView.CrossViewData.MeasuresLevel*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_MeasuresLevel" data-uid="FastReport.CrossView.CrossViewData.MeasuresLevel">MeasuresLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MeasuresLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_RowDescriptorsIndexes_" data-uid="FastReport.CrossView.CrossViewData.RowDescriptorsIndexes*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_RowDescriptorsIndexes" data-uid="FastReport.CrossView.CrossViewData.RowDescriptorsIndexes">RowDescriptorsIndexes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RowDescriptorsIndexes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_Rows_" data-uid="FastReport.CrossView.CrossViewData.Rows*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_Rows" data-uid="FastReport.CrossView.CrossViewData.Rows">Rows</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of row descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrossViewHeader Rows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.CrossView.CrossViewHeader.html">CrossViewHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_CrossView_CrossViewData_Rows_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: after you change something in this collection, call the
+<a class="xref" href="FastReport.CrossView.CrossViewObject.html#FastReport_CrossView_CrossViewObject_BuildTemplate">BuildTemplate()</a> method to refresh the CrossView.</p>
+</div>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_RowTerminalIndexes_" data-uid="FastReport.CrossView.CrossViewData.RowTerminalIndexes*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_RowTerminalIndexes" data-uid="FastReport.CrossView.CrossViewData.RowTerminalIndexes">RowTerminalIndexes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RowTerminalIndexes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_SourceAssigned_" data-uid="FastReport.CrossView.CrossViewData.SourceAssigned*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_SourceAssigned" data-uid="FastReport.CrossView.CrossViewData.SourceAssigned">SourceAssigned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SourceAssigned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_XAxisFieldsCount_" data-uid="FastReport.CrossView.CrossViewData.XAxisFieldsCount*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_XAxisFieldsCount" data-uid="FastReport.CrossView.CrossViewData.XAxisFieldsCount">XAxisFieldsCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int XAxisFieldsCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_CrossView_CrossViewData_YAxisFieldsCount_" data-uid="FastReport.CrossView.CrossViewData.YAxisFieldsCount*"></a>
+  <h4 id="FastReport_CrossView_CrossViewData_YAxisFieldsCount" data-uid="FastReport.CrossView.CrossViewData.YAxisFieldsCount">YAxisFieldsCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int YAxisFieldsCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

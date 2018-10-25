@@ -1,0 +1,913 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ComponentBase
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ComponentBase
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.ComponentBase">
+  
+  
+  <h1 id="FastReport_ComponentBase" data-uid="FastReport.ComponentBase" class="text-break">Class ComponentBase
+  </h1>
+  <div class="markdown level0 summary"><p>Class that implements some object's properties such as location, size and visibility.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.Base.html">Base</a></div>
+    <div class="level2"><span class="xref">ComponentBase</span></div>
+      <div class="level3"><a class="xref" href="FastReport.PageBase.html">PageBase</a></div>
+      <div class="level3"><a class="xref" href="FastReport.ReportComponentBase.html">ReportComponentBase</a></div>
+      <div class="level3"><a class="xref" href="FastReport.Table.TableColumn.html">TableColumn</a></div>
+      <div class="level3"><a class="xref" href="FastReport.Table.TableRow.html">TableRow</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Name">Base.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Restrictions">Base.Restrictions</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Flags">Base.Flags</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Parent">Base.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseName">Base.BaseName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ClassName">Base.ClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Report">Base.Report</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Page">Base.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ChildObjects">Base.ChildObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AllObjects">Base.AllObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ZOrder">Base.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsAncestor">Base.IsAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsDesigning">Base.IsDesigning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsPrinting">Base.IsPrinting</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsRunning">Base.IsRunning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OriginalComponent">Base.OriginalComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetProp_FastReport_Base_FastReport_Base_">Base.SetProp(Base, Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FloatDiff_System_Single_System_Single_">Base.FloatDiff(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">Base.DeserializeSubItems(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractDefaultMacros_System_String_">Base.ExtractDefaultMacros(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Dispose_System_Boolean_">Base.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetFlags_FastReport_Flags_System_Boolean_">Base.SetFlags(Flags, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetReport_FastReport_Report_">Base.SetReport(Report)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetName_System_String_">Base.SetName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParent_FastReport_Base_">Base.SetParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParentCore_FastReport_Base_">Base.SetParentCore(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FindObject_System_String_">Base.FindObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_CreateUniqueName">Base.CreateUniqueName()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">Base.AssignAll(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasParent_FastReport_Base_">Base.HasParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasFlag_FastReport_Flags_">Base.HasFlag(Flags)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasRestriction_FastReport_Restrictions_">Base.HasRestriction(Restrictions)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_InvokeEvent_System_String_System_Object_">Base.InvokeEvent(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OnAfterLoad">Base.OnAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetExpressions">Base.GetExpressions()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetCustomScript">Base.GetCustomScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractMacros">Base.ExtractMacros()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsHaveToConvert_System_Object_">Base.IsHaveToConvert(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetConvertedObjects">Base.GetConvertedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ForEachAllConvectedObjects_System_Object_">Base.ForEachAllConvectedObjects(Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.html">FastReport</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_ComponentBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ComponentBase : Base, IFRSerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_ComponentBase__ctor_" data-uid="FastReport.ComponentBase.#ctor*"></a>
+  <h4 id="FastReport_ComponentBase__ctor" data-uid="FastReport.ComponentBase.#ctor">ComponentBase()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.ComponentBase.html">ComponentBase</a> class with default settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComponentBase()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_ComponentBase_AbsBottom_" data-uid="FastReport.ComponentBase.AbsBottom*"></a>
+  <h4 id="FastReport_ComponentBase_AbsBottom" data-uid="FastReport.ComponentBase.AbsBottom">AbsBottom</h4>
+  <div class="markdown level1 summary"><p>Gets the absolute bottom coordinate of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AbsBottom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_ComponentBase_AbsBounds_" data-uid="FastReport.ComponentBase.AbsBounds*"></a>
+  <h4 id="FastReport_ComponentBase_AbsBounds" data-uid="FastReport.ComponentBase.AbsBounds">AbsBounds</h4>
+  <div class="markdown level1 summary"><p>Gets the absolute bounding rectangle of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleF AbsBounds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectangleF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_ComponentBase_AbsLeft_" data-uid="FastReport.ComponentBase.AbsLeft*"></a>
+  <h4 id="FastReport_ComponentBase_AbsLeft" data-uid="FastReport.ComponentBase.AbsLeft">AbsLeft</h4>
+  <div class="markdown level1 summary"><p>Gets the absolute left coordinate of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float AbsLeft { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_ComponentBase_AbsRight_" data-uid="FastReport.ComponentBase.AbsRight*"></a>
+  <h4 id="FastReport_ComponentBase_AbsRight" data-uid="FastReport.ComponentBase.AbsRight">AbsRight</h4>
+  <div class="markdown level1 summary"><p>Gets the absolute right coordinate of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AbsRight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_ComponentBase_AbsTop_" data-uid="FastReport.ComponentBase.AbsTop*"></a>
+  <h4 id="FastReport_ComponentBase_AbsTop" data-uid="FastReport.ComponentBase.AbsTop">AbsTop</h4>
+  <div class="markdown level1 summary"><p>Gets the absolute top coordinate of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float AbsTop { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_ComponentBase_Anchor_" data-uid="FastReport.ComponentBase.Anchor*"></a>
+  <h4 id="FastReport_ComponentBase_Anchor" data-uid="FastReport.ComponentBase.Anchor">Anchor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the edges of the container to which a control is bound and determines how a control
+is resized with its parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AnchorStyles Anchor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnchorStyles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Anchor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use the Anchor property to define how a control is automatically resized as its parent control
+is resized. Anchoring a control to its parent control ensures that the anchored edges remain in the
+same position relative to the edges of the parent control when the parent control is resized.</p>
+<p>You can anchor a control to one or more edges of its container. For example, if you have a band
+with a <strong>TextObject</strong> whose <strong>Anchor</strong> property value is set to <strong>Top, Bottom</strong>, the <strong>TextObject</strong> is stretched to
+maintain the anchored distance to the top and bottom edges of the band as the height of the band
+is increased.</p>
+</div>
+  
+  
+  <a id="FastReport_ComponentBase_Bottom_" data-uid="FastReport.ComponentBase.Bottom*"></a>
+  <h4 id="FastReport_ComponentBase_Bottom" data-uid="FastReport.ComponentBase.Bottom">Bottom</h4>
+  <div class="markdown level1 summary"><p>Gets the bottom coordinate of the object in relation to its container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Bottom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Bottom_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To change the bottom coordinate, change the <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Top">Top</a> and/or <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Height">Height</a> properties.</p>
+</div>
+  
+  
+  <a id="FastReport_ComponentBase_Bounds_" data-uid="FastReport.ComponentBase.Bounds*"></a>
+  <h4 id="FastReport_ComponentBase_Bounds" data-uid="FastReport.ComponentBase.Bounds">Bounds</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the bounding rectangle of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleF Bounds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectangleF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Bounds_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Assigning a value to this property is equal to assigning values to the <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Left">Left</a>,
+<a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Top">Top</a>, <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">Width</a>, <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Height">Height</a> properties.</p>
+</div>
+  
+  
+  <a id="FastReport_ComponentBase_ClientSize_" data-uid="FastReport.ComponentBase.ClientSize*"></a>
+  <h4 id="FastReport_ComponentBase_ClientSize" data-uid="FastReport.ComponentBase.ClientSize">ClientSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of client area of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SizeF ClientSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SizeF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_ClientSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used in the <see cref="!:FastReport.Dialog.DialogPage"></see> class.</p>
+</div>
+  
+  
+  <a id="FastReport_ComponentBase_Dock_" data-uid="FastReport.ComponentBase.Dock*"></a>
+  <h4 id="FastReport_ComponentBase_Dock" data-uid="FastReport.ComponentBase.Dock">Dock</h4>
+  <div class="markdown level1 summary"><p>Gets or sets which control borders are docked to its parent control and determines how a control
+is resized with its parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DockStyle Dock { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DockStyle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Dock_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use the <strong>Dock</strong> property to define how a control is automatically resized as its parent control is
+resized. For example, setting Dock to <code>DockStyle.Left</code> causes the control to align itself with the
+left edges of its parent control and to resize as the parent control is resized.</p>
+<p>A control can be docked to one edge of its parent container or can be docked to all edges and
+fill the parent container.</p>
+</div>
+  
+  
+  <a id="FastReport_ComponentBase_GroupIndex_" data-uid="FastReport.ComponentBase.GroupIndex*"></a>
+  <h4 id="FastReport_ComponentBase_GroupIndex" data-uid="FastReport.ComponentBase.GroupIndex">GroupIndex</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a group index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GroupIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_GroupIndex_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Group index is used to group objects in the designer (using &quot;Group&quot; button). When you select
+any object in a group, entire group becomes selected. To reset a group, set the <strong>GroupIndex</strong>
+to 0 (default value).</p>
+</div>
+  
+  
+  <a id="FastReport_ComponentBase_Height_" data-uid="FastReport.ComponentBase.Height*"></a>
+  <h4 id="FastReport_ComponentBase_Height" data-uid="FastReport.ComponentBase.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the height of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Height { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Height_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property value is measured in the screen pixels. Use <a class="xref" href="FastReport.Utils.Units.html">Units</a> class to
+convert a value to desired units.</p>
+</div>
+  <h5 id="FastReport_ComponentBase_Height_examples">Examples</h5>
+  <p>The following example demonstrates how to convert between pixels and units:<pre><code>TextObject text1;
+// set Height to 10mm
+text1.Height = Units.Millimeters * 10;
+// convert a value to millimeters
+MessageBox.Show(&quot;Height = &quot; + (text1.Height / Units.Millimeters).ToString() + &quot;mm&quot;);</code></pre></p>
+
+  
+  
+  <a id="FastReport_ComponentBase_Left_" data-uid="FastReport.ComponentBase.Left*"></a>
+  <h4 id="FastReport_ComponentBase_Left" data-uid="FastReport.ComponentBase.Left">Left</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the left coordinate of the object in relation to its container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Left { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Left_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+      This property value is measured in the screen pixels. Use
+<a class="xref" href="FastReport.Utils.Units.html">Units</a> class to convert a value to desired units.
+</p>
+<p>
+      To obtain absolute coordinate, use <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_AbsLeft">AbsLeft</a> property.
+</p>
+</div>
+  <h5 id="FastReport_ComponentBase_Left_examples">Examples</h5>
+  <p>The following example demonstrates how to convert between pixels and units:<pre><code>TextObject text1;
+// set Left to 10mm
+text1.Left = Units.Millimeters * 10;
+// convert a value to millimeters
+MessageBox.Show(&quot;Left = &quot; + (text1.Left / Units.Millimeters).ToString() + &quot;mm&quot;);</code></pre></p>
+
+  
+  
+  <a id="FastReport_ComponentBase_Right_" data-uid="FastReport.ComponentBase.Right*"></a>
+  <h4 id="FastReport_ComponentBase_Right" data-uid="FastReport.ComponentBase.Right">Right</h4>
+  <div class="markdown level1 summary"><p>Gets the right coordinate of the object in relation to its container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Right { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Right_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To change the right coordinate, change the <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Left">Left</a> and/or <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">Width</a> properties.</p>
+</div>
+  
+  
+  <a id="FastReport_ComponentBase_Tag_" data-uid="FastReport.ComponentBase.Tag*"></a>
+  <h4 id="FastReport_ComponentBase_Tag" data-uid="FastReport.ComponentBase.Tag">Tag</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Tag string for this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Tag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_ComponentBase_Top_" data-uid="FastReport.ComponentBase.Top*"></a>
+  <h4 id="FastReport_ComponentBase_Top" data-uid="FastReport.ComponentBase.Top">Top</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the top coordinate of the object in relation to its container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Top { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Top_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+      This property value is measured in the screen pixels. Use
+<a class="xref" href="FastReport.Utils.Units.html">Units</a> class to convert a value to desired units.
+</p>
+<p>
+      To obtain absolute coordinate, use <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_AbsTop">AbsTop</a> property.
+</p>
+</div>
+  <h5 id="FastReport_ComponentBase_Top_examples">Examples</h5>
+  <p>The following example demonstrates how to convert between pixels and units:<pre><code>TextObject text1;
+// set Top to 10mm
+text1.Top = Units.Millimeters * 10;
+// convert a value to millimeters
+MessageBox.Show(&quot;Top = &quot; + (text1.Top / Units.Millimeters).ToString() + &quot;mm&quot;);</code></pre></p>
+
+  
+  
+  <a id="FastReport_ComponentBase_Visible_" data-uid="FastReport.ComponentBase.Visible*"></a>
+  <h4 id="FastReport_ComponentBase_Visible" data-uid="FastReport.ComponentBase.Visible">Visible</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the object is displayed in the preview window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Visible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Visible_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Setting this property to <strong>false</strong> will hide the object in the preview window.</p>
+</div>
+  <h5 id="FastReport_ComponentBase_Visible_examples">Examples</h5>
+  <p>The following report script will control the Text1 visibility depending on the value of the
+data column:<pre><code>private void Data1_BeforePrint(object sender, EventArgs e)
+{
+Text1.Visible = [Orders.Shipped] == true;
+}</code></pre></p>
+
+  
+  
+  <a id="FastReport_ComponentBase_Width_" data-uid="FastReport.ComponentBase.Width*"></a>
+  <h4 id="FastReport_ComponentBase_Width" data-uid="FastReport.ComponentBase.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the width of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Width { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_ComponentBase_Width_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property value is measured in the screen pixels. Use <a class="xref" href="FastReport.Utils.Units.html">Units</a> class to
+convert a value to desired units.</p>
+</div>
+  <h5 id="FastReport_ComponentBase_Width_examples">Examples</h5>
+  <p>The following example demonstrates how to convert between pixels and units:<pre><code>TextObject text1;
+// set Width to 10mm
+text1.Width = Units.Millimeters * 10;
+// convert a value to millimeters
+MessageBox.Show(&quot;Width = &quot; + (text1.Width / Units.Millimeters).ToString() + &quot;mm&quot;);</code></pre></p>
+
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_ComponentBase_Assign_" data-uid="FastReport.ComponentBase.Assign*"></a>
+  <h4 id="FastReport_ComponentBase_Assign_FastReport_Base_" data-uid="FastReport.ComponentBase.Assign(FastReport.Base)">Assign(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Assign(Base source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Base.Assign(Base)</a></div>
+  
+  
+  <a id="FastReport_ComponentBase_Serialize_" data-uid="FastReport.ComponentBase.Serialize*"></a>
+  <h4 id="FastReport_ComponentBase_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.ComponentBase.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Serialize(FRWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Serialize_FastReport_Utils_FRWriter_">Base.Serialize(FRWriter)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

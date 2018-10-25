@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MatrixHeaderDescriptor
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MatrixHeaderDescriptor
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Matrix.MatrixHeaderDescriptor">
+  
+  
+  <h1 id="FastReport_Matrix_MatrixHeaderDescriptor" data-uid="FastReport.Matrix.MatrixHeaderDescriptor" class="text-break">Class MatrixHeaderDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>The descriptor that is used to describe one element of the matrix header.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.Matrix.MatrixDescriptor.html">MatrixDescriptor</a></div>
+    <div class="level2"><span class="xref">MatrixHeaderDescriptor</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_Expression">MatrixDescriptor.Expression</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_TemplateColumn">MatrixDescriptor.TemplateColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_TemplateRow">MatrixDescriptor.TemplateRow</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_TemplateCell">MatrixDescriptor.TemplateCell</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_Deserialize_FastReport_Utils_FRReader_">MatrixDescriptor.Deserialize(FRReader)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Matrix.html">FastReport.Matrix</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MatrixHeaderDescriptor : MatrixDescriptor, IFRSerializable</code></pre>
+  </div>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html">MatrixHeaderDescriptor</a> class is used to define one header element of the matrix
+(either the column element or row element). The key properties are
+<a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_Expression">Expression</a>, <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html#FastReport_Matrix_MatrixHeaderDescriptor_Sort">Sort</a> and <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html#FastReport_Matrix_MatrixHeaderDescriptor_Totals">Totals</a>.</p>
+<p>To set visual appearance of the element, use the <a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_TemplateCell">TemplateCell</a> 
+property. To set visual appearance of the &quot;total&quot; element, use the <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html#FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalCell">TemplateTotalCell</a> 
+property.
+<p>The collection of descriptors used to represent the matrix header is stored
+in the <strong>MatrixObject.Data.Columns</strong> and <strong>MatrixObject.Data.Rows</strong> properties.
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor__ctor_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor__ctor" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor">MatrixHeaderDescriptor()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html">MatrixHeaderDescriptor</a> class with
+default settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixHeaderDescriptor()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor__ctor_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor__ctor_System_String_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor(System.String)">MatrixHeaderDescriptor(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html">MatrixHeaderDescriptor</a> class with
+specified expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixHeaderDescriptor(string expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The descriptor's expression.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor__ctor_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor__ctor_System_String_FastReport_SortOrder_System_Boolean_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor(System.String,FastReport.SortOrder,System.Boolean)">MatrixHeaderDescriptor(String, SortOrder, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html">MatrixHeaderDescriptor</a> class with
+specified expression, sort order and totals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixHeaderDescriptor(string expression, SortOrder sort, bool totals)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The descriptor's expression.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.SortOrder.html">SortOrder</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort order used to sort header values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">totals</span></td>
+        <td><p>Indicates whether to show the &quot;total&quot; element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor__ctor_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor__ctor_System_String_System_Boolean_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.#ctor(System.String,System.Boolean)">MatrixHeaderDescriptor(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html">MatrixHeaderDescriptor</a> class with
+specified expression and totals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixHeaderDescriptor(string expression, bool totals)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The descriptor's expression.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">totals</span></td>
+        <td><p>Indicates whether to show the &quot;total&quot; element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_PageBreak_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.PageBreak*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_PageBreak" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.PageBreak">PageBreak</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating that the page break must be printed before this element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PageBreak { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_PageBreak_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Page break is not printed before the very first element.</p>
+</div>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_Sort_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Sort*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_Sort" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Sort">Sort</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the sort order of header values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortOrder Sort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.SortOrder.html">SortOrder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_Sort_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property determines how the values displayed in this element are sorted. The default sort
+is ascending.</p>
+</div>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_SuppressTotals_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.SuppressTotals*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_SuppressTotals" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.SuppressTotals">SuppressTotals</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether it is necessary to suppress totals
+if there is only one value in a group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SuppressTotals { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalCell_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TemplateTotalCell*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalCell" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TemplateTotalCell">TemplateTotalCell</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the template cell bound to the &quot;total&quot; element of this descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableCell TemplateTotalCell { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalCell_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property may be useful to change the &quot;Total&quot; text by something else.</p>
+<div class="NOTE"><h5>note</h5><p>
+Before using this property, you must initialize the matrix descriptors by
+calling the <a class="xref" href="FastReport.Matrix.MatrixObject.html#FastReport_Matrix_MatrixObject_BuildTemplate">BuildTemplate()</a> method.
+</p></div>
+</div>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalCell_examples">Examples</h5>
+  <p>This example shows how to change the &quot;Total&quot; element.</p>
+<pre><code>MatrixObject matrix;
+matrix.Data.Rows[0].TemplateTotalCell.Text = &quot;Grand Total&quot;;
+matrix.Data.Rows[0].TemplateTotalCell.Fill = new SolidFill(Color.Green);</code></pre>
+
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalColumn_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TemplateTotalColumn*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalColumn" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TemplateTotalColumn">TemplateTotalColumn</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the template column bound to the &quot;total&quot; element of this descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableColumn TemplateTotalColumn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableColumn.html">TableColumn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalColumn_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is for internal use; usually you don't need to use it.</p>
+</div>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalRow_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TemplateTotalRow*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalRow" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TemplateTotalRow">TemplateTotalRow</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the template row bound to the &quot;total&quot; element of this descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableRow TemplateTotalRow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableRow.html">TableRow</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalRow_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is for internal use; usually you don't need to use it.</p>
+</div>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_Totals_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Totals*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_Totals" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Totals">Totals</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating that this element has associated &quot;total&quot; element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Totals { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_Totals_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To access the matrix cell that is bound to the &quot;Total&quot; element, use the
+<a class="xref" href="FastReport.Matrix.MatrixHeaderDescriptor.html#FastReport_Matrix_MatrixHeaderDescriptor_TemplateTotalCell">TemplateTotalCell</a> property. It may be useful to change the
+&quot;Total&quot; text by something else.</p>
+</div>
+  <h5 id="FastReport_Matrix_MatrixHeaderDescriptor_Totals_examples">Examples</h5>
+  <p>This example shows how to change the &quot;Total&quot; text of the total element.</p>
+<pre><code>MatrixObject matrix;
+matrix.Data.Rows[0].TemplateTotalCell.Text = &quot;Grand Total&quot;;</code></pre>
+
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_TotalsFirst_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TotalsFirst*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_TotalsFirst" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.TotalsFirst">TotalsFirst</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value indicating whether the total values must be printed before the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TotalsFirst { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_Assign_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Assign*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_Assign_FastReport_Matrix_MatrixDescriptor_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Assign(FastReport.Matrix.MatrixDescriptor)">Assign(MatrixDescriptor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Assign(MatrixDescriptor source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Matrix.MatrixDescriptor.html">MatrixDescriptor</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_Assign_FastReport_Matrix_MatrixDescriptor_">MatrixDescriptor.Assign(MatrixDescriptor)</a></div>
+  
+  
+  <a id="FastReport_Matrix_MatrixHeaderDescriptor_Serialize_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Serialize*"></a>
+  <h4 id="FastReport_Matrix_MatrixHeaderDescriptor_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Matrix.MatrixHeaderDescriptor.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Serialize(FRWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Matrix.MatrixDescriptor.html#FastReport_Matrix_MatrixDescriptor_Serialize_FastReport_Utils_FRWriter_">MatrixDescriptor.Serialize(FRWriter)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

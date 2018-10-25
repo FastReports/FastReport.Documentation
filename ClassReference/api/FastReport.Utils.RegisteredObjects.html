@@ -1,0 +1,1002 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RegisteredObjects
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RegisteredObjects
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Utils.RegisteredObjects">
+  
+  
+  <h1 id="FastReport_Utils_RegisteredObjects" data-uid="FastReport.Utils.RegisteredObjects" class="text-break">Class RegisteredObjects
+  </h1>
+  <div class="markdown level0 summary"><p>Contains all registered report items such as objects, export filters, wizards.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RegisteredObjects</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Utils.html">FastReport.Utils</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Utils_RegisteredObjects_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RegisteredObjects</code></pre>
+  </div>
+  <h5 id="FastReport_Utils_RegisteredObjects_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Use this class to register own components, wizards, export filters or another items that
+need to be serialized to/from a report file.</p>
+</div>
+  <h5 id="FastReport_Utils_RegisteredObjects_examples"><strong>Examples</strong></h5>
+  <pre><code>// register own wizard
+RegisteredObjects.AddWizard(typeof(MyWizard), myWizBmp, &quot;My Wizard&quot;, true);
+// register own export filter
+RegisteredObjects.AddExport(typeof(MyExport), &quot;My Export&quot;);
+// register own report object
+RegisteredObjects.Add(typeof(MyObject), &quot;ReportPage&quot;, myObjBmp, &quot;My Object&quot;);</code></pre>
+
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_Objects_" data-uid="FastReport.Utils.RegisteredObjects.Objects*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_Objects" data-uid="FastReport.Utils.RegisteredObjects.Objects">Objects</h4>
+  <div class="markdown level1 summary"><p>Root object for all registered objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectInfo Objects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.ObjectInfo.html">ObjectInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_Add_" data-uid="FastReport.Utils.RegisteredObjects.Add*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String_" data-uid="FastReport.Utils.RegisteredObjects.Add(System.Type,System.String,Bitmap,System.String)">Add(Type, String, Bitmap, String)</h4>
+  <div class="markdown level1 summary"><p>Registers an object in the specified category with button's image and text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(Type obj, string category, Bitmap image, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of object to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>Name of category to register in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image for object's button.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text for object's button.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You must specify either the page type name or existing category name in the <strong>category</strong> parameter.
+The report objects must be registered in the &quot;ReportPage&quot; category or custom category that is
+registered in the &quot;ReportPage&quot; as well. The dialog controls must be registered in the &quot;DialogPage&quot;
+category or custom category that is registered in the &quot;DialogPage&quot; as well.</p>
+<p>If you want to register an object that needs to be serialized, but you don&apos;t want
+to show it on the toolbar, pass empty string in the <strong>category</strong> parameter.
+</p>
+</div>
+  <h5 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String__examples">Examples</h5>
+  <pre><code>// register the report object
+RegisteredObjects.Add(typeof(MyReportObject), &quot;ReportPage&quot;, myReportObjectBmp, &quot;My Report Object&quot;);
+// register the dialog control
+RegisteredObjects.Add(typeof(MyDialogControl), &quot;DialogPage&quot;, myDialogControlBmp, &quot;My Dialog Control&quot;);
+// add a category and register an object inside it
+RegisteredObjects.AddCategory(&quot;ReportPage,MyCategory&quot;, myCategoryBmp, &quot;My Category&quot;);
+// register another report object in MyCategory
+RegisteredObjects.Add(typeof(MyReportObject), &quot;ReportPage,MyCategory&quot;, 
+  anotherReportObjectBmp, &quot;Another Report Object&quot;);</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_Add_" data-uid="FastReport.Utils.RegisteredObjects.Add*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String_System_Int32_" data-uid="FastReport.Utils.RegisteredObjects.Add(System.Type,System.String,Bitmap,System.String,System.Int32)">Add(Type, String, Bitmap, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Registers an object in the specified category with button's image, text and object's flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(Type obj, string category, Bitmap image, string text, int flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of object to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>Name of category to register in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image for object's button.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text for object's button.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Integer value that will be passed to object's <strong>OnBeforeInsert</strong> method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the <a class="xref" href="FastReport.Utils.RegisteredObjects.html#FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String_">Add(Type, String, Bitmap, String)</a> method for more details.</p>
+<p>To learn about flags, see the <see cref="!:Base.OnBeforeInsert"></see> method.</p>
+</div>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_Add_" data-uid="FastReport.Utils.RegisteredObjects.Add*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String_System_Int32_System_Boolean_" data-uid="FastReport.Utils.RegisteredObjects.Add(System.Type,System.String,Bitmap,System.String,System.Int32,System.Boolean)">Add(Type, String, Bitmap, String, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers an object in the specified category with button's image, text, object's flags and multi-insert flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(Type obj, string category, Bitmap image, string text, int flags, bool multiInsert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of object to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>Name of category to register in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image for object's button.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text for object's button.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Integer value that will be passed to object's <strong>OnBeforeInsert</strong> method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">multiInsert</span></td>
+        <td><p>Specifies whether the object may be inserted several times until you
+select the &quot;arrow&quot; button or insert another object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String_System_Int32_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the <a class="xref" href="FastReport.Utils.RegisteredObjects.html#FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_Bitmap_System_String_">Add(Type, String, Bitmap, String)</a> method for more details.</p>
+<p>To learn about flags, see the <see cref="!:Base.OnBeforeInsert"></see> method.</p>
+</div>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_Add_" data-uid="FastReport.Utils.RegisteredObjects.Add*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_System_Int32_" data-uid="FastReport.Utils.RegisteredObjects.Add(System.Type,System.String,System.Int32)">Add(Type, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Registers an object in the specified category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(Type obj, string category, int imageIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of object to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>Name of category to register in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">imageIndex</span></td>
+        <td><p>Index of image for object's button.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddCategory_" data-uid="FastReport.Utils.RegisteredObjects.AddCategory*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddCategory_System_String_Bitmap_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddCategory(System.String,Bitmap,System.String)">AddCategory(String, Bitmap, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a category that may contain several report objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddCategory(string name, Bitmap image, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Category name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image for category button.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text for category button.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddCategory_System_String_Bitmap_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Category is a button on the &quot;Objects&quot; toolbar that shows context menu with nested items 
+when you click it. Consider using categories if you register several report objects. It can 
+save space on the &quot;Objects&quot; toolbar. For example, FastReport registers one category called &quot;Shapes&quot;
+that contains the <strong>LineObject</strong> and different types of <strong>ShapeObject</strong>.</p>
+<p>The name of category must starts either with &quot;ReportPage,&quot; or &quot;DialogPage,&quot; depending on
+what kind of controls do you need to regiter in this category: report objects or dialog controls.
+After the comma, specify the category name. So the full category name that you need to specify
+in the <strong>name</strong> parameter, must be something like this: &quot;ReportPage,Shapes&quot;.
+</p>
+<p>When register an object inside a category, you must specify the full category name in the
+<strong>category</strong> parameter of the <strong>Add</strong> method. </p>
+</div>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddConnection_" data-uid="FastReport.Utils.RegisteredObjects.AddConnection*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddConnection_System_Type_" data-uid="FastReport.Utils.RegisteredObjects.AddConnection(System.Type)">AddConnection(Type)</h4>
+  <div class="markdown level1 summary"><p>Registers data connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddConnection(Type obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddConnection_System_Type__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <strong>obj</strong> must be of <a class="xref" href="FastReport.Data.DataConnectionBase.html">DataConnectionBase</a> type.</p>
+</div>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddConnection_System_Type__examples">Examples</h5>
+  <pre><code>// register data connection
+RegisteredObjects.AddConnection(typeof(MsSqlDataConnection));</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddConnection_" data-uid="FastReport.Utils.RegisteredObjects.AddConnection*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddConnection_System_Type_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddConnection(System.Type,System.String)">AddConnection(Type, String)</h4>
+  <div class="markdown level1 summary"><p>Registers custom data connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddConnection(Type obj, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Name of connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddConnection_System_Type_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <strong>obj</strong> must be of <a class="xref" href="FastReport.Data.DataConnectionBase.html">DataConnectionBase</a> type.</p>
+</div>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddConnection_System_Type_System_String__examples">Examples</h5>
+  <pre><code>// register data connection
+RegisteredObjects.AddConnection(typeof(MyDataConnection), &quot;My Data Connection&quot;);</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddExport_" data-uid="FastReport.Utils.RegisteredObjects.AddExport*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddExport_System_Type_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddExport(System.Type,System.String)">AddExport(Type, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a new export filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddExport(Type obj, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of export filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text for export filter's menu item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddExport_System_Type_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <strong>obj</strong> must be of <a class="xref" href="FastReport.Export.ExportBase.html">ExportBase</a> type.</p>
+</div>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddExport_System_Type_System_String__examples">Examples</h5>
+  <pre><code>// register own export filter
+RegisteredObjects.AddExport(typeof(MyExport), &quot;My Export&quot;);</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddExport_" data-uid="FastReport.Utils.RegisteredObjects.AddExport*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddExport_System_Type_System_String_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddExport(System.Type,System.String,System.String)">AddExport(Type, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddExport(Type obj, string category, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddExportCategory_" data-uid="FastReport.Utils.RegisteredObjects.AddExportCategory*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddExportCategory_System_String_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddExportCategory(System.String,System.String)">AddExportCategory(String, String)</h4>
+  <div class="markdown level1 summary"><p>Register Export category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddExportCategory(string name, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Category name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Category text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddFunction_" data-uid="FastReport.Utils.RegisteredObjects.AddFunction*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddFunction_System_Reflection_MethodInfo_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddFunction(System.Reflection.MethodInfo,System.String)">AddFunction(MethodInfo, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a new function into the specified category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddFunction(MethodInfo function, string category)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.MethodInfo</span></td>
+        <td><span class="parametername">function</span></td>
+        <td><p><strong>MethodInfo</strong> containing all necessary information about the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>The name of category to register the function in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddFunction_System_Reflection_MethodInfo_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Your function must be a static, public method of a public class.</p>
+<p>The following standard categories are registered by default:
+<ul><li>&quot;Math&quot;</li><li>&quot;Text&quot;</li><li>&quot;DateTime&quot;</li><li>&quot;Formatting&quot;</li><li>&quot;Conversion&quot;</li><li>&quot;ProgramFlow&quot;</li></ul>
+You may use one of the standard categories, or create a new category by the
+<a class="xref" href="FastReport.Utils.RegisteredObjects.html#FastReport_Utils_RegisteredObjects_AddFunctionCategory_System_String_System_String_">AddFunctionCategory(String, String)</a> method call.
+<p>FastReport uses XML comments to display your function&apos;s description. 
+To generate XML comments, enable it in your project&apos;s properties 
+(&quot;Project|Properties...&quot; menu, &quot;Build&quot; tab, enable the &quot;XML documentation file&quot; checkbox).
+</div>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddFunction_System_Reflection_MethodInfo_System_String__examples">Examples</h5>
+  <p>The following example shows how to register own functions:</p>
+<pre><code>public static class MyFunctions
+{
+  /// &lt;summary>
+  /// Converts a specified string to uppercase.
+  /// &lt;/summary>
+  /// &lt;param name=&quot;s&quot;>The string to convert.&lt;/param>
+  /// &lt;returns>A string in uppercase.&lt;/returns>
+  public static string MyUpperCase(string s)
+  {
+    return s == null ? &quot;&quot; : s.ToUpper();
+  }
+
+  /// &lt;summary>
+  /// Returns the larger of two 32-bit signed integers. 
+  /// &lt;/summary>
+  /// &lt;param name=&quot;val1&quot;>The first of two values to compare.&lt;/param>
+  /// &lt;param name=&quot;val2&quot;>The second of two values to compare.&lt;/param>
+  /// &lt;returns>Parameter val1 or val2, whichever is larger.&lt;/returns>
+  public static int MyMaximum(int val1, int val2)
+  {
+    return Math.Max(val1, val2);
+  }
+
+  /// &lt;summary>
+  /// Returns the larger of two 64-bit signed integers. 
+  /// &lt;/summary>
+  /// &lt;param name=&quot;val1&quot;>The first of two values to compare.&lt;/param>
+  /// &lt;param name=&quot;val2&quot;>The second of two values to compare.&lt;/param>
+  /// &lt;returns>Parameter val1 or val2, whichever is larger.&lt;/returns>
+  public static long MyMaximum(long val1, long val2)
+  {
+    return Math.Max(val1, val2);
+  }
+}
+
+// register a category
+RegisteredObjects.AddFunctionCategory(&quot;MyFuncs&quot;, &quot;My Functions&quot;);
+
+// obtain MethodInfo for our functions
+Type myType = typeof(MyFunctions);
+MethodInfo myUpperCaseFunc = myType.GetMethod(&quot;MyUpperCase&quot;);
+MethodInfo myMaximumIntFunc = myType.GetMethod(&quot;MyMaximum&quot;, new Type[] { typeof(int), typeof(int) });
+MethodInfo myMaximumLongFunc = myType.GetMethod(&quot;MyMaximum&quot;, new Type[] { typeof(long), typeof(long) });
+
+// register simple function
+RegisteredObjects.AddFunction(myUpperCaseFunc, &quot;MyFuncs&quot;);
+
+// register overridden functions
+RegisteredObjects.AddFunction(myMaximumIntFunc, &quot;MyFuncs,MyMaximum&quot;);
+RegisteredObjects.AddFunction(myMaximumLongFunc, &quot;MyFuncs,MyMaximum&quot;);</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddFunctionCategory_" data-uid="FastReport.Utils.RegisteredObjects.AddFunctionCategory*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddFunctionCategory_System_String_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddFunctionCategory(System.String,System.String)">AddFunctionCategory(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a new function category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddFunctionCategory(string category, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>Short name of category.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Display name of category.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddFunctionCategory_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Short name is used to reference the category in the subsequent <a class="xref" href="FastReport.Utils.RegisteredObjects.html#FastReport_Utils_RegisteredObjects_AddFunction_System_Reflection_MethodInfo_System_String_">AddFunction(MethodInfo, String)</a>
+method call. It may be any value, for example, &quot;MyFuncs&quot;. Display name of category is displayed
+in the &quot;Data&quot; window. In may be, for example, &quot;My Functions&quot;.</p>
+<p>The following standard categories are registered by default:
+<ul><li>&quot;Math&quot;</li><li>&quot;Text&quot;</li><li>&quot;DateTime&quot;</li><li>&quot;Formatting&quot;</li><li>&quot;Conversion&quot;</li><li>&quot;ProgramFlow&quot;</li></ul>
+</div>
+  <h5 id="FastReport_Utils_RegisteredObjects_AddFunctionCategory_System_String_System_String__examples">Examples</h5>
+  <p>This example shows how to register a new category:</p>
+<pre><code>RegisteredObjects.AddFunctionCategory(&quot;MyFuncs&quot;, &quot;My Functions&quot;);</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_FindObject_" data-uid="FastReport.Utils.RegisteredObjects.FindObject*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_FindObject_System_Type_" data-uid="FastReport.Utils.RegisteredObjects.FindObject(System.Type)">FindObject(Type)</h4>
+  <div class="markdown level1 summary"><p>Finds the registered object's info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectInfo FindObject(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of object to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.ObjectInfo.html">ObjectInfo</a></td>
+        <td><p>The object's info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_RegisteredObjects_FindObject_System_Type__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method can be used to disable some objects, for example:</p>
+<p>RegisteredObjects.FindObject(typeof(PDFExport)).Enabled = false;
+</div>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_GetMethod_" data-uid="FastReport.Utils.RegisteredObjects.GetMethod*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_GetMethod_System_Type_System_String_System_Boolean_" data-uid="FastReport.Utils.RegisteredObjects.GetMethod(System.Type,System.String,System.Boolean)">GetMethod(Type, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the method or null if method is not found</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate GetMethod(Type type, string methodName, bool inheritance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type for method finding</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>Name for method finfing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inheritance</span></td>
+        <td><p>Use True value for inheritance the method from base type, use false for get the method only from the this type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Delegate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_IsTypeRegistered_" data-uid="FastReport.Utils.RegisteredObjects.IsTypeRegistered*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_IsTypeRegistered_System_Type_" data-uid="FastReport.Utils.RegisteredObjects.IsTypeRegistered(System.Type)">IsTypeRegistered(Type)</h4>
+  <div class="markdown level1 summary"><p>Checks whether the specified type is registered already.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeRegistered(Type obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><strong>true</strong> if such type is registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_RegisterMethod_" data-uid="FastReport.Utils.RegisteredObjects.RegisterMethod*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_RegisterMethod_System_Type_System_String_System_Delegate_" data-uid="FastReport.Utils.RegisteredObjects.RegisterMethod(System.Type,System.String,System.Delegate)">RegisterMethod(Type, String, Delegate)</h4>
+  <div class="markdown level1 summary"><p>Register and override the method with method name in the type.
+For property use the property name and _Get or _Set suffix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterMethod(Type type, string methodName, Delegate method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type for registering method</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>Name of method fir registering</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Delegate</span></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>Method for registering</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
