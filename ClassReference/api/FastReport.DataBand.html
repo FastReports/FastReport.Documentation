@@ -1,0 +1,1464 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataBand
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataBand
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.DataBand">
+  
+  
+  <h1 id="FastReport_DataBand" data-uid="FastReport.DataBand" class="text-break">Class DataBand
+  </h1>
+  <div class="markdown level0 summary"><p>This class represents the Data band.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.Base.html">Base</a></div>
+    <div class="level2"><a class="xref" href="FastReport.ComponentBase.html">ComponentBase</a></div>
+    <div class="level3"><a class="xref" href="FastReport.ReportComponentBase.html">ReportComponentBase</a></div>
+    <div class="level4"><a class="xref" href="FastReport.BreakableComponent.html">BreakableComponent</a></div>
+    <div class="level5"><a class="xref" href="FastReport.BandBase.html">BandBase</a></div>
+    <div class="level6"><span class="xref">DataBand</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></div>
+    <div><a class="xref" href="FastReport.IParent.html">IParent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_BeforeLayout">BandBase.BeforeLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_AfterLayout">BandBase.AfterLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_StartNewPage">BandBase.StartNewPage</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_FirstRowStartsNewPage">BandBase.FirstRowStartsNewPage</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_PrintOnBottom">BandBase.PrintOnBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_KeepChild">BandBase.KeepChild</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_OutlineExpression">BandBase.OutlineExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Child">BandBase.Child</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Objects">BandBase.Objects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Repeated">BandBase.Repeated</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_BeforeLayoutEvent">BandBase.BeforeLayoutEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_AfterLayoutEvent">BandBase.AfterLayoutEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_AbsLeft">BandBase.AbsLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_AbsTop">BandBase.AbsTop</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Guides">BandBase.Guides</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_RowNo">BandBase.RowNo</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_AbsRowNo">BandBase.AbsRowNo</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_IsFirstRow">BandBase.IsFirstRow</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_IsLastRow">BandBase.IsLastRow</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_UpdateLayout_System_Single_System_Single_">BandBase.UpdateLayout(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_SaveState">BandBase.SaveState()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_RestoreState">BandBase.RestoreState()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_CalcHeight">BandBase.CalcHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Break_FastReport_BreakableComponent_">BandBase.Break(BreakableComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_GetData">BandBase.GetData()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_OnBeforeLayout_System_EventArgs_">BandBase.OnBeforeLayout(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_OnAfterLayout_System_EventArgs_">BandBase.OnAfterLayout(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BreakableComponent.html#FastReport_BreakableComponent_CanBreak">BreakableComponent.CanBreak</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.BreakableComponent.html#FastReport_BreakableComponent_BreakTo">BreakableComponent.BreakTo</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_BeforePrint">ReportComponentBase.BeforePrint</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_AfterPrint">ReportComponentBase.AfterPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_AfterData">ReportComponentBase.AfterData</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Click">ReportComponentBase.Click</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Printable">ReportComponentBase.Printable</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Exportable">ReportComponentBase.Exportable</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Border">ReportComponentBase.Border</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Fill">ReportComponentBase.Fill</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FillColor">ReportComponentBase.FillColor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Bookmark">ReportComponentBase.Bookmark</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Hyperlink">ReportComponentBase.Hyperlink</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_CanGrow">ReportComponentBase.CanGrow</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_CanShrink">ReportComponentBase.CanShrink</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_GrowToBottom">ReportComponentBase.GrowToBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_ShiftMode">ReportComponentBase.ShiftMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Style">ReportComponentBase.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_EvenStyle">ReportComponentBase.EvenStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_HoverStyle">ReportComponentBase.HoverStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_EvenStylePriority">ReportComponentBase.EvenStylePriority</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_PrintOn">ReportComponentBase.PrintOn</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_BeforePrintEvent">ReportComponentBase.BeforePrintEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_AfterPrintEvent">ReportComponentBase.AfterPrintEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_AfterDataEvent">ReportComponentBase.AfterDataEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_ClickEvent">ReportComponentBase.ClickEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FlagSimpleBorder">ReportComponentBase.FlagSimpleBorder</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FlagUseBorder">ReportComponentBase.FlagUseBorder</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FlagUseFill">ReportComponentBase.FlagUseFill</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FlagPreviewVisible">ReportComponentBase.FlagPreviewVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FlagSerializeStyle">ReportComponentBase.FlagSerializeStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FlagProvidesHyperlinkValue">ReportComponentBase.FlagProvidesHyperlinkValue</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Cursor">ReportComponentBase.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_MouseMoveEvent">ReportComponentBase.MouseMoveEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_MouseUpEvent">ReportComponentBase.MouseUpEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_MouseDownEvent">ReportComponentBase.MouseDownEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_MouseEnterEvent">ReportComponentBase.MouseEnterEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_MouseLeaveEvent">ReportComponentBase.MouseLeaveEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_ApplyStyle_FastReport_Style_">ReportComponentBase.ApplyStyle(Style)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_SaveStyle">ReportComponentBase.SaveStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_RestoreStyle">ReportComponentBase.RestoreStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_DrawBackground_FastReport_Utils_FRPaintEventArgs_">ReportComponentBase.DrawBackground(FRPaintEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Draw_FastReport_Utils_FRPaintEventArgs_">ReportComponentBase.Draw(FRPaintEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_IsVisible_FastReport_Utils_FRPaintEventArgs_">ReportComponentBase.IsVisible(FRPaintEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnClick_System_EventArgs_">ReportComponentBase.OnClick(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnAfterLoad">ReportComponentBase.OnAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_HasClickListeners">ReportComponentBase.HasClickListeners()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FinalizeComponent">ReportComponentBase.FinalizeComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnBeforePrint_System_EventArgs_">ReportComponentBase.OnBeforePrint(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnAfterPrint_System_EventArgs_">ReportComponentBase.OnAfterPrint(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnAfterData_System_EventArgs_">ReportComponentBase.OnAfterData(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_AbsBottom">ComponentBase.AbsBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_AbsBounds">ComponentBase.AbsBounds</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_AbsRight">ComponentBase.AbsRight</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Anchor">ComponentBase.Anchor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Bottom">ComponentBase.Bottom</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Bounds">ComponentBase.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_ClientSize">ComponentBase.ClientSize</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Dock">ComponentBase.Dock</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_GroupIndex">ComponentBase.GroupIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Height">ComponentBase.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Left">ComponentBase.Left</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Right">ComponentBase.Right</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Tag">ComponentBase.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Top">ComponentBase.Top</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Visible">ComponentBase.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">ComponentBase.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Name">Base.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Restrictions">Base.Restrictions</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Flags">Base.Flags</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Parent">Base.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseName">Base.BaseName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ClassName">Base.ClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Report">Base.Report</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Page">Base.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ChildObjects">Base.ChildObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AllObjects">Base.AllObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ZOrder">Base.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsAncestor">Base.IsAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsDesigning">Base.IsDesigning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsPrinting">Base.IsPrinting</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsRunning">Base.IsRunning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OriginalComponent">Base.OriginalComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetProp_FastReport_Base_FastReport_Base_">Base.SetProp(Base, Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FloatDiff_System_Single_System_Single_">Base.FloatDiff(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractDefaultMacros_System_String_">Base.ExtractDefaultMacros(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Dispose_System_Boolean_">Base.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetFlags_FastReport_Flags_System_Boolean_">Base.SetFlags(Flags, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetReport_FastReport_Report_">Base.SetReport(Report)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetName_System_String_">Base.SetName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParent_FastReport_Base_">Base.SetParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParentCore_FastReport_Base_">Base.SetParentCore(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FindObject_System_String_">Base.FindObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_CreateUniqueName">Base.CreateUniqueName()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">Base.AssignAll(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasParent_FastReport_Base_">Base.HasParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasFlag_FastReport_Flags_">Base.HasFlag(Flags)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasRestriction_FastReport_Restrictions_">Base.HasRestriction(Restrictions)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_InvokeEvent_System_String_System_Object_">Base.InvokeEvent(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetCustomScript">Base.GetCustomScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractMacros">Base.ExtractMacros()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsHaveToConvert_System_Object_">Base.IsHaveToConvert(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetConvertedObjects">Base.GetConvertedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ForEachAllConvectedObjects_System_Object_">Base.ForEachAllConvectedObjects(Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.html">FastReport</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_DataBand_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataBand : BandBase, IFRSerializable, IParent</code></pre>
+  </div>
+  <h5 id="FastReport_DataBand_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Use the <a class="xref" href="FastReport.DataBand.html#FastReport_DataBand_DataSource">DataSource</a> property to connect the band to a datasource. Set the
+<a class="xref" href="FastReport.DataBand.html#FastReport_DataBand_Filter">Filter</a> property if you want to filter data rows. The <a class="xref" href="FastReport.DataBand.html#FastReport_DataBand_Sort">Sort</a>
+property can be used to sort data rows.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_DataBand__ctor_" data-uid="FastReport.DataBand.#ctor*"></a>
+  <h4 id="FastReport_DataBand__ctor" data-uid="FastReport.DataBand.#ctor">DataBand()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.DataBand.html">DataBand</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataBand()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_DataBand_Bands_" data-uid="FastReport.DataBand.Bands*"></a>
+  <h4 id="FastReport_DataBand_Bands" data-uid="FastReport.DataBand.Bands">Bands</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of detail bands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BandCollection Bands { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.BandCollection.html">BandCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_CollectChildRows_" data-uid="FastReport.DataBand.CollectChildRows*"></a>
+  <h4 id="FastReport_DataBand_CollectChildRows" data-uid="FastReport.DataBand.CollectChildRows">CollectChildRows</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating that the databand should collect child data rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CollectChildRows { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_CollectChildRows_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property determines how the master-detail report is printed. Default behavior is:</p>
+<p>MasterData row1
+<p>-- DetailData row1
+<p>-- DetailData row2
+<p>-- DetailData row3
+<p>MasterData row2
+<p>-- DetailData row1
+<p>-- DetailData row2
+<p>When you set this property to <strong>true</strong>, the master databand will collect all child data rows
+under a single master data row:
+<p>MasterData row1
+<p>-- DetailData row1
+<p>-- DetailData row2
+<p>-- DetailData row3
+<p>-- DetailData row4
+<p>-- DetailData row5
+</div>
+  
+  
+  <a id="FastReport_DataBand_Columns_" data-uid="FastReport.DataBand.Columns*"></a>
+  <h4 id="FastReport_DataBand_Columns" data-uid="FastReport.DataBand.Columns">Columns</h4>
+  <div class="markdown level1 summary"><p>Gets the band columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BandColumns Columns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.BandColumns.html">BandColumns</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_DataSource_" data-uid="FastReport.DataBand.DataSource*"></a>
+  <h4 id="FastReport_DataBand_DataSource" data-uid="FastReport.DataBand.DataSource">DataSource</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a data source.
+Please note: data source have to be enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataSourceBase DataSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.DataSourceBase.html">DataSourceBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_Filter_" data-uid="FastReport.DataBand.Filter*"></a>
+  <h4 id="FastReport_DataBand_Filter" data-uid="FastReport.DataBand.Filter">Filter</h4>
+  <div class="markdown level1 summary"><p>Gets the row filter expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Filter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_Filter_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property can contain any valid boolean expression. If the expression returns <strong>false</strong>,
+the corresponding data row will not be printed.</p>
+</div>
+  
+  
+  <a id="FastReport_DataBand_Footer_" data-uid="FastReport.DataBand.Footer*"></a>
+  <h4 id="FastReport_DataBand_Footer" data-uid="FastReport.DataBand.Footer">Footer</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a footer band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataFooterBand Footer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.DataFooterBand.html">DataFooterBand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_Header_" data-uid="FastReport.DataBand.Header*"></a>
+  <h4 id="FastReport_DataBand_Header" data-uid="FastReport.DataBand.Header">Header</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a header band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataHeaderBand Header { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.DataHeaderBand.html">DataHeaderBand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_IdColumn_" data-uid="FastReport.DataBand.IdColumn*"></a>
+  <h4 id="FastReport_DataBand_IdColumn" data-uid="FastReport.DataBand.IdColumn">IdColumn</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the key column that identifies the data row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdColumn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_IdColumn_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used when printing a hierarchic list.</p>
+<p>To print the hierarchic list, you have to setup three properties: <strong>IdColumn</strong>,
+<strong>ParentIdColumn</strong> and <strong>Indent</strong>. First two properties are used to identify the data
+row and its parent; the <strong>Indent</strong> property specifies the indent that will be used to shift
+the databand according to its hierarchy level.</p>
+<p>When printing hierarchy, FastReport shifts the band to the right
+(by value specified in the <a class="xref" href="FastReport.DataBand.html#FastReport_DataBand_Indent">Indent</a> property), and also decreases the
+width of the band by the same value. You may use the <strong>Anchor</strong> property of the
+objects on a band to indicate whether the object should move with the band, or stay
+on its original position, or shrink.
+</div>
+  
+  
+  <a id="FastReport_DataBand_Indent_" data-uid="FastReport.DataBand.Indent*"></a>
+  <h4 id="FastReport_DataBand_Indent" data-uid="FastReport.DataBand.Indent">Indent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the indent that will be used to shift the databand according to its hierarchy level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Indent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_Indent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used when printing a hierarchic list. See description of the
+<a class="xref" href="FastReport.DataBand.html#FastReport_DataBand_IdColumn">IdColumn</a> property for more details.</p>
+</div>
+  
+  
+  <a id="FastReport_DataBand_KeepDetail_" data-uid="FastReport.DataBand.KeepDetail*"></a>
+  <h4 id="FastReport_DataBand_KeepDetail" data-uid="FastReport.DataBand.KeepDetail">KeepDetail</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating that the band should be printed together with all its detail rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeepDetail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_KeepTogether_" data-uid="FastReport.DataBand.KeepTogether*"></a>
+  <h4 id="FastReport_DataBand_KeepTogether" data-uid="FastReport.DataBand.KeepTogether">KeepTogether</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating that all band rows should be printed together on one page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeepTogether { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_MaxRows_" data-uid="FastReport.DataBand.MaxRows*"></a>
+  <h4 id="FastReport_DataBand_MaxRows" data-uid="FastReport.DataBand.MaxRows">MaxRows</h4>
+  <div class="markdown level1 summary"><p>Limits the maximum number of rows in a datasource. 0 means no limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxRows { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_ParentIdColumn_" data-uid="FastReport.DataBand.ParentIdColumn*"></a>
+  <h4 id="FastReport_DataBand_ParentIdColumn" data-uid="FastReport.DataBand.ParentIdColumn">ParentIdColumn</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the column that identifies the parent data row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ParentIdColumn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_ParentIdColumn_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used when printing a hierarchic list. See description of the
+<a class="xref" href="FastReport.DataBand.html#FastReport_DataBand_IdColumn">IdColumn</a> property for more details.</p>
+</div>
+  
+  
+  <a id="FastReport_DataBand_PrintIfDatasourceEmpty_" data-uid="FastReport.DataBand.PrintIfDatasourceEmpty*"></a>
+  <h4 id="FastReport_DataBand_PrintIfDatasourceEmpty" data-uid="FastReport.DataBand.PrintIfDatasourceEmpty">PrintIfDatasourceEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether to print a band if its datasource is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrintIfDatasourceEmpty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_PrintIfDetailEmpty_" data-uid="FastReport.DataBand.PrintIfDetailEmpty*"></a>
+  <h4 id="FastReport_DataBand_PrintIfDetailEmpty" data-uid="FastReport.DataBand.PrintIfDetailEmpty">PrintIfDetailEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether to print a band if all its detail rows are empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrintIfDetailEmpty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_DataBand_Relation_" data-uid="FastReport.DataBand.Relation*"></a>
+  <h4 id="FastReport_DataBand_Relation" data-uid="FastReport.DataBand.Relation">Relation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a relation used to establish a master-detail relationship between
+this band and its parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Relation Relation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.Relation.html">Relation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_Relation_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this property if there are several relations exist between two data sources.
+If there is only one relation (in most cases it is), you can leave this property empty.</p>
+</div>
+  
+  
+  <a id="FastReport_DataBand_ResetPageNumber_" data-uid="FastReport.DataBand.ResetPageNumber*"></a>
+  <h4 id="FastReport_DataBand_ResetPageNumber" data-uid="FastReport.DataBand.ResetPageNumber">ResetPageNumber</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether to reset the page numbers when this band starts print.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResetPageNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_ResetPageNumber_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Typically you should set the <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_StartNewPage">StartNewPage</a> property to <strong>true</strong> as well.</p>
+</div>
+  
+  
+  <a id="FastReport_DataBand_RowCount_" data-uid="FastReport.DataBand.RowCount*"></a>
+  <h4 id="FastReport_DataBand_RowCount" data-uid="FastReport.DataBand.RowCount">RowCount</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a number of rows in the virtual data source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RowCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_DataBand_RowCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this property if your data band is not connected to any data source. In this case
+the virtual data source with the specified number of rows will be used.</p>
+</div>
+  
+  
+  <a id="FastReport_DataBand_Sort_" data-uid="FastReport.DataBand.Sort*"></a>
+  <h4 id="FastReport_DataBand_Sort" data-uid="FastReport.DataBand.Sort">Sort</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of sort conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortCollection Sort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.SortCollection.html">SortCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_DataBand_AddChild_" data-uid="FastReport.DataBand.AddChild*"></a>
+  <h4 id="FastReport_DataBand_AddChild_FastReport_Base_" data-uid="FastReport.DataBand.AddChild(FastReport.Base)">AddChild(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddChild(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_AddChild_FastReport_Base_">BandBase.AddChild(Base)</a></div>
+  
+  
+  <a id="FastReport_DataBand_Assign_" data-uid="FastReport.DataBand.Assign*"></a>
+  <h4 id="FastReport_DataBand_Assign_FastReport_Base_" data-uid="FastReport.DataBand.Assign(FastReport.Base)">Assign(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Assign(Base source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Assign_FastReport_Base_">BandBase.Assign(Base)</a></div>
+  
+  
+  <a id="FastReport_DataBand_CanContain_" data-uid="FastReport.DataBand.CanContain*"></a>
+  <h4 id="FastReport_DataBand_CanContain_FastReport_Base_" data-uid="FastReport.DataBand.CanContain(FastReport.Base)">CanContain(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanContain(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_CanContain_FastReport_Base_">BandBase.CanContain(Base)</a></div>
+  
+  
+  <a id="FastReport_DataBand_DeserializeSubItems_" data-uid="FastReport.DataBand.DeserializeSubItems*"></a>
+  <h4 id="FastReport_DataBand_DeserializeSubItems_FastReport_Utils_FRReader_" data-uid="FastReport.DataBand.DeserializeSubItems(FastReport.Utils.FRReader)">DeserializeSubItems(FRReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeserializeSubItems(FRReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">Base.DeserializeSubItems(FRReader)</a></div>
+  
+  
+  <a id="FastReport_DataBand_GetChildObjects_" data-uid="FastReport.DataBand.GetChildObjects*"></a>
+  <h4 id="FastReport_DataBand_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.DataBand.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetChildObjects(ObjectCollection list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_GetChildObjects_FastReport_ObjectCollection_">BandBase.GetChildObjects(ObjectCollection)</a></div>
+  
+  
+  <a id="FastReport_DataBand_GetChildOrder_" data-uid="FastReport.DataBand.GetChildOrder*"></a>
+  <h4 id="FastReport_DataBand_GetChildOrder_FastReport_Base_" data-uid="FastReport.DataBand.GetChildOrder(FastReport.Base)">GetChildOrder(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetChildOrder(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_GetChildOrder_FastReport_Base_">BandBase.GetChildOrder(Base)</a></div>
+  
+  
+  <a id="FastReport_DataBand_GetExpressions_" data-uid="FastReport.DataBand.GetExpressions*"></a>
+  <h4 id="FastReport_DataBand_GetExpressions" data-uid="FastReport.DataBand.GetExpressions">GetExpressions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] GetExpressions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_GetExpressions">BandBase.GetExpressions()</a></div>
+  
+  
+  <a id="FastReport_DataBand_InitDataSource_" data-uid="FastReport.DataBand.InitDataSource*"></a>
+  <h4 id="FastReport_DataBand_InitDataSource" data-uid="FastReport.DataBand.InitDataSource">InitDataSource()</h4>
+  <div class="markdown level1 summary"><p>Initializes the data source connected to this band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitDataSource()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_DataBand_InitializeComponent_" data-uid="FastReport.DataBand.InitializeComponent*"></a>
+  <h4 id="FastReport_DataBand_InitializeComponent" data-uid="FastReport.DataBand.InitializeComponent">InitializeComponent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitializeComponent()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_InitializeComponent">BandBase.InitializeComponent()</a></div>
+  
+  
+  <a id="FastReport_DataBand_RemoveChild_" data-uid="FastReport.DataBand.RemoveChild*"></a>
+  <h4 id="FastReport_DataBand_RemoveChild_FastReport_Base_" data-uid="FastReport.DataBand.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveChild(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_RemoveChild_FastReport_Base_">BandBase.RemoveChild(Base)</a></div>
+  
+  
+  <a id="FastReport_DataBand_Serialize_" data-uid="FastReport.DataBand.Serialize*"></a>
+  <h4 id="FastReport_DataBand_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.DataBand.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Serialize(FRWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Serialize_FastReport_Utils_FRWriter_">BandBase.Serialize(FRWriter)</a></div>
+  
+  
+  <a id="FastReport_DataBand_SetChildOrder_" data-uid="FastReport.DataBand.SetChildOrder*"></a>
+  <h4 id="FastReport_DataBand_SetChildOrder_FastReport_Base_System_Int32_" data-uid="FastReport.DataBand.SetChildOrder(FastReport.Base,System.Int32)">SetChildOrder(Base, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetChildOrder(Base child, int order)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">order</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_SetChildOrder_FastReport_Base_System_Int32_">BandBase.SetChildOrder(Base, Int32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="FastReport.IParent.html">IParent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,918 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FRReader
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FRReader
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Utils.FRReader">
+  
+  
+  <h1 id="FastReport_Utils_FRReader" data-uid="FastReport.Utils.FRReader" class="text-break">Class FRReader
+  </h1>
+  <div class="markdown level0 summary"><p>The reader used to deserialize object's properties from a report file.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FRReader</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Utils.html">FastReport.Utils</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Utils_FRReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FRReader : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Utils_FRReader__ctor_" data-uid="FastReport.Utils.FRReader.#ctor*"></a>
+  <h4 id="FastReport_Utils_FRReader__ctor_FastReport_Report_" data-uid="FastReport.Utils.FRReader.#ctor(FastReport.Report)">FRReader(Report)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <strong>FRReader</strong> class with specified report.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FRReader(Report report)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Report.html">Report</a></td>
+        <td><span class="parametername">report</span></td>
+        <td><p>Reference to a report.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader__ctor_" data-uid="FastReport.Utils.FRReader.#ctor*"></a>
+  <h4 id="FastReport_Utils_FRReader__ctor_FastReport_Report_FastReport_Utils_XmlItem_" data-uid="FastReport.Utils.FRReader.#ctor(FastReport.Report,FastReport.Utils.XmlItem)">FRReader(Report, XmlItem)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <strong>FRReader</strong> class with specified report and xml item with
+contents to read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FRReader(Report report, XmlItem root)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Report.html">Report</a></td>
+        <td><span class="parametername">report</span></td>
+        <td><p>Reference to a report.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><span class="parametername">root</span></td>
+        <td><p>Xml item with contents to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Utils_FRReader_Errors_" data-uid="FastReport.Utils.FRReader.Errors*"></a>
+  <h4 id="FastReport_Utils_FRReader_Errors" data-uid="FastReport.Utils.FRReader.Errors">Errors</h4>
+  <div class="markdown level1 summary"><p>Gets a string that contains errors occured during the load.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Errors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ItemName_" data-uid="FastReport.Utils.FRReader.ItemName*"></a>
+  <h4 id="FastReport_Utils_FRReader_ItemName" data-uid="FastReport.Utils.FRReader.ItemName">ItemName</h4>
+  <div class="markdown level1 summary"><p>Gets the current item name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ItemName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadChildren_" data-uid="FastReport.Utils.FRReader.ReadChildren*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadChildren" data-uid="FastReport.Utils.FRReader.ReadChildren">ReadChildren</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whther is necessary to read the object's children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadChildren { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Utils_FRReader_Dispose_" data-uid="FastReport.Utils.FRReader.Dispose*"></a>
+  <h4 id="FastReport_Utils_FRReader_Dispose" data-uid="FastReport.Utils.FRReader.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes the reader, fixups the property references.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Utils_FRReader_HasProperty_" data-uid="FastReport.Utils.FRReader.HasProperty*"></a>
+  <h4 id="FastReport_Utils_FRReader_HasProperty_System_String_" data-uid="FastReport.Utils.FRReader.HasProperty(System.String)">HasProperty(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if current item has specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProperty(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The property name to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><strong>true</strong> if current item has specified property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_Load_" data-uid="FastReport.Utils.FRReader.Load*"></a>
+  <h4 id="FastReport_Utils_FRReader_Load_System_IO_Stream_" data-uid="FastReport.Utils.FRReader.Load(System.IO.Stream)">Load(Stream)</h4>
+  <div class="markdown level1 summary"><p>Loads the xml items from a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to load from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_NextItem_" data-uid="FastReport.Utils.FRReader.NextItem*"></a>
+  <h4 id="FastReport_Utils_FRReader_NextItem" data-uid="FastReport.Utils.FRReader.NextItem">NextItem()</h4>
+  <div class="markdown level1 summary"><p>Moves the current xml item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NextItem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><strong>false</strong> if there is no more items to move on; <strong>true</strong> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_FRReader_NextItem_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to read child objects.</p>
+</div>
+  <h5 id="FastReport_Utils_FRReader_NextItem_examples">Examples</h5>
+  <p>This example demonstrates the use of <strong>ReadProperties</strong>, <strong>ReadChildren</strong>,
+<strong>NextItem</strong>, <strong>Read</strong> methods.</p>
+<pre><code>public void Deserialize(FRReader reader)
+{
+  // read simple properties like &quot;Text&quot;, complex properties like &quot;Border.Lines&quot;
+  reader.ReadProperties(this);
+
+  // moves the current reader item
+  while (reader.NextItem())
+  {
+    // read the &quot;Styles&quot; collection
+    if (String.Compare(reader.ItemName, &quot;Styles&quot;, true) == 0)
+      reader.Read(Styles);
+    else if (reader.ReadChildren)
+    {
+      // if read of children is enabled, read them
+      Base obj = reader.Read();
+      if (obj != null)
+         obj.Parent = this;
+    }
+  }
+}</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_FRReader_Read_" data-uid="FastReport.Utils.FRReader.Read*"></a>
+  <h4 id="FastReport_Utils_FRReader_Read" data-uid="FastReport.Utils.FRReader.Read">Read()</h4>
+  <div class="markdown level1 summary"><p>Reads an object from current xml node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFRSerializable Read()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_FRReader_Read_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method creates an instance of object described by the current xml node, then invokes
+its <strong>Deserialize</strong> method.</p>
+</div>
+  <h5 id="FastReport_Utils_FRReader_Read_examples">Examples</h5>
+  <p>This example demonstrates the use of <strong>ReadProperties</strong>, <strong>ReadChildren</strong>,
+<strong>NextItem</strong>, <strong>Read</strong> methods.</p>
+<pre><code>public void Deserialize(FRReader reader)
+{
+  // read simple properties like &quot;Text&quot;, complex properties like &quot;Border.Lines&quot;
+  reader.ReadProperties(this);
+
+  // moves the current reader item
+  while (reader.NextItem())
+  {
+    // read the &quot;Styles&quot; collection
+    if (String.Compare(reader.ItemName, &quot;Styles&quot;, true) == 0)
+      reader.Read(Styles);
+    else if (reader.ReadChildren)
+    {
+      // if read of children is enabled, read them
+      Base obj = reader.Read();
+      if (obj != null)
+         obj.Parent = this;
+    }
+  }
+}</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_FRReader_Read_" data-uid="FastReport.Utils.FRReader.Read*"></a>
+  <h4 id="FastReport_Utils_FRReader_Read_FastReport_IFRSerializable_" data-uid="FastReport.Utils.FRReader.Read(FastReport.IFRSerializable)">Read(IFRSerializable)</h4>
+  <div class="markdown level1 summary"><p>Reads the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Read(IFRSerializable obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_FRReader_Read_FastReport_IFRSerializable__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The object must implement the <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a> interface. This method
+invokes the <strong>Deserialize</strong> method of the object.</p>
+</div>
+  <h5 id="FastReport_Utils_FRReader_Read_FastReport_IFRSerializable__examples">Examples</h5>
+  <p>This example demonstrates the use of <strong>ReadProperties</strong>, <strong>ReadChildren</strong>,
+<strong>NextItem</strong>, <strong>Read</strong> methods.</p>
+<pre><code>public void Deserialize(FRReader reader)
+{
+  // read simple properties like &quot;Text&quot;, complex properties like &quot;Border.Lines&quot;
+  reader.ReadProperties(this);
+
+  // moves the current reader item
+  while (reader.NextItem())
+  {
+    // read the &quot;Styles&quot; collection
+    if (String.Compare(reader.ItemName, &quot;Styles&quot;, true) == 0)
+      reader.Read(Styles);
+    else if (reader.ReadChildren)
+    {
+      // if read of children is enabled, read them
+      Base obj = reader.Read();
+      if (obj != null)
+         obj.Parent = this;
+    }
+  }
+}</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadBool_" data-uid="FastReport.Utils.FRReader.ReadBool*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadBool_System_String_" data-uid="FastReport.Utils.FRReader.ReadBool(System.String)">ReadBool(String)</h4>
+  <div class="markdown level1 summary"><p>Reads the boolean property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadBool(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadDouble_" data-uid="FastReport.Utils.FRReader.ReadDouble*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadDouble_System_String_" data-uid="FastReport.Utils.FRReader.ReadDouble(System.String)">ReadDouble(String)</h4>
+  <div class="markdown level1 summary"><p>Reads the double property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ReadDouble(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadFloat_" data-uid="FastReport.Utils.FRReader.ReadFloat*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadFloat_System_String_" data-uid="FastReport.Utils.FRReader.ReadFloat(System.String)">ReadFloat(String)</h4>
+  <div class="markdown level1 summary"><p>Reads the float property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ReadFloat(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadInt_" data-uid="FastReport.Utils.FRReader.ReadInt*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadInt_System_String_" data-uid="FastReport.Utils.FRReader.ReadInt(System.String)">ReadInt(String)</h4>
+  <div class="markdown level1 summary"><p>Reads the integer property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadInt(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadProperties_" data-uid="FastReport.Utils.FRReader.ReadProperties*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadProperties_System_Object_" data-uid="FastReport.Utils.FRReader.ReadProperties(System.Object)">ReadProperties(Object)</h4>
+  <div class="markdown level1 summary"><p>Reads properties of specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadProperties(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_FRReader_ReadProperties_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method reads simple properties like &quot;Text&quot;, &quot;Border.Lines&quot; etc. for specified object.
+To read nested properties like collections, you should override the <a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">DeserializeSubItems(FRReader)</a>
+method of an object.</p>
+</div>
+  <h5 id="FastReport_Utils_FRReader_ReadProperties_System_Object__examples">Examples</h5>
+  <p>This example demonstrates the use of <strong>ReadProperties</strong>, <strong>ReadChildren</strong>,
+<strong>NextItem</strong>, <strong>Read</strong> methods.</p>
+<pre><code>public void Deserialize(FRReader reader)
+{
+  // read simple properties like &quot;Text&quot;, complex properties like &quot;Border.Lines&quot;
+  reader.ReadProperties(this);
+
+  // moves the current reader item
+  while (reader.NextItem())
+  {
+    // read the &quot;Styles&quot; collection
+    if (String.Compare(reader.ItemName, &quot;Styles&quot;, true) == 0)
+      reader.Read(Styles);
+    else if (reader.ReadChildren)
+    {
+      // if read of children is enabled, read them
+      Base obj = reader.Read();
+      if (obj != null)
+         obj.Parent = this;
+    }
+  }
+}</code></pre>
+
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadPropertyValue_" data-uid="FastReport.Utils.FRReader.ReadPropertyValue*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadPropertyValue" data-uid="FastReport.Utils.FRReader.ReadPropertyValue">ReadPropertyValue()</h4>
+  <div class="markdown level1 summary"><p>Reads the standalone property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadPropertyValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadStr_" data-uid="FastReport.Utils.FRReader.ReadStr*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadStr_System_String_" data-uid="FastReport.Utils.FRReader.ReadStr(System.String)">ReadStr(String)</h4>
+  <div class="markdown level1 summary"><p>Reads the string property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadStr(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_FRReader_ReadValue_" data-uid="FastReport.Utils.FRReader.ReadValue*"></a>
+  <h4 id="FastReport_Utils_FRReader_ReadValue_System_String_System_Type_" data-uid="FastReport.Utils.FRReader.ReadValue(System.String,System.Type)">ReadValue(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Reads the enum property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object ReadValue(string name, Type typ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">typ</span></td>
+        <td><p>Type of property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

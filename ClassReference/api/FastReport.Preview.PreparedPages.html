@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PreparedPages
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PreparedPages
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Preview.PreparedPages">
+  
+  
+  <h1 id="FastReport_Preview_PreparedPages" data-uid="FastReport.Preview.PreparedPages" class="text-break">Class PreparedPages
+  </h1>
+  <div class="markdown level0 summary"><p>Represents the pages of a prepared report.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PreparedPages</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Preview.html">FastReport.Preview</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Preview_PreparedPages_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PreparedPages : IDisposable</code></pre>
+  </div>
+  <h5 id="FastReport_Preview_PreparedPages_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Prepared page is a page that you can see in the preview window. Prepared pages can be
+accessed via <a class="xref" href="FastReport.Report.html#FastReport_Report_PreparedPages">PreparedPages</a> property.</p>
+<p>The common scenarios of using this object are:
+<ul><li>Working with prepared pages after the report is finished: load 
+    (<a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_Load_System_String_">Load(String)</a>) or save (<a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_Save_System_String_">Save(String)</a>) pages 
+    from/to a .fpx file, get a page with specified index to work with its objects 
+    (<a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_GetPage_System_Int32_">GetPage(Int32)</a>); modify specified page (<a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_ModifyPage_System_Int32_FastReport_ReportPage_">ModifyPage(Int32, ReportPage)</a>).
+</li><li>Using the <a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_AddPage_FastReport_ReportPage_">AddPage(ReportPage)</a>, <a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_AddSourcePage_FastReport_ReportPage_">AddSourcePage(ReportPage)</a>, <a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_AddBand_FastReport_BandBase_">AddBand(BandBase)</a>
+methods while report is generating to produce an output.
+</li></ul>
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Preview_PreparedPages__ctor_" data-uid="FastReport.Preview.PreparedPages.#ctor*"></a>
+  <h4 id="FastReport_Preview_PreparedPages__ctor_FastReport_Report_" data-uid="FastReport.Preview.PreparedPages.#ctor(FastReport.Report)">PreparedPages(Report)</h4>
+  <div class="markdown level1 summary"><p>Creates the pages of a prepared report</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PreparedPages(Report report)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Report.html">Report</a></td>
+        <td><span class="parametername">report</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_AddPageAction_" data-uid="FastReport.Preview.PreparedPages.AddPageAction*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_AddPageAction" data-uid="FastReport.Preview.PreparedPages.AddPageAction">AddPageAction</h4>
+  <div class="markdown level1 summary"><p>Specifies an action that will be performed on <a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_AddPage_FastReport_ReportPage_">AddPage(ReportPage)</a> method call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AddPageAction AddPageAction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Preview.AddPageAction.html">AddPageAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_CanUploadToCache_" data-uid="FastReport.Preview.PreparedPages.CanUploadToCache*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_CanUploadToCache" data-uid="FastReport.Preview.PreparedPages.CanUploadToCache">CanUploadToCache</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the prepared pages can be uploaded to the file cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUploadToCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Preview_PreparedPages_CanUploadToCache_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is used while report is generating.</p>
+<p>Default value for this property is <strong>true</strong>. That means the prepared pages may be uploaded to
+the file cache if needed. To prevent this (for example, if you need to access some objects
+on previously generated pages), set the property value to <strong>false</strong>.</p>
+</div>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_Count_" data-uid="FastReport.Preview.PreparedPages.Count*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_Count" data-uid="FastReport.Preview.PreparedPages.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of pages in the prepared report.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_AddBand_" data-uid="FastReport.Preview.PreparedPages.AddBand*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_AddBand_FastReport_BandBase_" data-uid="FastReport.Preview.PreparedPages.AddBand(FastReport.BandBase)">AddBand(BandBase)</h4>
+  <div class="markdown level1 summary"><p>Prints a band with all its child objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddBand(BandBase band)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.BandBase.html">BandBase</a></td>
+        <td><span class="parametername">band</span></td>
+        <td><p>The band to print.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><strong>true</strong> if band was printed; <strong>false</strong> if it can't be printed
+on current page due to its <strong>PrintOn</strong> property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Preview_PreparedPages_AddBand_FastReport_BandBase__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call the <a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_AddPage_FastReport_ReportPage_">AddPage(ReportPage)</a> method before adding a band.</p>
+</div>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_AddPage_" data-uid="FastReport.Preview.PreparedPages.AddPage*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_AddPage_FastReport_ReportPage_" data-uid="FastReport.Preview.PreparedPages.AddPage(FastReport.ReportPage)">AddPage(ReportPage)</h4>
+  <div class="markdown level1 summary"><p>Adds a new page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPage(ReportPage page)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportPage.html">ReportPage</a></td>
+        <td><span class="parametername">page</span></td>
+        <td><p>The original (template) page to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Preview_PreparedPages_AddPage_FastReport_ReportPage__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call the <a class="xref" href="FastReport.Preview.PreparedPages.html#FastReport_Preview_PreparedPages_AddSourcePage_FastReport_ReportPage_">AddSourcePage(ReportPage)</a> method before adding a page. This method creates
+a new output page with settings based on <strong>page</strong> parameter.</p>
+</div>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_AddSourcePage_" data-uid="FastReport.Preview.PreparedPages.AddSourcePage*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_AddSourcePage_FastReport_ReportPage_" data-uid="FastReport.Preview.PreparedPages.AddSourcePage(FastReport.ReportPage)">AddSourcePage(ReportPage)</h4>
+  <div class="markdown level1 summary"><p>Adds a source page to the prepared pages dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSourcePage(ReportPage page)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportPage.html">ReportPage</a></td>
+        <td><span class="parametername">page</span></td>
+        <td><p>The template page to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Preview_PreparedPages_AddSourcePage_FastReport_ReportPage__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call this method before using <strong>AddPage</strong> and <strong>AddBand</strong> methods. This method adds
+a page to the dictionary that will be used to decrease size of the prepared report.</p>
+</div>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_Clear_" data-uid="FastReport.Preview.PreparedPages.Clear*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_Clear" data-uid="FastReport.Preview.PreparedPages.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears the prepared report's pages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_Dispose_" data-uid="FastReport.Preview.PreparedPages.Dispose*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_Dispose" data-uid="FastReport.Preview.PreparedPages.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_GetPage_" data-uid="FastReport.Preview.PreparedPages.GetPage*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_GetPage_System_Int32_" data-uid="FastReport.Preview.PreparedPages.GetPage(System.Int32)">GetPage(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page with specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReportPage GetPage(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero-based index of page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportPage.html">ReportPage</a></td>
+        <td><p>The page with specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_GetPageSize_" data-uid="FastReport.Preview.PreparedPages.GetPageSize*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_GetPageSize_System_Int32_" data-uid="FastReport.Preview.PreparedPages.GetPageSize(System.Int32)">GetPageSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the size of specified page, in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF GetPageSize(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SizeF</span></td>
+        <td><p>the size of specified page, in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_Load_" data-uid="FastReport.Preview.PreparedPages.Load*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_Load_System_IO_Stream_" data-uid="FastReport.Preview.PreparedPages.Load(System.IO.Stream)">Load(Stream)</h4>
+  <div class="markdown level1 summary"><p>Loads prepared pages from a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to load from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_Load_" data-uid="FastReport.Preview.PreparedPages.Load*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_Load_System_String_" data-uid="FastReport.Preview.PreparedPages.Load(System.String)">Load(String)</h4>
+  <div class="markdown level1 summary"><p>Loads prepared pages from a .fpx file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The name of the file to load from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_ModifyPage_" data-uid="FastReport.Preview.PreparedPages.ModifyPage*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_ModifyPage_System_Int32_FastReport_ReportPage_" data-uid="FastReport.Preview.PreparedPages.ModifyPage(System.Int32,FastReport.ReportPage)">ModifyPage(Int32, ReportPage)</h4>
+  <div class="markdown level1 summary"><p>Replaces the prepared page with specified one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ModifyPage(int index, ReportPage newPage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of prepared page to replace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportPage.html">ReportPage</a></td>
+        <td><span class="parametername">newPage</span></td>
+        <td><p>The new page to replace with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_ModifyPageSize_" data-uid="FastReport.Preview.PreparedPages.ModifyPageSize*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_ModifyPageSize_System_String_" data-uid="FastReport.Preview.PreparedPages.ModifyPageSize(System.String)">ModifyPageSize(String)</h4>
+  <div class="markdown level1 summary"><p>Modify the prepared page with new sizes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ModifyPageSize(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of prepared page to reSize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_RemovePage_" data-uid="FastReport.Preview.PreparedPages.RemovePage*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_RemovePage_System_Int32_" data-uid="FastReport.Preview.PreparedPages.RemovePage(System.Int32)">RemovePage(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes a page with the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePage(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of page to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_Save_" data-uid="FastReport.Preview.PreparedPages.Save*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_Save_System_IO_Stream_" data-uid="FastReport.Preview.PreparedPages.Save(System.IO.Stream)">Save(Stream)</h4>
+  <div class="markdown level1 summary"><p>Saves prepared pages to a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to save to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Preview_PreparedPages_Save_" data-uid="FastReport.Preview.PreparedPages.Save*"></a>
+  <h4 id="FastReport_Preview_PreparedPages_Save_System_String_" data-uid="FastReport.Preview.PreparedPages.Save(System.String)">Save(String)</h4>
+  <div class="markdown level1 summary"><p>Saves prepared pages to a .fpx file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The name of the file to save to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

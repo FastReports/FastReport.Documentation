@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TableCellData
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TableCellData
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Table.TableCellData">
+  
+  
+  <h1 id="FastReport_Table_TableCellData" data-uid="FastReport.Table.TableCellData" class="text-break">Class TableCellData
+  </h1>
+  <div class="markdown level0 summary"><p>Represents data of the table cell.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TableCellData</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Table.html">FastReport.Table</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Table_TableCellData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TableCellData : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Table_TableCellData__ctor_" data-uid="FastReport.Table.TableCellData.#ctor*"></a>
+  <h4 id="FastReport_Table_TableCellData__ctor" data-uid="FastReport.Table.TableCellData.#ctor">TableCellData()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Table.TableCellData.html">TableCellData</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableCellData()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Table_TableCellData_Address_" data-uid="FastReport.Table.TableCellData.Address*"></a>
+  <h4 id="FastReport_Table_TableCellData_Address" data-uid="FastReport.Table.TableCellData.Address">Address</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the address of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point Address { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Cell_" data-uid="FastReport.Table.TableCellData.Cell*"></a>
+  <h4 id="FastReport_Table_TableCellData_Cell" data-uid="FastReport.Table.TableCellData.Cell">Cell</h4>
+  <div class="markdown level1 summary"><p>Gets the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableCell Cell { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_ColSpan_" data-uid="FastReport.Table.TableCellData.ColSpan*"></a>
+  <h4 id="FastReport_Table_TableCellData_ColSpan" data-uid="FastReport.Table.TableCellData.ColSpan">ColSpan</h4>
+  <div class="markdown level1 summary"><p>Gets or sets column span of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ColSpan { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Height_" data-uid="FastReport.Table.TableCellData.Height*"></a>
+  <h4 id="FastReport_Table_TableCellData_Height" data-uid="FastReport.Table.TableCellData.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Gets height of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_HyperlinkValue_" data-uid="FastReport.Table.TableCellData.HyperlinkValue*"></a>
+  <h4 id="FastReport_Table_TableCellData_HyperlinkValue" data-uid="FastReport.Table.TableCellData.HyperlinkValue">HyperlinkValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets hyperlink value of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HyperlinkValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Objects_" data-uid="FastReport.Table.TableCellData.Objects*"></a>
+  <h4 id="FastReport_Table_TableCellData_Objects" data-uid="FastReport.Table.TableCellData.Objects">Objects</h4>
+  <div class="markdown level1 summary"><p>Gets or sets objects collection of the cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReportComponentCollection Objects { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ReportComponentCollection.html">ReportComponentCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_OriginalCell_" data-uid="FastReport.Table.TableCellData.OriginalCell*"></a>
+  <h4 id="FastReport_Table_TableCellData_OriginalCell" data-uid="FastReport.Table.TableCellData.OriginalCell">OriginalCell</h4>
+  <div class="markdown level1 summary"><p>Gets original the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableCell OriginalCell { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_RowSpan_" data-uid="FastReport.Table.TableCellData.RowSpan*"></a>
+  <h4 id="FastReport_Table_TableCellData_RowSpan" data-uid="FastReport.Table.TableCellData.RowSpan">RowSpan</h4>
+  <div class="markdown level1 summary"><p>Gets or sets row span of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RowSpan { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Style_" data-uid="FastReport.Table.TableCellData.Style*"></a>
+  <h4 id="FastReport_Table_TableCellData_Style" data-uid="FastReport.Table.TableCellData.Style">Style</h4>
+  <div class="markdown level1 summary"><p>Gets style of table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableCell Style { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Table_" data-uid="FastReport.Table.TableCellData.Table*"></a>
+  <h4 id="FastReport_Table_TableCellData_Table" data-uid="FastReport.Table.TableCellData.Table">Table</h4>
+  <div class="markdown level1 summary"><p>Gets or sets parent table of the cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableBase Table { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableBase.html">TableBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Text_" data-uid="FastReport.Table.TableCellData.Text*"></a>
+  <h4 id="FastReport_Table_TableCellData_Text" data-uid="FastReport.Table.TableCellData.Text">Text</h4>
+  <div class="markdown level1 summary"><p>Gets or sets text of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Text { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Value_" data-uid="FastReport.Table.TableCellData.Value*"></a>
+  <h4 id="FastReport_Table_TableCellData_Value" data-uid="FastReport.Table.TableCellData.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets or sets value of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Width_" data-uid="FastReport.Table.TableCellData.Width*"></a>
+  <h4 id="FastReport_Table_TableCellData_Width" data-uid="FastReport.Table.TableCellData.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Gets width of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Table_TableCellData_Assign_" data-uid="FastReport.Table.TableCellData.Assign*"></a>
+  <h4 id="FastReport_Table_TableCellData_Assign_FastReport_Table_TableCellData_" data-uid="FastReport.Table.TableCellData.Assign(FastReport.Table.TableCellData)">Assign(TableCellData)</h4>
+  <div class="markdown level1 summary"><p>Assigns another <a class="xref" href="FastReport.Table.TableCellData.html">TableCellData</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Assign(TableCellData source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCellData.html">TableCellData</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The table cell data that used as a source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Table_TableCellData_Assign_FastReport_Table_TableCellData__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called when we copy cells or clone columns/rows in a designer.</p>
+</div>
+  
+  
+  <a id="FastReport_Table_TableCellData_AttachCell_" data-uid="FastReport.Table.TableCellData.AttachCell*"></a>
+  <h4 id="FastReport_Table_TableCellData_AttachCell_FastReport_Table_TableCell_" data-uid="FastReport.Table.TableCellData.AttachCell(FastReport.Table.TableCell)">AttachCell(TableCell)</h4>
+  <div class="markdown level1 summary"><p>Attaches the specified table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachCell(TableCell cell)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td><p>The table cell instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Table_TableCellData_AttachCell_FastReport_Table_TableCell__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called when we load the table.</p>
+</div>
+  
+  
+  <a id="FastReport_Table_TableCellData_CalcHeight_" data-uid="FastReport.Table.TableCellData.CalcHeight*"></a>
+  <h4 id="FastReport_Table_TableCellData_CalcHeight_System_Single_" data-uid="FastReport.Table.TableCellData.CalcHeight(System.Single)">CalcHeight(Single)</h4>
+  <div class="markdown level1 summary"><p>Calculates height of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalcHeight(float width)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the table cell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The value of the table cell height.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_CalcWidth_" data-uid="FastReport.Table.TableCellData.CalcWidth*"></a>
+  <h4 id="FastReport_Table_TableCellData_CalcWidth" data-uid="FastReport.Table.TableCellData.CalcWidth">CalcWidth()</h4>
+  <div class="markdown level1 summary"><p>Calculates width of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalcWidth()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The value of the table cell width.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_Dispose_" data-uid="FastReport.Table.TableCellData.Dispose*"></a>
+  <h4 id="FastReport_Table_TableCellData_Dispose" data-uid="FastReport.Table.TableCellData.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes the <a class="xref" href="FastReport.Table.TableCellData.html">TableCellData</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Table_TableCellData_RunTimeAssign_" data-uid="FastReport.Table.TableCellData.RunTimeAssign*"></a>
+  <h4 id="FastReport_Table_TableCellData_RunTimeAssign_FastReport_Table_TableCell_System_Boolean_" data-uid="FastReport.Table.TableCellData.RunTimeAssign(FastReport.Table.TableCell,System.Boolean)">RunTimeAssign(TableCell, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Assigns another <a class="xref" href="FastReport.Table.TableCellData.html">TableCellData</a> instance at run time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunTimeAssign(TableCell cell, bool copyChildren)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td><p>The table cell data that used as a source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">copyChildren</span></td>
+        <td><p>This flag shows should children be copied or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Table_TableCellData_RunTimeAssign_FastReport_Table_TableCell_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called when we print a table. We should create a copy of the cell and set the style.</p>
+</div>
+  
+  
+  <a id="FastReport_Table_TableCellData_SetStyle_" data-uid="FastReport.Table.TableCellData.SetStyle*"></a>
+  <h4 id="FastReport_Table_TableCellData_SetStyle_FastReport_Table_TableCell_" data-uid="FastReport.Table.TableCellData.SetStyle(FastReport.Table.TableCell)">SetStyle(TableCell)</h4>
+  <div class="markdown level1 summary"><p>Sets style of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStyle(TableCell style)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td><span class="parametername">style</span></td>
+        <td><p>The new style of the table cell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Table_TableCellData_UpdateLayout_" data-uid="FastReport.Table.TableCellData.UpdateLayout*"></a>
+  <h4 id="FastReport_Table_TableCellData_UpdateLayout_System_Single_System_Single_System_Single_System_Single_" data-uid="FastReport.Table.TableCellData.UpdateLayout(System.Single,System.Single,System.Single,System.Single)">UpdateLayout(Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Updates layout of the table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateLayout(float width, float height, float dx, float dy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the table cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height of the table cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dx</span></td>
+        <td><p>The new value of x coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dy</span></td>
+        <td><p>The new value of y coordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
