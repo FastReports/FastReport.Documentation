@@ -4,7 +4,7 @@ Template consists of one (mostly) or several report pages. Report page, in turn,
 
 ![](images/report-page-band.png)
 
-Report template can consist of several pages. For example, you can create a template containing title-page and a page with data. When creating such a report, the first page will be printed first, then the second page and so on. Every page of template can generate one or  several pages of a prepared report – this depends on the data it contains:
+Report template can consist of several pages. For example, you can create a template containing title-page and a page with data. When creating such a report, the first page will be printed first, then the second page and so on. Every page of template can generate one or  several pages of a prepared report â€“ this depends on the data it contains:
 
 ![](images/reporttemplate-preparedreport.png)
 

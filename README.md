@@ -43,5 +43,3 @@ Here is the FastReport Open Source Documentation.
 [FastReport Open Source](https://github.com/FastReports/FastReport "Click for visiting the FastReport Open Source GitHub")
 
 [FastReport .Net User's Manual](https://www.fast-report.com/public_download/html/UserManFrNET-en/index.html)
-
-
