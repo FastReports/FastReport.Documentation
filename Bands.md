@@ -29,7 +29,7 @@ The "Report Title" band will be printed first. The "Page Header" band will be pr
 
 ![](images/bandsequenceresult.png)
 
-In the process of printing, FastReport checks if there is enough space on the current page of the prepared report, so that the band can be printed. If there isn’t enough space, the following occurs:
+In the process of printing, FastReport checks if there is enough space on the current page of the prepared report, so that the band can be printed. If there isnâ€™t enough space, the following occurs:
 
 - page footer is printed;
 - a new page is added;
@@ -41,7 +41,7 @@ Every band has several useful properties, which affect the printing process.
 | Property | Description |
 |:-|:-|
 | CanGrow, CanShrink | These properties determine whether a band can grow or shrink depending on the size of the objects contained in the band. If both properties are disabled, the band will always have the size specified in the designer. Read more about this in the "Report Creation" chapter. |
-| CanBreak | If the property is enabled, FastReport tries to print a part of the band’s contents on the available space, that is, "break" the band. Read more about this in the "Report Creation" chapter. |
+| CanBreak | If the property is enabled, FastReport tries to print a part of the bandâ€™s contents on the available space, that is, "break" the band. Read more about this in the "Report Creation" chapter. |
 | StartNewPage | Printing a band with such property begins on a new page. This property is usually used when printing groups; that is, every group is printed on a new page. |
 | PrintOnBottom | A band with this property is printed at the bottom of the page, before the "Page Footer" band .This can be useful when printing certain documents, where the total sum is supposed to be printed at the bottom of the page. |
 | RepeatOnEveryPage | The bands - "Data Header", "Data Footer", "Group Header" and "Group Footer" - have got this property. This type of band will be printed on each new page, when data printing is being done. Read more about this in the "Report Creation" chapter. |
