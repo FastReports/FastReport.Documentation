@@ -48,4 +48,6 @@ You can change the value of properties with the help of the "Properties" window.
 | Restrictions | This property restricts certain operations, such as moving, resizing, deleting the object. |
 | Style | You can assign the style name to this property. When this is done, the object will become like it has been indicated in the style. If the parameters of the style changes, the appearance of the object changes as well. |
 
-[Next Page](Data.md)
+---
+
+[Report Pages](ReportPages.md) | [Top Page](README.md) | [Data](Data.md)

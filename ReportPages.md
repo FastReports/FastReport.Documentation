@@ -10,4 +10,6 @@ Report template can consist of several pages. For example, you can create a temp
 
 Report pages are also used when working with subreports. Contrary to other report generators, subreports in FastReport are saved in a separate template page, and not in a separate file. 
 
-[Next Page](Bands.md)
+---
+
+[The Report](Report.md) | [Top Page](README.md) | [Band](Bands.md)

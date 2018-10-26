@@ -6,4 +6,6 @@ The easiest way to create a report template is to use the FastReport Designer Co
 
 The FastReport Designer Community Edition can be downloaded from [this link](https://github.com/FastReports/FastReport/releases/latest).
 
-[Next Page](FastReportOnlineDesigner.md)
+---
+
+[Report Creation](ReportCreation.md) | [Top Page](README.md) | [FastReport Online Designer](FastReportOnlineDesigner.md)

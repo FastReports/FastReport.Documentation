@@ -94,4 +94,6 @@ The prepared report looks as follows:
 
 ![](images/CreateReportFromCode.png)
 
-[Next Page](Exporting.md)
+---
+
+[Report Template File Structure](ReportTemplateFileStructure.md) | [Top Page](README.md) | [Exporting](Exporting.md)

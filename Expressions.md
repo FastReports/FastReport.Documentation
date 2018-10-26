@@ -217,4 +217,6 @@ FastReport converts reference to a report parameter into the following way:
 ((string)Report.GetParameterValue("Parameter1"))
 ```
 
-[Next Page](Script.md)
+---
+
+[Data](Data.md) | [Top Page](README.md) | [Script](Script.md)
