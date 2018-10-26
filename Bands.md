@@ -46,4 +46,6 @@ Every band has several useful properties, which affect the printing process.
 | PrintOnBottom | A band with this property is printed at the bottom of the page, before the "Page Footer" band .This can be useful when printing certain documents, where the total sum is supposed to be printed at the bottom of the page. |
 | RepeatOnEveryPage | The bands - "Data Header", "Data Footer", "Group Header" and "Group Footer" - have got this property. This type of band will be printed on each new page, when data printing is being done. Read more about this in the "Report Creation" chapter. |
 
-[Next Page](ReportObjects.md)
+---
+
+[Previous Page](Bands.md) | [Top Page](README.md) | [Next Page](ReportObjects.md)

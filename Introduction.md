@@ -52,4 +52,6 @@ You can make a report template in several ways:
 
 [![Image of FastReport](images/FastReport-screenshot3-small.png)](images/FastReport-screenshot3.png)
 
-[Next Page](Fundamentals.md)
+---
+
+[Top Page](README.md) | [Next Page](Fundamentals.md)

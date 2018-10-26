@@ -175,4 +175,6 @@ To pass parameter value from your program to the report, use the following code:
 report1.SetParameterValue("EmployeeID", 2);
 ```
 
-[Next Page](Expressions.md)
+---
+
+[Previous Page](ReportObjects.md) | [Top Page](README.md) | [Next Page](Expressions.md)

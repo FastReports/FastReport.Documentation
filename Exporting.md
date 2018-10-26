@@ -9,4 +9,6 @@ The following is an example of exporting a report in Jpeg file.
             report.Export(image, "report.jpg");
 ```
 
-[Next Page](WebReport.md)
+---
+
+[Previous Page](CreatingReportUsingCode.md) | [Top Page](README.md) | [Next Page](WebReport.md)

@@ -63,4 +63,6 @@ The following is an example of the structure of a report template file.
 
 [The original file can be downloaded here.](https://github.com/FastReports/FastReport/blob/master/Demos/Reports/Simple%20List.frx)
 
-[Next Page](CreatingReportUsingCode.md)
+---
+
+[Previous Page](FastReportOnlineDesigner.md) | [Top Page](README.md) | [Next Page](CreatingReportUsingCode.md)

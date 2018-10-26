@@ -266,4 +266,6 @@ For changing the value of the parameter, use the SetParameterValue method of the
 Report.SetParameterValue("MyParameter", 10);
 ```
 
-[Next Page](ReportCreation.md)
+---
+
+[Previous Page](Expressions.md) | [Top Page](README.md) | [Next Page](ReportCreation.md)

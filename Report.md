@@ -10,4 +10,6 @@ Data can be any: this is data, defined in the program, or data from DBMS, for ex
 
 Prepared Report - this is what we see in the preview window (for Desktop application) or in web browser. Prepared report can be previewed, printed, saved in one of the supported formats (.png, jpg, .docx, .xlsx, .pdf  and others).
 
-[Next Page](ReportPages.md)
+---
+
+[Previous Page](Fundamentals.md) | [Top Page](README.md) | [Next Page](ReportPages.md)
