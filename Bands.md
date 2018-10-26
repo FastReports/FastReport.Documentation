@@ -48,4 +48,4 @@ Every band has several useful properties, which affect the printing process.
 
 ---
 
-[Previous Page](Bands.md) | [Top Page](README.md) | [Next Page](ReportObjects.md)
+[Bands](Bands.md) | [Top Page](README.md) | [Report Objects](ReportObjects.md)

@@ -7,4 +7,4 @@
 
 ---
 
-[Previous Page](Script.md) | [Top Page](README.md) | [Next Page](FastReportDesignerCommunityEdition.md)
+[Script](Script.md) | [Top Page](README.md) | [FastReport Designer Community Edition](FastReportDesignerCommunityEdition.md)

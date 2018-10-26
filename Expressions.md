@@ -219,4 +219,4 @@ FastReport converts reference to a report parameter into the following way:
 
 ---
 
-[Previous Page](Data.md) | [Top Page](README.md) | [Next Page](Script.md)
+[Data](Data.md) | [Top Page](README.md) | [Script](Script.md)

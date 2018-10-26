@@ -54,4 +54,4 @@ You can make a report template in several ways:
 
 ---
 
-[Top Page](README.md) | [Next Page](Fundamentals.md)
+[Top Page](README.md) | [Fundamentals](Fundamentals.md)

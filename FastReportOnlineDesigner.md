@@ -12,4 +12,4 @@ FastReport Online Designer can work only together [WebReport](WebReport.md).
 
 ---
 
-[Previous Page](FastReportDesignerCommunityEdition.md) | [Top Page](README.md) | [Next Page](ReportTemplateFileStructure.md)
+[FastReport Designer Community Edition](FastReportDesignerCommunityEdition.md) | [Top Page](README.md) | [Report Template File Structure](ReportTemplateFileStructure.md)

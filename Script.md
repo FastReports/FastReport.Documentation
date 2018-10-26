@@ -268,4 +268,4 @@ Report.SetParameterValue("MyParameter", 10);
 
 ---
 
-[Previous Page](Expressions.md) | [Top Page](README.md) | [Next Page](ReportCreation.md)
+[Expressions](Expressions.md) | [Top Page](README.md) | [Report Creation](ReportCreation.md)

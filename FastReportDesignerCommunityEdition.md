@@ -8,4 +8,4 @@ The FastReport Designer Community Edition can be downloaded from [this link](htt
 
 ---
 
-[Previous Page](ReportCreation.md) | [Top Page](README.md) | [Next Page](FastReportOnlineDesigner.md)
+[Report Creation](ReportCreation.md) | [Top Page](README.md) | [FastReport Online Designer](FastReportOnlineDesigner.md)

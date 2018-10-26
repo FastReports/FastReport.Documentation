@@ -12,4 +12,4 @@ Report pages are also used when working with subreports. Contrary to other repor
 
 ---
 
-[Next Page](Bands.md)
+[The Report](Report.md) | [Top Page](README.md) | [Band](Bands.md)

@@ -11,4 +11,4 @@ The following is an example of exporting a report in Jpeg file.
 
 ---
 
-[Previous Page](CreatingReportUsingCode.md) | [Top Page](README.md) | [Next Page](WebReport.md)
+[Creating Report Using Code](CreatingReportUsingCode.md) | [Top Page](README.md) | [WebReport](WebReport.md)

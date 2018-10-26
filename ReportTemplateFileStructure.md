@@ -65,4 +65,4 @@ The following is an example of the structure of a report template file.
 
 ---
 
-[Previous Page](FastReportOnlineDesigner.md) | [Top Page](README.md) | [Next Page](CreatingReportUsingCode.md)
+[FastReport Online Designer](FastReportOnlineDesigner.md) | [Top Page](README.md) | [Creating Report Using Code](CreatingReportUsingCode.md)

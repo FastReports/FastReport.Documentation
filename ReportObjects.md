@@ -50,4 +50,4 @@ You can change the value of properties with the help of the "Properties" window.
 
 ---
 
-[Previous Page](ReportPages.md) | [Top Page](README.md) | [Next Page](Data.md)
+[Report Pages](ReportPages.md) | [Top Page](README.md) | [Data](Data.md)

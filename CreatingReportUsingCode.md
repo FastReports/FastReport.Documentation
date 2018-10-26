@@ -96,4 +96,4 @@ The prepared report looks as follows:
 
 ---
 
-[Previous Page](ReportTemplateFileStructure.md.md) | [Top Page](README.md) | [Next Page](Exporting.md)
+[Report Template File Structure](ReportTemplateFileStructure.md) | [Top Page](README.md) | [Exporting](Exporting.md)

@@ -4,4 +4,4 @@ In this chapter we will learn the principles of working with a report in the Fas
 
 ---
 
-[Previous Page](Introduction.md) | [Top Page](README.md) | [Next Page](Report.md)
+[Introduction](Introduction.md) | [Top Page](README.md) | [The Report](Report.md)

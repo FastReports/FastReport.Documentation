@@ -12,4 +12,4 @@ Prepared Report - this is what we see in the preview window (for Desktop applica
 
 ---
 
-[Previous Page](Fundamentals.md) | [Top Page](README.md) | [Next Page](ReportPages.md)
+[Fundamentals](Fundamentals.md) | [Top Page](README.md) | [Report Pages](ReportPages.md)
