@@ -1,4 +1,4 @@
-# Script
+# 5. Script
 
 Script is a higher-level programming language, which is part of the report. Script can be written in one of the following .Net languages:
 
@@ -17,7 +17,7 @@ A script is applicable in many places. Using the script, you can do the followin
 
 A script is mainly used for creating objects' event handlers. For creating event handler select the needed object.
 
-```
+```csharp
 private void Text2_BeforePrint(object sender, EventArgs e)
 {
 
@@ -56,13 +56,13 @@ So, by using events of different objects, you can control every step of report f
 
 For referring to report objects (for example, "Text" object) use the name of the object. The following example returns the height of Text1 object:
 
-```
+```csharp
 float height = Text1.Height;
 ```
 
 Note that report's native unit of measurement is screen pixels. Keep it in mind when using such object's properties like Left, Top, Width, and Height. To convert pixels into centimeters and back, use the constants, defined in the "Units" class:
  
-```
+```csharp
 float heightInPixels = Text1.Height;
 float heightInCM = heightInPixels / Units.Centimeters;
 Text1.Height = Units.Centimeters * 5; // 5см
@@ -139,7 +139,7 @@ Item1
 
 For controlling the current element, there are OutlineUp and OutlineRoot methods. The first method moves the pointer to the element, located on a higher level. So, the script
 
-```
+```csharp
 Engine.AddOutline("Item1");
 Engine.AddOutline("Item2");
 Engine.AddOutline("Item3");
@@ -158,7 +158,7 @@ Item1
 
 The OutlineRoot method moves the current element to the root of the outline. For example, the following script:
 
-```
+```csharp
 Engine.AddOutline("Item1");
 Engine.AddOutline("Item2");
 Engine.AddOutline("Item3");
@@ -185,25 +185,25 @@ The GetBookmarkPage method returns the page number on which the bookmark is plac
 
 Contrary to the FastReport expressions (covered in the "Expressions" section), never use square brackets in script for referring to the data sources. Instead of this, use the GetColumnValue method of the Report object, which returns the value of the column:
 
-```
+```csharp
 string productName = (string)Report.GetColumnValue("Products.Name");
 ```
 
 As seen, you need to indicate the name of the source and its column. The name of the source can be compound in case, if we are referring to the data source by using a relation. Details about relations can be found in the "Data" chapter. For example, you can refer to a column of the related data source in this way:
  
-```
+```csharp
 string categoryName = (string)Report.GetColumnValue("Products.Categories.CategoryName");
 ```
 
 For referring to the data source itself, use the GetDataSource method of the Report object:
  
-```
+```csharp
 DataSourceBase ds = Report.GetDataSource("Products");
 ```
 
 Help on properties and methods of the DataSourceBase class can be received from the FastReport.Net Class Reference help system. As a rule, this object is used in the script in the following way:
  
-```
+```csharp
 // get a reference to the data source
 DataSourceBase ds = Report.GetDataSource("Products");
 // initialize it
@@ -224,7 +224,7 @@ while (ds.HasMoreRows)
 
 For reference to system variables, use the GetVariableValue method of the Report object:
 
-```
+```csharp
 DateTime date = (DateTime)Report.GetVariableValue("Date");
 ```
 
@@ -232,13 +232,13 @@ DateTime date = (DateTime)Report.GetVariableValue("Date");
 
 For reference to the total value, use the GetTotalValue method of the Report object:
  
-```
+```csharp
 float sales = Report.GetTotalValue("TotalSales");
 ```
 
 Total value has got the FastReport.Variant type. It can be used directly in any expression, because the FastReport.Variant type is automatically converted to any type. For example:
  
-```
+```csharp
 float tax = Report.GetTotalValue("TotalSales") * 0.2f;
 ```
 
@@ -248,13 +248,13 @@ Reference to the total value can be done at that time when, it is being processe
 
 For referring to report parameters, use the GetParameterValue method of the Report object:
 
-```
+```csharp
 int myParam = (int)Report.GetParameterValue("MyParameter");
 ```
 
 Parameters can be nested. In this case, indicate the name of the parent parameter and after the period, the name of the child parameter:
 
-```
+```csharp
 Report.GetParameterValue("ParentParameter.ChildParameter")
 ```
 
@@ -262,7 +262,7 @@ Parameters have got a definite data type. It is given in the DataType property o
 
 For changing the value of the parameter, use the SetParameterValue method of the report object:
 
-```
+```csharp
 Report.SetParameterValue("MyParameter", 10);
 ```
 

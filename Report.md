@@ -1,4 +1,4 @@
-# The Report
+# 2.1. The Report
 
 The report building process can be represented as follows:
 

@@ -1,4 +1,4 @@
-# Report Pages
+# 2.2. Report Pages
 
 Template consists of one (mostly) or several report pages. Report page, in turn, contains bands. Report objects like Text, Picture and others are placed on the band:
 

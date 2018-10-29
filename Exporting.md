@@ -1,8 +1,8 @@
-# Exporting
+# 7. Exporting
 
 The following is an example of exporting a report in Jpeg file.
 
-```		
+```csharp
             // export to image
             ImageExport image = new ImageExport();
             image.ImageFormat = ImageExportFormat.Jpeg;
@@ -11,4 +11,4 @@ The following is an example of exporting a report in Jpeg file.
 
 ---
 
-[Creating Report Using Code](CreatingReportUsingCode.md) | [Top Page](README.md) | [WebReport](WebReport.md)
+[Creating Report Using Code](CreatingReportUsingCode.md) | [Top Page](README.md) | [Reports in Web](WebReport.md)
