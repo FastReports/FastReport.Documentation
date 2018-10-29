@@ -1,4 +1,4 @@
-# Data
+# 3. Data
 Any report prints some data. In FastReport, you can operate with the following data:
  
 - data sources;
@@ -19,7 +19,7 @@ DB table content is not saved in a report file. Instead, the connection string a
 
 There can be parameters in a query text. Let us see the following query:
  
-```
+```sql
 select * from DVDs
 where Title = @param1
 ```
@@ -54,7 +54,7 @@ In the first way, you pass a value programmatically. Since there is no easy way 
 
 - Pass a value to the report parameter:
 
-```
+```csharp
 report1.SetParameterValue("MyReportParameter", 10);
 ```
 
@@ -171,7 +171,7 @@ Let us see one example of using parameters. Assuming we have a report which prin
 
 To pass parameter value from your program to the report, use the following code:
 
-```
+```csharp
 report1.SetParameterValue("EmployeeID", 2);
 ```
 

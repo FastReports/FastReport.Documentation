@@ -12,29 +12,29 @@ We wish to draw up your attention to the fact that Documentation is under constr
 
 ## Table of Contents
 
-### [Introduction](Introduction.md)
+### 1. [Introduction](Introduction.md)
 
-### [Fundamentals](Fundamentals.md)
-#### [The Report](Report.md)
-#### [Report Pages](ReportPages.md)
-#### [Bands](Bands.md)
-#### [Report Objects](ReportObjects.md)
+### 2. [Fundamentals](Fundamentals.md)
+#### 2.1. [The Report](Report.md)
+#### 2.2. [Report Pages](ReportPages.md)
+#### 2.3. [Bands](Bands.md)
+#### 2.4. [Report Objects](ReportObjects.md)
 
-### [Data](Data.md)
+### 3. [Data](Data.md)
 
-### [Expressions](Expressions.md)
+### 4. [Expressions](Expressions.md)
 
-### [Script](Script.md)
+### 5. [Script](Script.md)
 
-### [Report Creation](ReportCreation.md)
-#### [FastReport Designer Community Edition](FastReportDesignerCommunityEdition.md)
-#### [FastReport Online Designer](FastReportOnlineDesigner.md)
-#### [Report Template File Structure](ReportTemplateFileStructure.md)
-#### [Creating a Report by Using Code](CreatingReportUsingCode.md)
+### 6. [Report Creation](ReportCreation.md)
+#### 6.1. [FastReport Designer Community Edition](FastReportDesignerCommunityEdition.md)
+#### 6.2. [FastReport Online Designer](FastReportOnlineDesigner.md)
+#### 6.3. [Report Template File Structure](ReportTemplateFileStructure.md)
+#### 6.5. [Creating a Report by Using Code](CreatingReportUsingCode.md)
 
-### [Exporting](Exporting.md)
+### 7. [Exporting](Exporting.md)
 
-### [Web Reports](WebReport.md)
+### 8. [Reports in Web](WebReport.md)
 
 ### [APPENDIX I: Examples](Examples.md)
 ### [APPENDIX II: Class Reference](https://fastreports.github.io/FastReport.Documentation/ClassReference/api/FastReport.html)

@@ -1,4 +1,4 @@
-# Bands
+# 2.3. Bands
 
 The band is an object which is located directly on the report page and is a container for other objects like "Text", "Picture" and others.
 

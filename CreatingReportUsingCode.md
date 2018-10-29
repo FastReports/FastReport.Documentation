@@ -2,7 +2,7 @@
 
 Let us consider how to create a report in code.
 
-```
+```csharp
 Report report = new Report();
 // register the "Products" table
 report.RegisterData(dataSet1.Tables["Products"], "Products");

@@ -1,4 +1,4 @@
-# Report Objects
+# 2.4. Report Objects
 
 A wide variety of objects can be used in a report.
 

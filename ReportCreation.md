@@ -1,9 +1,9 @@
-# Report Creation
+# 6. Report Creation
 
-### [FastReport Designer Community Edition](FastReportDesignerCommunityEdition.md)
-### [FastReport Online Designer](FastReportOnlineDesigner.md)
-### [Report Template File Structure](ReportTemplateFileStructure.md)
-### [Creating a Report by Using Code](CreatingReportUsingCode.md)
+### 6.1. [FastReport Designer Community Edition](FastReportDesignerCommunityEdition.md)
+### 6.2. [FastReport Online Designer](FastReportOnlineDesigner.md)
+### 6.3. [Report Template File Structure](ReportTemplateFileStructure.md)
+### 6.4. [Creating a Report by Using Code](CreatingReportUsingCode.md)
 
 ---
 

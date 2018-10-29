@@ -1,4 +1,4 @@
-# Expressions
+# 4. Expressions
 
 In many places in FastReport, expressions are used. For example, the "Text" object can contain expressions in square brackets.
 
@@ -52,7 +52,7 @@ You have access to all .Net objects declared in these assemblies. If you need to
 
 For example, if you want to use a function in your report which was declared in your application, add application assembly (.exe or .dll) in a report assemblies list. After that you can call the function by using namespace of your application. For example, if the following function is defined in application:
 
-```
+```csharp
 namespace Demo
 {
   public static class MyFunctions
@@ -67,7 +67,7 @@ namespace Demo
 
 You can use it in your report in the following way:
 
-```
+```csharp
 Demo.MyFunctions.Func1()
 ```
 
@@ -128,21 +128,21 @@ The error occurs because, you never mix strings with numbers. For this, you need
 
 In this case, we refer to the "Employees.Age" column as if it is an integer variable. And it is so. We know that all expressions are compiled. All non-standard things (like referring to data columns) from a compiler's point of view are converted into another type, which is understandable to a compiler. So, the last expression will be turned into the following form:
 
-```
+```csharp
 (string)(Report.GetColumnValue("Employees.FirstName")) + " " + 
 (int)(Report.GetColumnValue("Employees.Age")).ToString()
 ```
  
 As seen, FastReport changes reference to data columns in the following way:
 
-```
+```csharp
 [Employees.FirstName] --> (string)(Report.GetColumnValue("Employees.FirstName"))
 [Employees.Age] --> (int)(Report.GetColumnValue("Employees.Age"))
 ```
 
 That is, we can use data column in an expressions as if it is a variable having a definite type. For example, the following expression will return the first symbol of an employee's name:
 
-``` 
+```csharp
 [Employees.FirstName].Substring(0, 1)
 ```
 
@@ -171,7 +171,7 @@ This expression returns the current year. As "Date" variable has DateTime type, 
 
 FastReport converts reference to system variable into the following form (for example, the "Date" variable):
 
-``` 
+```csharp 
 ((DateTime)Report.GetVariableValue("Date"))
 ```
 
@@ -185,7 +185,7 @@ In order to refer to a total value, use its name:
  
 FastReport converts reference to totals into the following form:
 
-```
+```csharp
 Report.GetTotalValue("TotalSales")
 ```
  
@@ -213,7 +213,7 @@ Parameters have a definite data type. It is set in the "DataType" property of th
 
 FastReport converts reference to a report parameter into the following way:
 
-``` 
+```csharp
 ((string)Report.GetParameterValue("Parameter1"))
 ```
 
