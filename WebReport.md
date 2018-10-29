@@ -47,9 +47,9 @@ public IActionResult Index()
 </div>
 ```
 
-## FastReport.OpenSource.Web examples
+## FastReport.OpenSource.Web Examples
 
-
+You can see some examples [here](https://github.com/FastReports/FastReport/tree/master/Demos/Core).
 
 ---
 
