@@ -45,3 +45,5 @@ We wish to draw up your attention to the fact that Documentation is under constr
 [FastReport Open Source](https://github.com/FastReports/FastReport "Click for visiting the FastReport Open Source GitHub")
 
 [FastReport .Net User's Manual](https://www.fast-report.com/public_download/html/UserManFrNET-en/index.html)
+
+[FastReport Online Designer](https://www.fast-report.com/en/product/fast-report-online-designer/)
