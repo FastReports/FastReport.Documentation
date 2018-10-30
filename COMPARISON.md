@@ -74,3 +74,4 @@ FastReport Core sources and nupkg files are included in FastReport .Net  Profess
 
 [FastReport .Net and FastReport Core home page](https://www.fast-report.com/en/product/fast-report-net/) 
 
+[FastReport Online Designer](https://www.fast-report.com/en/product/fast-report-online-designer/)
