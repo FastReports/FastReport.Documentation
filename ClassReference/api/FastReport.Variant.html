@@ -1,0 +1,4153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Variant
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Variant
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Variant">
+  
+  
+  <h1 id="FastReport_Variant" data-uid="FastReport.Variant" class="text-break">Struct Variant
+  </h1>
+  <div class="markdown level0 summary"><p>A strongly typed object that readily casts an intrinsic
+object to the other intrinsic types when possible.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IConvertible</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.html">FastReport</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Variant_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Variant : IConvertible</code></pre>
+  </div>
+  <h5 id="FastReport_Variant_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The Variant class is an intrinsic object container structure
+inspired by Visual Basic 6.0&apos;s Variant. The key features
+of a Variant class include the ability to perform typecasts and
+arithmetic between types that are not normally considered compatible.
+For example, if a Variant class contains a string describing a
+number, such as &quot;1.1&quot;, then floating point arithmetic can be
+performed on it.</p>
+<p>Variants are normally considered dangerous because they
+strip away the effectiveness of type safety, which is the
+reason why the Visual Basic 6.0 Variant was left out of
+Visual Basic .NET. However, this implementation restores the
+Variant structure, both as a proof of concept and as a
+restoration of the utility and positive merits of the Variant
+where it can be used responsibly.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Variant__ctor_" data-uid="FastReport.Variant.#ctor*"></a>
+  <h4 id="FastReport_Variant__ctor_System_Object_" data-uid="FastReport.Variant.#ctor(System.Object)">Variant(Object)</h4>
+  <div class="markdown level1 summary"><p>Creates a strongly typed object that readily casts a primitive
+object to the other primitive types when possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Variant_ImplementsIConvertible_" data-uid="FastReport.Variant.ImplementsIConvertible*"></a>
+  <h4 id="FastReport_Variant_ImplementsIConvertible" data-uid="FastReport.Variant.ImplementsIConvertible">ImplementsIConvertible</h4>
+  <div class="markdown level1 summary"><p>Returns true if the <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> property implements <span class="xref">System.IConvertible</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ImplementsIConvertible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_IsDate_" data-uid="FastReport.Variant.IsDate*"></a>
+  <h4 id="FastReport_Variant_IsDate" data-uid="FastReport.Variant.IsDate">IsDate</h4>
+  <div class="markdown level1 summary"><p>Returns true if the value is a date or can be parsed into a date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_IsNumberable_" data-uid="FastReport.Variant.IsNumberable*"></a>
+  <h4 id="FastReport_Variant_IsNumberable" data-uid="FastReport.Variant.IsNumberable">IsNumberable</h4>
+  <div class="markdown level1 summary"><p>Returns true if the <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> property
+is a numeric intrinsic value or else can be parsed into
+a numeric intrinsic value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNumberable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_IsNumeric_" data-uid="FastReport.Variant.IsNumeric*"></a>
+  <h4 id="FastReport_Variant_IsNumeric" data-uid="FastReport.Variant.IsNumeric">IsNumeric</h4>
+  <div class="markdown level1 summary"><p>Returns true if the <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> property
+is a numeric intrinsic value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNumeric { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_IsTimeSpan_" data-uid="FastReport.Variant.IsTimeSpan*"></a>
+  <h4 id="FastReport_Variant_IsTimeSpan" data-uid="FastReport.Variant.IsTimeSpan">IsTimeSpan</h4>
+  <div class="markdown level1 summary"><p>Returns true if the value is a TimeSpan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTimeSpan { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_Type_" data-uid="FastReport.Variant.Type*"></a>
+  <h4 id="FastReport_Variant_Type" data-uid="FastReport.Variant.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The <span class="xref">System.Type</span> of the <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_Value_" data-uid="FastReport.Variant.Value*"></a>
+  <h4 id="FastReport_Variant_Value" data-uid="FastReport.Variant.Value">Value</h4>
+  <div class="markdown level1 summary"><p>The actual value being stored in its original <span class="xref">System.Type</span>,
+returned as an <span class="xref">System.Object</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Variant_CBln_" data-uid="FastReport.Variant.CBln*"></a>
+  <h4 id="FastReport_Variant_CBln_System_Object_" data-uid="FastReport.Variant.CBln(System.Object)">CBln(Object)</h4>
+  <div class="markdown level1 summary"><p>Converts an object to a boolean.
+For any type, if null, returns false.
+For Boolean: true/false.
+For String: &quot;&quot;, &quot;false&quot;, &quot;0&quot;, etc. == false;
+&quot;1&quot;, &quot;true&quot;, etc. == true, else true.
+For numeric intrinsics: 0 == false, else true.
+For any other non-null object, returns true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CBln(object bln)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">bln</span></td>
+        <td><p>The string to be converted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>The boolean value of this string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_Equals_" data-uid="FastReport.Variant.Equals*"></a>
+  <h4 id="FastReport_Variant_Equals_System_Object_" data-uid="FastReport.Variant.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>See <span class="xref">System.Object.Equals(System.Object)</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  
+  
+  <a id="FastReport_Variant_GetHashCode_" data-uid="FastReport.Variant.GetHashCode*"></a>
+  <h4 id="FastReport_Variant_GetHashCode" data-uid="FastReport.Variant.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>See <span class="xref">System.Object.GetHashCode()</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  
+  
+  <a id="FastReport_Variant_GetTypeCode_" data-uid="FastReport.Variant.GetTypeCode*"></a>
+  <h4 id="FastReport_Variant_GetTypeCode" data-uid="FastReport.Variant.GetTypeCode">GetTypeCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the <span class="xref">System.TypeCode</span> for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeCode GetTypeCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TypeCode</span></td>
+        <td><p>The enumerated constant that is the <span class="xref">System.TypeCode</span>
+of the class or value type that implements this interface.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToBoolean_" data-uid="FastReport.Variant.ToBoolean*"></a>
+  <h4 id="FastReport_Variant_ToBoolean" data-uid="FastReport.Variant.ToBoolean">ToBoolean()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Boolean</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent <span class="xref">System.Boolean</span> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ToBoolean()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToBoolean_" data-uid="FastReport.Variant.ToBoolean*"></a>
+  <h4 id="FastReport_Variant_ToBoolean_System_IFormatProvider_" data-uid="FastReport.Variant.ToBoolean(System.IFormatProvider)">ToBoolean(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Boolean</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent <span class="xref">System.Boolean</span> value using the specified culture-specific
+formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ToBoolean(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToByte_" data-uid="FastReport.Variant.ToByte*"></a>
+  <h4 id="FastReport_Variant_ToByte" data-uid="FastReport.Variant.ToByte">ToByte()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Byte</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 8-bit unsigned integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ToByte()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToByte_" data-uid="FastReport.Variant.ToByte*"></a>
+  <h4 id="FastReport_Variant_ToByte_System_IFormatProvider_" data-uid="FastReport.Variant.ToByte(System.IFormatProvider)">ToByte(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Byte</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 8-bit unsigned integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ToByte(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToChar_" data-uid="FastReport.Variant.ToChar*"></a>
+  <h4 id="FastReport_Variant_ToChar" data-uid="FastReport.Variant.ToChar">ToChar()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Char</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent Unicode character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char ToChar()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToChar_" data-uid="FastReport.Variant.ToChar*"></a>
+  <h4 id="FastReport_Variant_ToChar_System_IFormatProvider_" data-uid="FastReport.Variant.ToChar(System.IFormatProvider)">ToChar(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Char</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent Unicode character using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char ToChar(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDateTime_" data-uid="FastReport.Variant.ToDateTime*"></a>
+  <h4 id="FastReport_Variant_ToDateTime" data-uid="FastReport.Variant.ToDateTime">ToDateTime()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.DateTime</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent DateTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime ToDateTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDateTime_" data-uid="FastReport.Variant.ToDateTime*"></a>
+  <h4 id="FastReport_Variant_ToDateTime_System_IFormatProvider_" data-uid="FastReport.Variant.ToDateTime(System.IFormatProvider)">ToDateTime(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.DateTime</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent DateTime using the specified culture-specific
+formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime ToDateTime(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDateTimeOffset_" data-uid="FastReport.Variant.ToDateTimeOffset*"></a>
+  <h4 id="FastReport_Variant_ToDateTimeOffset" data-uid="FastReport.Variant.ToDateTimeOffset">ToDateTimeOffset()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.DateTimeOffset</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent DateTimeOffset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset ToDateTimeOffset()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDateTimeOffset_" data-uid="FastReport.Variant.ToDateTimeOffset*"></a>
+  <h4 id="FastReport_Variant_ToDateTimeOffset_System_IFormatProvider_" data-uid="FastReport.Variant.ToDateTimeOffset(System.IFormatProvider)">ToDateTimeOffset(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.DateTimeOffset</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent DateTimeOffset using the specified culture-specific
+formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset ToDateTimeOffset(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDecimal_" data-uid="FastReport.Variant.ToDecimal*"></a>
+  <h4 id="FastReport_Variant_ToDecimal" data-uid="FastReport.Variant.ToDecimal">ToDecimal()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Decimal</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent Decimal number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal ToDecimal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDecimal_" data-uid="FastReport.Variant.ToDecimal*"></a>
+  <h4 id="FastReport_Variant_ToDecimal_System_IFormatProvider_" data-uid="FastReport.Variant.ToDecimal(System.IFormatProvider)">ToDecimal(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Decimal</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent Decimal number using the specified culture-specific
+formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal ToDecimal(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDouble_" data-uid="FastReport.Variant.ToDouble*"></a>
+  <h4 id="FastReport_Variant_ToDouble" data-uid="FastReport.Variant.ToDouble">ToDouble()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Double</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent double-precision floating-point number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ToDouble()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToDouble_" data-uid="FastReport.Variant.ToDouble*"></a>
+  <h4 id="FastReport_Variant_ToDouble_System_IFormatProvider_" data-uid="FastReport.Variant.ToDouble(System.IFormatProvider)">ToDouble(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Double</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent double-precision floating-point number using the
+specified culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ToDouble(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToInt16_" data-uid="FastReport.Variant.ToInt16*"></a>
+  <h4 id="FastReport_Variant_ToInt16" data-uid="FastReport.Variant.ToInt16">ToInt16()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Int16</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 16-bit signed integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short ToInt16()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToInt16_" data-uid="FastReport.Variant.ToInt16*"></a>
+  <h4 id="FastReport_Variant_ToInt16_System_IFormatProvider_" data-uid="FastReport.Variant.ToInt16(System.IFormatProvider)">ToInt16(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Boolean</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent 16-bit signed integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short ToInt16(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToInt32_" data-uid="FastReport.Variant.ToInt32*"></a>
+  <h4 id="FastReport_Variant_ToInt32" data-uid="FastReport.Variant.ToInt32">ToInt32()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Int32</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 32-bit signed integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ToInt32()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToInt32_" data-uid="FastReport.Variant.ToInt32*"></a>
+  <h4 id="FastReport_Variant_ToInt32_System_IFormatProvider_" data-uid="FastReport.Variant.ToInt32(System.IFormatProvider)">ToInt32(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Int32</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 32-bit signed integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ToInt32(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToInt64_" data-uid="FastReport.Variant.ToInt64*"></a>
+  <h4 id="FastReport_Variant_ToInt64" data-uid="FastReport.Variant.ToInt64">ToInt64()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Int64</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 64-bit signed integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToInt64()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToInt64_" data-uid="FastReport.Variant.ToInt64*"></a>
+  <h4 id="FastReport_Variant_ToInt64_System_IFormatProvider_" data-uid="FastReport.Variant.ToInt64(System.IFormatProvider)">ToInt64(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Int64</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 64-bit signed integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToInt64(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToSByte_" data-uid="FastReport.Variant.ToSByte*"></a>
+  <h4 id="FastReport_Variant_ToSByte" data-uid="FastReport.Variant.ToSByte">ToSByte()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.SByte</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 8-bit signed integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public sbyte ToSByte()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.SByte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToSByte_" data-uid="FastReport.Variant.ToSByte*"></a>
+  <h4 id="FastReport_Variant_ToSByte_System_IFormatProvider_" data-uid="FastReport.Variant.ToSByte(System.IFormatProvider)">ToSByte(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.SByte</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 8-bit signed integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public sbyte ToSByte(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.SByte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToSingle_" data-uid="FastReport.Variant.ToSingle*"></a>
+  <h4 id="FastReport_Variant_ToSingle" data-uid="FastReport.Variant.ToSingle">ToSingle()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Single</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent single-precision floating-point number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ToSingle()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToSingle_" data-uid="FastReport.Variant.ToSingle*"></a>
+  <h4 id="FastReport_Variant_ToSingle_System_IFormatProvider_" data-uid="FastReport.Variant.ToSingle(System.IFormatProvider)">ToSingle(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.Single</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent single-precision floating-point number using the
+specified culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ToSingle(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToString_" data-uid="FastReport.Variant.ToString*"></a>
+  <h4 id="FastReport_Variant_ToString" data-uid="FastReport.Variant.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns <span class="xref">FastReport.Variant.String</span> property unless the value on the right
+is null. If the value on the right is null, returns &quot;&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  
+  
+  <a id="FastReport_Variant_ToString_" data-uid="FastReport.Variant.ToString*"></a>
+  <h4 id="FastReport_Variant_ToString_System_IFormatProvider_" data-uid="FastReport.Variant.ToString(System.IFormatProvider)">ToString(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Converts the value of this instance to an equivalent <span class="xref">FastReport.Variant.String</span>
+using the specified culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToTimeSpan_" data-uid="FastReport.Variant.ToTimeSpan*"></a>
+  <h4 id="FastReport_Variant_ToTimeSpan" data-uid="FastReport.Variant.ToTimeSpan">ToTimeSpan()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.TimeSpan</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent TimeSpan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan ToTimeSpan()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToTimeSpan_" data-uid="FastReport.Variant.ToTimeSpan*"></a>
+  <h4 id="FastReport_Variant_ToTimeSpan_System_IFormatProvider_" data-uid="FastReport.Variant.ToTimeSpan(System.IFormatProvider)">ToTimeSpan(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.TimeSpan</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance to
+an equivalent TimeSpan using the specified culture-specific
+formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan ToTimeSpan(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToType_" data-uid="FastReport.Variant.ToType*"></a>
+  <h4 id="FastReport_Variant_ToType_System_Type_" data-uid="FastReport.Variant.ToType(System.Type)">ToType(Type)</h4>
+  <div class="markdown level1 summary"><p>Attempts to convert or typecast to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object ToType(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type to convert or cast to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The object after typecasting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToType_" data-uid="FastReport.Variant.ToType*"></a>
+  <h4 id="FastReport_Variant_ToType_System_Type_System_IFormatProvider_" data-uid="FastReport.Variant.ToType(System.Type,System.IFormatProvider)">ToType(Type, IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Attempts to convert or typecast to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object ToType(Type type, IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type to convert or cast to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>An <span class="xref">System.IFormatProvider</span>
+interface implementation that supplies culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The object after typecasting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToUInt16_" data-uid="FastReport.Variant.ToUInt16*"></a>
+  <h4 id="FastReport_Variant_ToUInt16" data-uid="FastReport.Variant.ToUInt16">ToUInt16()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.UInt16</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 16-bit unsigned integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public ushort ToUInt16()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToUInt16_" data-uid="FastReport.Variant.ToUInt16*"></a>
+  <h4 id="FastReport_Variant_ToUInt16_System_IFormatProvider_" data-uid="FastReport.Variant.ToUInt16(System.IFormatProvider)">ToUInt16(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.UInt16</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 16-bit unsigned integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public ushort ToUInt16(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToUInt32_" data-uid="FastReport.Variant.ToUInt32*"></a>
+  <h4 id="FastReport_Variant_ToUInt32" data-uid="FastReport.Variant.ToUInt32">ToUInt32()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.UInt32</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 32-bit unsigned integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public uint ToUInt32()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToUInt32_" data-uid="FastReport.Variant.ToUInt32*"></a>
+  <h4 id="FastReport_Variant_ToUInt32_System_IFormatProvider_" data-uid="FastReport.Variant.ToUInt32(System.IFormatProvider)">ToUInt32(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.UInt32</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 32-bit unsigned integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public uint ToUInt32(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToUInt64_" data-uid="FastReport.Variant.ToUInt64*"></a>
+  <h4 id="FastReport_Variant_ToUInt64" data-uid="FastReport.Variant.ToUInt64">ToUInt64()</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.UInt64</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 64-bit unsigned integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public ulong ToUInt64()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_ToUInt64_" data-uid="FastReport.Variant.ToUInt64*"></a>
+  <h4 id="FastReport_Variant_ToUInt64_System_IFormatProvider_" data-uid="FastReport.Variant.ToUInt64(System.IFormatProvider)">ToUInt64(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="FastReport.Variant.html#FastReport_Variant_Value">Value</a> is a <span class="xref">System.UInt64</span>, returns
+as-is. Otherwise, attempts to convert the value of this instance
+to an equivalent 64-bit unsigned integer using the specified
+culture-specific formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public ulong ToUInt64(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The culture-specific formatting information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="FastReport_Variant_op_Addition_" data-uid="FastReport.Variant.op_Addition*"></a>
+  <h4 id="FastReport_Variant_op_Addition_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_Addition(FastReport.Variant,System.Object)">Addition(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Addition operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator +(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><p>A new <a class="xref" href="FastReport.Variant.html">Variant</a> containing the resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Variant_op_Addition_FastReport_Variant_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value on the right is a <span class="xref">System.String</span>
+or a <span class="xref">System.Char</span>,
+the Variant is converted to a string and appended.
+If the value on the right or the Variant
+is a <span class="xref">System.DateTime</span>, arithmetic
+is performed on the <span class="xref">System.DateTime.Ticks</span> property and the
+resulting value is set to the DateTime type.
+Otherwise, if the value on the right is a number, both
+the Variant and the value on the right are
+converted to a <span class="xref">System.Double</span>, the arithmetic
+is performed, and the resulting value is converted back to the
+original type that the Variant previously represented.
+If the type that the Variant previously represented
+cannot contain the resulting value--such as if the type is a
+<span class="xref">System.UInt32</span> and the value is <code>-12</code>--then the
+type will be converted to a type that can contain
+the value, such as <span class="xref">System.Int32</span>.</p>
+</div>
+  
+  
+  <a id="FastReport_Variant_op_BitwiseAnd_" data-uid="FastReport.Variant.op_BitwiseAnd*"></a>
+  <h4 id="FastReport_Variant_op_BitwiseAnd_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_BitwiseAnd(FastReport.Variant,System.Object)">BitwiseAnd(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Bitwise And operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator &amp;(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><p>A new <a class="xref" href="FastReport.Variant.html">Variant</a> containing the resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Variant_op_BitwiseAnd_FastReport_Variant_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value on the right or the Variant
+is a <span class="xref">System.DateTime</span>, arithmetic
+is performed on the <span class="xref">System.DateTime.Ticks</span> property and the
+resulting value is set to the DateTime type.
+Otherwise, if the value on the right is a number, both
+the Variant and the value on the right are
+converted to a <span class="xref">System.Double</span>, the arithmetic
+is performed, and the resulting value is converted back to the
+original type that the Variant previously represented.
+If the type that the Variant previously represented
+cannot contain the resulting value--such as if the type is a
+<span class="xref">System.UInt32</span> and the value is <code>-12</code>--then the
+type will be converted to a type that can contain
+the value, such as <span class="xref">System.Int32</span>.</p>
+</div>
+  
+  
+  <a id="FastReport_Variant_op_BitwiseOr_" data-uid="FastReport.Variant.op_BitwiseOr*"></a>
+  <h4 id="FastReport_Variant_op_BitwiseOr_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_BitwiseOr(FastReport.Variant,System.Object)">BitwiseOr(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Bitwise Or operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator |(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><p>A new <a class="xref" href="FastReport.Variant.html">Variant</a> containing the resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Variant_op_BitwiseOr_FastReport_Variant_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value on the right or the Variant
+is a <span class="xref">System.DateTime</span>, arithmetic
+is performed on the <span class="xref">System.DateTime.Ticks</span> property and the
+resulting value is set to the DateTime type.
+Otherwise, if the value on the right is a number, both
+the Variant and the value on the right are
+converted to a <span class="xref">System.Double</span>, the arithmetic
+is performed, and the resulting value is converted back to the
+original type that the Variant previously represented.
+If the type that the Variant previously represented
+cannot contain the resulting value--such as if the type is a
+<span class="xref">System.UInt32</span> and the value is <code>-12</code>--then the
+type will be converted to a type that can contain
+the value, such as <span class="xref">System.Int32</span>.</p>
+</div>
+  
+  
+  <a id="FastReport_Variant_op_Division_" data-uid="FastReport.Variant.op_Division*"></a>
+  <h4 id="FastReport_Variant_op_Division_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_Division(FastReport.Variant,System.Object)">Division(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Division operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator /(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><p>A new <a class="xref" href="FastReport.Variant.html">Variant</a> containing the resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Variant_op_Division_FastReport_Variant_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value on the right or the Variant
+is a <span class="xref">System.DateTime</span>, arithmetic
+is performed on the <span class="xref">System.DateTime.Ticks</span> property and the
+resulting value is set to the DateTime type.
+Otherwise, if the value on the right is a number, both
+the Variant and the value on the right are
+converted to a <span class="xref">System.Double</span>, the arithmetic
+is performed, and the resulting value is converted back to the
+original type that the Variant previously represented.
+If the type that the Variant previously represented
+cannot contain the resulting value--such as if the type is a
+<span class="xref">System.UInt32</span> and the value is <code>-12</code>--then the
+type will be converted to a type that can contain
+the value, such as <span class="xref">System.Int32</span>.</p>
+</div>
+  
+  
+  <a id="FastReport_Variant_op_Equality_" data-uid="FastReport.Variant.op_Equality*"></a>
+  <h4 id="FastReport_Variant_op_Equality_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_Equality(FastReport.Variant,System.Object)">Equality(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Equality operator.</p>
+<p>First attempts to compare the left value after
+temporarily converting it to the type of the right value.
+If the conversion cannot occur, such as if the value is not an
+intrinsic value type, the comparison occurs at the <span class="xref">System.Object</span>
+level using <strong>Object.Equals</strong>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Equality_" data-uid="FastReport.Variant.op_Equality*"></a>
+  <h4 id="FastReport_Variant_op_Equality_FastReport_Variant_System_String_" data-uid="FastReport.Variant.op_Equality(FastReport.Variant,System.String)">Equality(Variant, String)</h4>
+  <div class="markdown level1 summary"><p>Equality operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Variant subjectVariant, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_GreaterThan_" data-uid="FastReport.Variant.op_GreaterThan*"></a>
+  <h4 id="FastReport_Variant_op_GreaterThan_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_GreaterThan(FastReport.Variant,System.Object)">GreaterThan(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Greater than operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_GreaterThanOrEqual_" data-uid="FastReport.Variant.op_GreaterThanOrEqual*"></a>
+  <h4 id="FastReport_Variant_op_GreaterThanOrEqual_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_GreaterThanOrEqual(FastReport.Variant,System.Object)">GreaterThanOrEqual(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Greater than or equal operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Boolean" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Boolean">Implicit(Variant to Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator bool (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Byte" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Byte">Implicit(Variant to Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator byte (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Char" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Char">Implicit(Variant to Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator char (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_DateTime" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.DateTime">Implicit(Variant to DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator DateTime(Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Decimal" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Decimal">Implicit(Variant to Decimal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator decimal (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Double" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Double">Implicit(Variant to Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator double (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Int16" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Int16">Implicit(Variant to Int16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator short (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Int32" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Int32">Implicit(Variant to Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator int (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Int64" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Int64">Implicit(Variant to Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator long (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_SByte" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.SByte">Implicit(Variant to SByte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator sbyte (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.SByte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_Single" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.Single">Implicit(Variant to Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator float (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_String" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.String">Implicit(Variant to String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_TimeSpan" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.TimeSpan">Implicit(Variant to TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator TimeSpan(Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_UInt16" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.UInt16">Implicit(Variant to UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator ushort (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_UInt32" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.UInt32">Implicit(Variant to UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator uint (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_FastReport_Variant__System_UInt64" data-uid="FastReport.Variant.op_Implicit(FastReport.Variant)~System.UInt64">Implicit(Variant to UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator ulong (Variant v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Boolean__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Boolean)~FastReport.Variant">Implicit(Boolean to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(bool v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Byte__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Byte)~FastReport.Variant">Implicit(Byte to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(byte v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Char__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Char)~FastReport.Variant">Implicit(Char to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(char v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_DateTime__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.DateTime)~FastReport.Variant">Implicit(DateTime to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(DateTime v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Decimal__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Decimal)~FastReport.Variant">Implicit(Decimal to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(decimal v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Double__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Double)~FastReport.Variant">Implicit(Double to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(double v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Int16__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Int16)~FastReport.Variant">Implicit(Int16 to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(short v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Int32__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Int32)~FastReport.Variant">Implicit(Int32 to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(int v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Int64__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Int64)~FastReport.Variant">Implicit(Int64 to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(long v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_SByte__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.SByte)~FastReport.Variant">Implicit(SByte to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator Variant(sbyte v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.SByte</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_Single__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.Single)~FastReport.Variant">Implicit(Single to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(float v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_String__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.String)~FastReport.Variant">Implicit(String to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(string v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_TimeSpan__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.TimeSpan)~FastReport.Variant">Implicit(TimeSpan to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(TimeSpan v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_UInt16__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.UInt16)~FastReport.Variant">Implicit(UInt16 to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator Variant(ushort v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_UInt32__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.UInt32)~FastReport.Variant">Implicit(UInt32 to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator Variant(uint v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Implicit_" data-uid="FastReport.Variant.op_Implicit*"></a>
+  <h4 id="FastReport_Variant_op_Implicit_System_UInt64__FastReport_Variant" data-uid="FastReport.Variant.op_Implicit(System.UInt64)~FastReport.Variant">Implicit(UInt64 to Variant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public static implicit operator Variant(ulong v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Inequality_" data-uid="FastReport.Variant.op_Inequality*"></a>
+  <h4 id="FastReport_Variant_op_Inequality_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_Inequality(FastReport.Variant,System.Object)">Inequality(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Inequality operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>The opposite of ==</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Inequality_" data-uid="FastReport.Variant.op_Inequality*"></a>
+  <h4 id="FastReport_Variant_op_Inequality_FastReport_Variant_System_String_" data-uid="FastReport.Variant.op_Inequality(FastReport.Variant,System.String)">Inequality(Variant, String)</h4>
+  <div class="markdown level1 summary"><p>Equality operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Variant subjectVariant, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_LessThan_" data-uid="FastReport.Variant.op_LessThan*"></a>
+  <h4 id="FastReport_Variant_op_LessThan_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_LessThan(FastReport.Variant,System.Object)">LessThan(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Less than operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_LessThanOrEqual_" data-uid="FastReport.Variant.op_LessThanOrEqual*"></a>
+  <h4 id="FastReport_Variant_op_LessThanOrEqual_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_LessThanOrEqual(FastReport.Variant,System.Object)">LessThanOrEqual(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Less than or equal operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Variant_op_Modulus_" data-uid="FastReport.Variant.op_Modulus*"></a>
+  <h4 id="FastReport_Variant_op_Modulus_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_Modulus(FastReport.Variant,System.Object)">Modulus(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Modulus operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator %(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><p>A new <a class="xref" href="FastReport.Variant.html">Variant</a> containing the resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Variant_op_Modulus_FastReport_Variant_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value on the right or the Variant
+is a <span class="xref">System.DateTime</span>, arithmetic
+is performed on the <span class="xref">System.DateTime.Ticks</span> property and the
+resulting value is set to the DateTime type.
+Otherwise, if the value on the right is a number, both
+the Variant and the value on the right are
+converted to a <span class="xref">System.Double</span>, the arithmetic
+is performed, and the resulting value is converted back to the
+original type that the Variant previously represented.
+If the type that the Variant previously represented
+cannot contain the resulting value--such as if the type is a
+<span class="xref">System.UInt32</span> and the value is <code>-12</code>--then the
+type will be converted to a type that can contain
+the value, such as <span class="xref">System.Int32</span>.</p>
+</div>
+  
+  
+  <a id="FastReport_Variant_op_Multiply_" data-uid="FastReport.Variant.op_Multiply*"></a>
+  <h4 id="FastReport_Variant_op_Multiply_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_Multiply(FastReport.Variant,System.Object)">Multiply(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Multiplication operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator *(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><p>A new <a class="xref" href="FastReport.Variant.html">Variant</a> containing the resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Variant_op_Multiply_FastReport_Variant_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value on the right or the Variant
+is a <span class="xref">System.DateTime</span>, arithmetic
+is performed on the <span class="xref">System.DateTime.Ticks</span> property and the
+resulting value is set to the DateTime type.
+Otherwise, if the value on the right is a number, both
+the Variant and the value on the right are
+converted to a <span class="xref">System.Double</span>, the arithmetic
+is performed, and the resulting value is converted back to the
+original type that the Variant previously represented.
+If the type that the Variant previously represented
+cannot contain the resulting value--such as if the type is a
+<span class="xref">System.UInt32</span> and the value is <code>-12</code>--then the
+type will be converted to a type that can contain
+the value, such as <span class="xref">System.Int32</span>.</p>
+</div>
+  
+  
+  <a id="FastReport_Variant_op_Subtraction_" data-uid="FastReport.Variant.op_Subtraction*"></a>
+  <h4 id="FastReport_Variant_op_Subtraction_FastReport_Variant_System_Object_" data-uid="FastReport.Variant.op_Subtraction(FastReport.Variant,System.Object)">Subtraction(Variant, Object)</h4>
+  <div class="markdown level1 summary"><p>Subtraction operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator -(Variant subjectVariant, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><p>A new <a class="xref" href="FastReport.Variant.html">Variant</a> containing the resulting value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Variant_op_Subtraction_FastReport_Variant_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value on the right or the Variant
+is a <span class="xref">System.DateTime</span>, arithmetic
+is performed on the <span class="xref">System.DateTime.Ticks</span> property and the
+resulting value is set to the DateTime type.
+Otherwise, if the value on the right is a number, both
+the Variant and the value on the right are
+converted to a <span class="xref">System.Double</span>, the arithmetic
+is performed, and the resulting value is converted back to the
+original type that the Variant previously represented.
+If the type that the Variant previously represented
+cannot contain the resulting value--such as if the type is a
+<span class="xref">System.UInt32</span> and the value is <code>-12</code>--then the
+type will be converted to a type that can contain
+the value, such as <span class="xref">System.Int32</span>.</p>
+</div>
+  
+  
+  <a id="FastReport_Variant_op_UnaryNegation_" data-uid="FastReport.Variant.op_UnaryNegation*"></a>
+  <h4 id="FastReport_Variant_op_UnaryNegation_FastReport_Variant_" data-uid="FastReport.Variant.op_UnaryNegation(FastReport.Variant)">UnaryNegation(Variant)</h4>
+  <div class="markdown level1 summary"><p>Unary minus operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant operator -(Variant subjectVariant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td><span class="parametername">subjectVariant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IConvertible</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

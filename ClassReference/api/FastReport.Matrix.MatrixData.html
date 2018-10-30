@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MatrixData
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MatrixData
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Matrix.MatrixData">
+  
+  
+  <h1 id="FastReport_Matrix_MatrixData" data-uid="FastReport.Matrix.MatrixData" class="text-break">Class MatrixData
+  </h1>
+  <div class="markdown level0 summary"><p>Contains a set of properties and methods to hold and manipulate the matrix descriptors.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MatrixData</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Matrix.html">FastReport.Matrix</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Matrix_MatrixData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MatrixData</code></pre>
+  </div>
+  <h5 id="FastReport_Matrix_MatrixData_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class contains three collections of descriptors such as <a class="xref" href="FastReport.Matrix.MatrixData.html#FastReport_Matrix_MatrixData_Columns">Columns</a>,
+<a class="xref" href="FastReport.Matrix.MatrixData.html#FastReport_Matrix_MatrixData_Rows">Rows</a> and <a class="xref" href="FastReport.Matrix.MatrixData.html#FastReport_Matrix_MatrixData_Cells">Cells</a>. Use collections' methods to add/remove
+descriptors. When you are done, call the <a class="xref" href="FastReport.Matrix.MatrixObject.html#FastReport_Matrix_MatrixObject_BuildTemplate">BuildTemplate()</a>
+method to refresh the matrix.</p>
+<p>To fill a matrix in code, use the <strong>AddValue</strong> method.
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Matrix_MatrixData_Cells_" data-uid="FastReport.Matrix.MatrixData.Cells*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_Cells" data-uid="FastReport.Matrix.MatrixData.Cells">Cells</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of data cell descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixCells Cells { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Matrix.MatrixCells.html">MatrixCells</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixData_Cells_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: after you change something in this collection, call the
+<a class="xref" href="FastReport.Matrix.MatrixObject.html#FastReport_Matrix_MatrixObject_BuildTemplate">BuildTemplate()</a> method to refresh the matrix.</p>
+</div>
+  
+  
+  <a id="FastReport_Matrix_MatrixData_Columns_" data-uid="FastReport.Matrix.MatrixData.Columns*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_Columns" data-uid="FastReport.Matrix.MatrixData.Columns">Columns</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of column descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixHeader Columns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Matrix.MatrixHeader.html">MatrixHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixData_Columns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: after you change something in this collection, call the
+<a class="xref" href="FastReport.Matrix.MatrixObject.html#FastReport_Matrix_MatrixObject_BuildTemplate">BuildTemplate()</a> method to refresh the matrix.</p>
+</div>
+  
+  
+  <a id="FastReport_Matrix_MatrixData_Rows_" data-uid="FastReport.Matrix.MatrixData.Rows*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_Rows" data-uid="FastReport.Matrix.MatrixData.Rows">Rows</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of row descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixHeader Rows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Matrix.MatrixHeader.html">MatrixHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixData_Rows_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: after you change something in this collection, call the
+<a class="xref" href="FastReport.Matrix.MatrixObject.html#FastReport_Matrix_MatrixObject_BuildTemplate">BuildTemplate()</a> method to refresh the matrix.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Matrix_MatrixData_AddValue_" data-uid="FastReport.Matrix.MatrixData.AddValue*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_AddValue_System_Object___System_Object___System_Object___" data-uid="FastReport.Matrix.MatrixData.AddValue(System.Object[],System.Object[],System.Object[])">AddValue(Object[], Object[], Object[])</h4>
+  <div class="markdown level1 summary"><p>Adds a value in the matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(object[] columnValues, object[] rowValues, object[] cellValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">columnValues</span></td>
+        <td><p>Array of column values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">rowValues</span></td>
+        <td><p>Array of row values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">cellValues</span></td>
+        <td><p>Array of data values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixData_AddValue_System_Object___System_Object___System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The number of elements in an array passed to this method must be the same as
+a number of descriptors in the appropriate collection. That is, if your matrix
+has one column, two row and one cell descriptors (in <strong>Columns</strong>, <strong>Rows</strong> and
+<strong>Cells</strong> collections respectively), you have to pass one-element array for the
+<strong>columnValues</strong> param, two-element array for the <strong>rowValues</strong> and one-element
+array for the <strong>cellValues</strong>.</p>
+</div>
+  <h5 id="FastReport_Matrix_MatrixData_AddValue_System_Object___System_Object___System_Object____examples">Examples</h5>
+  <p>This example demonstrates how to fill a simple matrix that contains one column,
+row and cell.</p>
+<pre><code>MatrixObject matrix;
+matrix.Data.AddValue(
+  new object[] { 1996 },
+  new object[] { &quot;Andrew Fuller&quot; }, 
+  new object[] { 123.45f });
+
+// this will produce the following result:
+//               |   1996   |
+// --------------+----------+
+// Andrew Fuller |    123.45|
+// --------------+----------+</code></pre>
+
+  
+  
+  <a id="FastReport_Matrix_MatrixData_AddValue_" data-uid="FastReport.Matrix.MatrixData.AddValue*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_AddValue_System_Object___System_Object___System_Object___System_Int32_" data-uid="FastReport.Matrix.MatrixData.AddValue(System.Object[],System.Object[],System.Object[],System.Int32)">AddValue(Object[], Object[], Object[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a value in the matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(object[] columnValues, object[] rowValues, object[] cellValues, int dataRowNo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">columnValues</span></td>
+        <td><p>Array of column values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">rowValues</span></td>
+        <td><p>Array of row values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">cellValues</span></td>
+        <td><p>Array of data values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dataRowNo</span></td>
+        <td><p>Datasource row index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Matrix_MatrixData_AddValue_System_Object___System_Object___System_Object___System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the <a class="xref" href="FastReport.Matrix.MatrixData.html#FastReport_Matrix_MatrixData_AddValue_System_Object___System_Object___System_Object___">AddValue(Object[], Object[], Object[])</a> method for more details.</p>
+</div>
+  
+  
+  <a id="FastReport_Matrix_MatrixData_Clear_" data-uid="FastReport.Matrix.MatrixData.Clear*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_Clear" data-uid="FastReport.Matrix.MatrixData.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears all descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Matrix_MatrixData_GetValue_" data-uid="FastReport.Matrix.MatrixData.GetValue*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_GetValue_System_Int32_System_Int32_System_Int32_" data-uid="FastReport.Matrix.MatrixData.GetValue(System.Int32,System.Int32,System.Int32)">GetValue(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a value with specified column, row and cell indicies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetValue(int columnIndex, int rowIndex, int cellIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnIndex</span></td>
+        <td><p>Index of a column.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowIndex</span></td>
+        <td><p>Index of a row.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cellIndex</span></td>
+        <td><p>Index of a cell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of a cell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Matrix_MatrixData_SetValue_" data-uid="FastReport.Matrix.MatrixData.SetValue*"></a>
+  <h4 id="FastReport_Matrix_MatrixData_SetValue_System_Int32_System_Int32_System_Object_" data-uid="FastReport.Matrix.MatrixData.SetValue(System.Int32,System.Int32,System.Object)">SetValue(Int32, Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets the cell's value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(int columnIndex, int rowIndex, object cellValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnIndex</span></td>
+        <td><p>Index of a column.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowIndex</span></td>
+        <td><p>Index of a row.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">cellValue</span></td>
+        <td><p>The new value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

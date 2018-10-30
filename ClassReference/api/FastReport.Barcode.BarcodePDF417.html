@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BarcodePDF417
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BarcodePDF417
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Barcode.BarcodePDF417">
+  
+  
+  <h1 id="FastReport_Barcode_BarcodePDF417" data-uid="FastReport.Barcode.BarcodePDF417" class="text-break">Class BarcodePDF417
+  </h1>
+  <div class="markdown level0 summary"><p>Generates the 2D PDF417 barcode.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.Barcode.BarcodeBase.html">BarcodeBase</a></div>
+    <div class="level2"><a class="xref" href="FastReport.Barcode.Barcode2DBase.html">Barcode2DBase</a></div>
+    <div class="level3"><span class="xref">BarcodePDF417</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Barcode.BarcodeBase.html#FastReport_Barcode_BarcodeBase_Name">BarcodeBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Barcode.BarcodeBase.html#FastReport_Barcode_BarcodeBase_Color">BarcodeBase.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Barcode.BarcodeBase.html#FastReport_Barcode_BarcodeBase_Clone">BarcodeBase.Clone()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Barcode.html">FastReport.Barcode</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Barcode_BarcodePDF417_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BarcodePDF417 : Barcode2DBase</code></pre>
+  </div>
+  <h5 id="FastReport_Barcode_BarcodePDF417_examples"><strong>Examples</strong></h5>
+  <p>This example shows how to configure the BarcodeObject to display PDF417 barcode.</p>
+<pre><code>BarcodeObject barcode;
+...
+barcode.Barcode = new BarcodePDF417();
+(barcode.Barcode as BarcodePDF417).CompactionMode = PDF417CompactionMode.Text;</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417__ctor_" data-uid="FastReport.Barcode.BarcodePDF417.#ctor*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417__ctor" data-uid="FastReport.Barcode.BarcodePDF417.#ctor">BarcodePDF417()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Barcode.BarcodePDF417.html">BarcodePDF417</a> class with default settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarcodePDF417()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_AspectRatio_" data-uid="FastReport.Barcode.BarcodePDF417.AspectRatio*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_AspectRatio" data-uid="FastReport.Barcode.BarcodePDF417.AspectRatio">AspectRatio</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the barcode aspect ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AspectRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Barcode_BarcodePDF417_AspectRatio_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A ratio or 0.5 will make the barcode width twice as large as the height.</p>
+</div>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_CodePage_" data-uid="FastReport.Barcode.BarcodePDF417.CodePage*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_CodePage" data-uid="FastReport.Barcode.BarcodePDF417.CodePage">CodePage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the code page used for text conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CodePage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Barcode_BarcodePDF417_CodePage_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this property to encode non-ASCII characters. For example, set this
+property to <strong>1251</strong> to use Window CP1251.</p>
+</div>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_Columns_" data-uid="FastReport.Barcode.BarcodePDF417.Columns*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_Columns" data-uid="FastReport.Barcode.BarcodePDF417.Columns">Columns</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the number of barcode data columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Columns { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Barcode_BarcodePDF417_Columns_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To calculate the necessary number of columns and rows, set the <a class="xref" href="FastReport.Barcode.BarcodePDF417.html#FastReport_Barcode_BarcodePDF417_Columns">Columns</a>
+and <a class="xref" href="FastReport.Barcode.BarcodePDF417.html#FastReport_Barcode_BarcodePDF417_Rows">Rows</a> properties to 0. In this case, the <a class="xref" href="FastReport.Barcode.BarcodePDF417.html#FastReport_Barcode_BarcodePDF417_AspectRatio">AspectRatio</a> property
+should be set to desired aspect ratio.</p>
+</div>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_CompactionMode_" data-uid="FastReport.Barcode.BarcodePDF417.CompactionMode*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_CompactionMode" data-uid="FastReport.Barcode.BarcodePDF417.CompactionMode">CompactionMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the compaction mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PDF417CompactionMode CompactionMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Barcode.PDF417CompactionMode.html">PDF417CompactionMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_ErrorCorrection_" data-uid="FastReport.Barcode.BarcodePDF417.ErrorCorrection*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_ErrorCorrection" data-uid="FastReport.Barcode.BarcodePDF417.ErrorCorrection">ErrorCorrection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the error level correction used for the barcode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PDF417ErrorCorrection ErrorCorrection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Barcode.PDF417ErrorCorrection.html">PDF417ErrorCorrection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_PixelSize_" data-uid="FastReport.Barcode.BarcodePDF417.PixelSize*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_PixelSize" data-uid="FastReport.Barcode.BarcodePDF417.PixelSize">PixelSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size PixelSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_Rows_" data-uid="FastReport.Barcode.BarcodePDF417.Rows*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_Rows" data-uid="FastReport.Barcode.BarcodePDF417.Rows">Rows</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the number of barcode data rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Rows { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Barcode_BarcodePDF417_Rows_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To calculate the necessary number of columns and rows, set the <a class="xref" href="FastReport.Barcode.BarcodePDF417.html#FastReport_Barcode_BarcodePDF417_Columns">Columns</a>
+and <a class="xref" href="FastReport.Barcode.BarcodePDF417.html#FastReport_Barcode_BarcodePDF417_Rows">Rows</a> properties to 0. In this case, the <a class="xref" href="FastReport.Barcode.BarcodePDF417.html#FastReport_Barcode_BarcodePDF417_AspectRatio">AspectRatio</a> property
+should be set to desired aspect ratio.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Barcode_BarcodePDF417_Assign_" data-uid="FastReport.Barcode.BarcodePDF417.Assign*"></a>
+  <h4 id="FastReport_Barcode_BarcodePDF417_Assign_FastReport_Barcode_BarcodeBase_" data-uid="FastReport.Barcode.BarcodePDF417.Assign(FastReport.Barcode.BarcodeBase)">Assign(BarcodeBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Assign(BarcodeBase source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Barcode.BarcodeBase.html">BarcodeBase</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Barcode.BarcodeBase.html#FastReport_Barcode_BarcodeBase_Assign_FastReport_Barcode_BarcodeBase_">BarcodeBase.Assign(BarcodeBase)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

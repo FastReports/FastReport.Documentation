@@ -1,0 +1,1597 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Dictionary
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Dictionary
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Data.Dictionary">
+  
+  
+  <h1 id="FastReport_Data_Dictionary" data-uid="FastReport.Data.Dictionary" class="text-break">Class Dictionary
+  </h1>
+  <div class="markdown level0 summary"><p>This class stores all report data items such as datasources, connections, relations, parameters,
+system variables.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.Base.html">Base</a></div>
+    <div class="level2"><span class="xref">Dictionary</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></div>
+    <div><a class="xref" href="FastReport.IParent.html">IParent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Name">Base.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Restrictions">Base.Restrictions</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Flags">Base.Flags</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Parent">Base.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseName">Base.BaseName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ClassName">Base.ClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Report">Base.Report</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Page">Base.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ChildObjects">Base.ChildObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AllObjects">Base.AllObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ZOrder">Base.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsAncestor">Base.IsAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsDesigning">Base.IsDesigning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsPrinting">Base.IsPrinting</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsRunning">Base.IsRunning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OriginalComponent">Base.OriginalComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetProp_FastReport_Base_FastReport_Base_">Base.SetProp(Base, Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FloatDiff_System_Single_System_Single_">Base.FloatDiff(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">Base.DeserializeSubItems(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractDefaultMacros_System_String_">Base.ExtractDefaultMacros(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Dispose_System_Boolean_">Base.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetFlags_FastReport_Flags_System_Boolean_">Base.SetFlags(Flags, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetReport_FastReport_Report_">Base.SetReport(Report)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetName_System_String_">Base.SetName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParent_FastReport_Base_">Base.SetParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParentCore_FastReport_Base_">Base.SetParentCore(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FindObject_System_String_">Base.FindObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_CreateUniqueName">Base.CreateUniqueName()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">Base.AssignAll(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasParent_FastReport_Base_">Base.HasParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasFlag_FastReport_Flags_">Base.HasFlag(Flags)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasRestriction_FastReport_Restrictions_">Base.HasRestriction(Restrictions)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_InvokeEvent_System_String_System_Object_">Base.InvokeEvent(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OnAfterLoad">Base.OnAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetExpressions">Base.GetExpressions()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetCustomScript">Base.GetCustomScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractMacros">Base.ExtractMacros()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsHaveToConvert_System_Object_">Base.IsHaveToConvert(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetConvertedObjects">Base.GetConvertedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ForEachAllConvectedObjects_System_Object_">Base.ForEachAllConvectedObjects(Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Data.html">FastReport.Data</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Data_Dictionary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Dictionary : Base, IFRSerializable, IParent</code></pre>
+  </div>
+  <h5 id="FastReport_Data_Dictionary_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>You can access the report dictionary via <strong>Report.Dictionary</strong> property.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Data_Dictionary__ctor_" data-uid="FastReport.Data.Dictionary.#ctor*"></a>
+  <h4 id="FastReport_Data_Dictionary__ctor" data-uid="FastReport.Data.Dictionary.#ctor">Dictionary()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FastReport.Data.Dictionary.html">Dictionary</a> class with default settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Data_Dictionary_Connections_" data-uid="FastReport.Data.Dictionary.Connections*"></a>
+  <h4 id="FastReport_Data_Dictionary_Connections" data-uid="FastReport.Data.Dictionary.Connections">Connections</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of connection objects available in a report.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionCollection Connections { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.ConnectionCollection.html">ConnectionCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_CubeSources_" data-uid="FastReport.Data.Dictionary.CubeSources*"></a>
+  <h4 id="FastReport_Data_Dictionary_CubeSources" data-uid="FastReport.Data.Dictionary.CubeSources">CubeSources</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of cubesources available in a report.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CubeSourceCollection CubeSources { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.CubeSourceCollection.html">CubeSourceCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_CubeSources_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Usually you don't need to use this property. It contains only cubesources
+registered using the <strong>RegisterData</strong> method.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_DataSources_" data-uid="FastReport.Data.Dictionary.DataSources*"></a>
+  <h4 id="FastReport_Data_Dictionary_DataSources" data-uid="FastReport.Data.Dictionary.DataSources">DataSources</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of datasources available in a report.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataSourceCollection DataSources { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.DataSourceCollection.html">DataSourceCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_DataSources_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Usually you don't need to use this property. It contains only datasources
+registered using the <strong>RegisterData</strong> method. All other datasources are contained
+in connection objects and may be accessed via <a class="xref" href="FastReport.Data.Dictionary.html#FastReport_Data_Dictionary_Connections">Connections</a> property.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_Parameters_" data-uid="FastReport.Data.Dictionary.Parameters*"></a>
+  <h4 id="FastReport_Data_Dictionary_Parameters" data-uid="FastReport.Data.Dictionary.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParameterCollection Parameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.ParameterCollection.html">ParameterCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_Parameters_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Another way to access parameters is to use the <strong>Report.Parameters</strong> property
+which is actually a shortcut to this property. You also may use the <strong>Report.GetParameter</strong>
+and <strong>Report.GetParameterValue</strong> methods.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_RegisteredItems_" data-uid="FastReport.Data.Dictionary.RegisteredItems*"></a>
+  <h4 id="FastReport_Data_Dictionary_RegisteredItems" data-uid="FastReport.Data.Dictionary.RegisteredItems">RegisteredItems</h4>
+  <div class="markdown level1 summary"><p>Gets a list of registered items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Dictionary.RegDataItem&gt; RegisteredItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FastReport.Data.Dictionary.RegDataItem.html">Dictionary.RegDataItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_RegisteredItems_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_Relations_" data-uid="FastReport.Data.Dictionary.Relations*"></a>
+  <h4 id="FastReport_Data_Dictionary_Relations" data-uid="FastReport.Data.Dictionary.Relations">Relations</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of relations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelationCollection Relations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.RelationCollection.html">RelationCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_SystemVariables_" data-uid="FastReport.Data.Dictionary.SystemVariables*"></a>
+  <h4 id="FastReport_Data_Dictionary_SystemVariables" data-uid="FastReport.Data.Dictionary.SystemVariables">SystemVariables</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of system variables like Date, PageNofM etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemVariables SystemVariables { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.SystemVariables.html">SystemVariables</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_SystemVariables_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Another way to access a system variable is to use the <strong>Report.GetVariableValue</strong> method.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_Totals_" data-uid="FastReport.Data.Dictionary.Totals*"></a>
+  <h4 id="FastReport_Data_Dictionary_Totals" data-uid="FastReport.Data.Dictionary.Totals">Totals</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of totals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TotalCollection Totals { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.TotalCollection.html">TotalCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_Totals_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Another way to get a total value is to use the <strong>Report.GetTotalValue</strong> method.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Data_Dictionary_AddChild_" data-uid="FastReport.Data.Dictionary.AddChild*"></a>
+  <h4 id="FastReport_Data_Dictionary_AddChild_FastReport_Base_" data-uid="FastReport.Data.Dictionary.AddChild(FastReport.Base)">AddChild(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChild(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_Assign_" data-uid="FastReport.Data.Dictionary.Assign*"></a>
+  <h4 id="FastReport_Data_Dictionary_Assign_FastReport_Base_" data-uid="FastReport.Data.Dictionary.Assign(FastReport.Base)">Assign(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Assign(Base source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Base.Assign(Base)</a></div>
+  
+  
+  <a id="FastReport_Data_Dictionary_CanContain_" data-uid="FastReport.Data.Dictionary.CanContain*"></a>
+  <h4 id="FastReport_Data_Dictionary_CanContain_FastReport_Base_" data-uid="FastReport.Data.Dictionary.CanContain(FastReport.Base)">CanContain(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanContain(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_ClearRegisteredData_" data-uid="FastReport.Data.Dictionary.ClearRegisteredData*"></a>
+  <h4 id="FastReport_Data_Dictionary_ClearRegisteredData" data-uid="FastReport.Data.Dictionary.ClearRegisteredData">ClearRegisteredData()</h4>
+  <div class="markdown level1 summary"><p>Clears all registered data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearRegisteredData()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Data_Dictionary_CreateUniqueAlias_" data-uid="FastReport.Data.Dictionary.CreateUniqueAlias*"></a>
+  <h4 id="FastReport_Data_Dictionary_CreateUniqueAlias_System_String_" data-uid="FastReport.Data.Dictionary.CreateUniqueAlias(System.String)">CreateUniqueAlias(String)</h4>
+  <div class="markdown level1 summary"><p>Creates unique alias for data item such as connection, datasource or relation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreateUniqueAlias(string alias)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">alias</span></td>
+        <td><p>The base alias.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The new unique alias.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_CreateUniqueAlias_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this method to create unique alias of the data item. It is necessary when you create new
+items in code to avoid conflicts with existing report items.
+<example>This example show how to add a new table:<p>
+<pre><code>Report report1;
+DataConnectionBase conn = report1.Dictionary.Connections.FindByName(&quot;Connection1&quot;);
+TableDataSource table = new TableDataSource();
+table.TableName = &quot;Employees&quot;;
+table.Name = report1.Dictionary.CreateUniqueName(&quot;EmployeesTable&quot;);
+table.Alias = report1.Dictionary.CreateUniqueAlias(&quot;Employees&quot;);
+conn.Tables.Add(table);</code></pre>
+</example>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_CreateUniqueName_" data-uid="FastReport.Data.Dictionary.CreateUniqueName*"></a>
+  <h4 id="FastReport_Data_Dictionary_CreateUniqueName_System_String_" data-uid="FastReport.Data.Dictionary.CreateUniqueName(System.String)">CreateUniqueName(String)</h4>
+  <div class="markdown level1 summary"><p>Creates unique name for data item such as connection, datasource, relation, parameter or total.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreateUniqueName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The base name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The new unique name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_CreateUniqueName_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this method to create unique name of the data item. It is necessary when you create new
+items in code to avoid conflicts with existing report items.
+<example>This example show how to add a new parameter:<p>
+<pre><code>Report report1;
+Parameter par = new Parameter();
+par.Name = report1.Dictionary.CreateUniqueName(&quot;Parameter&quot;);
+report1.Parameters.Add(par);</code></pre>
+</example>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_Deserialize_" data-uid="FastReport.Data.Dictionary.Deserialize*"></a>
+  <h4 id="FastReport_Data_Dictionary_Deserialize_FastReport_Utils_FRReader_" data-uid="FastReport.Data.Dictionary.Deserialize(FastReport.Utils.FRReader)">Deserialize(FRReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Deserialize(FRReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a></div>
+  
+  
+  <a id="FastReport_Data_Dictionary_FindByAlias_" data-uid="FastReport.Data.Dictionary.FindByAlias*"></a>
+  <h4 id="FastReport_Data_Dictionary_FindByAlias_System_String_" data-uid="FastReport.Data.Dictionary.FindByAlias(System.String)">FindByAlias(String)</h4>
+  <div class="markdown level1 summary"><p>Finds a data item such as connection, datasource or relation by its alias.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataComponentBase FindByAlias(string alias)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">alias</span></td>
+        <td><p>The item's alias.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.DataComponentBase.html">DataComponentBase</a></td>
+        <td><p>The data item if found; otherwise, <strong>null</strong>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_FindByName_" data-uid="FastReport.Data.Dictionary.FindByName*"></a>
+  <h4 id="FastReport_Data_Dictionary_FindByName_System_String_" data-uid="FastReport.Data.Dictionary.FindByName(System.String)">FindByName(String)</h4>
+  <div class="markdown level1 summary"><p>Finds a data item such as connection, datasource, relation, parameter or total by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Base FindByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The item's name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><p>The data item if found; otherwise, <strong>null</strong>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_FindDataComponent_" data-uid="FastReport.Data.Dictionary.FindDataComponent*"></a>
+  <h4 id="FastReport_Data_Dictionary_FindDataComponent_System_String_" data-uid="FastReport.Data.Dictionary.FindDataComponent(System.String)">FindDataComponent(String)</h4>
+  <div class="markdown level1 summary"><p>Finds a data component that matches the specified reference name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataComponentBase FindDataComponent(string referenceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">referenceName</span></td>
+        <td><p>The name to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.DataComponentBase.html">DataComponentBase</a></td>
+        <td><p>The <strong>DataComponentBase</strong> object if found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_FindDataComponent_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_FindDataTableSource_" data-uid="FastReport.Data.Dictionary.FindDataTableSource*"></a>
+  <h4 id="FastReport_Data_Dictionary_FindDataTableSource_DataTable_" data-uid="FastReport.Data.Dictionary.FindDataTableSource(DataTable)">FindDataTableSource(DataTable)</h4>
+  <div class="markdown level1 summary"><p>Finds a datasource that matches the specified DataTable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataSourceBase FindDataTableSource(DataTable table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataTable</span></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>The <strong>DataTable</strong> object to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.DataSourceBase.html">DataSourceBase</a></td>
+        <td><p>The <strong>DataSourceBase</strong> object if found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_FindDataTableSource_DataTable__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_GetChildObjects_" data-uid="FastReport.Data.Dictionary.GetChildObjects*"></a>
+  <h4 id="FastReport_Data_Dictionary_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.Data.Dictionary.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetChildObjects(ObjectCollection list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_GetChildOrder_" data-uid="FastReport.Data.Dictionary.GetChildOrder*"></a>
+  <h4 id="FastReport_Data_Dictionary_GetChildOrder_FastReport_Base_" data-uid="FastReport.Data.Dictionary.GetChildOrder(FastReport.Base)">GetChildOrder(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChildOrder(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_Load_" data-uid="FastReport.Data.Dictionary.Load*"></a>
+  <h4 id="FastReport_Data_Dictionary_Load_System_IO_Stream_" data-uid="FastReport.Data.Dictionary.Load(System.IO.Stream)">Load(Stream)</h4>
+  <div class="markdown level1 summary"><p>Loads the dictionary from a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to load from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_Load_" data-uid="FastReport.Data.Dictionary.Load*"></a>
+  <h4 id="FastReport_Data_Dictionary_Load_System_String_" data-uid="FastReport.Data.Dictionary.Load(System.String)">Load(String)</h4>
+  <div class="markdown level1 summary"><p>Loads the dictionary from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The name of a file to load from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_Merge_" data-uid="FastReport.Data.Dictionary.Merge*"></a>
+  <h4 id="FastReport_Data_Dictionary_Merge_FastReport_Data_Dictionary_" data-uid="FastReport.Data.Dictionary.Merge(FastReport.Data.Dictionary)">Merge(Dictionary)</h4>
+  <div class="markdown level1 summary"><p>Merges this dictionary with another <strong>Dictionary</strong>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Merge(Dictionary source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.Dictionary.html">Dictionary</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Another dictionary to merge the data from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_RegisterBusinessObject_" data-uid="FastReport.Data.Dictionary.RegisterBusinessObject*"></a>
+  <h4 id="FastReport_Data_Dictionary_RegisterBusinessObject_System_Collections_IEnumerable_System_String_System_Int32_System_Boolean_" data-uid="FastReport.Data.Dictionary.RegisterBusinessObject(System.Collections.IEnumerable,System.String,System.Int32,System.Boolean)">RegisterBusinessObject(IEnumerable, String, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers a business object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterBusinessObject(IEnumerable data, string referenceName, int maxNestingLevel, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerable</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The business object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">referenceName</span></td>
+        <td><p>The name of the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxNestingLevel</span></td>
+        <td><p>Maximum level of data nesting.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td><p>Determines wheter to enable the object or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_RegisterBusinessObject_System_Collections_IEnumerable_System_String_System_Int32_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_RegisterCubeLink_" data-uid="FastReport.Data.Dictionary.RegisterCubeLink*"></a>
+  <h4 id="FastReport_Data_Dictionary_RegisterCubeLink_FastReport_CrossView_IBaseCubeLink_System_String_System_Boolean_" data-uid="FastReport.Data.Dictionary.RegisterCubeLink(FastReport.CrossView.IBaseCubeLink,System.String,System.Boolean)">RegisterCubeLink(IBaseCubeLink, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers a CubeLink.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCubeLink(IBaseCubeLink cubeLink, string referenceName, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.CrossView.IBaseCubeLink.html">IBaseCubeLink</a></td>
+        <td><span class="parametername">cubeLink</span></td>
+        <td><p>The CubeLink to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">referenceName</span></td>
+        <td><p>The name of the data object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td><p>Determines wheter to enable the object or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_RegisterCubeLink_FastReport_CrossView_IBaseCubeLink_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_RegisterData_" data-uid="FastReport.Data.Dictionary.RegisterData*"></a>
+  <h4 id="FastReport_Data_Dictionary_RegisterData_System_Object_System_String_System_Boolean_" data-uid="FastReport.Data.Dictionary.RegisterData(System.Object,System.String,System.Boolean)">RegisterData(Object, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers a data object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterData(object data, string name, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The object to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td><p>Determines wheter to enable the object or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_RegisterData_System_Object_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_RegisterDataView_" data-uid="FastReport.Data.Dictionary.RegisterDataView*"></a>
+  <h4 id="FastReport_Data_Dictionary_RegisterDataView_DataView_System_String_System_Boolean_" data-uid="FastReport.Data.Dictionary.RegisterDataView(DataView,System.String,System.Boolean)">RegisterDataView(DataView, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers a DataView.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterDataView(DataView view, string referenceName, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataView</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The DataView to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">referenceName</span></td>
+        <td><p>The name of the data object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td><p>Determines wheter to enable the object or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_RegisterDataView_DataView_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_RemoveChild_" data-uid="FastReport.Data.Dictionary.RemoveChild*"></a>
+  <h4 id="FastReport_Data_Dictionary_RemoveChild_FastReport_Base_" data-uid="FastReport.Data.Dictionary.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveChild(Base child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_ReRegisterData_" data-uid="FastReport.Data.Dictionary.ReRegisterData*"></a>
+  <h4 id="FastReport_Data_Dictionary_ReRegisterData" data-uid="FastReport.Data.Dictionary.ReRegisterData">ReRegisterData()</h4>
+  <div class="markdown level1 summary"><p>Re-registers the data registered before.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReRegisterData()</code></pre>
+  </div>
+  <h5 id="FastReport_Data_Dictionary_ReRegisterData_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_ReRegisterData_" data-uid="FastReport.Data.Dictionary.ReRegisterData*"></a>
+  <h4 id="FastReport_Data_Dictionary_ReRegisterData_FastReport_Data_Dictionary_" data-uid="FastReport.Data.Dictionary.ReRegisterData(FastReport.Data.Dictionary)">ReRegisterData(Dictionary)</h4>
+  <div class="markdown level1 summary"><p>Re-registers the data registered before.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReRegisterData(Dictionary dictionary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.Dictionary.html">Dictionary</a></td>
+        <td><span class="parametername">dictionary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_Save_" data-uid="FastReport.Data.Dictionary.Save*"></a>
+  <h4 id="FastReport_Data_Dictionary_Save_System_IO_Stream_" data-uid="FastReport.Data.Dictionary.Save(System.IO.Stream)">Save(Stream)</h4>
+  <div class="markdown level1 summary"><p>Saves the dictionary to a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to save to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_Save_" data-uid="FastReport.Data.Dictionary.Save*"></a>
+  <h4 id="FastReport_Data_Dictionary_Save_System_String_" data-uid="FastReport.Data.Dictionary.Save(System.String)">Save(String)</h4>
+  <div class="markdown level1 summary"><p>Saves the dictionary to a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The name of a file to save to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_Serialize_" data-uid="FastReport.Data.Dictionary.Serialize*"></a>
+  <h4 id="FastReport_Data_Dictionary_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Data.Dictionary.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Serialize(FRWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Serialize_FastReport_Utils_FRWriter_">Base.Serialize(FRWriter)</a></div>
+  
+  
+  <a id="FastReport_Data_Dictionary_SetChildOrder_" data-uid="FastReport.Data.Dictionary.SetChildOrder*"></a>
+  <h4 id="FastReport_Data_Dictionary_SetChildOrder_FastReport_Base_System_Int32_" data-uid="FastReport.Data.Dictionary.SetChildOrder(FastReport.Base,System.Int32)">SetChildOrder(Base, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChildOrder(Base child, int order)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Base.html">Base</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">order</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_UnregisterData_" data-uid="FastReport.Data.Dictionary.UnregisterData*"></a>
+  <h4 id="FastReport_Data_Dictionary_UnregisterData_System_Object_" data-uid="FastReport.Data.Dictionary.UnregisterData(System.Object)">UnregisterData(Object)</h4>
+  <div class="markdown level1 summary"><p>Unregisters the previously registered data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterData(object data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The application data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_UnregisterData_" data-uid="FastReport.Data.Dictionary.UnregisterData*"></a>
+  <h4 id="FastReport_Data_Dictionary_UnregisterData_System_Object_System_String_" data-uid="FastReport.Data.Dictionary.UnregisterData(System.Object,System.String)">UnregisterData(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Unregisters the previously registered data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterData(object data, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The application data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Data_Dictionary_UnregisterData_System_Object_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You must specify the same <strong>data</strong> and <strong>name</strong> as when you call <strong>RegisterData</strong>.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_Dictionary_UpdateLayout_" data-uid="FastReport.Data.Dictionary.UpdateLayout*"></a>
+  <h4 id="FastReport_Data_Dictionary_UpdateLayout_System_Single_System_Single_" data-uid="FastReport.Data.Dictionary.UpdateLayout(System.Single,System.Single)">UpdateLayout(Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateLayout(float dx, float dy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Data_Dictionary_UpdateRelations_" data-uid="FastReport.Data.Dictionary.UpdateRelations*"></a>
+  <h4 id="FastReport_Data_Dictionary_UpdateRelations" data-uid="FastReport.Data.Dictionary.UpdateRelations">UpdateRelations()</h4>
+  <div class="markdown level1 summary"><p>Enables or disables relations between data tables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateRelations()</code></pre>
+  </div>
+  <h5 id="FastReport_Data_Dictionary_UpdateRelations_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call this method if you create master-detail report from code. This method enables
+relation between two data tables which <strong>Enabled</strong> flag is set to <strong>true</strong>. Relations
+whose parent and child tables are disabled, gets disabled too.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="FastReport.IParent.html">IParent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

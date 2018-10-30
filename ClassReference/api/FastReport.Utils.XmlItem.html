@@ -1,0 +1,803 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class XmlItem
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class XmlItem
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Utils.XmlItem">
+  
+  
+  <h1 id="FastReport_Utils_XmlItem" data-uid="FastReport.Utils.XmlItem" class="text-break">Class XmlItem
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a xml node.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">XmlItem</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Utils.html">FastReport.Utils</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Utils_XmlItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class XmlItem : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Utils_XmlItem__ctor_" data-uid="FastReport.Utils.XmlItem.#ctor*"></a>
+  <h4 id="FastReport_Utils_XmlItem__ctor" data-uid="FastReport.Utils.XmlItem.#ctor">XmlItem()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <strong>XmlItem</strong> class with default settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlItem()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Count_" data-uid="FastReport.Utils.XmlItem.Count*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Count" data-uid="FastReport.Utils.XmlItem.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets a number of children in this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Item_" data-uid="FastReport.Utils.XmlItem.Item*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Item_System_Int32_" data-uid="FastReport.Utils.XmlItem.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Gets a child node with specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlItem this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><p>The node with specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Items_" data-uid="FastReport.Utils.XmlItem.Items*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Items" data-uid="FastReport.Utils.XmlItem.Items">Items</h4>
+  <div class="markdown level1 summary"><p>Gets a list of children in this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;XmlItem&gt; Items { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Name_" data-uid="FastReport.Utils.XmlItem.Name*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Name" data-uid="FastReport.Utils.XmlItem.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the node name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_XmlItem_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property will return &quot;Node&quot; for a node like <code>&lt;Node Text=&quot;&quot; Left=&quot;0&quot;/&gt;</code></p>
+</div>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Parent_" data-uid="FastReport.Utils.XmlItem.Parent*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Parent" data-uid="FastReport.Utils.XmlItem.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the parent for this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlItem Parent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Properties_" data-uid="FastReport.Utils.XmlItem.Properties*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Properties" data-uid="FastReport.Utils.XmlItem.Properties">Properties</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of properties in this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlProperty[] Properties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlProperty.html">XmlProperty</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Root_" data-uid="FastReport.Utils.XmlItem.Root*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Root" data-uid="FastReport.Utils.XmlItem.Root">Root</h4>
+  <div class="markdown level1 summary"><p>Gets the root node which owns this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlItem Root { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Value_" data-uid="FastReport.Utils.XmlItem.Value*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Value" data-uid="FastReport.Utils.XmlItem.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the node value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_XmlItem_Value_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property will return &quot;ABC&quot; for a node like <code>&lt;Node&gt;ABC&lt;/Node&gt;</code></p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Add_" data-uid="FastReport.Utils.XmlItem.Add*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Add" data-uid="FastReport.Utils.XmlItem.Add">Add()</h4>
+  <div class="markdown level1 summary"><p>Adds a new child node to this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlItem Add()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><p>The new child node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_AddItem_" data-uid="FastReport.Utils.XmlItem.AddItem*"></a>
+  <h4 id="FastReport_Utils_XmlItem_AddItem_FastReport_Utils_XmlItem_" data-uid="FastReport.Utils.XmlItem.AddItem(FastReport.Utils.XmlItem)">AddItem(XmlItem)</h4>
+  <div class="markdown level1 summary"><p>Adds a specified node to this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(XmlItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The node to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Clear_" data-uid="FastReport.Utils.XmlItem.Clear*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Clear" data-uid="FastReport.Utils.XmlItem.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears the child nodes of this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Utils_XmlItem_ClearProps_" data-uid="FastReport.Utils.XmlItem.ClearProps*"></a>
+  <h4 id="FastReport_Utils_XmlItem_ClearProps" data-uid="FastReport.Utils.XmlItem.ClearProps">ClearProps()</h4>
+  <div class="markdown level1 summary"><p>Removes all properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearProps()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Dispose_" data-uid="FastReport.Utils.XmlItem.Dispose*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Dispose" data-uid="FastReport.Utils.XmlItem.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes the node and all its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_Utils_XmlItem_Find_" data-uid="FastReport.Utils.XmlItem.Find*"></a>
+  <h4 id="FastReport_Utils_XmlItem_Find_System_String_" data-uid="FastReport.Utils.XmlItem.Find(System.String)">Find(String)</h4>
+  <div class="markdown level1 summary"><p>Finds the node with specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Find(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of node to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The node with specified name, if found; <strong>null</strong> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_FindItem_" data-uid="FastReport.Utils.XmlItem.FindItem*"></a>
+  <h4 id="FastReport_Utils_XmlItem_FindItem_System_String_" data-uid="FastReport.Utils.XmlItem.FindItem(System.String)">FindItem(String)</h4>
+  <div class="markdown level1 summary"><p>Finds the node with specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlItem FindItem(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of node to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><p>The node with specified name, if found; the new node otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_XmlItem_FindItem_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method adds the node with specified name to the child nodes if it cannot find the node.</p>
+</div>
+  
+  
+  <a id="FastReport_Utils_XmlItem_GetProp_" data-uid="FastReport.Utils.XmlItem.GetProp*"></a>
+  <h4 id="FastReport_Utils_XmlItem_GetProp_System_String_" data-uid="FastReport.Utils.XmlItem.GetProp(System.String)">GetProp(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a property with specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetProp(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The property name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The value of property, if found; empty string otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_XmlItem_GetProp_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property will return &quot;0&quot; when you request the &quot;Left&quot; property for a node
+like <code>&lt;Node Text=&quot;&quot; Left=&quot;0&quot;/&gt;</code></p>
+</div>
+  
+  
+  <a id="FastReport_Utils_XmlItem_IndexOf_" data-uid="FastReport.Utils.XmlItem.IndexOf*"></a>
+  <h4 id="FastReport_Utils_XmlItem_IndexOf_FastReport_Utils_XmlItem_" data-uid="FastReport.Utils.XmlItem.IndexOf(FastReport.Utils.XmlItem)">IndexOf(XmlItem)</h4>
+  <div class="markdown level1 summary"><p>Gets the index of specified node in the child nodes list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(XmlItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The node to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Zero-based index of node, if found; <strong>-1</strong> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_InsertItem_" data-uid="FastReport.Utils.XmlItem.InsertItem*"></a>
+  <h4 id="FastReport_Utils_XmlItem_InsertItem_System_Int32_FastReport_Utils_XmlItem_" data-uid="FastReport.Utils.XmlItem.InsertItem(System.Int32,FastReport.Utils.XmlItem)">InsertItem(Int32, XmlItem)</h4>
+  <div class="markdown level1 summary"><p>Inserts a specified node to this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertItem(int index, XmlItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Position to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.XmlItem.html">XmlItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Node to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_RemoveProp_" data-uid="FastReport.Utils.XmlItem.RemoveProp*"></a>
+  <h4 id="FastReport_Utils_XmlItem_RemoveProp_System_String_" data-uid="FastReport.Utils.XmlItem.RemoveProp(System.String)">RemoveProp(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a property with specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveProp(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The property name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if property is removed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_XmlItem_SetProp_" data-uid="FastReport.Utils.XmlItem.SetProp*"></a>
+  <h4 id="FastReport_Utils_XmlItem_SetProp_System_String_System_String_" data-uid="FastReport.Utils.XmlItem.SetProp(System.String,System.String)">SetProp(String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the value for a specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProp(string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Utils_XmlItem_SetProp_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For example, you have a node like <code>&lt;Node Text=&quot;&quot; Left=&quot;0&quot;/&gt;</code>. When you set the
+&quot;Text&quot; property to &quot;test&quot;, the node will be <code>&lt;Node Text=&quot;test&quot; Left=&quot;0&quot;/&gt;</code>.
+If property with specified name is not exist, it will be added.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
