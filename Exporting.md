@@ -65,7 +65,57 @@ using FastReport.Export.Html;
             report.Export(html, "report.html");
 ```
 
-*To be continued ...*
+The following is an example of exporting a report in multiple streams.
+
+```csharp
+            // Creatint the Report object
+            using (Report report = new Report())
+            {
+                // Loading a report
+                report.Load("report.frx");
+                // Preparing a report
+                report.Prepare();
+
+                // Creating the HTML export
+                using (HTMLExport html = new HTMLExport())
+                {
+                    // Choose the Jpeg pictures
+                    html.ImageFormat = ImageFormat.Jpeg;
+                    // We need the saving in multiple streams
+                    html.SaveStreams = true;
+                    // Exporting with fake null stream object, html export will keep all files inside
+                    report.Export(html, (Stream)null);
+                    // Checking for the exporting
+                    if (html.GeneratedFiles.Count > 0)
+                    {
+                        // Loop for generated files 
+                        for (int i = 0; i < html.GeneratedFiles.Count; i++)
+                        {
+                            // We have several streams, let's save it in files
+                            using (FileStream file = new FileStream("export_path/" + html.GeneratedFiles[i], FileMode.Create))
+                            {
+                                // You need reset the internal stream position
+                                html.GeneratedStreams[i].Position = 0;
+                                // Saving a stream in the file
+                                html.GeneratedStreams[i].CopyTo(file);
+                            }                             
+                        }
+                    }
+                }
+            }
+
+```
+The result of the code above:
+```
+1.html
+3D8711F2B3E0CB27B4ABB3B008100944.jpeg
+8ADC69235827736FEFD905D29F1BA3C3.jpeg
+A4310A5FEB8A9D6D4FFDC4F3747940F4.jpeg
+D040CA1257EC42CE08EA369E5101E2D1.jpeg
+E9376AC431359E9A088B9F104665ABE9.jpeg
+EA63D4A0288B3841CD552CA0DC3845DB.jpeg
+EC5F2B95E3DA517ED1244012D77901BC.jpeg
+```
 
 ---
 
