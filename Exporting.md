@@ -1,4 +1,4 @@
-# 7. Exporting
+# 8. Exporting
 
 FastReport Open Source can save documents in HTML, BMP, PNG, JPEG, GIF, TIFF, EMF.
 
@@ -119,4 +119,4 @@ EC5F2B95E3DA517ED1244012D77901BC.jpeg
 
 ---
 
-[Creating Report Using Code](CreatingReportUsingCode.md) | [Top Page](README.md) | [Reports in Web](WebReport.md)
+[Reference to a Report Object](ReferenceReportObject.md) | [Top Page](README.md) | [Reports in Web](WebReport.md)
