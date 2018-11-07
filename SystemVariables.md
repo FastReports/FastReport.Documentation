@@ -6,7 +6,7 @@ There is a list of system variables that can be used in a report:
 |:-|:-|
 | `Date` | Date and time of the report's start. |
 | `Page` | Current page number. |
-| `TotalPages` | Total number of pages in the report. To use this variable, you need to enable the report's double pass. You can do this in "Report|Properties..." menu. |
+| `TotalPages` | Total number of pages in the report. To use this variable, you need to enable the report's double pass. You can do this in "Report\|Properties..." menu. |
 | `PageN` | Page number in the form: "Page N". |
 | `PageNofM` | Page number in the form: "Page N of M". | 
 | `Row#` | Data row number inside the group. This value is reset at the start of a new group. |
