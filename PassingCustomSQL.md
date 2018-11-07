@@ -1,6 +1,6 @@
 # 7.5. Passing Custom SQL
 
-The report may contain data sources that are added using the Data Wizard in Designer (via "Data|Add Data Source..." menu). 
+The report may contain data sources that are added using the Data Wizard in Designer (via "Data\|Add Data Source..." menu). 
 
 Sometimes it is needed to pass custom SQL to that data source from your application. To do this, use the following code: 
 
