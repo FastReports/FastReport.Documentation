@@ -21,6 +21,11 @@ We wish to draw up your attention to the fact that Documentation is under constr
 #### 2.4. [Report Objects](ReportObjects.md)
 
 ### 3. [Data](Data.md)
+#### 3.1. [Registering Data](RegisteringData.md)
+#### 3.2. [Report Parameters](ReportParameters.md)
+#### 3.3. [Query Parameters](QueryParameters.md)
+#### 3.4. [System Variables](SystemVariables.md)
+#### 3.5. [Totals](Totals.md)
 
 ### 4. [Expressions](Expressions.md)
 
@@ -32,13 +37,22 @@ We wish to draw up your attention to the fact that Documentation is under constr
 #### 6.3. [Report Template File Structure](ReportTemplateFileStructure.md)
 #### 6.5. [Creating a Report by Using Code](CreatingReportUsingCode.md)
 
-### 7. [Exporting](Exporting.md)
+### 7. [Using the Report](UsingReport.md)
+#### 7.1. [Storing and Loading a Report](StoringLoadingReport.md)
+#### 7.2. [Running a Report](RunningReport.md)
+#### 7.3. [Configuring the Environment](ConfiguringEnvironment.md)
+#### 7.4. [Passing Own Connection String](PassingOwnConnectionString.md)
+#### 7.5. [Passing Custom SQL](PassingCustomSQL.md)
+#### 7.6. [Reference to a Report Object](ReferenceReportObject.md)
 
-### 8. [Reports in Web](WebReport.md)
+### 8. [Exporting](Exporting.md)
 
-### [APPENDIX I: Examples](Examples.md)
-### [APPENDIX II: Class Reference](https://fastreports.github.io/FastReport.Documentation/ClassReference/api/FastReport.html)
-### [APPENDIX III: The Feature Comparison Table for FastReport Open Source, FastReport Core, FastReport .Net](COMPARISON.md)
+### 9. [WebReport](WebReport.md)
+
+### [APPENDIX I: Compilation and Installation](CompilationInstallation.md)
+### [APPENDIX II: Examples](Examples.md)
+### [APPENDIX III: Class Reference](https://fastreports.github.io/FastReport.Documentation/ClassReference/api/FastReport.html)
+### [APPENDIX IV: The Feature Comparison Table for FastReport Open Source, FastReport Core, FastReport .Net](COMPARISON.md)
 
 ### [LICENSE](LISCENSE.md)
 

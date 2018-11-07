@@ -1,4 +1,4 @@
-# APPENDIX I: Examples
+# Examples
 
 Under Construction
 
