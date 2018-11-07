@@ -54,7 +54,7 @@ We wish to draw up your attention to the fact that Documentation is under constr
 ### [APPENDIX III: Class Reference](https://fastreports.github.io/FastReport.Documentation/ClassReference/api/FastReport.html)
 ### [APPENDIX IV: The Feature Comparison Table for FastReport Open Source, FastReport Core, FastReport .Net](COMPARISON.md)
 
-### [LICENSE](LISCENSE.md)
+### [LICENSE](LICENSE.md)
 
 ## Links
 
