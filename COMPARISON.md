@@ -27,7 +27,8 @@
 | Print from Web browser and PDF  |   | + | + |
 | **Output formats and delivery** |
 | Export in HTML, BMP, PNG, JPEG, GIF, TIFF, EMF | + | + | + |
-| Export in PDF, XLSX, DOCX, PPTX, ODS, ODT, RTF, Text, XPS, XML, XAML, PS, PPML, LaTeX, Json, Dbf, Csv, XLS (Biff8), SVG, ZPL |   | + | + |
+| Export in PDF | * | + | + |
+| Export in XLSX, DOCX, PPTX, ODS, ODT, RTF, Text, XPS, XML, XAML, PS, PPML, LaTeX, Json, Dbf, Csv, XLS (Biff8), SVG, ZPL |   | + | + |
 | Save in prepared report FPX   | + | + | + |
 | Sending reports by email, FTP |   |   | + |
 | Uploading in the clouds Box, Dropbox, GoogleDrive, OneDrive (SkyDrive) |   |   | + |
@@ -63,6 +64,8 @@
 | Sources in Github      | + |   |   |
 | Installation package   |   | + | + |
 | Sources in installation (Professional and Enterprise editions) |   | + | + |
+
+_\* Pdf export for FastReport OpenSource is available as plugin. Not included to FastReport.dll or FastReport.OpenSource.nupkg._
 
 ## Remarks about FastReport Core
 
