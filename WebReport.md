@@ -90,7 +90,7 @@ public ActionResult SaveDesignedReport(string reportID, string reportUUID)
     return View();
 }
 ```
-Also you need to create a simple view in \Views\Home\SaveDesignedReport.cshtml.
+Also you need to create a simple view in `\Views\Home\SaveDesignedReport.cshtml`.
 
 ```html
 <h2>@ViewBag.Message</h2>
