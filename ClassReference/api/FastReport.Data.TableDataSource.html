@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TableDataSource
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -84,6 +84,7 @@
     <div class="level3"><a class="xref" href="FastReport.Data.Column.html">Column</a></div>
     <div class="level4"><a class="xref" href="FastReport.Data.DataSourceBase.html">DataSourceBase</a></div>
     <div class="level5"><span class="xref">TableDataSource</span></div>
+      <div class="level6"><a class="xref" href="FastReport.Data.JsonConnection.JsonTableDataSource.html">JsonTableDataSource</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -92,6 +93,9 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_currentRow">DataSourceBase.currentRow</a>
+    </div>
     <div>
       <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Load">DataSourceBase.Load</a>
     </div>
@@ -596,7 +600,8 @@ property.</p>
   
   <a id="FastReport_Data_TableDataSource_AddChild_" data-uid="FastReport.Data.TableDataSource.AddChild*"></a>
   <h4 id="FastReport_Data_TableDataSource_AddChild_FastReport_Base_" data-uid="FastReport.Data.TableDataSource.AddChild(FastReport.Base)">AddChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a child object to this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -615,7 +620,8 @@ property.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Object to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -625,7 +631,8 @@ property.</p>
   
   <a id="FastReport_Data_TableDataSource_CanContain_" data-uid="FastReport.Data.TableDataSource.CanContain*"></a>
   <h4 id="FastReport_Data_TableDataSource_CanContain_FastReport_Base_" data-uid="FastReport.Data.TableDataSource.CanContain(FastReport.Base)">CanContain(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this object can contain the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -644,7 +651,8 @@ property.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -659,7 +667,8 @@ property.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><strong>true</strong> if this object can contain the specified child object; otherwise, <strong>false</strong>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -698,7 +707,8 @@ property.</p>
   
   <a id="FastReport_Data_TableDataSource_GetChildObjects_" data-uid="FastReport.Data.TableDataSource.GetChildObjects*"></a>
   <h4 id="FastReport_Data_TableDataSource_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.Data.TableDataSource.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of child objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -717,7 +727,8 @@ property.</p>
       <tr>
         <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>List to fill with values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -727,7 +738,8 @@ property.</p>
   
   <a id="FastReport_Data_TableDataSource_GetValue_" data-uid="FastReport.Data.TableDataSource.GetValue*"></a>
   <h4 id="FastReport_Data_TableDataSource_GetValue_FastReport_Data_Column_" data-uid="FastReport.Data.TableDataSource.GetValue(FastReport.Data.Column)">GetValue(Column)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets data stored in a specified column.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -746,7 +758,8 @@ property.</p>
       <tr>
         <td><a class="xref" href="FastReport.Data.Column.html">Column</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -761,7 +774,8 @@ property.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td></td>
+        <td><p>An object that contains the data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -771,7 +785,8 @@ property.</p>
   
   <a id="FastReport_Data_TableDataSource_InitializeComponent_" data-uid="FastReport.Data.TableDataSource.InitializeComponent*"></a>
   <h4 id="FastReport_Data_TableDataSource_InitializeComponent" data-uid="FastReport.Data.TableDataSource.InitializeComponent">InitializeComponent()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the object before running a report.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -779,11 +794,15 @@ property.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_InitializeComponent">DataSourceBase.InitializeComponent()</a></div>
+  <h5 id="FastReport_Data_TableDataSource_InitializeComponent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used by the report engine, do not call it directly.</p>
+</div>
   
   
   <a id="FastReport_Data_TableDataSource_InitSchema_" data-uid="FastReport.Data.TableDataSource.InitSchema*"></a>
   <h4 id="FastReport_Data_TableDataSource_InitSchema" data-uid="FastReport.Data.TableDataSource.InitSchema">InitSchema()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the datasource schema.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -791,11 +810,15 @@ property.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_InitSchema">DataSourceBase.InitSchema()</a></div>
+  <h5 id="FastReport_Data_TableDataSource_InitSchema_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to support the FastReport.Net infrastructure. Do not call it directly.</p>
+</div>
   
   
   <a id="FastReport_Data_TableDataSource_LoadData_" data-uid="FastReport.Data.TableDataSource.LoadData*"></a>
   <h4 id="FastReport_Data_TableDataSource_LoadData_System_Collections_ArrayList_" data-uid="FastReport.Data.TableDataSource.LoadData(System.Collections.ArrayList)">LoadData(ArrayList)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loads the datasource with data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -814,12 +837,16 @@ property.</p>
       <tr>
         <td><span class="xref">System.Collections.ArrayList</span></td>
         <td><span class="parametername">rows</span></td>
-        <td></td>
+        <td><p>Rows to fill with data.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_LoadData_System_Collections_ArrayList_">DataSourceBase.LoadData(ArrayList)</a></div>
+  <h5 id="FastReport_Data_TableDataSource_LoadData_System_Collections_ArrayList__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to support the FastReport.Net infrastructure. Do not call it directly.</p>
+</div>
   
   
   <a id="FastReport_Data_TableDataSource_RefreshTable_" data-uid="FastReport.Data.TableDataSource.RefreshTable*"></a>
@@ -835,7 +862,8 @@ property.</p>
   
   <a id="FastReport_Data_TableDataSource_RemoveChild_" data-uid="FastReport.Data.TableDataSource.RemoveChild*"></a>
   <h4 id="FastReport_Data_TableDataSource_RemoveChild_FastReport_Base_" data-uid="FastReport.Data.TableDataSource.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes a specified object from this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -864,7 +892,8 @@ property.</p>
   
   <a id="FastReport_Data_TableDataSource_Serialize_" data-uid="FastReport.Data.TableDataSource.Serialize*"></a>
   <h4 id="FastReport_Data_TableDataSource_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Data.TableDataSource.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -883,17 +912,30 @@ property.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Serialize_FastReport_Utils_FRWriter_">DataSourceBase.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_Data_TableDataSource_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   
   
   <a id="FastReport_Data_TableDataSource_SetParent_" data-uid="FastReport.Data.TableDataSource.SetParent*"></a>
   <h4 id="FastReport_Data_TableDataSource_SetParent_FastReport_Base_" data-uid="FastReport.Data.TableDataSource.SetParent(FastReport.Base)">SetParent(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the object's parent.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -912,12 +954,34 @@ property.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>New parent.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_SetParent_FastReport_Base_">Base.SetParent(Base)</a></div>
+  <h5 id="FastReport_Data_TableDataSource_SetParent_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only. You can use it if you are developing a new
+component for FastReport. Override it to perform some actions when the parent of an
+object is changing. This method checks that parent can contain a child.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.ParentException.html">ParentException</a></td>
+        <td><p>Parent object cannot contain this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

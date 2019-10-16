@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RadialGauge
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -138,9 +138,6 @@
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Click">ReportComponentBase.Click</a>
     </div>
     <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Printable">ReportComponentBase.Printable</a>
-    </div>
-    <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Exportable">ReportComponentBase.Exportable</a>
     </div>
     <div>
@@ -249,6 +246,9 @@
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_IsVisible_FastReport_Utils_FRPaintEventArgs_">ReportComponentBase.IsVisible(FRPaintEventArgs)</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Deserialize_FastReport_Utils_FRReader_">ReportComponentBase.Deserialize(FRReader)</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnClick_System_EventArgs_">ReportComponentBase.OnClick(EventArgs)</a>
     </div>
     <div>
@@ -328,6 +328,9 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Visible">ComponentBase.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Printable">ComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_Name">Base.Name</a>
@@ -417,9 +420,6 @@
       <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
     </div>
     <div>
-      <a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a>
-    </div>
-    <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
     </div>
     <div>
@@ -504,7 +504,8 @@
   
   <a id="FastReport_Gauge_Radial_RadialGauge_Height_" data-uid="FastReport.Gauge.Radial.RadialGauge.Height*"></a>
   <h4 id="FastReport_Gauge_Radial_RadialGauge_Height" data-uid="FastReport.Gauge.Radial.RadialGauge.Height">Height</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the height of the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -527,6 +528,10 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Height">ComponentBase.Height</a></div>
+  <h5 id="FastReport_Gauge_Radial_RadialGauge_Height_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property value is measured in the screen pixels. Use <a class="xref" href="FastReport.Utils.Units.html">Units</a> class to
+convert a value to desired units.</p>
+</div>
   
   
   <a id="FastReport_Gauge_Radial_RadialGauge_Position_" data-uid="FastReport.Gauge.Radial.RadialGauge.Position*"></a>
@@ -635,7 +640,8 @@
   
   <a id="FastReport_Gauge_Radial_RadialGauge_Width_" data-uid="FastReport.Gauge.Radial.RadialGauge.Width*"></a>
   <h4 id="FastReport_Gauge_Radial_RadialGauge_Width" data-uid="FastReport.Gauge.Radial.RadialGauge.Width">Width</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the width of the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -658,13 +664,18 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">ComponentBase.Width</a></div>
+  <h5 id="FastReport_Gauge_Radial_RadialGauge_Width_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property value is measured in the screen pixels. Use <a class="xref" href="FastReport.Utils.Units.html">Units</a> class to
+convert a value to desired units.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="FastReport_Gauge_Radial_RadialGauge_Assign_" data-uid="FastReport.Gauge.Radial.RadialGauge.Assign*"></a>
   <h4 id="FastReport_Gauge_Radial_RadialGauge_Assign_FastReport_Base_" data-uid="FastReport.Gauge.Radial.RadialGauge.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -683,17 +694,34 @@
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Gauge.GaugeObject.html#FastReport_Gauge_GaugeObject_Assign_FastReport_Base_">GaugeObject.Assign(Base)</a></div>
+  <h5 id="FastReport_Gauge_Radial_RadialGauge_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_Gauge_Radial_RadialGauge_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_Gauge_Radial_RadialGauge_Draw_" data-uid="FastReport.Gauge.Radial.RadialGauge.Draw*"></a>
   <h4 id="FastReport_Gauge_Radial_RadialGauge_Draw_FastReport_Utils_FRPaintEventArgs_" data-uid="FastReport.Gauge.Radial.RadialGauge.Draw(FastReport.Utils.FRPaintEventArgs)">Draw(FRPaintEventArgs)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws the gauge.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -712,7 +740,8 @@
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRPaintEventArgs.html">FRPaintEventArgs</a></td>
         <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><p>Draw event arguments.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -722,7 +751,8 @@
   
   <a id="FastReport_Gauge_Radial_RadialGauge_Serialize_" data-uid="FastReport.Gauge.Radial.RadialGauge.Serialize*"></a>
   <h4 id="FastReport_Gauge_Radial_RadialGauge_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Gauge.Radial.RadialGauge.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -741,12 +771,24 @@
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Gauge.GaugeObject.html#FastReport_Gauge_GaugeObject_Serialize_FastReport_Utils_FRWriter_">GaugeObject.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_Gauge_Radial_RadialGauge_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

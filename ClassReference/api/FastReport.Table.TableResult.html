@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TableResult
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -148,6 +148,9 @@
       <a class="xref" href="FastReport.Table.TableBase.html#FastReport_Table_TableBase_GetCellData_System_Int32_System_Int32_">TableBase.GetCellData(Int32, Int32)</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.Table.TableBase.html#FastReport_Table_TableBase_IsInsideSpan_FastReport_Table_TableCell_">TableBase.IsInsideSpan(TableCell)</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.Table.TableBase.html#FastReport_Table_TableBase_CreateUniqueNames">TableBase.CreateUniqueNames()</a>
     </div>
     <div>
@@ -218,9 +221,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Click">ReportComponentBase.Click</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Printable">ReportComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Exportable">ReportComponentBase.Exportable</a>
@@ -328,6 +328,9 @@
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_DrawBackground_FastReport_Utils_FRPaintEventArgs_">ReportComponentBase.DrawBackground(FRPaintEventArgs)</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Deserialize_FastReport_Utils_FRReader_">ReportComponentBase.Deserialize(FRReader)</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnClick_System_EventArgs_">ReportComponentBase.OnClick(EventArgs)</a>
     </div>
     <div>
@@ -407,6 +410,9 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Visible">ComponentBase.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Printable">ComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">ComponentBase.Width</a>
@@ -494,9 +500,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a>
     </div>
     <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
@@ -590,7 +593,8 @@
   
   <a id="FastReport_Table_TableResult_GetChildObjects_" data-uid="FastReport.Table.TableResult.GetChildObjects*"></a>
   <h4 id="FastReport_Table_TableResult_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.Table.TableResult.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of child objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -609,7 +613,8 @@
       <tr>
         <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>List to fill with values.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class XmlDataConnection
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -410,7 +410,8 @@ conn.CreateAllTables();</code></pre>
   
   <a id="FastReport_Data_XmlDataConnection_CreateDataSet_" data-uid="FastReport.Data.XmlDataConnection.CreateDataSet*"></a>
   <h4 id="FastReport_Data_XmlDataConnection_CreateDataSet" data-uid="FastReport.Data.XmlDataConnection.CreateDataSet">CreateDataSet()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a <strong>DataSet</strong> instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -427,17 +428,23 @@ conn.CreateAllTables();</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">DataSet</span></td>
-        <td></td>
+        <td><p>The <strong>DataSet</strong> object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_CreateDataSet">DataConnectionBase.CreateDataSet()</a></div>
+  <h5 id="FastReport_Data_XmlDataConnection_CreateDataSet_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to support FastReport infrastructure. You don't need to use it.</p>
+</div>
   
   
   <a id="FastReport_Data_XmlDataConnection_CreateTable_" data-uid="FastReport.Data.XmlDataConnection.CreateTable*"></a>
   <h4 id="FastReport_Data_XmlDataConnection_CreateTable_FastReport_Data_TableDataSource_" data-uid="FastReport.Data.XmlDataConnection.CreateTable(FastReport.Data.TableDataSource)">CreateTable(TableDataSource)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates table.
+For internal use only.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -466,7 +473,9 @@ conn.CreateAllTables();</code></pre>
   
   <a id="FastReport_Data_XmlDataConnection_DeleteTable_" data-uid="FastReport.Data.XmlDataConnection.DeleteTable*"></a>
   <h4 id="FastReport_Data_XmlDataConnection_DeleteTable_FastReport_Data_TableDataSource_" data-uid="FastReport.Data.XmlDataConnection.DeleteTable(FastReport.Data.TableDataSource)">DeleteTable(TableDataSource)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes table.
+For internal use only.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -495,7 +504,8 @@ conn.CreateAllTables();</code></pre>
   
   <a id="FastReport_Data_XmlDataConnection_FillTableData_" data-uid="FastReport.Data.XmlDataConnection.FillTableData*"></a>
   <h4 id="FastReport_Data_XmlDataConnection_FillTableData_DataTable_System_String_FastReport_Data_CommandParameterCollection_" data-uid="FastReport.Data.XmlDataConnection.FillTableData(DataTable,System.String,FastReport.Data.CommandParameterCollection)">FillTableData(DataTable, String, CommandParameterCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Fills the table data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -514,27 +524,36 @@ conn.CreateAllTables();</code></pre>
       <tr>
         <td><span class="xref">DataTable</span></td>
         <td><span class="parametername">table</span></td>
-        <td></td>
+        <td><p>DataTable to fill.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">selectCommand</span></td>
-        <td></td>
+        <td><p>The SQL select command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="FastReport.Data.CommandParameterCollection.html">CommandParameterCollection</a></td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>SQL parameters.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_FillTableData_DataTable_System_String_FastReport_Data_CommandParameterCollection_">DataConnectionBase.FillTableData(DataTable, String, CommandParameterCollection)</a></div>
+  <h5 id="FastReport_Data_XmlDataConnection_FillTableData_DataTable_System_String_FastReport_Data_CommandParameterCollection__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Usually you don't need to use this method. Internally it uses the <a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_GetConnection">GetConnection()</a> and
+<a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_GetAdapter_System_String_DbConnection_FastReport_Data_CommandParameterCollection_">GetAdapter(String, DbConnection, CommandParameterCollection)</a> methods to fill the table data. If you create own connection component
+that does not use nor connection or adapter, then you need to override this method.</p>
+</div>
   
   
   <a id="FastReport_Data_XmlDataConnection_FillTableSchema_" data-uid="FastReport.Data.XmlDataConnection.FillTableSchema*"></a>
   <h4 id="FastReport_Data_XmlDataConnection_FillTableSchema_DataTable_System_String_FastReport_Data_CommandParameterCollection_" data-uid="FastReport.Data.XmlDataConnection.FillTableSchema(DataTable,System.String,FastReport.Data.CommandParameterCollection)">FillTableSchema(DataTable, String, CommandParameterCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Fills the table schema.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,27 +572,36 @@ conn.CreateAllTables();</code></pre>
       <tr>
         <td><span class="xref">DataTable</span></td>
         <td><span class="parametername">table</span></td>
-        <td></td>
+        <td><p>DataTable to fill.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">selectCommand</span></td>
-        <td></td>
+        <td><p>The SQL select command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="FastReport.Data.CommandParameterCollection.html">CommandParameterCollection</a></td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>SQL parameters.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_FillTableSchema_DataTable_System_String_FastReport_Data_CommandParameterCollection_">DataConnectionBase.FillTableSchema(DataTable, String, CommandParameterCollection)</a></div>
+  <h5 id="FastReport_Data_XmlDataConnection_FillTableSchema_DataTable_System_String_FastReport_Data_CommandParameterCollection__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Usually you don't need to use this method. Internally it uses the <a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_GetConnection">GetConnection()</a> and
+<a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_GetAdapter_System_String_DbConnection_FastReport_Data_CommandParameterCollection_">GetAdapter(String, DbConnection, CommandParameterCollection)</a> methods to fill the table schema. If you create own connection component
+that does not use nor connection or adapter, then you need to override this method.</p>
+</div>
   
   
   <a id="FastReport_Data_XmlDataConnection_QuoteIdentifier_" data-uid="FastReport.Data.XmlDataConnection.QuoteIdentifier*"></a>
   <h4 id="FastReport_Data_XmlDataConnection_QuoteIdentifier_System_String_DbConnection_" data-uid="FastReport.Data.XmlDataConnection.QuoteIdentifier(System.String,DbConnection)">QuoteIdentifier(String, DbConnection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Quotes the specified DB identifier such as table name or column name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -592,12 +620,14 @@ conn.CreateAllTables();</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>Identifier to quote.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DbConnection</span></td>
         <td><span class="parametername">connection</span></td>
-        <td></td>
+        <td><p>The opened DB connection.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -612,7 +642,8 @@ conn.CreateAllTables();</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The quoted identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -622,7 +653,8 @@ conn.CreateAllTables();</code></pre>
   
   <a id="FastReport_Data_XmlDataConnection_SetConnectionString_" data-uid="FastReport.Data.XmlDataConnection.SetConnectionString*"></a>
   <h4 id="FastReport_Data_XmlDataConnection_SetConnectionString_System_String_" data-uid="FastReport.Data.XmlDataConnection.SetConnectionString(System.String)">SetConnectionString(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the connection string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -641,12 +673,16 @@ conn.CreateAllTables();</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>New connection string.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataConnectionBase.html#FastReport_Data_DataConnectionBase_SetConnectionString_System_String_">DataConnectionBase.SetConnectionString(String)</a></div>
+  <h5 id="FastReport_Data_XmlDataConnection_SetConnectionString_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this method if you need to perform some actions when the connection string is set.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

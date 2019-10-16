@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FillBase
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,6 +85,7 @@
       <div class="level2"><a class="xref" href="FastReport.LinearGradientFill.html">LinearGradientFill</a></div>
       <div class="level2"><a class="xref" href="FastReport.PathGradientFill.html">PathGradientFill</a></div>
       <div class="level2"><a class="xref" href="FastReport.SolidFill.html">SolidFill</a></div>
+      <div class="level2"><a class="xref" href="FastReport.TextureFill.html">TextureFill</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -192,6 +193,95 @@
   </table>
   
   
+  <a id="FastReport_FillBase_CreateBrush_" data-uid="FastReport.FillBase.CreateBrush*"></a>
+  <h4 id="FastReport_FillBase_CreateBrush_RectangleF_System_Single_System_Single_" data-uid="FastReport.FillBase.CreateBrush(RectangleF,System.Single,System.Single)">CreateBrush(RectangleF, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates the GDI+ Brush object with scaling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Brush CreateBrush(RectangleF rect, float scaleX, float scaleY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectangleF</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Drawing rectangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scaleX</span></td>
+        <td><p>X scaling coefficient.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scaleY</span></td>
+        <td><p>Y scaling coefficient.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Brush</span></td>
+        <td><p>Brush object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_FillBase_Deserialize_" data-uid="FastReport.FillBase.Deserialize*"></a>
+  <h4 id="FastReport_FillBase_Deserialize_FastReport_Utils_FRReader_System_String_" data-uid="FastReport.FillBase.Deserialize(FastReport.Utils.FRReader,System.String)">Deserialize(FRReader, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Deserialize(FRReader reader, string prefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prefix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FastReport_FillBase_Draw_" data-uid="FastReport.FillBase.Draw*"></a>
   <h4 id="FastReport_FillBase_Draw_FastReport_Utils_FRPaintEventArgs_RectangleF_" data-uid="FastReport.FillBase.Draw(FastReport.Utils.FRPaintEventArgs,RectangleF)">Draw(FRPaintEventArgs, RectangleF)</h4>
   <div class="markdown level1 summary"><p>Fills the specified rectangle.</p>
@@ -225,6 +315,26 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="FastReport_FillBase_FinalizeComponent_" data-uid="FastReport.FillBase.FinalizeComponent*"></a>
+  <h4 id="FastReport_FillBase_FinalizeComponent" data-uid="FastReport.FillBase.FinalizeComponent">FinalizeComponent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FinalizeComponent()</code></pre>
+  </div>
+  
+  
+  <a id="FastReport_FillBase_InitializeComponent_" data-uid="FastReport.FillBase.InitializeComponent*"></a>
+  <h4 id="FastReport_FillBase_InitializeComponent" data-uid="FastReport.FillBase.InitializeComponent">InitializeComponent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitializeComponent()</code></pre>
+  </div>
   
   
   <a id="FastReport_FillBase_Serialize_" data-uid="FastReport.FillBase.Serialize*"></a>

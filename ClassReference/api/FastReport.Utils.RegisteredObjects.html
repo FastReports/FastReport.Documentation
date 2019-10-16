@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RegisteredObjects
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -384,6 +384,53 @@ select the &quot;arrow&quot; button or insert another object.</p>
   </table>
   
   
+  <a id="FastReport_Utils_RegisteredObjects_Add_" data-uid="FastReport.Utils.RegisteredObjects.Add*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_Add_System_Type_System_String_System_Int32_System_Int32_" data-uid="FastReport.Utils.RegisteredObjects.Add(System.Type,System.String,System.Int32,System.Int32)">Add(Type, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Registers an object in the specified category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(Type obj, string category, int imageIndex, int buttonIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Type of object to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>Name of category to register in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">imageIndex</span></td>
+        <td><p>Index of image for object's button.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buttonIndex</span></td>
+        <td><p>Index of object's button in toolbar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FastReport_Utils_RegisteredObjects_AddCategory_" data-uid="FastReport.Utils.RegisteredObjects.AddCategory*"></a>
   <h4 id="FastReport_Utils_RegisteredObjects_AddCategory_System_String_Bitmap_System_String_" data-uid="FastReport.Utils.RegisteredObjects.AddCategory(System.String,Bitmap,System.String)">AddCategory(String, Bitmap, String)</h4>
   <div class="markdown level1 summary"><p>Registers a category that may contain several report objects.</p>
@@ -589,6 +636,48 @@ RegisteredObjects.AddExport(typeof(MyExport), &quot;My Export&quot;);</code></pr
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_RegisteredObjects_AddExport_" data-uid="FastReport.Utils.RegisteredObjects.AddExport*"></a>
+  <h4 id="FastReport_Utils_RegisteredObjects_AddExport_System_Type_System_String_System_String_Bitmap_" data-uid="FastReport.Utils.RegisteredObjects.AddExport(System.Type,System.String,System.String,Bitmap)">AddExport(Type, String, String, Bitmap)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddExport(Type obj, string category, string text, Bitmap image)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Bitmap</span></td>
+        <td><span class="parametername">image</span></td>
         <td></td>
       </tr>
     </tbody>

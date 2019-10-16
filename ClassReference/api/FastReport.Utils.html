@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace FastReport.Utils
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,6 +77,33 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.html">AdvancedTextRenderer</a></h4>
+      <section><p>Advanced text renderer is used to perform the following tasks:</p>
+<ul>
+<li>draw justified text, text with custom line height, text containing html tags;</li>
+<li>calculate text height, get part of text that does not fit in the display rectangle;</li>
+<li>get paragraphs, lines, words and char sequence to perform accurate export to such
+formats as PDF, TXT, RTF</li>
+</ul>
+</section>
+      <h4><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Line.html">AdvancedTextRenderer.Line</a></h4>
+      <section><p>Line represents single text line. It consists of one or several <a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Line.html#FastReport_Utils_AdvancedTextRenderer_Line_Words">Words</a>.
+Simple line (that does not contain tabs, html tags, and is not justified) has
+single <a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Word.html">AdvancedTextRenderer.Word</a> which contains all the text.</p>
+</section>
+      <h4><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Paragraph.html">AdvancedTextRenderer.Paragraph</a></h4>
+      <section><p>Paragraph represents single paragraph. It consists of one or several <a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Paragraph.html#FastReport_Utils_AdvancedTextRenderer_Paragraph_Lines">Lines</a>.</p>
+</section>
+      <h4><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Run.html">AdvancedTextRenderer.Run</a></h4>
+      <section><p>Represents sequence of characters that have the same <a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Run.html#FastReport_Utils_AdvancedTextRenderer_Run_Style">Style</a>.</p>
+</section>
+      <h4><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.StyleDescriptor.html">AdvancedTextRenderer.StyleDescriptor</a></h4>
+      <section><p>Represents a style used in HtmlTags mode.</p>
+</section>
+      <h4><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Word.html">AdvancedTextRenderer.Word</a></h4>
+      <section><p>Word represents single word. It may consist of one or several <a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Word.html#FastReport_Utils_AdvancedTextRenderer_Word_Runs">Runs</a>, in case
+when HtmlTags are enabled in the main <a class="xref" href="FastReport.Utils.AdvancedTextRenderer.html">AdvancedTextRenderer</a> class.</p>
+</section>
       <h4><a class="xref" href="FastReport.Utils.AncestorException.html">AncestorException</a></h4>
       <section><p>The exception that is thrown when the user tried to rename an object that is introduced in the ancestor report.</p>
 </section>
@@ -90,6 +117,9 @@ unknown object type.</p>
       <h4><a class="xref" href="FastReport.Utils.CloudStorageException.html">CloudStorageException</a></h4>
       <section><p><see cref="!:FastReport.Cloud.StorageClient.CloudStorageClient"></see> throws this exception if an error occurs in the <strong>SaveReport</strong> method.
 See inner exception for detailed information.</p>
+</section>
+      <h4><a class="xref" href="FastReport.Utils.CompileHelper.html">CompileHelper</a></h4>
+      <section><p>Class helper for compile source code with path of assemblies</p>
 </section>
       <h4><a class="xref" href="FastReport.Utils.CompilerException.html">CompilerException</a></h4>
       <section><p>The exception that is thrown if there is an error in the report's script code.</p>
@@ -114,6 +144,8 @@ environment, including Report, Designer and Preview components.</p>
       <h4><a class="xref" href="FastReport.Utils.DecryptException.html">DecryptException</a></h4>
       <section><p>The exception that is thrown when loading an encrypted report with wrong password.</p>
 </section>
+      <h4><a class="xref" href="FastReport.Utils.DrawUtils.html">DrawUtils</a></h4>
+      <section></section>
       <h4><a class="xref" href="FastReport.Utils.DuplicateNameException.html">DuplicateNameException</a></h4>
       <section><p>The exception that is thrown when the user tried to set object's name that is already exists.</p>
 </section>
@@ -143,6 +175,9 @@ environment, including Report, Designer and Preview components.</p>
       <h4><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></h4>
       <section><p>The writer used to serialize object's properties to a report file.</p>
 </section>
+      <h4><a class="xref" href="FastReport.Utils.GroupHeaderHasNoGroupCondition.html">GroupHeaderHasNoGroupCondition</a></h4>
+      <section><p>The exception that is thrown when the Group Header has no group condition.</p>
+</section>
       <h4><a class="xref" href="FastReport.Utils.InlineImageCache.html">InlineImageCache</a></h4>
       <section><p>Cache for rendering img tags in textobject.
 You can use only HTTP[s] protocol with absolute urls.</p>
@@ -169,7 +204,7 @@ Implementation of Murmur3 Hash by Adam Horvath
       <section><p>Used to access to resource IDs inside the specified branch.</p>
 </section>
       <h4><a class="xref" href="FastReport.Utils.NotValidIdentifierException.html">NotValidIdentifierException</a></h4>
-      <section><p>The exception that is thrown if an error occurs in the <strong>MatrixObject.ManualBuild</strong> event.</p>
+      <section><p>The exception that is thrown if a report object's Name property is set to wrong value.</p>
 </section>
       <h4><a class="xref" href="FastReport.Utils.ObjectInfo.html">ObjectInfo</a></h4>
       <section><p>Holds the information about the registered object.</p>
@@ -196,6 +231,9 @@ an object that not accepts children of this type.</p>
       <h4><a class="xref" href="FastReport.Utils.Units.html">Units</a></h4>
       <section><p>Defines the constants used to convert between report units and screen pixels.</p>
 </section>
+      <h4><a class="xref" href="FastReport.Utils.UnknownNameException.html">UnknownNameException</a></h4>
+      <section><p>The exception that is thrown if an unknown value is supplied to some methods dealing with totals, variables etc.</p>
+</section>
       <h4><a class="xref" href="FastReport.Utils.XmlDocument.html">XmlDocument</a></h4>
       <section><p>Represents a xml document that contains the root xml node.</p>
 </section>
@@ -207,10 +245,21 @@ an object that not accepts children of this type.</p>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="FastReport.Utils.XmlProperty.html">XmlProperty</a></h4>
-      <section><p>Represents a xml property.</p>
+      <section><p>Represents a xml property.///</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="FastReport.Utils.IGraphicsRenderer.html">IGraphicsRenderer</a></h4>
+      <section><p>The interface for unifying methods for drawing objects into different graphics</p>
+</section>
+      <h4><a class="xref" href="FastReport.Utils.IGraphicsRendererState.html">IGraphicsRendererState</a></h4>
+      <section><p>the interface for saving and restoring state</p>
 </section>
     <h3 id="enums">Enums
   </h3>
+      <h4><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.BaseLine.html">AdvancedTextRenderer.BaseLine</a></h4>
+      <section><p>Represents character placement.</p>
+</section>
       <h4><a class="xref" href="FastReport.Utils.PageUnits.html">PageUnits</a></h4>
       <section><p>The report page units.</p>
 </section>

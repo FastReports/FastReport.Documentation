@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DataBand
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -103,6 +103,9 @@
       <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_StartNewPage">BandBase.StartNewPage</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_RepeatBandNTimes">BandBase.RepeatBandNTimes</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_FirstRowStartsNewPage">BandBase.FirstRowStartsNewPage</a>
     </div>
     <div>
@@ -191,9 +194,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Click">ReportComponentBase.Click</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Printable">ReportComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Exportable">ReportComponentBase.Exportable</a>
@@ -307,6 +307,9 @@
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_IsVisible_FastReport_Utils_FRPaintEventArgs_">ReportComponentBase.IsVisible(FRPaintEventArgs)</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Deserialize_FastReport_Utils_FRReader_">ReportComponentBase.Deserialize(FRReader)</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnClick_System_EventArgs_">ReportComponentBase.OnClick(EventArgs)</a>
     </div>
     <div>
@@ -371,6 +374,9 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Visible">ComponentBase.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Printable">ComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">ComponentBase.Width</a>
@@ -458,9 +464,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a>
     </div>
     <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
@@ -1077,7 +1080,8 @@ the virtual data source with the specified number of rows will be used.</p>
   
   <a id="FastReport_DataBand_AddChild_" data-uid="FastReport.DataBand.AddChild*"></a>
   <h4 id="FastReport_DataBand_AddChild_FastReport_Base_" data-uid="FastReport.DataBand.AddChild(FastReport.Base)">AddChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a child object to this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1096,7 +1100,8 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Object to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1106,7 +1111,8 @@ the virtual data source with the specified number of rows will be used.</p>
   
   <a id="FastReport_DataBand_Assign_" data-uid="FastReport.DataBand.Assign*"></a>
   <h4 id="FastReport_DataBand_Assign_FastReport_Base_" data-uid="FastReport.DataBand.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1125,17 +1131,34 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Assign_FastReport_Base_">BandBase.Assign(Base)</a></div>
+  <h5 id="FastReport_DataBand_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_DataBand_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_DataBand_CanContain_" data-uid="FastReport.DataBand.CanContain*"></a>
   <h4 id="FastReport_DataBand_CanContain_FastReport_Base_" data-uid="FastReport.DataBand.CanContain(FastReport.Base)">CanContain(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this object can contain the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1154,7 +1177,8 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1169,7 +1193,8 @@ the virtual data source with the specified number of rows will be used.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><strong>true</strong> if this object can contain the specified child object; otherwise, <strong>false</strong>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1179,7 +1204,8 @@ the virtual data source with the specified number of rows will be used.</p>
   
   <a id="FastReport_DataBand_DeserializeSubItems_" data-uid="FastReport.DataBand.DeserializeSubItems*"></a>
   <h4 id="FastReport_DataBand_DeserializeSubItems_FastReport_Utils_FRReader_" data-uid="FastReport.DataBand.DeserializeSubItems(FastReport.Utils.FRReader)">DeserializeSubItems(FRReader)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes nested object properties.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1198,17 +1224,29 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>Reader object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">Base.DeserializeSubItems(FRReader)</a></div>
+  <h5 id="FastReport_DataBand_DeserializeSubItems_FastReport_Utils_FRReader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Typically the object serializes all properties to the single xml item:</p>
+<pre><code>&lt;TextObject Name=&quot;Text2&quot; Left=&quot;18.9&quot; Top=&quot;37.8&quot; Width=&quot;283.5&quot; Height=&quot;28.35&quot;/></code></pre>
+<p>Some objects like <a class="xref" href="FastReport.DataBand.html">DataBand</a> have child objects that serialized in subitems:</p>
+<pre><code>&lt;DataBand Name=&quot;Data1&quot; Top=&quot;163&quot; Width=&quot;718.2&quot; Height=&quot;18.9&quot;>
+  &lt;TextObject Name=&quot;Text3&quot; Left=&quot;18.9&quot; Top=&quot;37.8&quot; Width=&quot;283.5&quot; Height=&quot;28.35&quot;/>
+&lt;/DataBand></code></pre>
+<p>To read such subitems, the <code>DeserializeSubItems</code> method is used. Base 
+implementation reads the child objects. You may override it to read some specific subitems.</p>
+</div>
   
   
   <a id="FastReport_DataBand_GetChildObjects_" data-uid="FastReport.DataBand.GetChildObjects*"></a>
   <h4 id="FastReport_DataBand_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.DataBand.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of child objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1227,7 +1265,8 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>List to fill with values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1237,7 +1276,8 @@ the virtual data source with the specified number of rows will be used.</p>
   
   <a id="FastReport_DataBand_GetChildOrder_" data-uid="FastReport.DataBand.GetChildOrder*"></a>
   <h4 id="FastReport_DataBand_GetChildOrder_FastReport_Base_" data-uid="FastReport.DataBand.GetChildOrder(FastReport.Base)">GetChildOrder(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns z-order of the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1256,7 +1296,8 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1271,17 +1312,22 @@ the virtual data source with the specified number of rows will be used.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Z-order of the specified object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_GetChildOrder_FastReport_Base_">BandBase.GetChildOrder(Base)</a></div>
+  <h5 id="FastReport_DataBand_GetChildOrder_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must return the index of a specified child object in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_DataBand_GetExpressions_" data-uid="FastReport.DataBand.GetExpressions*"></a>
   <h4 id="FastReport_DataBand_GetExpressions" data-uid="FastReport.DataBand.GetExpressions">GetExpressions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all expressions contained in the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1298,12 +1344,23 @@ the virtual data source with the specified number of rows will be used.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span>[]</td>
-        <td></td>
+        <td><p>Array of expressions or <strong>null</strong> if object contains no expressions.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_GetExpressions">BandBase.GetExpressions()</a></div>
+  <h5 id="FastReport_DataBand_GetExpressions_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You may override it if you are developing a
+  new component for FastReport.</p>
+<p>
+      This method is called by FastReport each time before run a report. FastReport
+      do this to collect all expressions and compile them. For example,
+<strong>GetExpressions</strong> method of the <a class="xref" href="FastReport.TextObject.html">TextObject</a> class
+parses the text and returns all expressions found in the text.
+</p>
+</div>
   
   
   <a id="FastReport_DataBand_InitDataSource_" data-uid="FastReport.DataBand.InitDataSource*"></a>
@@ -1319,7 +1376,8 @@ the virtual data source with the specified number of rows will be used.</p>
   
   <a id="FastReport_DataBand_InitializeComponent_" data-uid="FastReport.DataBand.InitializeComponent*"></a>
   <h4 id="FastReport_DataBand_InitializeComponent" data-uid="FastReport.DataBand.InitializeComponent">InitializeComponent()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the object before running a report.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1327,11 +1385,15 @@ the virtual data source with the specified number of rows will be used.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_InitializeComponent">BandBase.InitializeComponent()</a></div>
+  <h5 id="FastReport_DataBand_InitializeComponent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used by the report engine, do not call it directly.</p>
+</div>
   
   
   <a id="FastReport_DataBand_RemoveChild_" data-uid="FastReport.DataBand.RemoveChild*"></a>
   <h4 id="FastReport_DataBand_RemoveChild_FastReport_Base_" data-uid="FastReport.DataBand.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes a specified object from this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1360,7 +1422,8 @@ the virtual data source with the specified number of rows will be used.</p>
   
   <a id="FastReport_DataBand_Serialize_" data-uid="FastReport.DataBand.Serialize*"></a>
   <h4 id="FastReport_DataBand_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.DataBand.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1379,17 +1442,30 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_Serialize_FastReport_Utils_FRWriter_">BandBase.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_DataBand_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   
   
   <a id="FastReport_DataBand_SetChildOrder_" data-uid="FastReport.DataBand.SetChildOrder*"></a>
   <h4 id="FastReport_DataBand_SetChildOrder_FastReport_Base_System_Int32_" data-uid="FastReport.DataBand.SetChildOrder(FastReport.Base,System.Int32)">SetChildOrder(Base, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the z-order of the specified object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1408,17 +1484,22 @@ the virtual data source with the specified number of rows will be used.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">order</span></td>
-        <td></td>
+        <td><p>New Z-order.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BandBase.html#FastReport_BandBase_SetChildOrder_FastReport_Base_System_Int32_">BandBase.SetChildOrder(Base, Int32)</a></div>
+  <h5 id="FastReport_DataBand_SetChildOrder_FastReport_Base_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must place the specified child object at the specified position in the internal child list.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

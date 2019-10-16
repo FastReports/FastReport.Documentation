@@ -1,0 +1,1038 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AdvancedTextRenderer
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AdvancedTextRenderer
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Utils.AdvancedTextRenderer">
+  
+  
+  <h1 id="FastReport_Utils_AdvancedTextRenderer" data-uid="FastReport.Utils.AdvancedTextRenderer" class="text-break">Class AdvancedTextRenderer
+  </h1>
+  <div class="markdown level0 summary"><p>Advanced text renderer is used to perform the following tasks:</p>
+<ul>
+<li>draw justified text, text with custom line height, text containing html tags;</li>
+<li>calculate text height, get part of text that does not fit in the display rectangle;</li>
+<li>get paragraphs, lines, words and char sequence to perform accurate export to such
+formats as PDF, TXT, RTF</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AdvancedTextRenderer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Utils.html">FastReport.Utils</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Utils_AdvancedTextRenderer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AdvancedTextRenderer</code></pre>
+  </div>
+  <h5 id="FastReport_Utils_AdvancedTextRenderer_examples"><strong>Examples</strong></h5>
+  <p>Here is how one may operate the renderer items:</p>
+<pre><code>foreach (AdvancedTextRenderer.Paragraph paragraph in renderer.Paragraphs)
+{
+  foreach (AdvancedTextRenderer.Line line in paragraph.Lines)
+  {
+    foreach (AdvancedTextRenderer.Word word in line.Words)
+    {
+      if (renderer.HtmlTags)
+      {
+        foreach (AdvancedTextRenderer.Run run in word.Runs)
+        {
+          using (Font f = run.GetFont())
+          using (Brush b = run.GetBrush())
+          {
+            g.DrawString(run.Text, f, b, run.Left, run.Top, renderer.Format);
+          }  
+        }
+      }
+      else
+      {
+        g.DrawString(word.Text, renderer.Font, renderer.Brush, word.Left, word.Top, renderer.Format);
+      }
+    }
+  }
+}</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer__ctor_" data-uid="FastReport.Utils.AdvancedTextRenderer.#ctor*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer__ctor_System_String_Graphics_Font_Brush_Pen_RectangleF_StringFormat_FastReport_HorzAlign_FastReport_VertAlign_System_Single_System_Int32_System_Single_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Single_System_Single_FastReport_Utils_InlineImageCache_" data-uid="FastReport.Utils.AdvancedTextRenderer.#ctor(System.String,Graphics,Font,Brush,Pen,RectangleF,StringFormat,FastReport.HorzAlign,FastReport.VertAlign,System.Single,System.Int32,System.Single,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Single,System.Single,FastReport.Utils.InlineImageCache)">AdvancedTextRenderer(String, Graphics, Font, Brush, Pen, RectangleF, StringFormat, HorzAlign, VertAlign, Single, Int32, Single, Boolean, Boolean, Boolean, Boolean, Single, Single, InlineImageCache)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdvancedTextRenderer(string text, Graphics g, Font font, Brush brush, Pen outlinePen, RectangleF rect, StringFormat format, HorzAlign horzAlign, VertAlign vertAlign, float lineHeight, int angle, float widthRatio, bool forceJustify, bool wysiwyg, bool htmlTags, bool pdfMode, float scale, float fontScale, InlineImageCache cache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Graphics</span></td>
+        <td><span class="parametername">g</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Font</span></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Brush</span></td>
+        <td><span class="parametername">brush</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Pen</span></td>
+        <td><span class="parametername">outlinePen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RectangleF</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StringFormat</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.HorzAlign.html">HorzAlign</a></td>
+        <td><span class="parametername">horzAlign</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.VertAlign.html">VertAlign</a></td>
+        <td><span class="parametername">vertAlign</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">lineHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">widthRatio</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forceJustify</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">wysiwyg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">htmlTags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">pdfMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fontScale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.InlineImageCache.html">InlineImageCache</a></td>
+        <td><span class="parametername">cache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Angle_" data-uid="FastReport.Utils.AdvancedTextRenderer.Angle*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Angle" data-uid="FastReport.Utils.AdvancedTextRenderer.Angle">Angle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Angle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Brush_" data-uid="FastReport.Utils.AdvancedTextRenderer.Brush*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Brush" data-uid="FastReport.Utils.AdvancedTextRenderer.Brush">Brush</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Brush Brush { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Brush</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_BrushColor_" data-uid="FastReport.Utils.AdvancedTextRenderer.BrushColor*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_BrushColor" data-uid="FastReport.Utils.AdvancedTextRenderer.BrushColor">BrushColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color BrushColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Cache_" data-uid="FastReport.Utils.AdvancedTextRenderer.Cache*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Cache" data-uid="FastReport.Utils.AdvancedTextRenderer.Cache">Cache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InlineImageCache Cache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.InlineImageCache.html">InlineImageCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_DisplayRect_" data-uid="FastReport.Utils.AdvancedTextRenderer.DisplayRect*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_DisplayRect" data-uid="FastReport.Utils.AdvancedTextRenderer.DisplayRect">DisplayRect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleF DisplayRect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectangleF</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Font_" data-uid="FastReport.Utils.AdvancedTextRenderer.Font*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Font" data-uid="FastReport.Utils.AdvancedTextRenderer.Font">Font</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Font Font { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Font</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_FontLineHeight_" data-uid="FastReport.Utils.AdvancedTextRenderer.FontLineHeight*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_FontLineHeight" data-uid="FastReport.Utils.AdvancedTextRenderer.FontLineHeight">FontLineHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FontLineHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_FontScale_" data-uid="FastReport.Utils.AdvancedTextRenderer.FontScale*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_FontScale" data-uid="FastReport.Utils.AdvancedTextRenderer.FontScale">FontScale</h4>
+  <div class="markdown level1 summary"><p>The scale for font tag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FontScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_ForceJustify_" data-uid="FastReport.Utils.AdvancedTextRenderer.ForceJustify*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_ForceJustify" data-uid="FastReport.Utils.AdvancedTextRenderer.ForceJustify">ForceJustify</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForceJustify { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Format_" data-uid="FastReport.Utils.AdvancedTextRenderer.Format*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Format" data-uid="FastReport.Utils.AdvancedTextRenderer.Format">Format</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringFormat Format { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StringFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Graphics_" data-uid="FastReport.Utils.AdvancedTextRenderer.Graphics*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Graphics" data-uid="FastReport.Utils.AdvancedTextRenderer.Graphics">Graphics</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphics Graphics { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Graphics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_HorzAlign_" data-uid="FastReport.Utils.AdvancedTextRenderer.HorzAlign*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_HorzAlign" data-uid="FastReport.Utils.AdvancedTextRenderer.HorzAlign">HorzAlign</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorzAlign HorzAlign { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.HorzAlign.html">HorzAlign</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_HtmlTags_" data-uid="FastReport.Utils.AdvancedTextRenderer.HtmlTags*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_HtmlTags" data-uid="FastReport.Utils.AdvancedTextRenderer.HtmlTags">HtmlTags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HtmlTags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_LineHeight_" data-uid="FastReport.Utils.AdvancedTextRenderer.LineHeight*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_LineHeight" data-uid="FastReport.Utils.AdvancedTextRenderer.LineHeight">LineHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LineHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_OutlinePen_" data-uid="FastReport.Utils.AdvancedTextRenderer.OutlinePen*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_OutlinePen" data-uid="FastReport.Utils.AdvancedTextRenderer.OutlinePen">OutlinePen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pen OutlinePen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Pen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Paragraphs_" data-uid="FastReport.Utils.AdvancedTextRenderer.Paragraphs*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Paragraphs" data-uid="FastReport.Utils.AdvancedTextRenderer.Paragraphs">Paragraphs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AdvancedTextRenderer.Paragraph&gt; Paragraphs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FastReport.Utils.AdvancedTextRenderer.Paragraph.html">AdvancedTextRenderer.Paragraph</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_PDFMode_" data-uid="FastReport.Utils.AdvancedTextRenderer.PDFMode*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_PDFMode" data-uid="FastReport.Utils.AdvancedTextRenderer.PDFMode">PDFMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PDFMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_RightToLeft_" data-uid="FastReport.Utils.AdvancedTextRenderer.RightToLeft*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_RightToLeft" data-uid="FastReport.Utils.AdvancedTextRenderer.RightToLeft">RightToLeft</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RightToLeft { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Scale_" data-uid="FastReport.Utils.AdvancedTextRenderer.Scale*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Scale" data-uid="FastReport.Utils.AdvancedTextRenderer.Scale">Scale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_TabOffset_" data-uid="FastReport.Utils.AdvancedTextRenderer.TabOffset*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_TabOffset" data-uid="FastReport.Utils.AdvancedTextRenderer.TabOffset">TabOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TabOffset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_TabSize_" data-uid="FastReport.Utils.AdvancedTextRenderer.TabSize*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_TabSize" data-uid="FastReport.Utils.AdvancedTextRenderer.TabSize">TabSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TabSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_VertAlign_" data-uid="FastReport.Utils.AdvancedTextRenderer.VertAlign*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_VertAlign" data-uid="FastReport.Utils.AdvancedTextRenderer.VertAlign">VertAlign</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertAlign VertAlign { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.VertAlign.html">VertAlign</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_WidthRatio_" data-uid="FastReport.Utils.AdvancedTextRenderer.WidthRatio*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_WidthRatio" data-uid="FastReport.Utils.AdvancedTextRenderer.WidthRatio">WidthRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WidthRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_WordWrap_" data-uid="FastReport.Utils.AdvancedTextRenderer.WordWrap*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_WordWrap" data-uid="FastReport.Utils.AdvancedTextRenderer.WordWrap">WordWrap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WordWrap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Wysiwyg_" data-uid="FastReport.Utils.AdvancedTextRenderer.Wysiwyg*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Wysiwyg" data-uid="FastReport.Utils.AdvancedTextRenderer.Wysiwyg">Wysiwyg</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Wysiwyg { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_CalcHeight_" data-uid="FastReport.Utils.AdvancedTextRenderer.CalcHeight*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_CalcHeight" data-uid="FastReport.Utils.AdvancedTextRenderer.CalcHeight">CalcHeight()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalcHeight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_CalcHeight_" data-uid="FastReport.Utils.AdvancedTextRenderer.CalcHeight*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_CalcHeight_System_Int32__FastReport_Utils_AdvancedTextRenderer_StyleDescriptor__" data-uid="FastReport.Utils.AdvancedTextRenderer.CalcHeight(System.Int32@,FastReport.Utils.AdvancedTextRenderer.StyleDescriptor@)">CalcHeight(out Int32, out AdvancedTextRenderer.StyleDescriptor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalcHeight(out int charsFit, out AdvancedTextRenderer.StyleDescriptor style)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">charsFit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FastReport.Utils.AdvancedTextRenderer.StyleDescriptor.html">AdvancedTextRenderer.StyleDescriptor</a></td>
+        <td><span class="parametername">style</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_CalcWidth_" data-uid="FastReport.Utils.AdvancedTextRenderer.CalcWidth*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_CalcWidth" data-uid="FastReport.Utils.AdvancedTextRenderer.CalcWidth">CalcWidth()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalcWidth()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_Utils_AdvancedTextRenderer_Draw_" data-uid="FastReport.Utils.AdvancedTextRenderer.Draw*"></a>
+  <h4 id="FastReport_Utils_AdvancedTextRenderer_Draw" data-uid="FastReport.Utils.AdvancedTextRenderer.Draw">Draw()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
