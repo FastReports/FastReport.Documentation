@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Dictionary
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -478,7 +478,8 @@ and <strong>Report.GetParameterValue</strong> methods.</p>
   
   <a id="FastReport_Data_Dictionary_AddChild_" data-uid="FastReport.Data.Dictionary.AddChild*"></a>
   <h4 id="FastReport_Data_Dictionary_AddChild_FastReport_Base_" data-uid="FastReport.Data.Dictionary.AddChild(FastReport.Base)">AddChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a child object to this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -497,7 +498,8 @@ and <strong>Report.GetParameterValue</strong> methods.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Object to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -505,7 +507,8 @@ and <strong>Report.GetParameterValue</strong> methods.</p>
   
   <a id="FastReport_Data_Dictionary_Assign_" data-uid="FastReport.Data.Dictionary.Assign*"></a>
   <h4 id="FastReport_Data_Dictionary_Assign_FastReport_Base_" data-uid="FastReport.Data.Dictionary.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -524,17 +527,34 @@ and <strong>Report.GetParameterValue</strong> methods.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Base.Assign(Base)</a></div>
+  <h5 id="FastReport_Data_Dictionary_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_Data_Dictionary_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_Data_Dictionary_CanContain_" data-uid="FastReport.Data.Dictionary.CanContain*"></a>
   <h4 id="FastReport_Data_Dictionary_CanContain_FastReport_Base_" data-uid="FastReport.Data.Dictionary.CanContain(FastReport.Base)">CanContain(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this object can contain the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,7 +573,8 @@ and <strong>Report.GetParameterValue</strong> methods.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -568,7 +589,8 @@ and <strong>Report.GetParameterValue</strong> methods.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><strong>true</strong> if this object can contain the specified child object; otherwise, <strong>false</strong>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -700,7 +722,8 @@ report1.Parameters.Add(par);</code></pre>
   
   <a id="FastReport_Data_Dictionary_Deserialize_" data-uid="FastReport.Data.Dictionary.Deserialize*"></a>
   <h4 id="FastReport_Data_Dictionary_Deserialize_FastReport_Utils_FRReader_" data-uid="FastReport.Data.Dictionary.Deserialize(FastReport.Utils.FRReader)">Deserialize(FRReader)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -719,12 +742,23 @@ report1.Parameters.Add(par);</code></pre>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>Reader object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a></div>
+  <h5 id="FastReport_Data_Dictionary_Deserialize_FastReport_Utils_FRReader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to restore the state. It may
+  happen when:</p>
+<ul><li>loading the report from a file or stream;</li><li>loading the report from the designer&apos;s undo
+          buffer;</li><li>assigning another object to this object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;</li><li>loading the object from the designer&apos;s
+    clipboard;</li><li></li></ul>
+</div>
   
   
   <a id="FastReport_Data_Dictionary_FindByAlias_" data-uid="FastReport.Data.Dictionary.FindByAlias*"></a>
@@ -915,7 +949,8 @@ report1.Parameters.Add(par);</code></pre>
   
   <a id="FastReport_Data_Dictionary_GetChildObjects_" data-uid="FastReport.Data.Dictionary.GetChildObjects*"></a>
   <h4 id="FastReport_Data_Dictionary_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.Data.Dictionary.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of child objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -934,7 +969,8 @@ report1.Parameters.Add(par);</code></pre>
       <tr>
         <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>List to fill with values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -942,7 +978,8 @@ report1.Parameters.Add(par);</code></pre>
   
   <a id="FastReport_Data_Dictionary_GetChildOrder_" data-uid="FastReport.Data.Dictionary.GetChildOrder*"></a>
   <h4 id="FastReport_Data_Dictionary_GetChildOrder_FastReport_Base_" data-uid="FastReport.Data.Dictionary.GetChildOrder(FastReport.Base)">GetChildOrder(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns z-order of the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -961,7 +998,8 @@ report1.Parameters.Add(par);</code></pre>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -976,10 +1014,14 @@ report1.Parameters.Add(par);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Z-order of the specified object.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Data_Dictionary_GetChildOrder_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must return the index of a specified child object in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_Data_Dictionary_Load_" data-uid="FastReport.Data.Dictionary.Load*"></a>
@@ -1253,7 +1295,8 @@ report1.Parameters.Add(par);</code></pre>
   
   <a id="FastReport_Data_Dictionary_RemoveChild_" data-uid="FastReport.Data.Dictionary.RemoveChild*"></a>
   <h4 id="FastReport_Data_Dictionary_RemoveChild_FastReport_Base_" data-uid="FastReport.Data.Dictionary.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes a specified object from this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1380,7 +1423,8 @@ report1.Parameters.Add(par);</code></pre>
   
   <a id="FastReport_Data_Dictionary_Serialize_" data-uid="FastReport.Data.Dictionary.Serialize*"></a>
   <h4 id="FastReport_Data_Dictionary_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Data.Dictionary.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1399,17 +1443,30 @@ report1.Parameters.Add(par);</code></pre>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Serialize_FastReport_Utils_FRWriter_">Base.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_Data_Dictionary_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   
   
   <a id="FastReport_Data_Dictionary_SetChildOrder_" data-uid="FastReport.Data.Dictionary.SetChildOrder*"></a>
   <h4 id="FastReport_Data_Dictionary_SetChildOrder_FastReport_Base_System_Int32_" data-uid="FastReport.Data.Dictionary.SetChildOrder(FastReport.Base,System.Int32)">SetChildOrder(Base, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the z-order of the specified object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1428,15 +1485,20 @@ report1.Parameters.Add(par);</code></pre>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">order</span></td>
-        <td></td>
+        <td><p>New Z-order.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Data_Dictionary_SetChildOrder_FastReport_Base_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must place the specified child object at the specified position in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_Data_Dictionary_UnregisterData_" data-uid="FastReport.Data.Dictionary.UnregisterData*"></a>
@@ -1508,7 +1570,8 @@ report1.Parameters.Add(par);</code></pre>
   
   <a id="FastReport_Data_Dictionary_UpdateLayout_" data-uid="FastReport.Data.Dictionary.UpdateLayout*"></a>
   <h4 id="FastReport_Data_Dictionary_UpdateLayout_System_Single_System_Single_" data-uid="FastReport.Data.Dictionary.UpdateLayout(System.Single,System.Single)">UpdateLayout(Single, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the children layout when the size of this object is changed by dx, dy values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1527,15 +1590,21 @@ report1.Parameters.Add(par);</code></pre>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dx</span></td>
-        <td></td>
+        <td><p>X delta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dy</span></td>
-        <td></td>
+        <td><p>Y delta.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Data_Dictionary_UpdateLayout_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must update positions/sizes of child objects whose <strong>Dock</strong> or <strong>Anchor</strong> properties
+are set to non-default values.</p>
+</div>
   
   
   <a id="FastReport_Data_Dictionary_UpdateRelations_" data-uid="FastReport.Data.Dictionary.UpdateRelations*"></a>

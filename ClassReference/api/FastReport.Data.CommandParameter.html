@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CommandParameter
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -409,7 +409,8 @@ to obtain a parameter's value.</p>
   
   <a id="FastReport_Data_CommandParameter_GetExpressions_" data-uid="FastReport.Data.CommandParameter.GetExpressions*"></a>
   <h4 id="FastReport_Data_CommandParameter_GetExpressions" data-uid="FastReport.Data.CommandParameter.GetExpressions">GetExpressions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all expressions contained in the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -426,17 +427,29 @@ to obtain a parameter's value.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span>[]</td>
-        <td></td>
+        <td><p>Array of expressions or <strong>null</strong> if object contains no expressions.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_GetExpressions">Base.GetExpressions()</a></div>
+  <h5 id="FastReport_Data_CommandParameter_GetExpressions_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You may override it if you are developing a
+  new component for FastReport.</p>
+<p>
+      This method is called by FastReport each time before run a report. FastReport
+      do this to collect all expressions and compile them. For example,
+<strong>GetExpressions</strong> method of the <a class="xref" href="FastReport.TextObject.html">TextObject</a> class
+parses the text and returns all expressions found in the text.
+</p>
+</div>
   
   
   <a id="FastReport_Data_CommandParameter_Serialize_" data-uid="FastReport.Data.CommandParameter.Serialize*"></a>
   <h4 id="FastReport_Data_CommandParameter_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Data.CommandParameter.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -455,12 +468,24 @@ to obtain a parameter's value.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Serialize_FastReport_Utils_FRWriter_">Base.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_Data_CommandParameter_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

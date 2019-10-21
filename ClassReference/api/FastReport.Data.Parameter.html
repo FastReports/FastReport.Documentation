@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Parameter
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -514,7 +514,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
   
   <a id="FastReport_Data_Parameter_AddChild_" data-uid="FastReport.Data.Parameter.AddChild*"></a>
   <h4 id="FastReport_Data_Parameter_AddChild_FastReport_Base_" data-uid="FastReport.Data.Parameter.AddChild(FastReport.Base)">AddChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a child object to this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -533,7 +534,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Object to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -541,7 +543,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
   
   <a id="FastReport_Data_Parameter_Assign_" data-uid="FastReport.Data.Parameter.Assign*"></a>
   <h4 id="FastReport_Data_Parameter_Assign_FastReport_Base_" data-uid="FastReport.Data.Parameter.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -560,17 +563,34 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Base.Assign(Base)</a></div>
+  <h5 id="FastReport_Data_Parameter_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_Data_Parameter_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_Data_Parameter_CanContain_" data-uid="FastReport.Data.Parameter.CanContain*"></a>
   <h4 id="FastReport_Data_Parameter_CanContain_FastReport_Base_" data-uid="FastReport.Data.Parameter.CanContain(FastReport.Base)">CanContain(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this object can contain the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -589,7 +609,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -604,7 +625,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><strong>true</strong> if this object can contain the specified child object; otherwise, <strong>false</strong>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -612,7 +634,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
   
   <a id="FastReport_Data_Parameter_GetChildObjects_" data-uid="FastReport.Data.Parameter.GetChildObjects*"></a>
   <h4 id="FastReport_Data_Parameter_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.Data.Parameter.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of child objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -631,7 +654,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>List to fill with values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -639,7 +663,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
   
   <a id="FastReport_Data_Parameter_GetChildOrder_" data-uid="FastReport.Data.Parameter.GetChildOrder*"></a>
   <h4 id="FastReport_Data_Parameter_GetChildOrder_FastReport_Base_" data-uid="FastReport.Data.Parameter.GetChildOrder(FastReport.Base)">GetChildOrder(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns z-order of the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -658,7 +683,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -673,15 +699,20 @@ property is not empty, it will be calculated and its value will be returned.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Z-order of the specified object.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Data_Parameter_GetChildOrder_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must return the index of a specified child object in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_Data_Parameter_GetExpressions_" data-uid="FastReport.Data.Parameter.GetExpressions*"></a>
   <h4 id="FastReport_Data_Parameter_GetExpressions" data-uid="FastReport.Data.Parameter.GetExpressions">GetExpressions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all expressions contained in the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -698,17 +729,29 @@ property is not empty, it will be calculated and its value will be returned.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span>[]</td>
-        <td></td>
+        <td><p>Array of expressions or <strong>null</strong> if object contains no expressions.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_GetExpressions">Base.GetExpressions()</a></div>
+  <h5 id="FastReport_Data_Parameter_GetExpressions_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You may override it if you are developing a
+  new component for FastReport.</p>
+<p>
+      This method is called by FastReport each time before run a report. FastReport
+      do this to collect all expressions and compile them. For example,
+<strong>GetExpressions</strong> method of the <a class="xref" href="FastReport.TextObject.html">TextObject</a> class
+parses the text and returns all expressions found in the text.
+</p>
+</div>
   
   
   <a id="FastReport_Data_Parameter_RemoveChild_" data-uid="FastReport.Data.Parameter.RemoveChild*"></a>
   <h4 id="FastReport_Data_Parameter_RemoveChild_FastReport_Base_" data-uid="FastReport.Data.Parameter.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes a specified object from this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -735,7 +778,8 @@ property is not empty, it will be calculated and its value will be returned.</p>
   
   <a id="FastReport_Data_Parameter_Serialize_" data-uid="FastReport.Data.Parameter.Serialize*"></a>
   <h4 id="FastReport_Data_Parameter_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Data.Parameter.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -754,17 +798,30 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Serialize_FastReport_Utils_FRWriter_">Base.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_Data_Parameter_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   
   
   <a id="FastReport_Data_Parameter_SetChildOrder_" data-uid="FastReport.Data.Parameter.SetChildOrder*"></a>
   <h4 id="FastReport_Data_Parameter_SetChildOrder_FastReport_Base_System_Int32_" data-uid="FastReport.Data.Parameter.SetChildOrder(FastReport.Base,System.Int32)">SetChildOrder(Base, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the z-order of the specified object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -783,20 +840,26 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">order</span></td>
-        <td></td>
+        <td><p>New Z-order.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Data_Parameter_SetChildOrder_FastReport_Base_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must place the specified child object at the specified position in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_Data_Parameter_UpdateLayout_" data-uid="FastReport.Data.Parameter.UpdateLayout*"></a>
   <h4 id="FastReport_Data_Parameter_UpdateLayout_System_Single_System_Single_" data-uid="FastReport.Data.Parameter.UpdateLayout(System.Single,System.Single)">UpdateLayout(Single, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the children layout when the size of this object is changed by dx, dy values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -815,15 +878,21 @@ property is not empty, it will be calculated and its value will be returned.</p>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dx</span></td>
-        <td></td>
+        <td><p>X delta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dy</span></td>
-        <td></td>
+        <td><p>Y delta.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Data_Parameter_UpdateLayout_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must update positions/sizes of child objects whose <strong>Dock</strong> or <strong>Anchor</strong> properties
+are set to non-default values.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

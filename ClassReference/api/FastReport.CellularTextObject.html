@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CellularTextObject
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -181,6 +181,9 @@
       <a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_DeserializeSubItems_FastReport_Utils_FRReader_">TextObject.DeserializeSubItems(FRReader)</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_GetStringFormat_FastReport_GraphicCache_StringFormatFlags_">TextObject.GetStringFormat(GraphicCache, StringFormatFlags)</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_DrawText_FastReport_Utils_FRPaintEventArgs_">TextObject.DrawText(FRPaintEventArgs)</a>
     </div>
     <div>
@@ -194,6 +197,12 @@
     </div>
     <div>
       <a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_Deserialize_FastReport_Utils_FRReader_">TextObject.Deserialize(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_InitializeComponent">TextObject.InitializeComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_FinalizeComponent">TextObject.FinalizeComponent()</a>
     </div>
     <div>
       <a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_GetExpressions">TextObject.GetExpressions()</a>
@@ -272,9 +281,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Click">ReportComponentBase.Click</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Printable">ReportComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Exportable">ReportComponentBase.Exportable</a>
@@ -385,12 +391,6 @@
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_HasClickListeners">ReportComponentBase.HasClickListeners()</a>
     </div>
     <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_InitializeComponent">ReportComponentBase.InitializeComponent()</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_FinalizeComponent">ReportComponentBase.FinalizeComponent()</a>
-    </div>
-    <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnBeforePrint_System_EventArgs_">ReportComponentBase.OnBeforePrint(EventArgs)</a>
     </div>
     <div>
@@ -449,6 +449,9 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Visible">ComponentBase.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Printable">ComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">ComponentBase.Width</a>
@@ -716,7 +719,8 @@ automatically based on its font.</p>
   
   <a id="FastReport_CellularTextObject_Assign_" data-uid="FastReport.CellularTextObject.Assign*"></a>
   <h4 id="FastReport_CellularTextObject_Assign_FastReport_Base_" data-uid="FastReport.CellularTextObject.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -735,17 +739,34 @@ automatically based on its font.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_Assign_FastReport_Base_">TextObject.Assign(Base)</a></div>
+  <h5 id="FastReport_CellularTextObject_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_CellularTextObject_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_CellularTextObject_CalcHeight_" data-uid="FastReport.CellularTextObject.CalcHeight*"></a>
   <h4 id="FastReport_CellularTextObject_CalcHeight" data-uid="FastReport.CellularTextObject.CalcHeight">CalcHeight()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the object's height.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -762,12 +783,17 @@ automatically based on its font.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td></td>
+        <td><p>Actual object's height, in pixels.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_CalcHeight">TextObject.CalcHeight()</a></div>
+  <h5 id="FastReport_CellularTextObject_CalcHeight_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Applicable to objects that contain several text lines, such as TextObject. Returns the height needed
+to display all the text lines.</p>
+</div>
   
   
   <a id="FastReport_CellularTextObject_Draw_" data-uid="FastReport.CellularTextObject.Draw*"></a>
@@ -799,9 +825,35 @@ automatically based on its font.</p>
   <div><a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_Draw_FastReport_Utils_FRPaintEventArgs_">TextObject.Draw(FRPaintEventArgs)</a></div>
   
   
+  <a id="FastReport_CellularTextObject_GetTable_" data-uid="FastReport.CellularTextObject.GetTable*"></a>
+  <h4 id="FastReport_CellularTextObject_GetTable" data-uid="FastReport.CellularTextObject.GetTable">GetTable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableObject GetTable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableObject.html">TableObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FastReport_CellularTextObject_Serialize_" data-uid="FastReport.CellularTextObject.Serialize*"></a>
   <h4 id="FastReport_CellularTextObject_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.CellularTextObject.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -820,12 +872,24 @@ automatically based on its font.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.TextObject.html#FastReport_TextObject_Serialize_FastReport_Utils_FRWriter_">TextObject.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_CellularTextObject_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SolidFill
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -84,6 +84,18 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.FillBase.html#FastReport_FillBase_CreateBrush_RectangleF_System_Single_System_Single_">FillBase.CreateBrush(RectangleF, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.FillBase.html#FastReport_FillBase_Deserialize_FastReport_Utils_FRReader_System_String_">FillBase.Deserialize(FRReader, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.FillBase.html#FastReport_FillBase_FinalizeComponent">FillBase.FinalizeComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.FillBase.html#FastReport_FillBase_InitializeComponent">FillBase.InitializeComponent()</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -181,7 +193,8 @@
   
   <a id="FastReport_SolidFill_Clone_" data-uid="FastReport.SolidFill.Clone*"></a>
   <h4 id="FastReport_SolidFill_Clone" data-uid="FastReport.SolidFill.Clone">Clone()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates exact copy of this fill.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,7 +211,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="FastReport.FillBase.html">FillBase</a></td>
-        <td></td>
+        <td><p>Copy of this object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,7 +222,8 @@
   
   <a id="FastReport_SolidFill_CreateBrush_" data-uid="FastReport.SolidFill.CreateBrush*"></a>
   <h4 id="FastReport_SolidFill_CreateBrush_RectangleF_" data-uid="FastReport.SolidFill.CreateBrush(RectangleF)">CreateBrush(RectangleF)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates the GDI+ Brush object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -227,7 +242,8 @@
       <tr>
         <td><span class="xref">RectangleF</span></td>
         <td><span class="parametername">rect</span></td>
-        <td></td>
+        <td><p>Drawing rectangle.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -242,7 +258,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Brush</span></td>
-        <td></td>
+        <td><p>Brush object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,7 +269,8 @@
   
   <a id="FastReport_SolidFill_Draw_" data-uid="FastReport.SolidFill.Draw*"></a>
   <h4 id="FastReport_SolidFill_Draw_FastReport_Utils_FRPaintEventArgs_RectangleF_" data-uid="FastReport.SolidFill.Draw(FastReport.Utils.FRPaintEventArgs,RectangleF)">Draw(FRPaintEventArgs, RectangleF)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Fills the specified rectangle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -271,12 +289,14 @@
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRPaintEventArgs.html">FRPaintEventArgs</a></td>
         <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><p>Draw event arguments.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">RectangleF</span></td>
         <td><span class="parametername">rect</span></td>
-        <td></td>
+        <td><p>Drawing rectangle.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -357,7 +377,8 @@
   
   <a id="FastReport_SolidFill_Serialize_" data-uid="FastReport.SolidFill.Serialize*"></a>
   <h4 id="FastReport_SolidFill_Serialize_FastReport_Utils_FRWriter_System_String_FastReport_FillBase_" data-uid="FastReport.SolidFill.Serialize(FastReport.Utils.FRWriter,System.String,FastReport.FillBase)">Serialize(FRWriter, String, FillBase)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the fill.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -376,22 +397,28 @@
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">prefix</span></td>
-        <td></td>
+        <td><p>Name of the fill property.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="FastReport.FillBase.html">FillBase</a></td>
         <td><span class="parametername">fill</span></td>
-        <td></td>
+        <td><p>Fill object to compare with.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.FillBase.html#FastReport_FillBase_Serialize_FastReport_Utils_FRWriter_System_String_FastReport_FillBase_">FillBase.Serialize(FRWriter, String, FillBase)</a></div>
+  <h5 id="FastReport_SolidFill_Serialize_FastReport_Utils_FRWriter_System_String_FastReport_FillBase__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is for internal use only.</p>
+</div>
 </article>
           </div>
           

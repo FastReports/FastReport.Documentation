@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PolyLineObject
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -102,9 +102,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Click">ReportComponentBase.Click</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Printable">ReportComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Exportable">ReportComponentBase.Exportable</a>
@@ -305,6 +302,9 @@
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Visible">ComponentBase.Visible</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Printable">ComponentBase.Printable</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">ComponentBase.Width</a>
     </div>
     <div>
@@ -451,6 +451,33 @@ the line width, style and color.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PolyLineObject()</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="FastReport_PolyLineObject_polygonSelectionMode" data-uid="FastReport.PolyLineObject.polygonSelectionMode">polygonSelectionMode</h4>
+  <div class="markdown level1 summary"><p>do not set this value, internal use only</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PolyLineObject.PolygonSelectionMode polygonSelectionMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.PolyLineObject.PolygonSelectionMode.html">PolyLineObject.PolygonSelectionMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -507,14 +534,43 @@ the line width, style and color.</p>
   </table>
   
   
-  <a id="FastReport_PolyLineObject_PointsArray_" data-uid="FastReport.PolyLineObject.PointsArray*"></a>
-  <h4 id="FastReport_PolyLineObject_PointsArray" data-uid="FastReport.PolyLineObject.PointsArray">PointsArray</h4>
-  <div class="markdown level1 summary"><p>Return points array of line</p>
+  <a id="FastReport_PolyLineObject_Points_" data-uid="FastReport.PolyLineObject.Points*"></a>
+  <h4 id="FastReport_PolyLineObject_Points" data-uid="FastReport.PolyLineObject.Points">Points</h4>
+  <div class="markdown level1 summary"><p>Return points collection.
+You can modify the collection for change this object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PointF[] PointsArray { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PolyLineObject.PolyPointCollection Points { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.PolyLineObject.PolyPointCollection.html">PolyLineObject.PolyPointCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FastReport_PolyLineObject_PointsArray_" data-uid="FastReport.PolyLineObject.PointsArray*"></a>
+  <h4 id="FastReport_PolyLineObject_PointsArray" data-uid="FastReport.PolyLineObject.PointsArray">PointsArray</h4>
+  <div class="markdown level1 summary"><p>Return points array of line
+deprecated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public PointF[] PointsArray { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -535,12 +591,14 @@ the line width, style and color.</p>
   
   <a id="FastReport_PolyLineObject_PointTypesArray_" data-uid="FastReport.PolyLineObject.PointTypesArray*"></a>
   <h4 id="FastReport_PolyLineObject_PointTypesArray" data-uid="FastReport.PolyLineObject.PointTypesArray">PointTypesArray</h4>
-  <div class="markdown level1 summary"><p>Return point types array. 0 - Start of line, 1 - Keep on line</p>
+  <div class="markdown level1 summary"><p>Return point types array. 0 - Start of line, 1 - Keep on line
+deprecated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] PointTypesArray { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public byte[] PointTypesArray { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -564,12 +622,14 @@ the line width, style and color.</p>
   <a id="FastReport_PolyLineObject_addPoint_" data-uid="FastReport.PolyLineObject.addPoint*"></a>
   <h4 id="FastReport_PolyLineObject_addPoint_System_Single_System_Single_System_Byte_" data-uid="FastReport.PolyLineObject.addPoint(System.Single,System.Single,System.Byte)">addPoint(Single, Single, Byte)</h4>
   <div class="markdown level1 summary"><p>Add point to end of polyline, need to recalculate bounds after add
-First point must have zero coordinate and zero type</p>
+First point must have zero coordinate and zero type.
+Recalculate bounds.
+Method is slow do not use this.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void addPoint(float localX, float localY, byte pointType)</code></pre>
+    <pre><code class="lang-csharp hljs">protected PolyLineObject.PolyPoint addPoint(float localX, float localY, byte pointType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -596,8 +656,23 @@ First point must have zero coordinate and zero type</p>
       <tr>
         <td><span class="xref">System.Byte</span></td>
         <td><span class="parametername">pointType</span></td>
-        <td><p>0-start,1-line</p>
+        <td><p>depreceted</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.PolyLineObject.PolyPoint.html">PolyLineObject.PolyPoint</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -605,7 +680,8 @@ First point must have zero coordinate and zero type</p>
   
   <a id="FastReport_PolyLineObject_Assign_" data-uid="FastReport.PolyLineObject.Assign*"></a>
   <h4 id="FastReport_PolyLineObject_Assign_FastReport_Base_" data-uid="FastReport.PolyLineObject.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -624,18 +700,35 @@ First point must have zero coordinate and zero type</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Assign_FastReport_Base_">ReportComponentBase.Assign(Base)</a></div>
+  <h5 id="FastReport_PolyLineObject_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_PolyLineObject_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_PolyLineObject_deletePoint_" data-uid="FastReport.PolyLineObject.deletePoint*"></a>
   <h4 id="FastReport_PolyLineObject_deletePoint_System_Int32_" data-uid="FastReport.PolyLineObject.deletePoint(System.Int32)">deletePoint(Int32)</h4>
-  <div class="markdown level1 summary"><p>Delete point from polyline by index
-Recalculate bounds</p>
+  <div class="markdown level1 summary"><p>Delete point from polyline by index.
+Recalculate bounds.
+Method is slow do not use this.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -688,7 +781,7 @@ Recalculate bounds</p>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a></div>
+  <div><a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Deserialize_FastReport_Utils_FRReader_">ReportComponentBase.Deserialize(FRReader)</a></div>
   
   
   <a id="FastReport_PolyLineObject_Draw_" data-uid="FastReport.PolyLineObject.Draw*"></a>
@@ -832,12 +925,14 @@ Recalculate bounds</p>
   
   <a id="FastReport_PolyLineObject_insertPoint_" data-uid="FastReport.PolyLineObject.insertPoint*"></a>
   <h4 id="FastReport_PolyLineObject_insertPoint_System_Int32_System_Single_System_Single_System_Byte_" data-uid="FastReport.PolyLineObject.insertPoint(System.Int32,System.Single,System.Single,System.Byte)">insertPoint(Int32, Single, Single, Byte)</h4>
-  <div class="markdown level1 summary"><p>Insert point to desired place of polyline</p>
+  <div class="markdown level1 summary"><p>Insert point to desired place of polyline
+recalculateBounds();
+Method is slow do not use this</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void insertPoint(int index, float localX, float localY, byte pointType)</code></pre>
+    <pre><code class="lang-csharp hljs">protected PolyLineObject.PolyPoint insertPoint(int index, float localX, float localY, byte pointType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -870,27 +965,43 @@ Recalculate bounds</p>
       <tr>
         <td><span class="xref">System.Byte</span></td>
         <td><span class="parametername">pointType</span></td>
-        <td><p>0-start,1-line</p>
+        <td><p>deprecated</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.PolyLineObject.PolyPoint.html">PolyLineObject.PolyPoint</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="FastReport_PolyLineObject_recalculateBounds_" data-uid="FastReport.PolyLineObject.recalculateBounds*"></a>
-  <h4 id="FastReport_PolyLineObject_recalculateBounds" data-uid="FastReport.PolyLineObject.recalculateBounds">recalculateBounds()</h4>
+  <a id="FastReport_PolyLineObject_RecalculateBounds_" data-uid="FastReport.PolyLineObject.RecalculateBounds*"></a>
+  <h4 id="FastReport_PolyLineObject_RecalculateBounds" data-uid="FastReport.PolyLineObject.RecalculateBounds">RecalculateBounds()</h4>
   <div class="markdown level1 summary"><p>Recalculate position and size of element</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void recalculateBounds()</code></pre>
+    <pre><code class="lang-csharp hljs">public void RecalculateBounds()</code></pre>
   </div>
   
   
   <a id="FastReport_PolyLineObject_Serialize_" data-uid="FastReport.PolyLineObject.Serialize*"></a>
   <h4 id="FastReport_PolyLineObject_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.PolyLineObject.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -909,12 +1020,51 @@ Recalculate bounds</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Serialize_FastReport_Utils_FRWriter_">ReportComponentBase.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_PolyLineObject_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
+  
+  
+  <a id="FastReport_PolyLineObject_SetPolyLine_" data-uid="FastReport.PolyLineObject.SetPolyLine*"></a>
+  <h4 id="FastReport_PolyLineObject_SetPolyLine_PointF___" data-uid="FastReport.PolyLineObject.SetPolyLine(PointF[])">SetPolyLine(PointF[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPolyLine(PointF[] newPoints)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointF</span>[]</td>
+        <td><span class="parametername">newPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>

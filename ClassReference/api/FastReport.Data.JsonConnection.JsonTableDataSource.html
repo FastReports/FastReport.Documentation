@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JsonTableDataSource
+   | FastReport OpenSource Class Reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JsonTableDataSource
+   | FastReport OpenSource Class Reference ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource">
+  
+  
+  <h1 id="FastReport_Data_JsonConnection_JsonTableDataSource" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource" class="text-break">Class JsonTableDataSource
+  </h1>
+  <div class="markdown level0 summary"><p>JsonTableDataSource present a json array object</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FastReport.Base.html">Base</a></div>
+    <div class="level2"><a class="xref" href="FastReport.Data.DataComponentBase.html">DataComponentBase</a></div>
+    <div class="level3"><a class="xref" href="FastReport.Data.Column.html">Column</a></div>
+    <div class="level4"><a class="xref" href="FastReport.Data.DataSourceBase.html">DataSourceBase</a></div>
+    <div class="level5"><a class="xref" href="FastReport.Data.TableDataSource.html">TableDataSource</a></div>
+    <div class="level6"><span class="xref">JsonTableDataSource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a></div>
+    <div><a class="xref" href="FastReport.IParent.html">IParent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_Table">TableDataSource.Table</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_TableName">TableDataSource.TableName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_SelectCommand">TableDataSource.SelectCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_Parameters">TableDataSource.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_Connection">TableDataSource.Connection</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_StoreData">TableDataSource.StoreData</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_TableData">TableDataSource.TableData</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_QbSchema">TableDataSource.QbSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_Dispose_System_Boolean_">TableDataSource.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_RefreshTable">TableDataSource.RefreshTable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_Serialize_FastReport_Utils_FRWriter_">TableDataSource.Serialize(FRWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_SetParent_FastReport_Base_">TableDataSource.SetParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_CanContain_FastReport_Base_">TableDataSource.CanContain(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_GetChildObjects_FastReport_ObjectCollection_">TableDataSource.GetChildObjects(ObjectCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_AddChild_FastReport_Base_">TableDataSource.AddChild(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_RemoveChild_FastReport_Base_">TableDataSource.RemoveChild(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_currentRow">DataSourceBase.currentRow</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Load">DataSourceBase.Load</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_RowCount">DataSourceBase.RowCount</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_HasMoreRows">DataSourceBase.HasMoreRows</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_CurrentRow">DataSourceBase.CurrentRow</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_CurrentRowNo">DataSourceBase.CurrentRowNo</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Item_System_String_">DataSourceBase.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Item_FastReport_Data_Column_">DataSourceBase.Item[Column]</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_ForceLoadData">DataSourceBase.ForceLoadData</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_DataType">DataSourceBase.DataType</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_BindableControl">DataSourceBase.BindableControl</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_CustomBindableControl">DataSourceBase.CustomBindableControl</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Format">DataSourceBase.Format</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Expression">DataSourceBase.Expression</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Calculated">DataSourceBase.Calculated</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Init">DataSourceBase.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Init_System_String_">DataSourceBase.Init(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Init_System_String_FastReport_SortCollection_">DataSourceBase.Init(String, SortCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Init_FastReport_Data_DataSourceBase_">DataSourceBase.Init(DataSourceBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Init_FastReport_Data_DataSourceBase_System_String_FastReport_SortCollection_">DataSourceBase.Init(DataSourceBase, String, SortCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Init_FastReport_Data_Relation_System_String_FastReport_SortCollection_">DataSourceBase.Init(Relation, String, SortCollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_EnsureInit">DataSourceBase.EnsureInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_First">DataSourceBase.First()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Next">DataSourceBase.Next()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Prior">DataSourceBase.Prior()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Deserialize_FastReport_Utils_FRReader_">DataSourceBase.Deserialize(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_PropName">Column.PropName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_PropDescriptor">Column.PropDescriptor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_Columns">Column.Columns</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_SetName_System_String_">Column.SetName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_GetExpressions">Column.GetExpressions()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_GetChildOrder_FastReport_Base_">Column.GetChildOrder(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_SetChildOrder_FastReport_Base_System_Int32_">Column.SetChildOrder(Base, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.Column.html#FastReport_Data_Column_UpdateLayout_System_Single_System_Single_">Column.UpdateLayout(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataComponentBase.html#FastReport_Data_DataComponentBase_Alias">DataComponentBase.Alias</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataComponentBase.html#FastReport_Data_DataComponentBase_Enabled">DataComponentBase.Enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataComponentBase.html#FastReport_Data_DataComponentBase_ReferenceName">DataComponentBase.ReferenceName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataComponentBase.html#FastReport_Data_DataComponentBase_Reference">DataComponentBase.Reference</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataComponentBase.html#FastReport_Data_DataComponentBase_IsAliased">DataComponentBase.IsAliased</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Data.DataComponentBase.html#FastReport_Data_DataComponentBase_Assign_FastReport_Base_">DataComponentBase.Assign(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Name">Base.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Restrictions">Base.Restrictions</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Flags">Base.Flags</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Parent">Base.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseName">Base.BaseName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ClassName">Base.ClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Report">Base.Report</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Page">Base.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ChildObjects">Base.ChildObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AllObjects">Base.AllObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ZOrder">Base.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsAncestor">Base.IsAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsDesigning">Base.IsDesigning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsPrinting">Base.IsPrinting</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsRunning">Base.IsRunning</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OriginalComponent">Base.OriginalComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetProp_FastReport_Base_FastReport_Base_">Base.SetProp(Base, Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FloatDiff_System_Single_System_Single_">Base.FloatDiff(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">Base.DeserializeSubItems(FRReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractDefaultMacros_System_String_">Base.ExtractDefaultMacros(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetFlags_FastReport_Flags_System_Boolean_">Base.SetFlags(Flags, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetReport_FastReport_Report_">Base.SetReport(Report)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_SetParentCore_FastReport_Base_">Base.SetParentCore(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_FindObject_System_String_">Base.FindObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_CreateUniqueName">Base.CreateUniqueName()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">Base.AssignAll(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasParent_FastReport_Base_">Base.HasParent(Base)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasFlag_FastReport_Flags_">Base.HasFlag(Flags)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_HasRestriction_FastReport_Restrictions_">Base.HasRestriction(Restrictions)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_InvokeEvent_System_String_System_Object_">Base.InvokeEvent(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_OnAfterLoad">Base.OnAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetCustomScript">Base.GetCustomScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ExtractMacros">Base.ExtractMacros()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_IsHaveToConvert_System_Object_">Base.IsHaveToConvert(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_GetConvertedObjects">Base.GetConvertedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.Base.html#FastReport_Base_ForEachAllConvectedObjects_System_Object_">Base.ForEachAllConvectedObjects(Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FastReport.Data.JsonConnection.html">FastReport.Data.JsonConnection</a></h6>
+  <h6><strong>Assembly</strong>: FastReport.OpenSource.dll</h6>
+  <h5 id="FastReport_Data_JsonConnection_JsonTableDataSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JsonTableDataSource : TableDataSource, IFRSerializable, IParent</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FastReport_Data_JsonConnection_JsonTableDataSource__ctor_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.#ctor*"></a>
+  <h4 id="FastReport_Data_JsonConnection_JsonTableDataSource__ctor" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.#ctor">JsonTableDataSource()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTableDataSource()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FastReport_Data_JsonConnection_JsonTableDataSource_UpdateSchema_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.UpdateSchema*"></a>
+  <h4 id="FastReport_Data_JsonConnection_JsonTableDataSource_UpdateSchema" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.UpdateSchema">UpdateSchema</h4>
+  <div class="markdown level1 summary"><p>Gets or sets value for force update schema on init schema</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateSchema { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FastReport_Data_JsonConnection_JsonTableDataSource_GetValue_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.GetValue*"></a>
+  <h4 id="FastReport_Data_JsonConnection_JsonTableDataSource_GetValue_FastReport_Data_Column_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.GetValue(FastReport.Data.Column)">GetValue(Column)</h4>
+  <div class="markdown level1 summary"><p>Gets data stored in a specified column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override object GetValue(Column column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Data.Column.html">Column</a></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>The column.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An object that contains the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_GetValue_FastReport_Data_Column_">TableDataSource.GetValue(Column)</a></div>
+  
+  
+  <a id="FastReport_Data_JsonConnection_JsonTableDataSource_GetValue_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.GetValue*"></a>
+  <h4 id="FastReport_Data_JsonConnection_JsonTableDataSource_GetValue_System_String_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.GetValue(System.String)">GetValue(String)</h4>
+  <div class="markdown level1 summary"><p>Gets data stored in a specified column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override object GetValue(string alias)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">alias</span></td>
+        <td><p>The column alias.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An object that contains the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_GetValue_System_String_">DataSourceBase.GetValue(String)</a></div>
+  
+  
+  <a id="FastReport_Data_JsonConnection_JsonTableDataSource_InitializeComponent_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.InitializeComponent*"></a>
+  <h4 id="FastReport_Data_JsonConnection_JsonTableDataSource_InitializeComponent" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.InitializeComponent">InitializeComponent()</h4>
+  <div class="markdown level1 summary"><p>Initializes the object before running a report.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitializeComponent()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_InitializeComponent">TableDataSource.InitializeComponent()</a></div>
+  <h5 id="FastReport_Data_JsonConnection_JsonTableDataSource_InitializeComponent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used by the report engine, do not call it directly.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_JsonConnection_JsonTableDataSource_InitSchema_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.InitSchema*"></a>
+  <h4 id="FastReport_Data_JsonConnection_JsonTableDataSource_InitSchema" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.InitSchema">InitSchema()</h4>
+  <div class="markdown level1 summary"><p>Initializes the datasource schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitSchema()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_InitSchema">TableDataSource.InitSchema()</a></div>
+  <h5 id="FastReport_Data_JsonConnection_JsonTableDataSource_InitSchema_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to support the FastReport.Net infrastructure. Do not call it directly.</p>
+</div>
+  
+  
+  <a id="FastReport_Data_JsonConnection_JsonTableDataSource_LoadData_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.LoadData*"></a>
+  <h4 id="FastReport_Data_JsonConnection_JsonTableDataSource_LoadData_System_Collections_ArrayList_" data-uid="FastReport.Data.JsonConnection.JsonTableDataSource.LoadData(System.Collections.ArrayList)">LoadData(ArrayList)</h4>
+  <div class="markdown level1 summary"><p>Loads the datasource with data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadData(ArrayList rows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ArrayList</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td><p>Rows to fill with data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FastReport.Data.TableDataSource.html#FastReport_Data_TableDataSource_LoadData_System_Collections_ArrayList_">TableDataSource.LoadData(ArrayList)</a></div>
+  <h5 id="FastReport_Data_JsonConnection_JsonTableDataSource_LoadData_System_Collections_ArrayList__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to support the FastReport.Net infrastructure. Do not call it directly.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="FastReport.IParent.html">IParent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

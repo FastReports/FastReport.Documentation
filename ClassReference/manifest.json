@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/FastReports/REPOS/fastreport_net/Tools/FastReport.OpenSource.Documentation",
+  "source_base_path": "E:/FR/FastReport/Tools/FastReport.OpenSource.Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.AfterDatabaseLoginEventArgs.html",
-          "hash": "EOQXJXY7lFPmsZ9doA34Mg=="
+          "hash": "w370AJOwgN1jrfcEHC5sVA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.AfterDatabaseLoginEventHandler.html",
-          "hash": "iHcR129uKRMliBw1LwkGkQ=="
+          "hash": "+ryvWY+zAji8KRO+HYuZXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.AssemblyInitializer.html",
-          "hash": "E4MKdAlvGNB8z4QMGEz5dQ=="
+          "hash": "Vd8oUzwj1ZNIuyOZDF6CYw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.AutoShrinkMode.html",
-          "hash": "4LbEZ/zh+yrVJZ9yA1CoTQ=="
+          "hash": "Kl2iirJ9Aj/YwrFTQjYo9A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.BandBase.html",
-          "hash": "JiaGf4nO8XIH0NzSqtfg4A=="
+          "hash": "ThZczF6bbwTYImhyudDTrA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.BandCollection.html",
-          "hash": "R+aGwqfYy7yJowzkLicCvA=="
+          "hash": "7A57MI696meCDgp8JadUlA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.BandColumns.html",
-          "hash": "NdQXp8cbYsPsKVyS/qggpw=="
+          "hash": "z3MqcLjhzWj3ya5Bcy4T0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode128.html",
-          "hash": "+zKyiEP102PzFr5Atmiwfg=="
+          "hash": "n7AewsDHbNLrZgAt+ejXnw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode2DBase.html",
-          "hash": "IDdFWEgvfOEXVtCK3Ut+Sw=="
+          "hash": "X26OGsdyJiWZkIloQLjqaQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode2of5Industrial.html",
-          "hash": "jFbr6ilq+Y5zEi5F4bHa/w=="
+          "hash": "Pce2PafBUaUdcfh0VlyLag=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode2of5Interleaved.html",
-          "hash": "D1izX4qY0hK22fm/sJIs+A=="
+          "hash": "PY8NGyj0KQ5UndaFlM8CjA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode2of5Matrix.html",
-          "hash": "bDpFFSg4DACRBiQfqiogMw=="
+          "hash": "/2rxCoqqBzRXf1VIn9B7xQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode39.html",
-          "hash": "lNHZnMpSCtKbEKic4QHDLQ=="
+          "hash": "65KBtP7xBWet28JzAUR+AQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode39Extended.html",
-          "hash": "aNzYJDhjUZn+fWefGYd/rg=="
+          "hash": "tWQ+/JvLA9KxxisVlyolyA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode93.html",
-          "hash": "OfwC5509Mx8fIC5l8kEGmA=="
+          "hash": "Wjn99lhbYEYu/kUsEfrqsg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.Barcode93Extended.html",
-          "hash": "aEkzpzlVk0kQim1dOxVe7g=="
+          "hash": "ZOOeHuJNBI3Rah0nm9sXgg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeAztec.html",
-          "hash": "8/YLKXcfU9i4+op3mf2aLQ=="
+          "hash": "hRj/sFDQmgxoM+Zljpnm5A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeBase.html",
-          "hash": "KRvzS+nqjm/m5svUXLymqw=="
+          "hash": "kZt5yE8vYLU3zlywLKRTmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeCodabar.html",
-          "hash": "FhjeIZhXzJODpsQ713burQ=="
+          "hash": "r60RVqcA070BBHBX1SBgPw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeDatamatrix.html",
-          "hash": "2gZW4oFeiA6YzFBYJ13j5A=="
+          "hash": "jP8kifRnLqzxYQp4sJE0FQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeEAN.html",
-          "hash": "glYG7csw1bHNbb/YlfDecw=="
+          "hash": "kISD1Mb3dg3L+6kyPTtPMA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeEAN128.html",
-          "hash": "n2wQTRvqM/j+zxCch66xhQ=="
+          "hash": "a7/ggtazl5wRPiD9ZoGGCA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeEAN13.html",
-          "hash": "1TDWQSD+YhuQKB3ijhdRBw=="
+          "hash": "1DwidkBW96i/jLuPQJmWgw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeEAN8.html",
-          "hash": "PVQ6UUv5YgNOw4wGfBli8g=="
+          "hash": "PvhdMUoDbJigm1VdvQOM2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeIntelligentMail.html",
-          "hash": "dt5l9lH9QVO58o1Xvso49A=="
+          "hash": "jfHDYqavM6AUrM0RyXoMqw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeMSI.html",
-          "hash": "ftUymZO1toRJ/xtAA0KzGg=="
+          "hash": "Y3HTrNlD88qZULK3o8YrWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeMaxiCode.html",
-          "hash": "9BDGbehyaRcfGyf1h0hHRw=="
+          "hash": "+5bUJ67L7cSCPRBEz56KOw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeObject.html",
-          "hash": "vgzqVpgjsXos2jLmOVwSUg=="
+          "hash": "iGE5jvhDWdat1kLFRbLkIQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodePDF417.html",
-          "hash": "Z15ILQkobU48nM9gn1NK1w=="
+          "hash": "I9BD/pe2Qui5oNLIc+EK0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodePharmacode.html",
-          "hash": "n3WUAGnkkW5skRSKeXrG8g=="
+          "hash": "92RCy+h87eRpT6a3yfQyUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodePlessey.html",
-          "hash": "7TE2AFs9hbw98orjRTbrNA=="
+          "hash": "go/ks00VkgKdx3S4Rho+DQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodePostNet.html",
-          "hash": "ULiwUsA9ydr522wtZW21Kw=="
+          "hash": "8G1tFofJ4I5fhMzvUNf/aQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeQR.html",
-          "hash": "YjlLXbgLbVmknMGBM2v99Q=="
+          "hash": "wO1NtICyX8m5gCHoVU5cmw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeSupplement2.html",
-          "hash": "phKRcEN6hzO6HbCcCk2bsw=="
+          "hash": "g98zgszdp/wZFx7XPM4tLg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -417,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeUPC_A.html",
-          "hash": "pPX6pmSTLkePYOZxga58Nw=="
+          "hash": "3CRhyUDlXSfIlk6LCwBHVQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeUPC_E0.html",
-          "hash": "oMIHuOeMUkQPU5Pw00bXDQ=="
+          "hash": "ODGSRXFp3i8L3mA6vdW8Vg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.BarcodeUPC_E1.html",
-          "hash": "iYCkI6W9ZZh5mXBhEP8xNA=="
+          "hash": "ldi+q6pxSm1RhF8TNUjJEw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.DatamatrixEncoding.html",
-          "hash": "h1c+j4jRsITv5KxIzxjfWA=="
+          "hash": "8oygZdzs6NVxqWl9SPe1ug=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.DatamatrixSymbolSize.html",
-          "hash": "UpMoAxx79W4SQK/VPqAAsw=="
+          "hash": "ZGOpXUSamqWCyAOBoqqRPw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.LinearBarcodeBase.html",
-          "hash": "j+2Po5vi7z5ycXCoS8JZqQ=="
+          "hash": "QrC/Mqyvwz/9/a26aiDZWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.PDF417CompactionMode.html",
-          "hash": "Et7GQ3Kzqt0TicQiIoB1Og=="
+          "hash": "OcWr9P49rY5zFBxmLyQHQg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.PDF417ErrorCorrection.html",
-          "hash": "KkX/J3ZG3sEv7oFQ2uNUoQ=="
+          "hash": "8DtmH9nLj/BhGwznfzO8rw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.QRCodeEncoding.html",
-          "hash": "LWE5//0nWiLrXHmQzkfxJw=="
+          "hash": "jp6/zm23wSmq3gFkE6oYXA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.QRCodeErrorCorrection.html",
-          "hash": "sbXC30q12PdpEahvQvNJZg=="
+          "hash": "eCCjh6YWtmbDV0GuckUnWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Barcode.html",
-          "hash": "StAKqlP+BevGTsL4sIMSkQ=="
+          "hash": "yfib6H/Ys8TKn5C+ZRD3XA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +549,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Base.html",
-          "hash": "WhdmF1QHUY1ua2cwo2NYyQ=="
+          "hash": "zyFqpgf4gpIIy8tGRedtZw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +561,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Border.html",
-          "hash": "QrUDL9/PQEnvGUhBNh/36A=="
+          "hash": "I6sojrkkVu2WY+FBnVz2Ew=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.BorderLine.html",
-          "hash": "JFLqi57Tx4k4hDHeYHdE3w=="
+          "hash": "eEjJ902SLht2FvggrIM6Ag=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.BorderLines.html",
-          "hash": "/h7xhGBFGMcCV6spYhZ60A=="
+          "hash": "ikkmQZTEmC1OjhtXKgiYew=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.BreakableComponent.html",
-          "hash": "UHoPr2Pj9HaL+/xwQdm1Ww=="
+          "hash": "/NFIITymtn8Z9wnIGVOC6Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CapSettings.html",
-          "hash": "cp6W04IMeAk+udHx3izHrg=="
+          "hash": "U8kZRTxVe4tkR1JpIk7unQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CapStyle.html",
-          "hash": "99KH4654KBjK/RvAMbMABw=="
+          "hash": "IhmyHUczHOkPGUvMhcR6Og=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -633,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CellularTextObject.html",
-          "hash": "qeVBESwQx40GfqNQdsx0cQ=="
+          "hash": "K0GK0qHKQmA4bmK6B4fHvg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CheckBoxObject.html",
-          "hash": "Hv0jKN2KohNKIFw93h2Lng=="
+          "hash": "ZFGxGl3JJ2SThjmhZhx+yQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CheckedSymbol.html",
-          "hash": "xeN3KnxEkdPneyxFtl5cwQ=="
+          "hash": "c95am2fP6z9mE/28zrNh3g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ChildBand.html",
-          "hash": "pcGHwi8XHFVcMLAPQQmH0A=="
+          "hash": "lZfBqjo190ON9d4xt4h8wA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Code.CodeUtils.html",
-          "hash": "H50kdFOotigBYJDjhikBYw=="
+          "hash": "7IL927HW7ygF/PnVZPMZUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Code.FindTextArgs.html",
-          "hash": "J2PF8GSmVsPo5AM4YSibSg=="
+          "hash": "MIqYG65s/FAa8TNvTEgIUQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Code.html",
-          "hash": "1dk8ctdSqRAbUlTCap3ldA=="
+          "hash": "3ByY48EkyMfsHadLVNmWXA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -717,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ColumnFooterBand.html",
-          "hash": "fsg3Xfe1O/8cDoe9ExaN6Q=="
+          "hash": "nxOOIOm2UmUNuARliV5pIA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -729,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ColumnHeaderBand.html",
-          "hash": "CROfCCjt5Fra9/7LIwJ5Ag=="
+          "hash": "5P4NplE8VlJnWHO5u2UttA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -741,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ColumnLayout.html",
-          "hash": "NVtUOwMiBo+oX4GBbY9hVA=="
+          "hash": "7EOH6LDVliJMWnS/rENZTw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -753,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ComponentBase.html",
-          "hash": "2N267mW2ngqAlYq9X7ijiw=="
+          "hash": "KZbxe5Y1BYxbD4SisbCD1g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ConditionCollection.html",
-          "hash": "1TYImrFMfREBBP0d8vVxTQ=="
+          "hash": "N8KfxP49pIcLWhp0T+2Xdg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewAxisDrawCell.html",
-          "hash": "QNGQdhOhac9XihQH730uRA=="
+          "hash": "a3Sla5qqsIcBO7rtiPVxyg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,10 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewAxisDrawCellHandler.html",
-          "hash": "U/fuoA/0jn2fLU1Ih72p+A=="
+          "hash": "l2JbR/v20yQV69mRUwXASg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -801,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewCellDescriptor.html",
-          "hash": "BK7NjH+2oZZsmToazUa+1A=="
+          "hash": "uW5DYSl1b+6Kv71loupjyA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -813,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewCells.html",
-          "hash": "3wmLrU+Ryfl/uHNnjhZ4YQ=="
+          "hash": "HXmo9F6SXbzJkMAhtkYAdA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,10 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewData.html",
-          "hash": "eBskGhE6CM632J26jOS/bQ=="
+          "hash": "lr6ybompvyySeC13YFFTWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -837,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewDescriptor.html",
-          "hash": "240tmtVW/fXcGOCIzwC/2Q=="
+          "hash": "lYnajZM9sNEac7KpvNv6HA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -849,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewHeader.html",
-          "hash": "5uD9qtvlCgCc56CtPpjt8g=="
+          "hash": "McUOYRCGRbwgMJhyBmdFfg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -861,10 +861,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewHeaderDescriptor.html",
-          "hash": "2i/jdOblh78Mdl+JIOXk6Q=="
+          "hash": "0U1/m1ZKvaR7hDOmjKOhfA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -873,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewMeasureCell.html",
-          "hash": "iQRCUL+W7dFDxliwwy6Y1w=="
+          "hash": "3V0om3L9EWDif7WyVJv1wg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -885,10 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.CrossViewObject.html",
-          "hash": "pevU5PNfp9SDuhxz/1O0vQ=="
+          "hash": "eUD90O4QNutjb8lZRBz2yw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -897,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.IBaseCubeLink.html",
-          "hash": "1DuY++qcoVoyc5lKeC60+Q=="
+          "hash": "Yc9Cwp8GPKsBbKIcpVDYwA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -909,10 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CrossView.html",
-          "hash": "SbL+H3OPkgysLl30abEa6A=="
+          "hash": "y1aaofuCo1t9MNLSxcqb2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -921,10 +921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CustomCalcEventArgs.html",
-          "hash": "uvAZw8yFDA0qq3PeHKcTYg=="
+          "hash": "ZnTQRX3uygW2DnBu/kQUUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -933,10 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CustomCalcEventHandler.html",
-          "hash": "vExHgUzBMnyiA6TiALLR+g=="
+          "hash": "lZqPAdpFzlRzduJQaHSg8Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CustomLoadEventArgs.html",
-          "hash": "MeFnETajrN8RzGzOg+D6Rg=="
+          "hash": "8Yce6ouYrNzTvH8bwzPSLw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -957,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.CustomLoadEventHandler.html",
-          "hash": "vgB7OGzq/DFDQNAQyUjsaQ=="
+          "hash": "oOW6KstdK4pd1tRFiwGFvg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -969,10 +969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.AbsRowVariable.html",
-          "hash": "XjUODGLR42O8rqsnk8Fnnw=="
+          "hash": "vpXeqTyOG+7Qlhq4WzEISA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -981,10 +981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.BOConverterFlags.html",
-          "hash": "GjeeDzzUhaQAXFYD9jCVCg=="
+          "hash": "UU5+VsCqybIHwy8iswEgoQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -993,10 +993,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.BusinessObjectDataSource.html",
-          "hash": "Ww3BHujE345Q+HrSSPRfiA=="
+          "hash": "7fnGrkpHI6XaAQwGXsi4Pw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1005,10 +1005,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.Column.html",
-          "hash": "NbmiF+C7LFKghkD2tr7wTw=="
+          "hash": "8Om6UVoJQpI9ZJYITiu1KA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1017,10 +1017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.ColumnBindableControl.html",
-          "hash": "VsiPUhqmBo93oJKi850REw=="
+          "hash": "1p1rSl2eFo9XKlWqGXD2+Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1029,10 +1029,22 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.ColumnCollection.html",
-          "hash": "YMxfoZ6JXEpHqqItHzeLgA=="
+          "hash": "XNvrgY1RzrG3AFk6xIPfrg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Data.ColumnComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Data.ColumnComparer.html",
+          "hash": "vyQW3NuUtvvJS1RTKpr41A=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1041,10 +1053,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.ColumnFormat.html",
-          "hash": "16+A2HrProVB+JAvL9bHfg=="
+          "hash": "ba7v/wVlsamBiVOALTRcoA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1053,10 +1065,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.CommandParameter.html",
-          "hash": "6FTaMVgzGXOI1ITpxR/D9A=="
+          "hash": "IK626/so0YUEF3XoPi3a9g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1065,10 +1077,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.CommandParameterCollection.html",
-          "hash": "aMhS3PcyVI2nIjrifX8PTg=="
+          "hash": "BAsHmmqLXdQ++KbzMtt0/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1077,10 +1089,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.ConnectionCollection.html",
-          "hash": "AypBrTg9QTFYBDeF1p7PHQ=="
+          "hash": "JbhiItCjmLiVY3+NCADvpQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1089,10 +1101,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.CopyNameMacroVariable.html",
-          "hash": "nhogHdvJ1DSAFkgwLBSOqA=="
+          "hash": "mD+3d0b14FNWrlWatTPfmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1101,10 +1113,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.CsvConnectionStringBuilder.html",
-          "hash": "JS/1RWKl7cJmjEtyqfEKVw=="
+          "hash": "NKm4LwGv1VlMsQc1fiKZeA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1113,10 +1125,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.CsvDataConnection.html",
-          "hash": "gIGCVFLjFqeAXGvybgHMUQ=="
+          "hash": "TMg2Ze9wXChk8AWjV2QA2Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1125,10 +1137,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.CubeSourceBase.html",
-          "hash": "K6fY3TCnF4a90gXxHJumiw=="
+          "hash": "8VFWrMuOPwg/CayqcyBI4w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1137,10 +1149,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.CubeSourceCollection.html",
-          "hash": "20FGLGVKuIbIO6bvIwCzdA=="
+          "hash": "M5YuwE3LfeGbArnJVFrurw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1149,10 +1161,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.DataComponentBase.html",
-          "hash": "OiUcQiRKU1E7hcC467cIpw=="
+          "hash": "eQUI4SMXZNLmZkwtacziTQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1161,10 +1173,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.DataConnectionBase.html",
-          "hash": "eqF4Jt4kGvDV2vScZNlcpw=="
+          "hash": "kLu2uebuuruYeKYTj8yNYQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1173,10 +1185,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.DataSourceBase.html",
-          "hash": "IPVYtkZ85bRiC3NTngPhFw=="
+          "hash": "QHPuiEhZvSKJ5OLx8TqBjA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1185,10 +1197,22 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.DataSourceCollection.html",
-          "hash": "Ot8bXE1hLsdCwfPAk6pFyQ=="
+          "hash": "cLW+l46HXSktuQhfUsp8sQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Data.DataSourceComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Data.DataSourceComparer.html",
+          "hash": "rBC6ow6vzojh7W9quJ7JJA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1197,10 +1221,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.DateVariable.html",
-          "hash": "Br1pHvTTCBmt/l5UkV/rmw=="
+          "hash": "Sx1MXKrPsE9ZJSGialEZqQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1209,10 +1233,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.Dictionary.RegDataItem.html",
-          "hash": "ahyLAc5FiOslQaKHsj/tCg=="
+          "hash": "YaxzQEz7lDU9MH03GnJgSw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1221,10 +1245,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.Dictionary.html",
-          "hash": "RU1OY77HCBkj95AVyuhz/w=="
+          "hash": "iF10AtgxLGdI5yIRG9H8ng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1233,10 +1257,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.FilterOperation.html",
-          "hash": "iisoGLi2kLRv4fZkHiDh5Q=="
+          "hash": "fd8pUSVyjmyZUpfncjHCmg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1245,10 +1269,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.HierarchyLevelVariable.html",
-          "hash": "Jk4UERe2KNYrNvy5KiesDA=="
+          "hash": "x94jPHPQR/Z/uH/5iyh0uA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1257,10 +1281,58 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.HierarchyRowNoVariable.html",
-          "hash": "GwEPAqg8+H01cuRsb7F2ew=="
+          "hash": "yzCMAdpOcWLixMZ1RCu5Zw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Data.JsonConnection.JsonDataSourceConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Data.JsonConnection.JsonDataSourceConnection.html",
+          "hash": "YgRZzkgCxjoTiNE1PGE58A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Data.JsonConnection.JsonDataSourceConnectionStringBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Data.JsonConnection.JsonDataSourceConnectionStringBuilder.html",
+          "hash": "ygdKbIxXvnawDT7upYTitw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Data.JsonConnection.JsonTableDataSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Data.JsonConnection.JsonTableDataSource.html",
+          "hash": "d7BK6l6g4fKjZWshJQd0jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Data.JsonConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Data.JsonConnection.html",
+          "hash": "seXszbWOT8BkBMyTK9ZqKQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1269,10 +1341,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.LoadBusinessObjectEventArgs.html",
-          "hash": "bb21Q06iBGfetzp6YEA/Yw=="
+          "hash": "/Tv5T0JxuK0a+8WZ3//ADQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1281,10 +1353,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.LoadBusinessObjectEventHandler.html",
-          "hash": "aEeRy3dNN1EyyFFXfOxKsA=="
+          "hash": "fb06eHjIDBB9DW7oBwKWag=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1293,10 +1365,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.PageMacroVariable.html",
-          "hash": "kl3QZYf+iDJwPwRrgzsc0A=="
+          "hash": "bkKEzR1fBJ52Lb7lZfReYQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1305,10 +1377,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.PageNVariable.html",
-          "hash": "/v4yGq3kGNhaXEgFis319w=="
+          "hash": "S7pDe7R1wavMDt/Q/zGhlQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1317,10 +1389,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.PageNofMVariable.html",
-          "hash": "pYCi8mNMkN7uwNTa//aZPg=="
+          "hash": "wknH7VVVJ8hj3bzE4qbDmg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1329,10 +1401,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.PageVariable.html",
-          "hash": "hJb23MxiFrDpGG09P5MDGw=="
+          "hash": "feWYthPQ11CaAZUf0vlPHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1341,10 +1413,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.Parameter.html",
-          "hash": "HI6BSrDeFBkN400mH9iPxw=="
+          "hash": "ybp2UvC/3K0EHOIEdEX3gg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1353,10 +1425,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.ParameterCollection.html",
-          "hash": "ERmVcZiwmVSWqaKRrndtwA=="
+          "hash": "Lnj7xgV4QMr3mN7q3rq/gA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1365,10 +1437,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.PropertyKind.html",
-          "hash": "/Pw4ToKS+gYndGnztNEGNQ=="
+          "hash": "MRjTv2KBab20jzk91FQlbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1377,10 +1449,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.Relation.html",
-          "hash": "dOp6aa3Hi0StAEHOwMyNDg=="
+          "hash": "qXlgkMidHp4ljxU1XZfkog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1389,10 +1461,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.RelationCollection.html",
-          "hash": "msPk09cU6omGynO8oP7Z8g=="
+          "hash": "qDBK1scYrrsNzNd+ZJxBhg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1401,10 +1473,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.RowVariable.html",
-          "hash": "QaZM3i/IE8dCo9Ui+KfDlg=="
+          "hash": "dnEcqDQTpSmHMZko1g/J0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1413,10 +1485,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.SliceCubeSource.html",
-          "hash": "T9+H9XmE78mKPpLX10uI6Q=="
+          "hash": "VMTmcqvQnpPpUUT/3HyQQg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1425,10 +1497,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.SystemVariable.html",
-          "hash": "XRTzwA/pDQAtoMgdrd1+rw=="
+          "hash": "5CodzDOoA+TGcWtxPdeHxQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1437,10 +1509,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.SystemVariables.html",
-          "hash": "U1Yrs7ZIIwzs+p0pQaVg0g=="
+          "hash": "4eajQjt0zq3eO+BnwyAq0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1449,10 +1521,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.TableCollection.html",
-          "hash": "5i4oH0s+kcsTLgzO50MSjQ=="
+          "hash": "r1RVdiaCZiI7x7e2vf+OhQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1461,10 +1533,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.TableDataSource.html",
-          "hash": "RmfmEYZUnO4u8tUoO5UQSw=="
+          "hash": "uqvqURF3oe2dNq66lPc3+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1473,10 +1545,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.Total.html",
-          "hash": "5KgyvPkdRKY4+wbhwszEJA=="
+          "hash": "lJBW84KJLg0lp4hCSuWcgA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1485,10 +1557,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.TotalCollection.html",
-          "hash": "qxZ+votsNuNvOqoOqwF3Kw=="
+          "hash": "gyHRABSLvLvZxzFcDFMg2A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1497,10 +1569,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.TotalPagesMacroVariable.html",
-          "hash": "X5AYk+B5rr8vNAbGx53+Cw=="
+          "hash": "lqTpJxHO9p5Rr/d8XPbOMg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1509,10 +1581,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.TotalPagesVariable.html",
-          "hash": "t4qWcCjJAIP3NVJB5LxetQ=="
+          "hash": "PFWl85M/JJtmgCImjaq+qg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1521,10 +1593,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.TotalType.html",
-          "hash": "juuJA5LFeCmKw9H8+/2B9Q=="
+          "hash": "6nIzTLQkSsNaRXXKbSvKxg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1533,10 +1605,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.ViewDataSource.html",
-          "hash": "KkGBIexDeQC/Kzx5/g/e2g=="
+          "hash": "Sk9kCYCrGNIhywee3Z2Q+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1545,10 +1617,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.XmlConnectionStringBuilder.html",
-          "hash": "JsQ1g9z+4tWe+9FWTN7bmw=="
+          "hash": "rlmuRN4pyAwgwF5E0Y8BqQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1557,10 +1629,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.XmlDataConnection.html",
-          "hash": "roSN9dDc7QVTiwkdJ4IW5g=="
+          "hash": "O7xq9u1A4au/M3KC6JzchQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1569,10 +1641,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Data.html",
-          "hash": "nKZCR8jazghSuAkT6pB9GA=="
+          "hash": "NJnLtF7C+GYokOGf4a1tvw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1581,10 +1653,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.DataBand.html",
-          "hash": "xc4ggvWAOfDGENzqQY1kBw=="
+          "hash": "yminEtO3u8BMg8rZV7TQ2g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1593,10 +1665,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.DataFooterBand.html",
-          "hash": "DKMrMdDCYTC7B5qJ2yS0/A=="
+          "hash": "wIT3VbyzYZz5JxAFoufgVw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1605,10 +1677,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.DataHeaderBand.html",
-          "hash": "phD66gMDAsf470E5ux8qUw=="
+          "hash": "VavOKrlL9cp7/P8eBs74kQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1617,10 +1689,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.DatabaseLoginEventArgs.html",
-          "hash": "POjQ7+AmkTFqxZZMdrWA4g=="
+          "hash": "yza5eDXxyt3MdbyWR8hJ/Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1629,10 +1701,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.DatabaseLoginEventHandler.html",
-          "hash": "IYVFvvgNUQv/K6KhCubPDg=="
+          "hash": "466kCQhI18269dB6EAaJZQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1641,10 +1713,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.DefaultPaperSize.html",
-          "hash": "VXTh1P4+mM00TrqL3Xsseg=="
+          "hash": "dKjzjdnTV26nUivsUjm5AA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1653,10 +1725,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Duplicates.html",
-          "hash": "4QoSf3b7rGyLIH5BKEfBgA=="
+          "hash": "Ke2/QBByGfW4lgQVHLSmvw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1665,10 +1737,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Engine.ReportEngine.html",
-          "hash": "d8H61qnpQuEo85Ehi4kCPQ=="
+          "hash": "VRidAZfooV5v/ZgB88KETA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1677,10 +1749,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Engine.html",
-          "hash": "FJ/ZpasxIxqJzK2aKbMNKw=="
+          "hash": "bMH35PNdokCGkO8rR0Q7zQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1689,10 +1761,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.ExportBase.html",
-          "hash": "+FN1RMVCELrtF0Ac25GHTA=="
+          "hash": "kkQiCT3+0TJUPW8HySdMJw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1701,10 +1773,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.ExportUtils.html",
-          "hash": "VcNYdG3fksT8nJJ0S7Owmw=="
+          "hash": "uli/N5y3M42bgxgIIvXq2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1713,10 +1785,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.CustomDrawEventArgs.html",
-          "hash": "Up6YGpAFzM+B5Z8f3QHb/g=="
+          "hash": "KGsUEMp8Cls8Y6g+BGNjow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1725,10 +1797,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.HTMLExport.ExportType.html",
-          "hash": "IjlE9uUmQb5LUgNTZExTFg=="
+          "hash": "/M+i0E3RdTLVotMHQRTN7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1737,10 +1809,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.HTMLExport.html",
-          "hash": "Oe7el0pXtL92YMtghpV82w=="
+          "hash": "FDUepXuOt3QYooFSwv5r0A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1749,10 +1821,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.HTMLExportFormat.html",
-          "hash": "NCItJk0qjAbKFeq/qOgs2A=="
+          "hash": "+9y/g7WaMvNVDSSJYoluNA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1761,10 +1833,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.HTMLPageData.html",
-          "hash": "LU1Yp5XCFeoUImyvmlOZfQ=="
+          "hash": "g3XiMm9QYZmH6wDoA8p1ig=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1773,10 +1845,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.HtmlSizeUnits.html",
-          "hash": "ZUmal1JKKj6o1SQ4Yr4SfQ=="
+          "hash": "IN+RahaR9Tb+nxIhjgJtpA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1785,10 +1857,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.HtmlTemplates.html",
-          "hash": "lirMhjPuBWjX1nQn+BoafQ=="
+          "hash": "PUGZB2BrHg0HS5s4Qm4u6Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1797,10 +1869,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.ImageFormat.html",
-          "hash": "npdaL1WR0WSHXgYltY1Agw=="
+          "hash": "Ep5KlaDqV00smtnQjiS7rw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1809,10 +1881,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Html.html",
-          "hash": "f/Ag64seybA4yS0yZTCAhQ=="
+          "hash": "yVtH+EL1xqdZzf1VjhT7xg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1821,10 +1893,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Image.ImageExport.html",
-          "hash": "HjP/si1Tp4lI9KGQduF4KA=="
+          "hash": "3drOjOrE7Xd5b1VmRVuSKg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1833,10 +1905,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Image.ImageExportFormat.html",
-          "hash": "s/pouVnuwiGPF5QP+WGHRg=="
+          "hash": "P15hu0W4APxx3ydk0ICw8Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1845,10 +1917,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.Image.html",
-          "hash": "hGm5aKmNa7Y54uT8WbUlQw=="
+          "hash": "fPKz7tx9ySF7frZ2+L0w7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1857,10 +1929,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Export.html",
-          "hash": "cGSLvFTGNc1/rkV5XyZtvQ=="
+          "hash": "z0yK7Q0ih9ASPsGYK0jGCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1869,10 +1941,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.FillBase.html",
-          "hash": "P1DqXWFI90DGEAgHkm6wCA=="
+          "hash": "tpnUgeqD8A2ZJUhfpo9EHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1881,10 +1953,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.FilterPropertiesEventArgs.html",
-          "hash": "HgI00ndZtORjbfnqGn+WWQ=="
+          "hash": "tORdLs30AkmldYNHfSGTPg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1893,10 +1965,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.FilterPropertiesEventHandler.html",
-          "hash": "SI2LunZeLa0bfHlX8gzJcQ=="
+          "hash": "JgCx66R6lPACjOWNTBrJmg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1905,10 +1977,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Flags.html",
-          "hash": "+Xq/PLyd+hkhug5sQyOwFg=="
+          "hash": "hNx6EeyWSn0Iw3JGICeaTw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1917,10 +1989,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.BooleanFormat.html",
-          "hash": "Gg93EcMzXbfFNdYqDgbVTQ=="
+          "hash": "i51LekZCMpR7sGQhfGkuuA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1929,10 +2001,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.CurrencyFormat.html",
-          "hash": "EHw6iLB2MVW1TdP1s1MeVw=="
+          "hash": "0WrdEUyejmlijtgwu0gKBw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1941,10 +2013,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.CustomFormat.html",
-          "hash": "CAemHQ3hA3N6lsAXs6RKXg=="
+          "hash": "rFF7PJSJ2bZEvDb4UeaBCg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1953,10 +2025,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.DateFormat.html",
-          "hash": "Obq8m5shc1mADEmYeIlbqg=="
+          "hash": "YM0+SRubamJMBDapTgMUIw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1965,10 +2037,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.FormatBase.html",
-          "hash": "jtddRoDPeGcndwrTbgpzOA=="
+          "hash": "s9+zz8IF+wJPFI/Tobua+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1977,10 +2049,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.FormatCollection.html",
-          "hash": "rCiAX1WzEx2tNRuS+QT8iA=="
+          "hash": "hD++McUebOKHFJeqh/SNrA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1989,10 +2061,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.GeneralFormat.html",
-          "hash": "ZdtSATLf7W2Uzx13WKIS9w=="
+          "hash": "hQ7olW0JOARD1iX7E86seQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2001,10 +2073,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.NumberFormat.html",
-          "hash": "X1roHkDuCluzDRrSkQnVCw=="
+          "hash": "tVT2lsbnCDd5nCMz1tBLCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2013,10 +2085,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.PercentFormat.html",
-          "hash": "xpQBj0cgipqylXv0d8RO4A=="
+          "hash": "13aft2teMCcLUezb2rjufA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2025,10 +2097,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.TimeFormat.html",
-          "hash": "IA8qhCXFOJM/s+UKV32pWg=="
+          "hash": "Os/ONA8vvD/3yqhvrRv5tg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2037,10 +2109,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Format.html",
-          "hash": "cIJHg+n5sc8yBfjShYfDNQ=="
+          "hash": "3CkW/IXX7ALGzkzCiARSMg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2049,10 +2121,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Functions.StdFunctions.html",
-          "hash": "g/IZ7xv562Y8YUxXTqBxkQ=="
+          "hash": "yDwnhjiZcr8W1WOI9z0b/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2061,10 +2133,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Functions.html",
-          "hash": "MWFrBM2IDLbGHYW/5z2u9Q=="
+          "hash": "f9OtMToBc5ZYu2zY+L0aMA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2073,10 +2145,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.GaugeLabel.html",
-          "hash": "nbmwqCnUo9vEouliFUoobA=="
+          "hash": "TTDz0+Cx9LuX+QXWaEmqEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2085,10 +2157,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.GaugeObject.html",
-          "hash": "Xetx/bni2UVd/IC5gMJTRw=="
+          "hash": "daqoFDorrg8xLRx1njgSIw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2097,10 +2169,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.GaugePointer.html",
-          "hash": "/SCQqkn/KxptPMS+CWE9bQ=="
+          "hash": "qU1EoxHU2//4zHRnDpcb6w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2109,10 +2181,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.GaugeScale.html",
-          "hash": "v//sXCoQ/aI3XlGXpGCBRg=="
+          "hash": "pLGR+MhFVOwhUW/x+7N1BA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2121,10 +2193,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Linear.LinearGauge.html",
-          "hash": "hTNn5rwZT8/vtn6xVx7bKw=="
+          "hash": "GoZE44PkHeWWFC2vTrdNkA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2133,10 +2205,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Linear.LinearPointer.html",
-          "hash": "z+ZKXENjVtPyMVMsUJEJ+w=="
+          "hash": "YlwQEFXdFiQOONvcU+mEfw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2145,10 +2217,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Linear.LinearScale.html",
-          "hash": "ZLe1o1SoZCw135JDVBAFDg=="
+          "hash": "NlnmWLyO5SW+AMYLraXdLg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2157,10 +2229,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Linear.html",
-          "hash": "tqiFLcgOyY5cRSB3Z+j4iA=="
+          "hash": "E6Pw4lGduLgMzN7+b0m1gw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2169,10 +2241,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Radial.RadialGauge.html",
-          "hash": "MIZMPwiVR+4sg1gu7SCECw=="
+          "hash": "oGLzK04ncy6R5834nqD5SA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2181,10 +2253,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Radial.RadialGaugePosition.html",
-          "hash": "Eq+0HaZnKBT77GycNPCZuQ=="
+          "hash": "cXTOUGHYxZBslSrBNZIOpA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2193,10 +2265,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Radial.RadialGaugeType.html",
-          "hash": "54MfbwqbKOW4o+gr7P5+xA=="
+          "hash": "QAUXVg90z+zmxG0K+m+SMg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2205,10 +2277,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Radial.RadialPointer.html",
-          "hash": "j0RVaB7UBEnfTk8m25Rq5w=="
+          "hash": "MahO26dnTTuIwugXKDG2JA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2217,10 +2289,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Radial.RadialScale.html",
-          "hash": "JV9/5CP7KqepQxqiKfr1uw=="
+          "hash": "C9W7WwW0hxzRQ6CmhyNqmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2229,10 +2301,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Radial.html",
-          "hash": "6saOg2bGUn9f5n+r9EBmMA=="
+          "hash": "v0kwGrl6TaM9GKUwNJv2xQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2241,10 +2313,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.ScaleTicks.html",
-          "hash": "HA6P5Vm9tI46BardM2iJCA=="
+          "hash": "kcZNYmnXkrigJ+8vcoPb/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2253,10 +2325,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.Progress.SimpleProgressGauge.html",
-          "hash": "Mg2QK/QQkNEsDfJKttyOcg=="
+          "hash": "LjqSV/JxjfVrSOMuh/5RBA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2265,10 +2337,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.Progress.SimpleProgressLabel.html",
-          "hash": "NauB3qL6SSxhOiELE0NjNg=="
+          "hash": "6rL/rTTVGA5iQUj+lzoSKg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2277,10 +2349,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.Progress.SimpleProgressPointer.html",
-          "hash": "/yqAItfiOD2AdGWXivnjyA=="
+          "hash": "YoGpdLorGHL9sNayrNxNDA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2289,10 +2361,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.Progress.SimpleProgressPointerType.html",
-          "hash": "yUbH49XRYt79FS74feKJpg=="
+          "hash": "HF+HPB6T2pMzAZZbxo3a6Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2301,10 +2373,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.Progress.html",
-          "hash": "L3tuy9zuZfof5+iULS4H8g=="
+          "hash": "hgpZAxY25pOya/OSwIJttQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2313,10 +2385,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.SimpleGauge.html",
-          "hash": "mRmhhKPHr17R3RAIpahsTQ=="
+          "hash": "l0Om8Vb6KIVJ5gwnWbyYFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2325,10 +2397,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.SimplePointer.html",
-          "hash": "59ISkOWTIh1/B1TVjG6YSQ=="
+          "hash": "vR3JTYzqNpGqO4ii3W3D0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2337,10 +2409,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.SimpleScale.html",
-          "hash": "0RRFgjPZbz6qMnUuxtTCJA=="
+          "hash": "3gNGnrXpSp/gbguAouLFdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2349,10 +2421,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.SimpleSubScale.html",
-          "hash": "6ACxq924oxPEzPEG0gzKDQ=="
+          "hash": "AwAXhOU0PoJ9iEPPQIKQpA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2361,10 +2433,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.Simple.html",
-          "hash": "hBj3yUuxfe3nzPi77PgD1g=="
+          "hash": "8m2s2MJYhfAARnuEjAJkxA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2373,10 +2445,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Gauge.html",
-          "hash": "2gPJr4UVR5d1LMoC2Awj4w=="
+          "hash": "ti+hmvAGlYodAAa4e2AXlA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2385,10 +2457,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GetPropertyKindEventArgs.html",
-          "hash": "YZUt1lwsGOCihI7asXRS8A=="
+          "hash": "wCg3lHfi4Gtp+H6eVJmc7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2397,10 +2469,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GetPropertyKindEventHandler.html",
-          "hash": "JpWOxDS56gMq8sahw/4NaA=="
+          "hash": "Loo4alPgZmaNcnq3v+HaIQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2409,10 +2481,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GetTypeInstanceEventArgs.html",
-          "hash": "csbYouo8o/gHOsRKrjvNRQ=="
+          "hash": "orUXARIr/3PpV/arRFnfgQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2421,10 +2493,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GetTypeInstanceEventHandler.html",
-          "hash": "mWIwvTGNrSD4M5R4CHaTxg=="
+          "hash": "fjy9XqUdJkq8345dJl8DfA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2433,10 +2505,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GlassFill.html",
-          "hash": "YgfxBFaFzW08l/otcfB26Q=="
+          "hash": "IFr0Asf8BF0cvKdC4nzfAA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2445,10 +2517,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GraphicCache.html",
-          "hash": "e087zA47DFeU7RCV0PW3kw=="
+          "hash": "Bh13x0J3bt6hRs6sS9NyNA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2457,10 +2529,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GroupFooterBand.html",
-          "hash": "uSho9SueCpQlaE7sY2fDmA=="
+          "hash": "/3tOK7NtgIQs4E2jA/8P2A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2469,10 +2541,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.GroupHeaderBand.html",
-          "hash": "fambpi3rfkUZwKn7NtrmOw=="
+          "hash": "drAeuwezBkXS7V6axaYYlw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2481,10 +2553,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.HatchFill.html",
-          "hash": "uK3xi1G1AN+bhn4mfR2J6w=="
+          "hash": "BafX7y8C0UnlJJchv0n/iw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2493,10 +2565,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.HeaderFooterBandBase.html",
-          "hash": "3Ob5FQ3kRfMcUnssohhFaw=="
+          "hash": "jdAKh9zPLehl/Vpg0U5w0w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2505,10 +2577,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.HighlightCondition.html",
-          "hash": "3bM2rMyn0fLNPp0J214q4g=="
+          "hash": "AYvUNZvpCQ4BtSjVyN+2+Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2517,10 +2589,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.HorzAlign.html",
-          "hash": "Z9OG1M7EBeXtrn0BjGfCJA=="
+          "hash": "XcKj5v7l8lxjHqrAexniCA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2529,10 +2601,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.HtmlObject.html",
-          "hash": "Y10bEgqBjwXQFrfHRBX5aQ=="
+          "hash": "jQSpCRJ3U4e29pgO/NLrEA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2541,10 +2613,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Hyperlink.html",
-          "hash": "eZ/OmU/NuErnmrVLxHLCVw=="
+          "hash": "cIyoT8+YN4yeCi3fx5Zkog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2553,10 +2625,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.HyperlinkKind.html",
-          "hash": "9QEt6WfPI69JEL3+NFmoUA=="
+          "hash": "dJPVPNU65/9VO8h7Q0spgw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2565,10 +2637,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.IFRSerializable.html",
-          "hash": "3MiN5aBBeMTmQYYql7YhHQ=="
+          "hash": "li0HdTqrLtv+kvNYJxEPKQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2577,10 +2649,34 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.IParent.html",
-          "hash": "o/9sEaky/A5h63YAy/FCLQ=="
+          "hash": "DBkLYekHS/nLliy2T6rLuw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.ImageAlign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.ImageAlign.html",
+          "hash": "VFV78BtNQKfvi/RpdlfOAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.JsonBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.JsonBase.html",
+          "hash": "CQQKN2US+GLPn88hMZpKqw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2589,10 +2685,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Language.html",
-          "hash": "QWxCNdTi2/EOyPQXPYM5Fw=="
+          "hash": "upHolJztjFgF0Q6DAUdq7A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2601,10 +2697,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.LineObject.html",
-          "hash": "9XkXFm0u4WNNnh3z66SSLg=="
+          "hash": "rq9ui0zMV+0mOQ7X9DvkqA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2613,10 +2709,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.LineSpacingType.html",
-          "hash": "XppBcoxOpAU08rFwpvhMyA=="
+          "hash": "YsNcrwSTPmkrUtjg/kCpkA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2625,10 +2721,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.LineStyle.html",
-          "hash": "84Sen2A8th2dcC1HYawlPw=="
+          "hash": "O52XtcDSnP3/bWeNH9sQwQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2637,10 +2733,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.LinearGradientFill.html",
-          "hash": "B2Oe727QDwYNOPJ4xYBzBw=="
+          "hash": "V5B2TTyfVl767xgRahrSaQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2649,10 +2745,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixAggregateFunction.html",
-          "hash": "9TBDQQozC9d51HqpPNg/tA=="
+          "hash": "k2DniYYkKN+OGCLGWE12Yw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2661,10 +2757,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixCellDescriptor.html",
-          "hash": "31TG63dXWaJHxEhY9q0GsQ=="
+          "hash": "Q4ZUSTNjlO+FRP2Axy/OBQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2673,10 +2769,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixCells.html",
-          "hash": "nK12nkdNeFaWUiHX9XEr+A=="
+          "hash": "BEQ6dOC5cGcaCOHxgurh5w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2685,10 +2781,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixData.html",
-          "hash": "DoK3tdXrqhPcoVWdrySA5Q=="
+          "hash": "MEIgucpSYMAW44yGepQobA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2697,10 +2793,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixDescriptor.html",
-          "hash": "/x4CevMcFW8uK4g3uHLndw=="
+          "hash": "Ld4jynDvD6HMklp+Rt4s2A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2709,10 +2805,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixEvenStylePriority.html",
-          "hash": "ePo59Cu1V/Bv90w/v7vNBQ=="
+          "hash": "r5kn8v+IeVq14+ID+8Vfsw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2721,10 +2817,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixHeader.html",
-          "hash": "5iE3LLbY+ZnWSIhzVdsftA=="
+          "hash": "gKFeoRIKr+fzhs5HQCYB3Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2733,10 +2829,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixHeaderDescriptor.html",
-          "hash": "TmTPgoluv3G5JzNI65a3Sg=="
+          "hash": "NCOK17//9fE+Pr4Cq/MwDA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2745,10 +2841,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixObject.html",
-          "hash": "9nBSnE41wsbeq+e8hU/S5Q=="
+          "hash": "icGDBHRrD+n+YX9o7KE0Gw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2757,10 +2853,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.MatrixPercent.html",
-          "hash": "UqKNuDOeUOcG93HMjSddKg=="
+          "hash": "yJYfeRRks6gN02RezPIVaA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2769,10 +2865,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Matrix.html",
-          "hash": "IEWJoY6OgQQW84DKezUovw=="
+          "hash": "9zSEvKS/HXdZQQ7tZ9r9ug=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2781,10 +2877,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ObjectCollection.html",
-          "hash": "73U1n7oLsHUFweIELuDdJA=="
+          "hash": "2Nk1EERxjpu07EJat9Fl0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2793,10 +2889,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.OverlayBand.html",
-          "hash": "p4u6yXfZ0rQOtFaXM1Yh0w=="
+          "hash": "M+X+M48ZfkCxAkTRYhlM1g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2805,10 +2901,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PageBase.html",
-          "hash": "zC+ju+368Sd8cyQEnePsOA=="
+          "hash": "NeaI2XvzzjZGsRYJqEhwiw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2817,10 +2913,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PageCollection.html",
-          "hash": "Gpk1W3ojUTHvu7dRk0uvqQ=="
+          "hash": "KVZ7cg6nwdzhHvuolu/5hA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2829,10 +2925,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PageColumns.html",
-          "hash": "xcDumJEFkAlXwoozuDoCdA=="
+          "hash": "YtpxqyCdOYVSKuI/VFvG3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2841,10 +2937,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PageFooterBand.html",
-          "hash": "blITEmWi7qezf7mw6GWfsQ=="
+          "hash": "M/gi3yFZQaywpvIcfzG8jA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2853,10 +2949,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PageHeaderBand.html",
-          "hash": "exCChe+csqdXYXydfP9QVQ=="
+          "hash": "i80SyC3KQQEeM+/9YlD8aw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2865,10 +2961,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PageRange.html",
-          "hash": "ryWBnzE5xnaSarUawWB7gg=="
+          "hash": "tQNBjml+L9tVVkSF6zNPzQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2877,10 +2973,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ParagraphFormat.html",
-          "hash": "pE7PeFDxOoqKZG3EuoZSqg=="
+          "hash": "IOEFCvc7wN6YGsGjHi0JeQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2889,10 +2985,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PathGradientFill.html",
-          "hash": "byzZbW9vOCHWi/OyV8nXGw=="
+          "hash": "/eC5jvdfIEAdRvd2BwZpBA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2901,10 +2997,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PathGradientStyle.html",
-          "hash": "HRbTJQCoRbsXpb99GeyF1g=="
+          "hash": "P4a3nNY871kvYcfOxfsG7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2913,10 +3009,58 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PictureObject.html",
-          "hash": "4/YBGkav0Y5nIjPKQwgVRQ=="
+          "hash": "HTXv8jubdb/TVNvfc+/PhA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.PictureObjectBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.PictureObjectBase.html",
+          "hash": "a/8juCzhhnRIlucXEyOjhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.PolyLineObject.PolyPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.PolyLineObject.PolyPoint.html",
+          "hash": "V27lm4qNtjs8Np/eLrcv9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.PolyLineObject.PolyPointCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.PolyLineObject.PolyPointCollection.html",
+          "hash": "0ma19O5FOHNQQv9Op3b1jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.PolyLineObject.PolygonSelectionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.PolyLineObject.PolygonSelectionMode.html",
+          "hash": "j1hGkIbm+sn9wKYTFerQig=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2925,10 +3069,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PolyLineObject.html",
-          "hash": "vEDA8BbVUI6ejtIduTBYVQ=="
+          "hash": "tghb7R23RdWiwgDyHZ5SYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2937,10 +3081,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PolygonObject.html",
-          "hash": "rPMNWN9n/KhX10f1+ytdFA=="
+          "hash": "vX70eSg+wp+CAF3uE4sryA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2949,10 +3093,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Preview.AddPageAction.html",
-          "hash": "UYuDa+ON3F9uPj7nGKlMmg=="
+          "hash": "e9wfUv8sTOx7CU//e0sZYg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2961,10 +3105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Preview.PreparedPages.html",
-          "hash": "6Lu2Ey9RwjBRmIa4SzTHtw=="
+          "hash": "tZMOvHIjLtBVJ6SDSncXSw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2973,10 +3117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Preview.html",
-          "hash": "nb65bUyJydP1/YC9wEN9mg=="
+          "hash": "miWUOCJDuWQUfVP97yo0PA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2985,10 +3129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.PrintOn.html",
-          "hash": "L7K3Np9Fck94o6rRawz9FA=="
+          "hash": "/y6yvdIrCWmwXiF15Vq2Ug=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2997,10 +3141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ProcessAt.html",
-          "hash": "kW4dX2FV852FWihFey0g+w=="
+          "hash": "LP3f1u1j0SrGKHKJ5kn3Bg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3009,10 +3153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ProgressEventArgs.html",
-          "hash": "nR5tZqjD0mbL5usJNKSUUQ=="
+          "hash": "dJSXumhcHQew2w+l5oUFQw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3021,10 +3165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ProgressEventHandler.html",
-          "hash": "aZGXtKCd6EbqAeFLdnjw6A=="
+          "hash": "/9+n/LuOjINUebLCHMy+0w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3033,10 +3177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Report.html",
-          "hash": "NsbZUq4pCUEUoJ/KvoAD3w=="
+          "hash": "5XU85yuiTMLoMrfN5zrLbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3045,10 +3189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportComponentBase.html",
-          "hash": "iPc6HDYEL2wGBDeFqMYd3g=="
+          "hash": "WXjukaJapDAXJCHX5Qv3lg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3057,10 +3201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportComponentCollection.html",
-          "hash": "Czba2625GsQkPoHev1PJPw=="
+          "hash": "9rUlWWGRFvC+qVDh2vQFkA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3069,10 +3213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportInfo.html",
-          "hash": "Ry9gicBH/w5qPSMFjQFjYQ=="
+          "hash": "VEFoqsvttNlimL8bvcPPpw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3081,10 +3225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportOperation.html",
-          "hash": "tf6gmvYyjfwnBoqPOmzD5Q=="
+          "hash": "V7i8Dph0wvU/paNrC/oMNQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3093,10 +3237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportPage.html",
-          "hash": "v2PDLR9twe1o/bKBkHkYDA=="
+          "hash": "DsearEWvZ2tFvcQQSoe59Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3105,10 +3249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportSettings.html",
-          "hash": "mDH6jZqKC5UbfSmv0eDkTQ=="
+          "hash": "+zo7g/yUEkNqUIOrHs0JcQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3117,10 +3261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportSummaryBand.html",
-          "hash": "War3tazolOH3b9Swso49uA=="
+          "hash": "N4TzL8z64tP+jULTBBtk9Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3129,10 +3273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ReportTitleBand.html",
-          "hash": "tiCaXbQwLIzZ0kK4xc8IYQ=="
+          "hash": "7ISRFiTIjHJnpAGk1I1f7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3141,10 +3285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Restrictions.html",
-          "hash": "2XrXAkwcuuIIy451++3GHA=="
+          "hash": "qoVC2e7RS1RdBJdZB1nSyA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3153,10 +3297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.SaveMode.html",
-          "hash": "jTrR2r8rsDS/VKSnXHwvxg=="
+          "hash": "D2x2KX/0tlVNvjgqmC1Ysw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3165,10 +3309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ShapeKind.html",
-          "hash": "dolh4kmsvvTkIxMBLkwljQ=="
+          "hash": "TIy3bADtFeOy66tj9kBVHA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3177,10 +3321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ShapeObject.html",
-          "hash": "Zdofag5BeYi6Gff47DJnPQ=="
+          "hash": "2Ukd2KKkUxhkjwPR4iZeYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3189,10 +3333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ShiftMode.html",
-          "hash": "KuzXkq9CRpG7j4EG5z5TvQ=="
+          "hash": "7gSV8/ecJvA9/iadqtN8lA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3201,10 +3345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.SolidFill.html",
-          "hash": "NDDeWCTYARFNRP8Qh1Yh7w=="
+          "hash": "hDGfWRLts94PmrCyYI8DHg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3213,10 +3357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Sort.html",
-          "hash": "r/7kf5vr3G8qwIGVGgFKjQ=="
+          "hash": "I45zT1G6ht0xqGcjeebkww=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3225,10 +3369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.SortCollection.html",
-          "hash": "hXpqeJahMh8AeEKxIqGyyQ=="
+          "hash": "yfBgaFRjxyfMvk2qudHnow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3237,10 +3381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.SortOrder.html",
-          "hash": "qbo0uSO8ysv5TG8pBXTwZg=="
+          "hash": "zgPYXa7UTRO7AwDyjbZBCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3249,10 +3393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Style.html",
-          "hash": "RE14v30k4v6G1N6mnJrknw=="
+          "hash": "6RTvJfJ4lul0ZDAL4bPhGg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3261,10 +3405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.StyleBase.html",
-          "hash": "uCaE97OMOvzgRVsqbJwO5g=="
+          "hash": "I9+VgB0h3ymQiI2SlOY74Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3273,10 +3417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.StyleCollection.html",
-          "hash": "YcLhOCBl7iljcBCk6fAUSg=="
+          "hash": "cIW5CsUlIU4OAu6f/8nF9Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3285,10 +3429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.StylePriority.html",
-          "hash": "k4/ghsXD53yUDSxRXg9KIA=="
+          "hash": "x5/kWubN67ceZGy+EfvqDw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3297,10 +3441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.StyleSheet.html",
-          "hash": "7Bofp4F6s5hLSrpaOx4DYw=="
+          "hash": "zoZAgK7vGwHRr2Ynn5XuRw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3309,10 +3453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.SubreportObject.html",
-          "hash": "y63LWwdl8o405zPEPSVoBw=="
+          "hash": "Qp4l/3YO41MbaDM1SdllbQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3321,10 +3465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableBase.html",
-          "hash": "TGDOU1cU43oN0fjg8yhNDw=="
+          "hash": "6iobh6s18wSqAn3q6zfqsw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3333,10 +3477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableCell.html",
-          "hash": "ttkFYruu2YN4ume4ldD7vw=="
+          "hash": "mlhEhFbF5jKz4AX6udB1/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3345,10 +3489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableCellData.html",
-          "hash": "xkYvgjdvYEm8gL0yYHN4GQ=="
+          "hash": "uq/TxRu/Ciil+NSEAeM2DQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3357,10 +3501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableColumn.html",
-          "hash": "vLpHHZG+VwyYrPcNQLWIeQ=="
+          "hash": "15x+LLiYsW3/0CKbHXrzKg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3369,10 +3513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableColumnCollection.html",
-          "hash": "w3y6YFHZM3C9boHvJ0F1qw=="
+          "hash": "r0IPgGmp2ulLHg28lrWQcA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3381,10 +3525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableLayout.html",
-          "hash": "UWpzXAzAiG5WD6MZikh9Jw=="
+          "hash": "U999DHUHlIR/dYNjoiniiA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3393,10 +3537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableObject.html",
-          "hash": "sICkfHZaUj5JM146RlM1Vw=="
+          "hash": "9jB0U+K4dxSiYr1vX6H64A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3405,10 +3549,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableResult.html",
-          "hash": "iBsPsGK980+RYus8+vXwRQ=="
+          "hash": "rT/fU0hta+7cErSW/vVsAA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3417,10 +3561,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableRow.html",
-          "hash": "/Lafdsf3lgULhvVP+hatLg=="
+          "hash": "hrsfHEzszQ2NT0Bmsdrr2Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3429,10 +3573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.TableRowCollection.html",
-          "hash": "IQ62vAtDgno7MyESAY/03Q=="
+          "hash": "Lmdhg5E0H1AuVhOKpUJgJA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3441,10 +3585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Table.html",
-          "hash": "4rIHlFU7W2+U0k8hW0/wCA=="
+          "hash": "be9LYpVlhDVZYooi+Hs+Yw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3453,10 +3597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TextObject.html",
-          "hash": "v4AavvfKTlUxTNTmMKOt3Q=="
+          "hash": "mNr2ANVAIT6ZFrL5bZsZiw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3465,10 +3609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TextObjectBase.html",
-          "hash": "dSC82sHqBIR/z3uGPv0C9g=="
+          "hash": "/YBEoSts1i+CBVFpUX6e5w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3477,10 +3621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TextOutline.html",
-          "hash": "MLyAZxHUzLgc6EGeSc83DA=="
+          "hash": "6hIffhx7tt0PYNTeB/P4xg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3489,10 +3633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TextQuality.html",
-          "hash": "Ykn/n1zgnLmxw/C8HIt2uw=="
+          "hash": "akzves6Ug+uCscDiYB1Q8g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3501,10 +3645,22 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TextRenderType.html",
-          "hash": "9sJyVNt1H5JBp5/+9ibf4g=="
+          "hash": "m7ZwceO8Z/NI1bpZ9fdDUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.TextureFill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.TextureFill.html",
+          "hash": "lPpwkr6t3EgUOtEypV925w=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3513,10 +3669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TypeConverters.ComponentRefConverter.html",
-          "hash": "Y8F3WRPNnUFu2A8daMxuDg=="
+          "hash": "0j9wYYZg9Gi8HM0Vl9pdSg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3525,10 +3681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TypeConverters.DataTypeConverter.html",
-          "hash": "HxzRq863RekAudVMp7VPZw=="
+          "hash": "Mx27LjyVL4RCPkckKwCU1g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3537,10 +3693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TypeConverters.FRExpandableObjectConverter.html",
-          "hash": "zHm1RohnPrnm3WN3aBJSAQ=="
+          "hash": "4n7caLgT8YKYyOpqZWAB3w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3549,10 +3705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.TypeConverters.html",
-          "hash": "dvlXNiVubmMfepWdKbxxEg=="
+          "hash": "ORWqka0dC3XDpzpFjVhx3w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3561,10 +3717,94 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.UncheckedSymbol.html",
-          "hash": "ShZkVrYoit2nOaxJYB5DEg=="
+          "hash": "DrmNibdhmCyD0gdRP6wUtg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.AdvancedTextRenderer.BaseLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.AdvancedTextRenderer.BaseLine.html",
+          "hash": "jO8fQmIaOeBES6jOhQKLVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Line.html",
+          "hash": "y+2Vy9dv5Zv/UsMxfCJjUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Paragraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Paragraph.html",
+          "hash": "94e5dah38eogtvPfJn/d3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Run.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Run.html",
+          "hash": "jCQmjmF8VfOJy0WkwIx2/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.AdvancedTextRenderer.StyleDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.AdvancedTextRenderer.StyleDescriptor.html",
+          "hash": "pFT6afuGKaIYApk86g+1kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Word.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.AdvancedTextRenderer.Word.html",
+          "hash": "dMqge15fSB2XuAL2jg57QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.AdvancedTextRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.AdvancedTextRenderer.html",
+          "hash": "xbQHkQJCEfkXfg5J6ej24A=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3573,10 +3813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.AncestorException.html",
-          "hash": "P/HxAtb6UHHWIcmk2lX5VA=="
+          "hash": "yYZd5S/bEdlHBTvox7Dziw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3585,10 +3825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.AssemblyInitializerBase.html",
-          "hash": "+jS5tr2p8K6zu3DuG2gY0A=="
+          "hash": "BY/ZqDn6iaFevblTo5OEFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3597,10 +3837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.ClassException.html",
-          "hash": "bN2YXPBGaMrGlMI92BLEaQ=="
+          "hash": "7nSsmIK7cEvN+LPoV2tz4A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3609,10 +3849,22 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.CloudStorageException.html",
-          "hash": "KK8vtVeeTcc9jngf7o4CZw=="
+          "hash": "WkXZaHR7/E2CWOalllth/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.CompileHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.CompileHelper.html",
+          "hash": "L7GbV7ROJIhgzmCsaDPeOg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3621,10 +3873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.CompilerException.html",
-          "hash": "R9YHZldinjiMDXYAeIlg7w=="
+          "hash": "G6fsNZYtMZZS8Zx5jzlAIQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3633,10 +3885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.Config.html",
-          "hash": "R6M5WEwXA1DOhs26S8Yc9Q=="
+          "hash": "5GD9RPWilIqH7I1PiwUXEQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3645,10 +3897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.Converter.html",
-          "hash": "A9XF/cvvkICAMp7cOm+2AQ=="
+          "hash": "b3dQr69pRBMuelyr1bTnpA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3657,10 +3909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.Crypter.html",
-          "hash": "mju7x0sPSE/kvmn4I6slsA=="
+          "hash": "eRyGkdfaB0KkzWDV0leJ1Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3669,10 +3921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.DataNotInitializedException.html",
-          "hash": "tm8DZ2ox6rGdDJ6z/glG7g=="
+          "hash": "G9xJ8+yn3o2oIKttTCkgdA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3681,10 +3933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.DataTableException.html",
-          "hash": "9RXSTBAdkqDJr6byxr5DFQ=="
+          "hash": "7Y3Z2D8DnHL8kc6IPbwdqQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3693,10 +3945,22 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.DecryptException.html",
-          "hash": "25EvUGSezoSN2QgAS3LBfA=="
+          "hash": "k+6x+hrJTAxjoM2+T97IGA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.DrawUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.DrawUtils.html",
+          "hash": "Mtt5UPi1W+zgDkS4FH73Eg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3705,10 +3969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.DuplicateNameException.html",
-          "hash": "1GFe+HsMK3BxgNpz1ziRfQ=="
+          "hash": "rzZEXbr4Xy9hvhU3nLFMSw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3717,10 +3981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FRCollectionBase.html",
-          "hash": "clgdYsNPSeFYjT+hVvCtwg=="
+          "hash": "3NfS8CHSUFEF31hXylaOjw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3729,10 +3993,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FRPaintEventArgs.html",
-          "hash": "hiu/b0kkTiZZPGLqMGFmKg=="
+          "hash": "VoE6QWXqYpzmT9+Y/nnUQA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3741,10 +4005,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FRReader.html",
-          "hash": "xg5aGfm0tdoOTKdKJ4JZfA=="
+          "hash": "YBI9qw6aG4RC8+BjkXuNWA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3753,10 +4017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FRWriter.html",
-          "hash": "skj8WbVxWYsGQeXsKeKR0A=="
+          "hash": "X2ukdICU6Gqw4w7eMpsKSA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3765,10 +4029,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FastNameCreator.html",
-          "hash": "GYQG6Ctn9gLK/KGhbM5euw=="
+          "hash": "/48Qt4TA0MYapjKET/ni9A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3777,10 +4041,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FastString.html",
-          "hash": "Rth/BpPHTHR9LCzuGMHIfg=="
+          "hash": "zCGn7u414tjMyCWoqXfxcw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3789,10 +4053,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FastStringWithPool.html",
-          "hash": "LONHE2A+Asou9F2K7Ji3Xw=="
+          "hash": "rKBCSxxqS69nqfE144+OmQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3801,10 +4065,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FileFormatException.html",
-          "hash": "/oZDAi+7QBXUCfcDRjRwHA=="
+          "hash": "FLP/CobY17O9yaXOK5DgJw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3813,10 +4077,46 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.FloatCollection.html",
-          "hash": "fsv5DVw7DMYkYIsecikIRQ=="
+          "hash": "1WZ9RuQ2juZ7FvpcwxSgjQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.GroupHeaderHasNoGroupCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.GroupHeaderHasNoGroupCondition.html",
+          "hash": "6gE9uKIxmInbZVMxvTwyKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.IGraphicsRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.IGraphicsRenderer.html",
+          "hash": "GzYZUBnl6Q4FECt+SgsNAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.IGraphicsRendererState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.IGraphicsRendererState.html",
+          "hash": "5h+GUuhhFDl0RTsfIZOBXA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3825,10 +4125,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.InlineImageCache.CacheItem.html",
-          "hash": "nlGYnk3nZAxx2//S7zLd6g=="
+          "hash": "IL6jMm4Yd4KVexR5TImdLw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3837,10 +4137,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.InlineImageCache.LoadEventArgs.html",
-          "hash": "3YXNQddJ1DKa1Q8nc/+dFQ=="
+          "hash": "q8EDvDgGkYD7v9IV5TTTmw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3849,10 +4149,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.InlineImageCache.html",
-          "hash": "AzbO1UzAvumQ96kGrCJdeQ=="
+          "hash": "vpaGoio9S9hj7PZqJQbvZg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3861,10 +4161,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.MatrixValueException.html",
-          "hash": "IYFo7Lzccx5Qe/n8MuLNzw=="
+          "hash": "xgLMRrny5uSsKnMVRWCreQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3873,10 +4173,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.Murmur3.html",
-          "hash": "mqUmFkinCn6r15gjZZHcpA=="
+          "hash": "fIPRnP/cGcYhuysTrvcPLQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3885,10 +4185,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.MyRes.html",
-          "hash": "uqw6BuQvGcrX0/s5Bai5LQ=="
+          "hash": "fa29nhPTjxXaprG3EBbGuA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3897,10 +4197,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.NotValidIdentifierException.html",
-          "hash": "SzsjFKHv8AJtUUooMZeZPQ=="
+          "hash": "05yydG9/uS6+r15AxMdN1w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3909,10 +4209,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.ObjectInfo.html",
-          "hash": "cqJYgqWA62yOqfnG66dToA=="
+          "hash": "+w0tmIAwfdciniEgT3Mijw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3921,10 +4221,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.PageUnits.html",
-          "hash": "VUhHtF1dIhuITbaiWendRg=="
+          "hash": "lTjpK2Hcqx5YMX3lGonLHg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3933,10 +4233,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.ParentException.html",
-          "hash": "Ft73kbGrReelqsV9IE94ug=="
+          "hash": "LWvm2VfrZNTzDoIMjPMaCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3945,10 +4245,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.RegisteredObjects.html",
-          "hash": "Jmn75Hi1PFT54gXcva5czw=="
+          "hash": "//K6Bws0TA17bXcatU70Ow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3957,10 +4257,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.Res.html",
-          "hash": "TwpYqxGNpf190Cbbe34igQ=="
+          "hash": "nwpZsjSnRe/uh6cKppB29g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3969,10 +4269,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.ResourceLoader.html",
-          "hash": "NNqB99HdDC9S8W7+okkzkw=="
+          "hash": "7LZtfrm/6wBbIN5+hjevKQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3981,10 +4281,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.SRCategory.html",
-          "hash": "SszvOYeT5u9Ea5eSuPPCYQ=="
+          "hash": "gxJ4dSC9/xsJ3UwgwgW74Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3993,10 +4293,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.SerializeTo.html",
-          "hash": "GtBsFp/3G2nShDmgJSfORQ=="
+          "hash": "QAimRzsgfoB3EB4MfdSSaA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4005,10 +4305,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.TableManualBuildException.html",
-          "hash": "R1RSwidxNkx7u6udlF4OZg=="
+          "hash": "5eiya9FxSIZHIszGs5h9Iw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4017,10 +4317,22 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.Units.html",
-          "hash": "aCxhTVcI4oVOhKGBsASZWg=="
+          "hash": "HlaxIllo4ajncs/ZEPx41w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FastReport.Utils.UnknownNameException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FastReport.Utils.UnknownNameException.html",
+          "hash": "TMmfW4GEtfwxt2iIWiFy0g=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4029,10 +4341,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.XmlDocument.html",
-          "hash": "+RR+SvQDcds3R2i23hsVsw=="
+          "hash": "tp1wtsAic2NxfAmshwoFSw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4041,10 +4353,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.XmlItem.html",
-          "hash": "n1ndXn4AihINQFIrIFcn5w=="
+          "hash": "dX5wCWBQMZXxK5H9OhyHBg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4053,10 +4365,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.XmlProperty.html",
-          "hash": "notzR4WM3M2fAtyhId+iFQ=="
+          "hash": "ImV8O45M0EZAOkqkNipHXQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4065,10 +4377,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.ZipArchive.html",
-          "hash": "xh3ROk1EXfFr3BANjKmFLA=="
+          "hash": "QUntulIx49yU5QEfx5NEPg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4077,10 +4389,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Utils.html",
-          "hash": "vYugtYNFTr5JGvg9+Kjq6g=="
+          "hash": "LYPm8ZGbM87Dw/oarYuIzA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4089,10 +4401,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Variant.html",
-          "hash": "vvJqh+JGHNa79PItkAN+vQ=="
+          "hash": "CHwWbE0OnLxtJkxgxVvfjg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4101,10 +4413,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.VertAlign.html",
-          "hash": "A4lr3k4M1uuISG4JgAk7tQ=="
+          "hash": "4GepR0EKLHnUOpMVfSYaSQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4113,10 +4425,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.Watermark.html",
-          "hash": "XsQ9cYV9eo+8veIQ7fy3WA=="
+          "hash": "touxpA2ihnkiZnjg/ng0ZA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4125,10 +4437,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.WatermarkImageSize.html",
-          "hash": "jQ6IH1Qb4gBC+ycmnp5dng=="
+          "hash": "W3kCbBZXA97gLVrcwJ8xlg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4137,10 +4449,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.WatermarkTextRotation.html",
-          "hash": "exj5IH+LbnNa6Xz0aOLcKg=="
+          "hash": "Xyzmhh3tuKE6BIt3uB+utQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4149,10 +4461,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.ZipCodeObject.html",
-          "hash": "470F0fzDGC0sbgEogUAydg=="
+          "hash": "5IiVpyGkJqs1MSlzuMOVXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4161,10 +4473,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FastReport.html",
-          "hash": "U6ZRcJB0ORCCpMGtxRUDwg=="
+          "hash": "AI60NasTrCqp5hGQoESolA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -4173,7 +4485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "17+9UFG9uDxR5ILmd4p83g=="
+          "hash": "R1C/HXP78oJzXpBl42haWg=="
         }
       },
       "is_incremental": false,
@@ -4199,7 +4511,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "MLr1VvusunXQK7O7n6WR9A=="
+          "hash": "JZfAo5fyafbmFtx9eKBgpw=="
         }
       },
       "is_incremental": false,
@@ -4235,35 +4547,49 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
-        "incrementalPhase": "build"
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 373,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
-        "incrementalPhase": "postProcessing"
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
       },
       "processors": {}
     }

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BusinessObjectDataSource
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,6 +92,9 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_currentRow">DataSourceBase.currentRow</a>
+    </div>
     <div>
       <a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Load">DataSourceBase.Load</a>
     </div>
@@ -361,7 +364,8 @@
   
   <a id="FastReport_Data_BusinessObjectDataSource_Deserialize_" data-uid="FastReport.Data.BusinessObjectDataSource.Deserialize*"></a>
   <h4 id="FastReport_Data_BusinessObjectDataSource_Deserialize_FastReport_Utils_FRReader_" data-uid="FastReport.Data.BusinessObjectDataSource.Deserialize(FastReport.Utils.FRReader)">Deserialize(FRReader)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -380,17 +384,29 @@
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>Reader object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_Deserialize_FastReport_Utils_FRReader_">DataSourceBase.Deserialize(FRReader)</a></div>
+  <h5 id="FastReport_Data_BusinessObjectDataSource_Deserialize_FastReport_Utils_FRReader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to restore the state. It may
+  happen when:</p>
+<ul><li>loading the report from a file or stream;</li><li>loading the report from the designer&apos;s undo
+          buffer;</li><li>assigning another object to this object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;</li><li>loading the object from the designer&apos;s
+    clipboard;</li><li></li></ul>
+</div>
   
   
   <a id="FastReport_Data_BusinessObjectDataSource_GetValue_" data-uid="FastReport.Data.BusinessObjectDataSource.GetValue*"></a>
   <h4 id="FastReport_Data_BusinessObjectDataSource_GetValue_FastReport_Data_Column_" data-uid="FastReport.Data.BusinessObjectDataSource.GetValue(FastReport.Data.Column)">GetValue(Column)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets data stored in a specified column.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,7 +425,8 @@
       <tr>
         <td><a class="xref" href="FastReport.Data.Column.html">Column</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -424,7 +441,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td></td>
+        <td><p>An object that contains the data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -434,7 +452,8 @@
   
   <a id="FastReport_Data_BusinessObjectDataSource_GetValue_" data-uid="FastReport.Data.BusinessObjectDataSource.GetValue*"></a>
   <h4 id="FastReport_Data_BusinessObjectDataSource_GetValue_System_String_" data-uid="FastReport.Data.BusinessObjectDataSource.GetValue(System.String)">GetValue(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets data stored in a specified column.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -453,7 +472,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">alias</span></td>
-        <td></td>
+        <td><p>The column alias.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -468,7 +488,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td></td>
+        <td><p>An object that contains the data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -478,7 +499,8 @@
   
   <a id="FastReport_Data_BusinessObjectDataSource_InitSchema_" data-uid="FastReport.Data.BusinessObjectDataSource.InitSchema*"></a>
   <h4 id="FastReport_Data_BusinessObjectDataSource_InitSchema" data-uid="FastReport.Data.BusinessObjectDataSource.InitSchema">InitSchema()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the datasource schema.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -486,11 +508,15 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_InitSchema">DataSourceBase.InitSchema()</a></div>
+  <h5 id="FastReport_Data_BusinessObjectDataSource_InitSchema_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to support the FastReport.Net infrastructure. Do not call it directly.</p>
+</div>
   
   
   <a id="FastReport_Data_BusinessObjectDataSource_LoadData_" data-uid="FastReport.Data.BusinessObjectDataSource.LoadData*"></a>
   <h4 id="FastReport_Data_BusinessObjectDataSource_LoadData_System_Collections_ArrayList_" data-uid="FastReport.Data.BusinessObjectDataSource.LoadData(System.Collections.ArrayList)">LoadData(ArrayList)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loads the datasource with data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -509,12 +535,16 @@
       <tr>
         <td><span class="xref">System.Collections.ArrayList</span></td>
         <td><span class="parametername">rows</span></td>
-        <td></td>
+        <td><p>Rows to fill with data.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Data.DataSourceBase.html#FastReport_Data_DataSourceBase_LoadData_System_Collections_ArrayList_">DataSourceBase.LoadData(ArrayList)</a></div>
+  <h5 id="FastReport_Data_BusinessObjectDataSource_LoadData_System_Collections_ArrayList__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is used to support the FastReport.Net infrastructure. Do not call it directly.</p>
+</div>
   <h3 id="events">Events
   </h3>
   

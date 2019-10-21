@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Report
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -206,21 +206,21 @@
     <pre><code class="lang-csharp hljs">public class Report : Base, IFRSerializable, IParent, ISupportInitialize</code></pre>
   </div>
   <h5 id="FastReport_Report_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The instance of this class contains a report. Here are some common 
+  <div class="markdown level0 remarks"><p>The instance of this class contains a report. Here are some common
 actions that can be performed with this object:</p>
 <ul><li>To load a report, use the <a class="xref" href="FastReport.Report.html#FastReport_Report_Load_System_String_">Load(String)</a>
     method or call static <a class="xref" href="FastReport.Report.html#FastReport_Report_FromFile_System_String_">FromFile(String)</a> method. </li><li>To save a report, call the <a class="xref" href="FastReport.Report.html#FastReport_Report_Save_System_String_">Save(String)</a> method.</li><li>To register application dataset for use it in a report, call one of the
 <strong>RegisterData</strong> methods.</li><li>To pass some parameter to a report, use the
-<a class="xref" href="FastReport.Report.html#FastReport_Report_SetParameterValue_System_String_System_Object_">SetParameterValue(String, Object)</a> method.</li><li>To design a report, call the <see cref="!:Design()"></see> method.</li><li>To run a report and preview it, call the <see cref="!:Show()"></see> method. 
-Another way is to call the <a class="xref" href="FastReport.Report.html#FastReport_Report_Prepare">Prepare()</a> method, then call the 
+<a class="xref" href="FastReport.Report.html#FastReport_Report_SetParameterValue_System_String_System_Object_">SetParameterValue(String, Object)</a> method.</li><li>To design a report, call the <see cref="!:Design()"></see> method.</li><li>To run a report and preview it, call the <see cref="!:Show()"></see> method.
+Another way is to call the <a class="xref" href="FastReport.Report.html#FastReport_Report_Prepare">Prepare()</a> method, then call the
 <see cref="!:ShowPrepared()"></see> method.</li><li>To run a report and print it, call the <see cref="!:Print"></see> method.
-Another way is to call the <a class="xref" href="FastReport.Report.html#FastReport_Report_Prepare">Prepare()</a> method, then call the 
+Another way is to call the <a class="xref" href="FastReport.Report.html#FastReport_Report_Prepare">Prepare()</a> method, then call the
 <see cref="!:PrintPrepared()"></see> method.</li><li>To load/save prepared report, use one of the <strong>LoadPrepared</strong> and
 <strong>SavePrepared</strong> methods.</li><li>To set up some global properties, use the <a class="xref" href="FastReport.Utils.Config.html">Config</a> static class
 or <see cref="!:EnvironmentSettings"></see> component that you can use in the Visual Studio IDE.
 </li></ul>
-<p>The report consists of one or several report pages (pages of the 
-<a class="xref" href="FastReport.ReportPage.html">ReportPage</a> type) and/or dialog forms (pages of the <see cref="!:DialogPage"></see> type). 
+<p>The report consists of one or several report pages (pages of the
+<a class="xref" href="FastReport.ReportPage.html">ReportPage</a> type) and/or dialog forms (pages of the <see cref="!:DialogPage"></see> type).
 They are stored in the <a class="xref" href="FastReport.Report.html#FastReport_Report_Pages">Pages</a> collection. In turn, each page may contain report
 objects. See the example below how to create a simple report in code.
 </div>
@@ -395,7 +395,7 @@ compressed report in any zip-compatible archiver.</p>
   
   <a id="FastReport_Report_ConvertNulls_" data-uid="FastReport.Report.ConvertNulls*"></a>
   <h4 id="FastReport_Report_ConvertNulls" data-uid="FastReport.Report.ConvertNulls">ConvertNulls</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the null DB value must be converted to zero, false or<br>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the null DB value must be converted to zero, false or
 empty string depending on the data column type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -480,8 +480,8 @@ system variables.</p>
     </tbody>
   </table>
   <h5 id="FastReport_Report_DoublePass_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Typically the second pass is necessary to print the number of total pages. It also 
-may be used to perform some calculations on the first pass and print its results on the 
+  <div class="markdown level1 remarks"><p>Typically the second pass is necessary to print the number of total pages. It also
+may be used to perform some calculations on the first pass and print its results on the
 second pass.</p>
 <p>Use the <strong>Engine.FirstPass</strong>, <strong>Engine.FinalPass</strong> properties to determine which
 pass the engine is performing now.</p>
@@ -823,11 +823,11 @@ if you want to work with pages of <strong>ReportPage</strong> type.</p>
   <div class="markdown level1 remarks"><p>Parameters are displayed in the &quot;Data&quot; window under the &quot;Parameters&quot; node.</p>
 <p>Typical use of parameters is to pass some static data from the application to the report.
 You can print such data, use it in the data row filter, script etc. </p>
-<p>Another way to use parameters is to define some reusable piece of code, for example, 
-to define an expression that will return the concatenation of first and second employee name. 
-In this case, you set the parameter&apos;s <strong>Expression</strong> property to something like this: 
+<p>Another way to use parameters is to define some reusable piece of code, for example,
+to define an expression that will return the concatenation of first and second employee name.
+In this case, you set the parameter&apos;s <strong>Expression</strong> property to something like this:
 [Employees.FirstName] + &quot; &quot; + [Employees.LastName]. Now this parameter may be used in the report
-to print full employee name. Each time you access such parameter, it will calculate the expression 
+to print full employee name. Each time you access such parameter, it will calculate the expression
 and return its value. </p>
 <p>You can create nested parameters. To do this, add the new <strong>Parameter</strong> to the
 <strong>Parameters</strong> collection of the root parameter. To access the nested parameter, you may use the
@@ -867,7 +867,7 @@ and return its value. </p>
   <div class="markdown level1 remarks"><p>When you try to load the password-protected report, you will be asked
 for a password. You also may specify the password in this property before loading
 the report. In this case the report will load silently.</p>
-<p>Password-protected report file is crypted using Rijndael algorithm. 
+<p>Password-protected report file is crypted using Rijndael algorithm.
 Do not forget your password! It will be hard or even impossible to open
 the protected file in this case.</p>
 </div>
@@ -1106,18 +1106,18 @@ report1.Prepare();</code></pre>
   </table>
   <h5 id="FastReport_Report_ScriptText_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The script contains the <strong>ReportScript</strong> class that contains all report objects&apos;
-event handlers and own items such as private fields, properties, methods etc. The script 
-contains only items written by you. Unlike other report generators, the script does not 
-contain report objects declarations, initialization code. It is added automatically when 
+event handlers and own items such as private fields, properties, methods etc. The script
+contains only items written by you. Unlike other report generators, the script does not
+contain report objects declarations, initialization code. It is added automatically when
 you run the report.</p>
-<p>By default this property contains an empty script text. You may see it in the designer 
+<p>By default this property contains an empty script text. You may see it in the designer
 when you switch to the Code window.</p>
-<p>If you set this property programmatically, you have to declare the <strong>FastReport</strong> 
-namespace and the <strong>ReportScript</strong> class in it. Do not declare report items (such as bands, 
-objects, etc) in the <strong>ReportScript</strong> class: the report engine does this automatically when 
+<p>If you set this property programmatically, you have to declare the <strong>FastReport</strong>
+namespace and the <strong>ReportScript</strong> class in it. Do not declare report items (such as bands,
+objects, etc) in the <strong>ReportScript</strong> class: the report engine does this automatically when
 you run the report.</p>
-<p><strong>Security note:</strong> since the report script is compiled into .NET assembly, it allows 
-you to do ANYTHING. For example, you may create a script that will read/write files from/to a disk. 
+<p><strong>Security note:</strong> since the report script is compiled into .NET assembly, it allows
+you to do ANYTHING. For example, you may create a script that will read/write files from/to a disk.
 To restrict such operations, use the <a class="xref" href="FastReport.Report.html#FastReport_Report_ScriptRestrictions">ScriptRestrictions</a> property.</p>
 </div>
   
@@ -1304,7 +1304,8 @@ to store the prepared report pages.</p>
   
   <a id="FastReport_Report_AddChild_" data-uid="FastReport.Report.AddChild*"></a>
   <h4 id="FastReport_Report_AddChild_FastReport_Base_" data-uid="FastReport.Report.AddChild(FastReport.Base)">AddChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a child object to this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1345,7 +1346,8 @@ to store the prepared report pages.</p>
   
   <a id="FastReport_Report_Assign_" data-uid="FastReport.Report.Assign*"></a>
   <h4 id="FastReport_Report_Assign_FastReport_Base_" data-uid="FastReport.Report.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1364,12 +1366,28 @@ to store the prepared report pages.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Base.Assign(Base)</a></div>
+  <h5 id="FastReport_Report_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_Report_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_Report_BeginInit_" data-uid="FastReport.Report.BeginInit*"></a>
@@ -1427,7 +1445,7 @@ Otherwise returns <strong>null</strong>.</p>
     </tbody>
   </table>
   <h5 id="FastReport_Report_Calc_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The expression may be any valid expression such as &quot;1 + 2&quot;. The expression 
+  <div class="markdown level1 remarks"><p>The expression may be any valid expression such as &quot;1 + 2&quot;. The expression
 is calculated in the report script&apos;s <strong>ReportScript</strong> class instance context,
 so you may refer to any objects available in this context: private fields,
 methods, report objects.</p>
@@ -1545,7 +1563,8 @@ Otherwise returns <strong>null</strong>.</p>
   
   <a id="FastReport_Report_CanContain_" data-uid="FastReport.Report.CanContain*"></a>
   <h4 id="FastReport_Report_CanContain_FastReport_Base_" data-uid="FastReport.Report.CanContain(FastReport.Base)">CanContain(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this object can contain the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1564,7 +1583,8 @@ Otherwise returns <strong>null</strong>.</p>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1579,7 +1599,8 @@ Otherwise returns <strong>null</strong>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><strong>true</strong> if this object can contain the specified child object; otherwise, <strong>false</strong>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1587,7 +1608,8 @@ Otherwise returns <strong>null</strong>.</p>
   
   <a id="FastReport_Report_Clear_" data-uid="FastReport.Report.Clear*"></a>
   <h4 id="FastReport_Report_Clear" data-uid="FastReport.Report.Clear">Clear()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears the object's state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1595,11 +1617,15 @@ Otherwise returns <strong>null</strong>.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a></div>
+  <h5 id="FastReport_Report_Clear_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method also disposes all object's children.</p>
+</div>
   
   
   <a id="FastReport_Report_Deserialize_" data-uid="FastReport.Report.Deserialize*"></a>
   <h4 id="FastReport_Report_Deserialize_FastReport_Utils_FRReader_" data-uid="FastReport.Report.Deserialize(FastReport.Utils.FRReader)">Deserialize(FRReader)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1618,17 +1644,29 @@ Otherwise returns <strong>null</strong>.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>Reader object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a></div>
+  <h5 id="FastReport_Report_Deserialize_FastReport_Utils_FRReader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to restore the state. It may
+  happen when:</p>
+<ul><li>loading the report from a file or stream;</li><li>loading the report from the designer&apos;s undo
+          buffer;</li><li>assigning another object to this object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;</li><li>loading the object from the designer&apos;s
+    clipboard;</li><li></li></ul>
+</div>
   
   
   <a id="FastReport_Report_DeserializeSubItems_" data-uid="FastReport.Report.DeserializeSubItems*"></a>
   <h4 id="FastReport_Report_DeserializeSubItems_FastReport_Utils_FRReader_" data-uid="FastReport.Report.DeserializeSubItems(FastReport.Utils.FRReader)">DeserializeSubItems(FRReader)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes nested object properties.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1647,12 +1685,23 @@ Otherwise returns <strong>null</strong>.</p>
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRReader.html">FRReader</a></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>Reader object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_DeserializeSubItems_FastReport_Utils_FRReader_">Base.DeserializeSubItems(FRReader)</a></div>
+  <h5 id="FastReport_Report_DeserializeSubItems_FastReport_Utils_FRReader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Typically the object serializes all properties to the single xml item:</p>
+<pre><code>&lt;TextObject Name=&quot;Text2&quot; Left=&quot;18.9&quot; Top=&quot;37.8&quot; Width=&quot;283.5&quot; Height=&quot;28.35&quot;/></code></pre>
+<p>Some objects like <a class="xref" href="FastReport.DataBand.html">DataBand</a> have child objects that serialized in subitems:</p>
+<pre><code>&lt;DataBand Name=&quot;Data1&quot; Top=&quot;163&quot; Width=&quot;718.2&quot; Height=&quot;18.9&quot;>
+  &lt;TextObject Name=&quot;Text3&quot; Left=&quot;18.9&quot; Top=&quot;37.8&quot; Width=&quot;283.5&quot; Height=&quot;28.35&quot;/>
+&lt;/DataBand></code></pre>
+<p>To read such subitems, the <code>DeserializeSubItems</code> method is used. Base 
+implementation reads the child objects. You may override it to read some specific subitems.</p>
+</div>
   
   
   <a id="FastReport_Report_Dispose_" data-uid="FastReport.Report.Dispose*"></a>
@@ -1777,7 +1826,8 @@ Otherwise returns <strong>null</strong>.</p>
   
   <a id="FastReport_Report_FindObject_" data-uid="FastReport.Report.FindObject*"></a>
   <h4 id="FastReport_Report_FindObject_System_String_" data-uid="FastReport.Report.FindObject(System.String)">FindObject(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Searches for an object with given name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1796,7 +1846,8 @@ Otherwise returns <strong>null</strong>.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>Name of the object to find.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1811,7 +1862,8 @@ Otherwise returns <strong>null</strong>.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
-        <td></td>
+        <td><p>Returns a null reference if object is not found</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1992,7 +2044,8 @@ report.Show();</code></pre>
   
   <a id="FastReport_Report_GetChildObjects_" data-uid="FastReport.Report.GetChildObjects*"></a>
   <h4 id="FastReport_Report_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.Report.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of child objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2011,7 +2064,8 @@ report.Show();</code></pre>
       <tr>
         <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>List to fill with values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2019,7 +2073,8 @@ report.Show();</code></pre>
   
   <a id="FastReport_Report_GetChildOrder_" data-uid="FastReport.Report.GetChildOrder*"></a>
   <h4 id="FastReport_Report_GetChildOrder_FastReport_Base_" data-uid="FastReport.Report.GetChildOrder(FastReport.Base)">GetChildOrder(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns z-order of the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2038,7 +2093,8 @@ report.Show();</code></pre>
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2053,10 +2109,14 @@ report.Show();</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Z-order of the specified object.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Report_GetChildOrder_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must return the index of a specified child object in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_Report_GetColumnValue_" data-uid="FastReport.Report.GetColumnValue*"></a>
@@ -3365,7 +3425,8 @@ because it may be selected in the designer's &quot;Choose Report Data&quot; dial
   
   <a id="FastReport_Report_RemoveChild_" data-uid="FastReport.Report.RemoveChild*"></a>
   <h4 id="FastReport_Report_RemoveChild_FastReport_Base_" data-uid="FastReport.Report.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes a specified object from this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3562,7 +3623,8 @@ because it may be selected in the designer's &quot;Choose Report Data&quot; dial
   
   <a id="FastReport_Report_Serialize_" data-uid="FastReport.Report.Serialize*"></a>
   <h4 id="FastReport_Report_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Report.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3581,17 +3643,30 @@ because it may be selected in the designer's &quot;Choose Report Data&quot; dial
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.Base.html#FastReport_Base_Serialize_FastReport_Utils_FRWriter_">Base.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_Report_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   
   
   <a id="FastReport_Report_SetChildOrder_" data-uid="FastReport.Report.SetChildOrder*"></a>
   <h4 id="FastReport_Report_SetChildOrder_FastReport_Base_System_Int32_" data-uid="FastReport.Report.SetChildOrder(FastReport.Base,System.Int32)">SetChildOrder(Base, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the z-order of the specified object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3610,15 +3685,20 @@ because it may be selected in the designer's &quot;Choose Report Data&quot; dial
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">order</span></td>
-        <td></td>
+        <td><p>New Z-order.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Report_SetChildOrder_FastReport_Base_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must place the specified child object at the specified position in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_Report_SetParameterValue_" data-uid="FastReport.Report.SetParameterValue*"></a>
@@ -3705,7 +3785,8 @@ report1.Show();</code></pre>
   
   <a id="FastReport_Report_UpdateLayout_" data-uid="FastReport.Report.UpdateLayout*"></a>
   <h4 id="FastReport_Report_UpdateLayout_System_Single_System_Single_" data-uid="FastReport.Report.UpdateLayout(System.Single,System.Single)">UpdateLayout(Single, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the children layout when the size of this object is changed by dx, dy values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3724,15 +3805,21 @@ report1.Show();</code></pre>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dx</span></td>
-        <td></td>
+        <td><p>X delta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dy</span></td>
-        <td></td>
+        <td><p>Y delta.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Report_UpdateLayout_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must update positions/sizes of child objects whose <strong>Dock</strong> or <strong>Anchor</strong> properties
+are set to non-default values.</p>
+</div>
   <h3 id="events">Events
   </h3>
   

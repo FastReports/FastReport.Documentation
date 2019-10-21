@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TableBase
    | FastReport OpenSource Class Reference ">
-    <meta name="generator" content="docfx 2.40.0.0">
+    <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -114,9 +114,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Click">ReportComponentBase.Click</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Printable">ReportComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Exportable">ReportComponentBase.Exportable</a>
@@ -224,6 +221,9 @@
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_DrawBackground_FastReport_Utils_FRPaintEventArgs_">ReportComponentBase.DrawBackground(FRPaintEventArgs)</a>
     </div>
     <div>
+      <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_Deserialize_FastReport_Utils_FRReader_">ReportComponentBase.Deserialize(FRReader)</a>
+    </div>
+    <div>
       <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_OnClick_System_EventArgs_">ReportComponentBase.OnClick(EventArgs)</a>
     </div>
     <div>
@@ -303,6 +303,9 @@
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Visible">ComponentBase.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Printable">ComponentBase.Printable</a>
     </div>
     <div>
       <a class="xref" href="FastReport.ComponentBase.html#FastReport_ComponentBase_Width">ComponentBase.Width</a>
@@ -393,9 +396,6 @@
     </div>
     <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_Clear">Base.Clear()</a>
-    </div>
-    <div>
-      <a class="xref" href="FastReport.Base.html#FastReport_Base_Deserialize_FastReport_Utils_FRReader_">Base.Deserialize(FRReader)</a>
     </div>
     <div>
       <a class="xref" href="FastReport.Base.html#FastReport_Base_BaseAssign_FastReport_Base_">Base.BaseAssign(Base)</a>
@@ -875,7 +875,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_AddChild_" data-uid="FastReport.Table.TableBase.AddChild*"></a>
   <h4 id="FastReport_Table_TableBase_AddChild_FastReport_Base_" data-uid="FastReport.Table.TableBase.AddChild(FastReport.Base)">AddChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a child object to this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -894,7 +895,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Object to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -902,7 +904,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_Assign_" data-uid="FastReport.Table.TableBase.Assign*"></a>
   <h4 id="FastReport_Table_TableBase_Assign_FastReport_Base_" data-uid="FastReport.Table.TableBase.Assign(FastReport.Base)">Assign(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of another, similar object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -921,12 +924,28 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>Source object to copy the contents from.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BreakableComponent.html#FastReport_BreakableComponent_Assign_FastReport_Base_">BreakableComponent.Assign(Base)</a></div>
+  <h5 id="FastReport_Table_TableBase_Assign_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Call Assign to copy the properties from another object of the same type. 
+The standard form of a call to Assign is</p>
+<p><code>destination.Assign(source);</code></p>
+<p>
+      which tells the <strong>destination</strong> object to copy the contents of the
+<strong>source</strong> object to itself. In this method, all child objects are
+ignored. If you want to copy child objects, use the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> method.
+</p>
+</div>
+  <h5 id="FastReport_Table_TableBase_Assign_FastReport_Base__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll</a>(<a class="xref" href="FastReport.Base.html">Base</a>)</div>
+  </div>
   
   
   <a id="FastReport_Table_TableBase_Avg_" data-uid="FastReport.Table.TableBase.Avg*"></a>
@@ -979,7 +998,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_Break_" data-uid="FastReport.Table.TableBase.Break*"></a>
   <h4 id="FastReport_Table_TableBase_Break_FastReport_BreakableComponent_" data-uid="FastReport.Table.TableBase.Break(FastReport.BreakableComponent)">Break(BreakableComponent)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Breaks the contents of the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -998,7 +1018,9 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.BreakableComponent.html">BreakableComponent</a></td>
         <td><span class="parametername">breakTo</span></td>
-        <td></td>
+        <td><p>Object to put the part of content to that does not fit in this object. These two
+objects must have the same type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1013,17 +1035,30 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><strong>true</strong> if there is enough space in this object to display at least one text line.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BreakableComponent.html#FastReport_BreakableComponent_Break_FastReport_BreakableComponent_">BreakableComponent.Break(BreakableComponent)</a></div>
+  <h5 id="FastReport_Table_TableBase_Break_FastReport_BreakableComponent__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+Do not call this method directly, it is used by the report engine. You should override it if
+you are writing a new FastReport object.
+</p>
+<p>
+This method must break the contents of the object. The part of content that fit in current object&apos;s
+bounds should remain in this object, the part that does not fit should be transferred to <strong>breakTo</strong>
+object. 
+</p>
+</div>
   
   
   <a id="FastReport_Table_TableBase_CalcHeight_" data-uid="FastReport.Table.TableBase.CalcHeight*"></a>
   <h4 id="FastReport_Table_TableBase_CalcHeight" data-uid="FastReport.Table.TableBase.CalcHeight">CalcHeight()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the object's height.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1040,12 +1075,17 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td></td>
+        <td><p>Actual object's height, in pixels.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_CalcHeight">ReportComponentBase.CalcHeight()</a></div>
+  <h5 id="FastReport_Table_TableBase_CalcHeight_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Applicable to objects that contain several text lines, such as TextObject. Returns the height needed
+to display all the text lines.</p>
+</div>
   
   
   <a id="FastReport_Table_TableBase_CalcWidth_" data-uid="FastReport.Table.TableBase.CalcWidth*"></a>
@@ -1076,7 +1116,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_CanContain_" data-uid="FastReport.Table.TableBase.CanContain*"></a>
   <h4 id="FastReport_Table_TableBase_CanContain_FastReport_Base_" data-uid="FastReport.Table.TableBase.CanContain(FastReport.Base)">CanContain(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating that this object can contain the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1095,7 +1136,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1110,7 +1152,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><strong>true</strong> if this object can contain the specified child object; otherwise, <strong>false</strong>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1257,7 +1300,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_GetChildObjects_" data-uid="FastReport.Table.TableBase.GetChildObjects*"></a>
   <h4 id="FastReport_Table_TableBase_GetChildObjects_FastReport_ObjectCollection_" data-uid="FastReport.Table.TableBase.GetChildObjects(FastReport.ObjectCollection)">GetChildObjects(ObjectCollection)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of child objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1276,7 +1320,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.ObjectCollection.html">ObjectCollection</a></td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>List to fill with values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1284,7 +1329,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_GetChildOrder_" data-uid="FastReport.Table.TableBase.GetChildOrder*"></a>
   <h4 id="FastReport_Table_TableBase_GetChildOrder_FastReport_Base_" data-uid="FastReport.Table.TableBase.GetChildOrder(FastReport.Base)">GetChildOrder(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns z-order of the specified child object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1303,7 +1349,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1318,6 +1365,52 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td><p>Z-order of the specified object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FastReport_Table_TableBase_GetChildOrder_FastReport_Base__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must return the index of a specified child object in the internal child list.</p>
+</div>
+  
+  
+  <a id="FastReport_Table_TableBase_IsInsideSpan_" data-uid="FastReport.Table.TableBase.IsInsideSpan*"></a>
+  <h4 id="FastReport_Table_TableBase_IsInsideSpan_FastReport_Table_TableCell_" data-uid="FastReport.Table.TableBase.IsInsideSpan(FastReport.Table.TableCell)">IsInsideSpan(TableCell)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideSpan(TableCell cell)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastReport.Table.TableCell.html">TableCell</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1326,7 +1419,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_IsVisible_" data-uid="FastReport.Table.TableBase.IsVisible*"></a>
   <h4 id="FastReport_Table_TableBase_IsVisible_FastReport_Utils_FRPaintEventArgs_" data-uid="FastReport.Table.TableBase.IsVisible(FastReport.Utils.FRPaintEventArgs)">IsVisible(FRPaintEventArgs)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines if the object is visible on current drawing surface.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1345,7 +1439,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRPaintEventArgs.html">FRPaintEventArgs</a></td>
         <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><p>Draw event arguments.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1466,7 +1561,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_RemoveChild_" data-uid="FastReport.Table.TableBase.RemoveChild*"></a>
   <h4 id="FastReport_Table_TableBase_RemoveChild_FastReport_Base_" data-uid="FastReport.Table.TableBase.RemoveChild(FastReport.Base)">RemoveChild(Base)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes a specified object from this object's childs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1493,7 +1589,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_RestoreState_" data-uid="FastReport.Table.TableBase.RestoreState*"></a>
   <h4 id="FastReport_Table_TableBase_RestoreState" data-uid="FastReport.Table.TableBase.RestoreState">RestoreState()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Restores the object's state after printing it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1501,11 +1598,17 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_RestoreState">ReportComponentBase.RestoreState()</a></div>
+  <h5 id="FastReport_Table_TableBase_RestoreState_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called by the report engine after processing the object.</p>
+<p>Do not call it directly. You may override it if you are developing a new FastReport component. 
+In this method you should restore the object properties that were saved by the <a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_SaveState">SaveState()</a> method.
+</div>
   
   
   <a id="FastReport_Table_TableBase_SaveState_" data-uid="FastReport.Table.TableBase.SaveState*"></a>
   <h4 id="FastReport_Table_TableBase_SaveState" data-uid="FastReport.Table.TableBase.SaveState">SaveState()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Saves the object's state before printing it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1513,11 +1616,18 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.ReportComponentBase.html#FastReport_ReportComponentBase_SaveState">ReportComponentBase.SaveState()</a></div>
+  <h5 id="FastReport_Table_TableBase_SaveState_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called by the report engine before processing the object.</p>
+<p>Do not call it directly. You may override it if you are developing a new FastReport component. 
+In this method you should save any object properties that may be changed during the object printing. 
+The standard implementation saves the object&apos;s bounds, visibility, bookmark and hyperlink.
+</div>
   
   
   <a id="FastReport_Table_TableBase_Serialize_" data-uid="FastReport.Table.TableBase.Serialize*"></a>
   <h4 id="FastReport_Table_TableBase_Serialize_FastReport_Utils_FRWriter_" data-uid="FastReport.Table.TableBase.Serialize(FastReport.Utils.FRWriter)">Serialize(FRWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1536,17 +1646,30 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.Utils.FRWriter.html">FRWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>Writer object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="FastReport.BreakableComponent.html#FastReport_BreakableComponent_Serialize_FastReport_Utils_FRWriter_">BreakableComponent.Serialize(FRWriter)</a></div>
+  <h5 id="FastReport_Table_TableBase_Serialize_FastReport_Utils_FRWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not call this method directly. You should override it if you are
+  developing a new component for FastReport.</p>
+<p>This method is called when the object needs to save the state. It may happen
+  when:</p>
+<ul><li>saving the report to the file or stream;</li><li>saving the report to the designer&apos;s undo buffer;</li><li>
+              assigning the object to another object using the
+<a class="xref" href="FastReport.Base.html#FastReport_Base_Assign_FastReport_Base_">Assign(Base)</a> or <a class="xref" href="FastReport.Base.html#FastReport_Base_AssignAll_FastReport_Base_">AssignAll(Base)</a> methods;
+</li><li>saving the object to the designer&apos;s clipboard;</li><li>saving the object to the preview (when run a
+report).</li></ul>
+</div>
   
   
   <a id="FastReport_Table_TableBase_SetChildOrder_" data-uid="FastReport.Table.TableBase.SetChildOrder*"></a>
   <h4 id="FastReport_Table_TableBase_SetChildOrder_FastReport_Base_System_Int32_" data-uid="FastReport.Table.TableBase.SetChildOrder(FastReport.Base,System.Int32)">SetChildOrder(Base, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the z-order of the specified object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1565,15 +1688,20 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><a class="xref" href="FastReport.Base.html">Base</a></td>
         <td><span class="parametername">child</span></td>
-        <td></td>
+        <td><p>Child object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">order</span></td>
-        <td></td>
+        <td><p>New Z-order.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Table_TableBase_SetChildOrder_FastReport_Base_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must place the specified child object at the specified position in the internal child list.</p>
+</div>
   
   
   <a id="FastReport_Table_TableBase_Sum_" data-uid="FastReport.Table.TableBase.Sum*"></a>
@@ -1626,7 +1754,8 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
   
   <a id="FastReport_Table_TableBase_UpdateLayout_" data-uid="FastReport.Table.TableBase.UpdateLayout*"></a>
   <h4 id="FastReport_Table_TableBase_UpdateLayout_System_Single_System_Single_" data-uid="FastReport.Table.TableBase.UpdateLayout(System.Single,System.Single)">UpdateLayout(Single, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the children layout when the size of this object is changed by dx, dy values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1645,15 +1774,21 @@ Table1.ResultTable.Left = Engine.PageWidth - Table1.ResultTable.CalcWidth() - 1;
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dx</span></td>
-        <td></td>
+        <td><p>X delta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">dy</span></td>
-        <td></td>
+        <td><p>Y delta.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="FastReport_Table_TableBase_UpdateLayout_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must update positions/sizes of child objects whose <strong>Dock</strong> or <strong>Anchor</strong> properties
+are set to non-default values.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FastReport.IFRSerializable.html">IFRSerializable</a>
