@@ -1,9 +1,10 @@
-# The Feature Comparison Table for FastReport Open Source, FastReport Core, FastReport .Net
+# The Feature Comparison Table for FastReport Open Source, FastReport Core, FastReport .NET
 
-| Features | FastReport Open Source | FastReport Core | FastReport .Net |
+| Features | FastReport Open Source | FastReport Core | FastReport .NET |
 |:-|:-|:-|:-|
 | **Supported Projects**    |   |   |   |
 | WinForms Applications |   |   | + |
+| .NET Core 3.1 WinForms  |  | + |   |
 | Console Applications  | + | + | + |
 | ASP.NET ASPX (WebForms) Applications |   |   | + |
 | ASP.NET MVC Applications | + | + | + |
@@ -69,12 +70,12 @@ _\* Pdf export for FastReport OpenSource is available as plugin. Not included to
 
 ## Remarks about FastReport Core
 
-FastReport Core sources and nupkg files are included in FastReport .Net  Professional and Enterprise editions. FastReport Core Demo nupkg files are included in FastReport .Net Trial, Win, Win+Web editions.
+FastReport Core sources and nupkg files are included in FastReport .NET  Professional and Enterprise editions. FastReport Core Demo nupkg files are included in FastReport .NET Trial, Win, Win+Web editions.
 
 ## Resources
 
 [FastReport Open Source](https://github.com/FastReports/FastReport)
 
-[FastReport .Net and FastReport Core home page](https://www.fast-report.com/en/product/fast-report-net/) 
+[FastReport .NET and FastReport Core home page](https://www.fast-report.com/en/product/fast-report-net/) 
 
 [FastReport Online Designer](https://www.fast-report.com/en/product/fast-report-online-designer/)
