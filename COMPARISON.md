@@ -42,7 +42,7 @@
 | Internal report script C#, VB.NET | + | + | + |
 | Text, Picture, Line, Shape, Subreport, Table, Matrix,  PolyLine, Polygon, Barcode, Checkbox, ZipCode, CellularText, LinearGauge, SimpleGauge, RadialGauge, SimpleProgressGauge, Html | + | + | + |
 | RichText, Map, SVG |   | + | + |
-| Chart, Sparkline   |   |   | + |
+| Chart, Sparkline   |   | + | + |
 | Dialogs            |   |   | + |
 | Interactive Reports (clicks, hyperlinks, link on report, bookmarks, outline) | + | + | + |
 | **Report Designing** |
