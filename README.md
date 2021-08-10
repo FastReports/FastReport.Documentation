@@ -1,4 +1,4 @@
-[![Gitter](https://badges.gitter.im/FastReports/FastReport.svg)](https://gitter.im/FastReports/FastReport?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Twitter Follow](https://img.shields.io/twitter/follow/fastreports?style=social)](https://twitter.com/FastReports)  [![Channel on Telegram](https://img.shields.io/badge/Channel%20on-Telegram-brightgreen.svg)](https://t.me/fastreport_open_source) [![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen.svg)](https://t.me/joinchat/hs87tfi79Rg3OGQy)
 
 # FastReport Open Source Documentation
 
